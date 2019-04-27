@@ -15,7 +15,12 @@ the deck.
    * Exhaust. Draw 1 card.
    * At the end of combat, if Doubloon is in your deck, gain 8 (12) gold.
 
-## Recall (cost 0 skill normal)
+## Convert Currency (cost 0 skill normal)
+   * Gilded.
+   * Reduce the cost of a (all) card in your hand by 1 for each doubloon in your
+     hand.
+
+## Recall Funds (cost 1 skill normal)
    * Gilded.
    * Exhaust. Return up to 3 (5) doubloons from your exhaust pile to your hand.
 
@@ -24,47 +29,22 @@ the deck.
    * Gain 7 (10) block, then 3 (4) block for each doubloon in your hand.
 
 ## Borrow (cost 0 skill normal)
-   * Gain 50 (80) gold.
+   * Gain 60 (100) gold.
    * At the end of the turn, return any amount unspent.
 
-## Autumn Tax (cost 1 skill normal)
-   * Tithe.
-   * Gain gold equal to the amount spent last turn. Exhaust
-   * Enhanced: Twice.
-
-## Winter Tax (cost 1 skill normal)
-   * Tithe.
-   * Gain gold equal to the total block gained this turn. Exhaust.
-   * Enhanced: Twice.
-
-## Summer Tax (cost 1 skill normal)
-   * Tithe.
-   * Gain gold equal to the total damage dealt this turn. Exhaust.
-   * Enhanced: Twice.
-
-## Spring Tax (cost 1 skill normal)
-   * Tithe
-   * Gain 10 gold per enemy. Exhaust
-   * Enhanced: 20 gold per enemy.
-
-## Empty Hand (cost 1 skill normal)
+## Empty Hand (cost 1 (0) skill normal)
    * Every card in your hand gains tithe this turn.
-   * Enhanced: Cost 0.
 
 ## Shield of the Meek (cost 2 skill normal).
    * Tithe.
-   * Gain 10 (15) block plus half of the gold spent last turn.
+   * Gain 10 (14) block plus a fifth (fourth) of the gold spent this turn.
 
 ## Sword of the Meek (cost 2 skill normal).
    * Tithe.
-   * Deal 10 (15) plus damage plus half of the gold spent last turn.
-
-## Opulence (cost 0 skill uncommon)
-   * Draw a card, then gain gold equal to (twice) the combined cost of the cards in your
-     hand. Exhaust
+   * Deal 10 (14) damage plus a fifth (fourth) of the gold spent this turn.
 
 ## Blessing (cost 1 skill normal)
-   * Heal 6 (9), then heal all monsters 12 (15). Exhaust.
+   * Heal 8 (12), then heal all monsters 16 (24). Exhaust.
 
 ## Circle of Protection (cost 1 skill normal, base deck)
    * Block 8 (12), Monsters gain block 8 (12).
@@ -77,38 +57,49 @@ the deck.
    * Gain 5 piety, plus 5 piety for each unique active Vow.
    * Enhanced: 8, plus 8 per Vow.
 
-## Miracle (cost 2 skill rare)
-   * Restore all HP to a monster. Gain 2 (3) piety for each HP healed.
+## Divine Intervention (cost 2 skill rare)
+   * Restore all HP to an enemy. Gain 2 (3) piety for each HP healed.
+
+## Miracle (cost 1 skill uncommon)
+   * Exhaust all status cards in your hand. Gain 2 (4) piety for each card
+     exhausted.
 
 ## Bribe (cost 4 skill, rare)
    * Tithe.
-   * Gain 20 (30) piety.
+   * Give all enemies weak 3 (4), vulnerable 3 (4), and reduce their strength by
+     3 (4).
 
 ## Self Flagellation (cost 1 skill, uncommon)
-   * Add three wounds to your hand and gain 14 (20) piety.
+   * Add 2 wounds to your hand and gain 10 (15) piety.
 
+## Pristine Soul (cost 2 (1) skill, rare)
+   * Gain block equal to a half of your piety, then gain piety equal to half of
+     your block.
 
+## Prophecy (cost 0 skill, uncommon)
+   * Put the highest cost card from your draw pile in your hand.
+   * Enhanced: highest cost card from you draw pile and from your discard pile.
 
 # Powers
 
 ## Vow of Poverty (cost 1 power common)
    * You may not gain gold during the battle or as a reward. Regenerate 4.
-   * Enhanced: Regenerate 6 + innate.
+   * Enhanced: Regenerate 5 + innate.
 
 ## Vow of Sobriety (cost 0 power uncommon)
-   * You may not consume potions this combat. If you haven't consumed potions
-     this combat, gain +3 dexterity.
+   * You may not consume or earn potions as a reward during this combat. Gain +2
+     (+3) dexterity.
    * Enhanced: Innate.
 
-## Vow of Contemplation (cost 1 power uncommon)
-   * Every turn, shuffle an unplayable meditation card in your draw pile, then
-     draw two cards.
+## Vow of Contemplation (cost 1 power rare)
+   * Every turn, shuffle an unplayable meditation status card in your draw pile,
+     then draw two cards.
    * Enhanced: Innate.
 
-## Vow of Sanctity (cost 2 power uncommon)
+## Vow of Sanctity (cost 2 power common)
    * You lose 4 extra piety when dealing damage.
-   * At the end of your turn, gain 5 piety.
-   * Enhanced: Innate, Gain 8 piety.
+   * At the end of your turn, gain 6 (8) piety.
+   * Enhanced: Innate.
 
 ## Vow of Purity (cost 1 power rare)
    * You may not inflict any negative status effects. Gain +2 artifact.
@@ -120,6 +111,10 @@ the deck.
 
 ## Martyrdom (cost 1 power uncommon)
    * At the end of your turn, lose 1 HP and gain 4 (6) piety.
+
+## Sin and Contrition (cost 1 power uncommon)
+   * Shuffle 3 wounds into your deck.
+   * Whenever you draw a status card, gain 4 (6) piety.
 
 ## Generosity (cost 1 power uncommon)
    * Gilded.
@@ -133,8 +128,12 @@ the deck.
 
 # Attacks
 
+## Coin Fling (cost 0 attack)
+   * Gilded.
+   * Deal 4 (6) damage, plus 4 (6) for each doubloon in your hand.
+
 ## Blinding Virtue (cost 2 attack)
-   * Deal 15 (20) damage to all enemies, plus 5 (7) for each unique active Vow.
+   * Deal 15 (20) damage, plus 5 (7) for each unique active Vow.
 
 ## Solar Flare (base deck, cost 5 attack)
    * Tithe
@@ -143,102 +142,35 @@ the deck.
 
 ## Wrath of God (cost 8 attack rare)
    * Tithe
-   * Deal 50 damage to every enemy and 5 damage to yourself.
-   * Enhanced: 80 damage, 8 to yourself.
+   * Deal 50 damage to every enemy and 10 damage to yourself.
+   * Enhanced: 80 damage, 16 to yourself.
 
-## Spare the Rod (cost 1 attack normal)
+## Admonish (cost 1 attack normal)
    * Deal 5 damage, then gain 4 piety.
    * Enhanced: Deal 8 damage, then gain 6 piety.
 
-## Teach a Lesson (cost 2 attack normal, base deck)
-   * Deal 2\*4 damage, then gain 8 piety.
-   * Enhanced: 2\*6 damage, then gain 12 piety.
+## Crumble and Rebuild (cost 1 attack normal)
+   * Deal 8 (11) damage, then give the enemy 8 (11) block.
+
+## Upheaval (cost 2 attack uncommon)
+   * Tithe.
+   * Deal damage equal to twice the enemy's block.
+
+## Rod Slam (cost 2 attack uncommon)
+   * Deal 10 (15) damage. Enemy loses 1 strength.
+
+## Punish (cost 2 attack uncommon)
+   * Gain 10 (14) piety. Deal 2\*5 (2 * 7) damage,
 
 ## Anathema (Cost 3 attack rare)
-   * Lose all piety and vows. Deal 2 damage for each lost piety and 10
-     damage for each vow.
+   * Lose all vows. Deal 10 (15) damage to every enemy for each unique lost vow.
+     Exhaust.
+
+## Blasphemy (Cost 2 attack rare)
+   * Lose all piety. Deal 2 damage for each lost piety.
 
 ## Golden Beam (cost 3 (2) attack normal)
    * Deal damage equal to 1/10th of your gold.
 
 ## Display of Power (cost 1 attack):
-   * Deal 5 (8) damage plus twice the highest cost among the cards in your hand.
-
-# Skills
-
-## Doubloon (cost 0 skill normal)
-   * Exhaust. Draw 1 card.
-   * At the end of combat, if Doubloon is in your deck, gain 8 (12) gold.
-
-## Recall (cost 0 skill normal)
-   * Gilded.
-   * Exhaust. Return up to 3 (5) doubloons from your exhaust pile to your hand.
-
-## Dazzle (cost 1 skill normal)
-   * Gilded
-   * Gain 7 (10) block, then 3 (4) block for each doubloon in your hand.
-
-## Borrow (cost 0 skill normal)
-   * Gain 50 (80) gold.
-   * At the end of the turn, return any amount unspent.
-
-## Autumn Tax (cost 1 skill normal)
-   * Tithe.
-   * Gain gold equal to the amount spent last turn. Exhaust
-   * Enhanced: Twice.
-
-## Winter Tax (cost 1 skill normal)
-   * Tithe.
-   * Gain gold equal to the total block gained this turn. Exhaust.
-   * Enhanced: Twice.
-
-## Summer Tax (cost 1 skill normal)
-   * Tithe.
-   * Gain gold equal to the total damage dealt this turn. Exhaust.
-   * Enhanced: Twice.
-
-## Spring Tax (cost 1 skill normal)
-   * Tithe
-   * Gain 10 gold per enemy. Exhaust
-   * Enhanced: 20 gold per enemy.
-
-## Empty Hand (cost 1 skill normal)
-   * Every card in your hand gains tithe this turn.
-   * Enhanced: Cost 0.
-
-## Shield of the Meek (cost 2 skill normal).
-   * Tithe.
-   * Gain 10 (15) block plus half of the gold spent last turn.
-
-## Sword of the Meek (cost 2 skill normal).
-   * Tithe.
-   * Deal 10 (15) plus damage plus half of the gold spent last turn.
-
-## Opulence (cost 0 skill uncommon)
-   * Draw a card, then gain gold equal to (twice) the combined cost of the cards in your
-     hand. Exhaust
-
-## Blessing (cost 1 skill normal)
-   * Heal 6 (9), then heal all monsters 12 (15). Exhaust.
-
-## Circle of Protection (cost 1 skill normal, base deck)
-   * Block 8 (12), Monsters gain block 8 (12).
-
-## Church Resources (cost 2 skill normal)
-   * Tithe.
-   * Draw 2 (3) cards, gain 1 (2) energy.
-
-## Sermon (cost 1 skill normal)
-   * Gain 5 piety, plus 5 piety for each unique active Vow.
-   * Enhanced: 8, plus 8 per Vow.
-
-## Miracle (cost 2 skill rare)
-   * Restore all HP to a monster. Gain 2 (3) piety for each HP healed.
-
-## Bribe (cost 4 skill, rare)
-   * Tithe.
-   * Gain 20 (30) piety.
-
-## Self Flagellation (cost 1 skill, uncommon)
-   * Add three wounds to your hand and gain 14 (20) piety.
-
+   * Choose a card in your hand. Deal damage equal to 4 (6) times its cost.

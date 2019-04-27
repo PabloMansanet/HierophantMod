@@ -1,23 +1,25 @@
 # Donation Box (Base)
-   * Once per floor, when you have 10 or less gold, gain 100 gold.
+   * Once per floor, when you have 20 or less gold, gain 100 gold.
 
-# Golden Ark (Base Upgrade, Boss)
-   * When you climb a floor, gain 10% of your total gold.
+# Gilded Ark (Base Upgrade, Boss)
+   * Replaces Donation Box.
+   * When you obtain Gilded Ark, obtain 3 doubloons.
+   * When you exhaust a doubloon, gain 1 energy.
 
 # Beggar's Robes (uncommon):
    * When you have 30 or less gold, gain +3 strength and +3 dexterity.
 
 # Martyr's Crown (normal):
-   * Gain gold equal to five times your HP loss.
+   * Gain gold equal to four times your HP loss.
 
 # Writ of Virtue (uncommon):
-   * Gain energy at the start of each turn for each active vow.
+   * Gain energy at the start of each turn for each unique active vow.
 
 # Apostle's Rod (normal):
-   * Do not lose piety when dealing damage.
-
-# Flagellation Whip (uncommon):
    * Whenever your attack damage is blocked, gain 2 piety.
+
+# Flagellation Whip (normal):
+   * Whenever you draw a status effect, gain 2 piety.
 
 # Golden Atrium (normal):
    * When you defeat an enemy peacefully, gain gold equal to their remaining HP.
