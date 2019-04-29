@@ -4,7 +4,7 @@ import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import hierophant.cards.AbstractDefaultCard;
 
-import static hierophant.DefaultMod.makeID;
+import static hierophant.HierophantMod.makeID;
 
 public class DefaultSecondMagicNumber extends DynamicVariable {
 

@@ -6,10 +6,10 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import hierophant.DefaultMod;
+import hierophant.HierophantMod;
 import hierophant.characters.TheDefault;
 
-import static hierophant.DefaultMod.makeCardPath;
+import static hierophant.HierophantMod.makeCardPath;
 
 // public class ${NAME} extends AbstractDynamicCard
 public class CardTemplate extends AbstractDynamicCard {
@@ -34,8 +34,8 @@ public class CardTemplate extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    // public static final String ID = DefaultMod.makeID(${NAME}.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
-    public static final String ID = DefaultMod.makeID("DefaultCommonAttack"); // DELETE THIS ONE.
+    // public static final String ID = HierophantMod.makeID(${NAME}.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
+    public static final String ID = HierophantMod.makeID("DefaultCommonAttack"); // DELETE THIS ONE.
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the card in your image folder for it to run correctly.
 

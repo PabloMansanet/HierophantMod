@@ -3,11 +3,11 @@ package hierophant.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import hierophant.DefaultMod;
+import hierophant.HierophantMod;
 import hierophant.util.TextureLoader;
 
-import static hierophant.DefaultMod.makeRelicOutlinePath;
-import static hierophant.DefaultMod.makeRelicPath;
+import static hierophant.HierophantMod.makeRelicOutlinePath;
+import static hierophant.HierophantMod.makeRelicPath;
 
 public class PlaceholderRelic extends CustomRelic {
 
@@ -18,7 +18,7 @@ public class PlaceholderRelic extends CustomRelic {
      */
 
     // ID, images, text.
-    public static final String ID = DefaultMod.makeID("PlaceholderRelic");
+    public static final String ID = HierophantMod.makeID("PlaceholderRelic");
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));

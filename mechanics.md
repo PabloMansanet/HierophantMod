@@ -122,7 +122,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
      3 (4).
 
 ## Self Flagellation (cost 1 skill, uncommon)
-   * Add 2 wounds to your hand and gain 10 (15) piety.
+   * Add 2 wounds to your hand and gain 12 (18) piety.
 
 ## Pristine Soul (cost 2 (1) skill, rare)
    * Gain block equal to a half of your piety, then gain piety equal to half of
@@ -135,6 +135,10 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Doomsaying (cost 0 skill, uncommon)
    * Discard the top (two) card(s) of your draw pile. Gain energy equal to its
      (their) cost.
+
+## Repentance (cost 1 skill, uncommon)
+   * Exhaust (no exhaust) Gain Piety equal to twice the piety lost this
+     combat.
 
 ## Powers:
 
@@ -211,7 +215,11 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Enhanced: Deal 8 damage, then gain 6 piety.
 
 ## Crumble and Rebuild (cost 1 attack normal)
-   * Deal 8 (11) damage, then give the enemy 8 (11) block.
+   * Deal 10 (15) damage, then give the enemy 10 (15) block.
+
+## Holy Strike (cost 2 attack normal)
+   * Deals 12 (18) damage.
+   * Deals 1 additional damage for every 3 (2) piety you have.
 
 ## Upheaval (cost 2 attack uncommon)
    * Tithe.
