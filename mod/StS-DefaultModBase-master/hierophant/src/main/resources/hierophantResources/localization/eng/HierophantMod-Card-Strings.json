@@ -61,5 +61,17 @@
   "hierophant:DivineIntervention": {
     "NAME": "Divine intervention",
     "DESCRIPTION": "Fully heal an enemy. NL Gain !M! hierophant:Piety per HP healed."
+  },
+  "hierophant:Strike_Hierophant": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "hierophant:Defend_Hierophant": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "hierophant:Smite": {
+    "NAME": "Smite",
+    "DESCRIPTION": "Deal !D! damage. NL Deals 1 additional damage per !M! piety."
   }
 }

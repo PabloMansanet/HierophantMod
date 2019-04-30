@@ -155,21 +155,12 @@ public class Hierophant extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-
-        retVal.add(DefaultCommonAttack.ID);
-        retVal.add(DefaultUncommonAttack.ID);
-        retVal.add(DefaultRareAttack.ID);
-
+   
+        for(int i = 0; i < 4; i = i + 1) {
+           retVal.add(Strike_Hierophant.ID);
+           retVal.add(Defend_Hierophant.ID);
+        }
         retVal.add(Doubloon.ID);
-        retVal.add(DefaultUncommonSkill.ID);
-        retVal.add(DivineIntervention.ID);
-
-        retVal.add(DefaultCommonPower.ID);
-        retVal.add(DefaultUncommonPower.ID);
-        retVal.add(DefaultRarePower.ID);
-
-        retVal.add(DefaultAttackWithVariable.ID);
-        retVal.add(DefaultSecondMagicNumberSkill.ID);
         retVal.add(Blessing.ID);
         return retVal;
     }

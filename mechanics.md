@@ -149,6 +149,9 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Exhaust (no exhaust) Gain Piety equal to twice the piety lost this
      combat.
 
+## Ornate Chest (cost 0 skill, rare)
+   * Unplayable. Ethereal. Hoard 30 (50).
+
 ## Powers:
 
 ## Vow of Poverty (cost 1 power common)
@@ -229,7 +232,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Crumble and Rebuild (cost 1 attack normal)
    * Deal 10 (14) damage, then give the enemy 10 (14) block.
 
-## Holy Strike (cost 2 attack normal)
+## Smite (cost 2 attack normal)
    * Deals 12 (18) damage.
    * Deals 1 additional damage for every 3 (2) piety.
 
