@@ -405,6 +405,7 @@ public class HierophantMod implements
 
         BaseMod.addCard(new OrbSkill());
         BaseMod.addCard(new Blessing());
+        BaseMod.addCard(new Doubloon());
         BaseMod.addCard(new DefaultSecondMagicNumberSkill());
         BaseMod.addCard(new DefaultCommonAttack());
         BaseMod.addCard(new DefaultAttackWithVariable());
@@ -423,6 +424,7 @@ public class HierophantMod implements
         // before playing your mod.
         UnlockTracker.unlockCard(OrbSkill.ID);
         UnlockTracker.unlockCard(Blessing.ID);
+        UnlockTracker.unlockCard(Doubloon.ID);
         UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
         UnlockTracker.unlockCard(DefaultCommonAttack.ID);
         UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);

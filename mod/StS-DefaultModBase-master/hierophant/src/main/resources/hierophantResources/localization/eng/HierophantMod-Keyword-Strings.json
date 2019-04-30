@@ -1,8 +1,14 @@
 [
   {
     "NAMES": [
+      "hoard"
+    ],
+    "DESCRIPTION": "Earn gold at the end of combat if this card is not exhausted."
+  },
+  {
+    "NAMES": [
       "keyword",
-      "keywords"
+      "keywords",
     ],
     "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
   },

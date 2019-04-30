@@ -160,7 +160,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(DefaultUncommonAttack.ID);
         retVal.add(DefaultRareAttack.ID);
 
-        retVal.add(DefaultCommonSkill.ID);
+        retVal.add(Doubloon.ID);
         retVal.add(DefaultUncommonSkill.ID);
         retVal.add(DefaultRareSkill.ID);
 

@@ -53,5 +53,9 @@
   "hierophant:Blessing": {
     "NAME": "Blessing",
     "DESCRIPTION": "Heal !M!. NL Heal ALL enemies !M!. NL Exhaust."
+  },
+  "hierophant:Doubloon": {
+    "NAME": "Doubloon",
+    "DESCRIPTION": "Draw 1 card. NL Exhaust. NL hierophant:Hoard !M!."
   }
 }
