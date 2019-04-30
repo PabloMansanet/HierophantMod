@@ -132,43 +132,71 @@
     "NAME": "Flagellation",
     "DESCRIPTION": "Add 2 Wounds to your hand. NL Gain !M! hierophant:Piety."
   },
-
-## Pristine Soul (cost 2 (1) skill, rare)
-   * Gain block equal to a half of your piety, then gain piety equal to half of
-     your block.
-
-## Prophecy (cost 0 skill, uncommon)
-   * Put the highest cost card from your draw pile in your hand.
-   * Enhanced: highest cost card from you draw pile and from your discard pile.
-
-## Doomsaying (cost 0 skill, uncommon)
-   * Discard the top two (four) card of your draw pile. Gain energy equal to the
-     highest energy cost among them.
-
-## Repentance (cost 1 skill, uncommon)
-   * Exhaust (no exhaust) Gain Piety equal to twice the piety lost this
-     combat.
-
-## Ornate Chest (cost 0 skill, rare)
-   * Unplayable. Ethereal. Hoard 30 (50).
-
-## Powers:
-
-## Vow of Poverty (cost 1 power common)
-   * You may not gain gold during the battle or as a reward. At the beginning of
-     your turn, gain 1 strength. (Innate)
-
-## Vow of Sobriety (cost 0 power uncommon)
-   * You may not consume or earn potions as a reward during this combat. At the
-     beginning of your turn, gain 1 dexterity. (Innate)
-
-## Vow of Contemplation (cost 1 power rare)
-   * Every turn, shuffle an unplayable meditation status card in your draw pile,
-     then draw two cards. (Innate)
-
-## Vow of Sanctity (cost 1 power common)
-   * You lose 2 extra piety when dealing damage.
-   * At the end of your turn, gain 10 piety. (Innate)
+  "hierophant:PristineSoul": {
+    "NAME": "Pristine Soul",
+    "DESCRIPTION": "Set your block and hierophant:Piety to the highest of their two values."
+  },
+  "hierophant:Prophecy": {
+    "NAME": "Prophecy",
+    "DESCRIPTION": "Put the highest cost card from your draw pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Put the highest cost card from your draw and discard piles into your hand."
+  },
+  "hierophant:Doomsaying": {
+    "NAME":"Doomsaying",
+    "DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain energy equal to the highest cost among the discarded cards."
+  },
+  "hierophant:Divination": {
+    "NAME":"Divination",
+    "DESCRIPTION": "Draw a card. NL If its cost is the highest among cards in your hand, repeat the process."
+  },
+  "hierophant:Prayer": {
+    "NAME":"Prayer",
+    "DESCRIPTION": "Play the highest cost card among the top X cards of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Play the highest cost card among the top X+1 cards of your draw pile."
+  },
+  "hierophant:Repentance": {
+    "NAME":"Repentance",
+    "DESCRIPTION": "Gain hierophant:Piety equal to twice the hierophant:Piety lost this combat. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain hierophant:Piety equal to twice the hierophant:Piety lost this combat."
+  },
+  "hierophant:Repentance": {
+    "NAME":"Repentance",
+    "DESCRIPTION": "Gain hierophant:Piety equal to twice the hierophant:Piety lost this combat. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain hierophant:Piety equal to twice the hierophant:Piety lost this combat."
+  },
+  "hierophant:OrnateChest": {
+    "NAME":"Ornate Chest",
+    "DESCRIPTION": "Unplayable. NL Ethereal. NL hierophant:Hoard !M!"
+  },
+  "hierophant:Contemplation": {
+    "NAME":"Contemplation",
+    "DESCRIPTION": "At the beginning of your turn, put 2 unplayable Meditation status cards in your draw pile, then draw !M! cards."
+  },
+  "hierophant:VowOfPoverty": {
+    "NAME":"Vow Of Poverty",
+    "DESCRIPTION": "You may not earn gold this combat. NL Gain 1 strength at the beginning of your turn.",
+    "UPGRADE_DESCRIPTION": "You may not gain gold this combat. NL Gain 1 strength at the beginning of your turn. NL Innate."
+  },
+  "hierophant:VowOfSobriety": {
+    "NAME":"Vow Of Sobriety",
+    "DESCRIPTION": "You may not consume or earn potions this combat. NL Gain 1 dexterity at the beginning of your turn.",
+    "UPGRADE_DESCRIPTION": "You may not consume or earn potions this combat. NL Gain 1 dexterity at the beginning of your turn. NL Innate."
+  },
+  "hierophant:VowOfSobriety": {
+    "NAME":"Vow Of Sobriety",
+    "DESCRIPTION": "You may not consume or earn potions this combat. NL Gain 1 dexterity at the beginning of your turn.",
+    "UPGRADE_DESCRIPTION": "You may not consume or earn potions this combat. NL Gain 1 dexterity at the beginning of your turn. NL Innate."
+  },
+  "hierophant:VowOfSanctity": {
+    "NAME":"Vow Of Sanctity",
+    "DESCRIPTION": "You lose 3 additional piety when dealing damage. NL At the end of your turn, gain 10 piety.",
+    "UPGRADE_DESCRIPTION": "You lose 3 additional piety when dealing damage. NL At the end of your turn, gain 10 piety. NL Innate."
+  },
+  "hierophant:VowOfStability": {
+    "NAME":"Vow Of Stability",
+    "DESCRIPTION": "You take double unblocked attack damage. NL At the end of your turn, double your block.",
+    "UPGRADE_DESCRIPTION": "You take double unblocked attack damage. NL At the end of your turn, double your block. NL Innate."
+  },
 
 ## Vow of Purity (cost 2 power rare)
    * You may not inflict any negative status effects. At the start of your turn,

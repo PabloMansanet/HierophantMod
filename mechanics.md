@@ -131,8 +131,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Add 2 wounds to your hand and gain 12 (18) piety.
 
 ## Pristine Soul (cost 2 (1) skill, rare)
-   * Gain block equal to a half of your piety, then gain piety equal to half of
-     your block.
+   * Set your Piety and Block to the highest of the two values.
 
 ## Prophecy (cost 0 skill, uncommon)
    * Put the highest cost card from your draw pile in your hand.
@@ -141,6 +140,12 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Doomsaying (cost 0 skill, uncommon)
    * Discard the top two (four) card of your draw pile. Gain energy equal to the
      highest energy cost among them.
+
+## Prayer (cost X skill, uncommon)
+   * Play the highest cost card among the top X (X+1) cards of your draw pile.
+
+## Divination (cost 1 (0) skill, rare)
+   * Draw. If it's not among the lowest, keep going.
 
 ## Repentance (cost 1 skill, uncommon)
    * Exhaust (no exhaust) Gain Piety equal to twice the piety lost this
@@ -159,12 +164,12 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * You may not consume or earn potions as a reward during this combat. At the
      beginning of your turn, gain 1 dexterity. (Innate)
 
-## Vow of Contemplation (cost 1 power rare)
-   * Every turn, shuffle an unplayable meditation status card in your draw pile,
-     then draw two cards. (Innate)
+## Contemplation (cost 0 power rare)
+   * Every turn, shuffle 2 unplayable meditation status cards in your draw pile,
+     then draw 2(3) cards. 
 
 ## Vow of Sanctity (cost 1 power common)
-   * You lose 2 extra piety when dealing damage.
+   * You lose 3 extra piety when dealing damage.
    * At the end of your turn, gain 10 piety. (Innate)
 
 ## Vow of Purity (cost 2 power rare)
