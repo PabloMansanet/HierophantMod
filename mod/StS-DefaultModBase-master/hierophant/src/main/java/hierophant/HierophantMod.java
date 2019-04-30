@@ -3,7 +3,6 @@ package hierophant;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
-import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -19,16 +18,11 @@ import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import hierophant.characters.Hierophant;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import hierophant.cards.*;
-import hierophant.characters.TheDefault;
 import hierophant.events.IdentityCrisisEvent;
-import hierophant.potions.PlaceholderPotion;
-import hierophant.relics.BottledPlaceholderRelic;
-import hierophant.relics.DefaultClickableRelic;
-import hierophant.relics.PlaceholderRelic;
-import hierophant.relics.PlaceholderRelic2;
 import hierophant.util.IDCheckDontTouchPls;
 import hierophant.util.TextureLoader;
 import hierophant.variables.DefaultCustomVariable;
@@ -199,9 +193,9 @@ public class HierophantMod implements
         
         logger.info("Done subscribing");
         
-        logger.info("Creating the color " + TheDefault.Enums.COLOR_GRAY.toString());
+        logger.info("Creating the color " + Hierophant.Enums.COLOR_GRAY.toString());
         
-        BaseMod.addColor(TheDefault.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
+        BaseMod.addColor(Hierophant.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
                 DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
                 ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
                 ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
@@ -284,13 +278,13 @@ public class HierophantMod implements
     
     @Override
     public void receiveEditCharacters() {
-        logger.info("Beginning to edit characters. " + "Add " + TheDefault.Enums.THE_DEFAULT.toString());
+        logger.info("Beginning to edit characters. " + "Add " + Hierophant.Enums.HIEROPHANT.toString());
         
-        BaseMod.addCharacter(new TheDefault("the Default", TheDefault.Enums.THE_DEFAULT),
-                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheDefault.Enums.THE_DEFAULT);
+        BaseMod.addCharacter(new Hierophant("the Default", Hierophant.Enums.HIEROPHANT),
+                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, Hierophant.Enums.HIEROPHANT);
         
         receiveEditPotions();
-        logger.info("Added " + TheDefault.Enums.THE_DEFAULT.toString());
+        logger.info("Added " + Hierophant.Enums.HIEROPHANT.toString());
     }
     
     // =============== /LOAD THE CHARACTER/ =================
@@ -353,9 +347,9 @@ public class HierophantMod implements
         logger.info("Beginning to edit potions");
         
         // Class Specific Potion. If you want your potion to not be class-specific,
-        // just remove the player class at the end (in this case the "TheDefaultEnum.THE_DEFAULT".
+        // just remove the player class at the end (in this case the "TheDefaultEnum.HIEROPHANT".
         // Remember, you can press ctrl+P inside parentheses like addPotions)
-        //BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheDefault.Enums.THE_DEFAULT);
+        //BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, Hierophant.Enums.HIEROPHANT);
         
         logger.info("Done editing potions");
     }
@@ -370,9 +364,9 @@ public class HierophantMod implements
         logger.info("Adding relics");
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        //BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        //BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        //BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_GRAY);
+        //BaseMod.addRelicToCustomPool(new PlaceholderRelic(), Hierophant.Enums.COLOR_GRAY);
+        //BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), Hierophant.Enums.COLOR_GRAY);
+        //BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), Hierophant.Enums.COLOR_GRAY);
         
         // This adds a relic to the Shared pool. Every character can find this relic.
         //BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
@@ -406,6 +400,7 @@ public class HierophantMod implements
         BaseMod.addCard(new OrbSkill());
         BaseMod.addCard(new Blessing());
         BaseMod.addCard(new Doubloon());
+        BaseMod.addCard(new DivineIntervention());
         BaseMod.addCard(new DefaultSecondMagicNumberSkill());
         BaseMod.addCard(new DefaultCommonAttack());
         BaseMod.addCard(new DefaultAttackWithVariable());
@@ -425,6 +420,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(OrbSkill.ID);
         UnlockTracker.unlockCard(Blessing.ID);
         UnlockTracker.unlockCard(Doubloon.ID);
+        UnlockTracker.unlockCard(DivineIntervention.ID);
         UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
         UnlockTracker.unlockCard(DefaultCommonAttack.ID);
         UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);

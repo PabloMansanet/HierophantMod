@@ -7,6 +7,12 @@
   },
   {
     "NAMES": [
+      "piety"
+    ],
+    "DESCRIPTION": "If your piety equals or exceeds an enemy's HP at the end of turn, defeat it. NL Lose 2 piety when dealing attack damage."
+  },
+  {
+    "NAMES": [
       "keyword",
       "keywords",
     ],

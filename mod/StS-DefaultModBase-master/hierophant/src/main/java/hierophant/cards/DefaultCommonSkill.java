@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
-import hierophant.characters.TheDefault;
+import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;
 
@@ -33,7 +33,7 @@ public class DefaultCommonSkill extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = Hierophant.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
     private static final int BLOCK = 5;

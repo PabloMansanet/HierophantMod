@@ -30,13 +30,13 @@ import hierophant.relics.PlaceholderRelic2;
 import java.util.ArrayList;
 
 import static hierophant.HierophantMod.*;
-import static hierophant.characters.TheDefault.Enums.COLOR_GRAY;
+import static hierophant.characters.Hierophant.Enums.COLOR_GRAY;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
 //All text (starting description and loadout, anything labeled TEXT[]) can be found in HierophantMod-character-Strings.json in the resources
 
-public class TheDefault extends CustomPlayer {
+public class Hierophant extends CustomPlayer {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
 
     // =============== CHARACTER ENUMERATORS =================
@@ -48,7 +48,7 @@ public class TheDefault extends CustomPlayer {
 
     public static class Enums {
         @SpireEnum
-        public static AbstractPlayer.PlayerClass THE_DEFAULT;
+        public static AbstractPlayer.PlayerClass HIEROPHANT;
         @SpireEnum(name = "DEFAULT_GRAY_COLOR") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor COLOR_GRAY;
         @SpireEnum(name = "DEFAULT_GRAY_COLOR") @SuppressWarnings("unused")
@@ -99,7 +99,7 @@ public class TheDefault extends CustomPlayer {
 
     // =============== CHARACTER CLASS START =================
 
-    public TheDefault(String name, PlayerClass setClass) {
+    public Hierophant(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
                 "hierophantResources/images/char/defaultCharacter/orb/vfx.png", null,
                 new SpriterAnimation(
@@ -162,7 +162,7 @@ public class TheDefault extends CustomPlayer {
 
         retVal.add(Doubloon.ID);
         retVal.add(DefaultUncommonSkill.ID);
-        retVal.add(DefaultRareSkill.ID);
+        retVal.add(DivineIntervention.ID);
 
         retVal.add(DefaultCommonPower.ID);
         retVal.add(DefaultUncommonPower.ID);
@@ -250,7 +250,7 @@ public class TheDefault extends CustomPlayer {
     // Should return a new instance of your character, sending name as its name parameter.
     @Override
     public AbstractPlayer newInstance() {
-        return new TheDefault(name, chosenClass);
+        return new Hierophant(name, chosenClass);
     }
 
     // Should return a Color object to be used to color the miniature card images in run history.

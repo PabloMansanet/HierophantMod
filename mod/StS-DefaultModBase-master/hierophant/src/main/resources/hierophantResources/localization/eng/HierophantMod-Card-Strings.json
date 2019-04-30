@@ -57,5 +57,9 @@
   "hierophant:Doubloon": {
     "NAME": "Doubloon",
     "DESCRIPTION": "Draw 1 card. NL Exhaust. NL hierophant:Hoard !M!."
+  },
+  "hierophant:DivineIntervention": {
+    "NAME": "Divine intervention",
+    "DESCRIPTION": "Fully heal an enemy. NL Gain !M! hierophant:Piety per HP healed."
   }
 }
