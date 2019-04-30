@@ -79,38 +79,35 @@ be prevented through Artifact. A few cards key off the number of active vows.
 
 ## Convert Currency (cost 0 skill normal)
    * Gilded.
-   * Reduce the cost of a (all) card in your hand by 1 for each doubloon in your
-     hand.
+   * Gain 1 energy for each doubloon in your hand. Discard all doubloons. 
+   * Enhanced: No discard.
 
 ## Recall Funds (cost 1 skill uncommon)
    * Gilded.
    * Exhaust. Return up to 3 (5) doubloons from your exhaust pile to your hand.
 
 ## Dazzle (cost 1 skill normal)
-   * Gilded
+   * Gilded.
    * Gain 7 (10) block, then 3 (4) block for each doubloon in your hand.
 
 ## Borrow (cost 0 skill normal)
    * Gain 60 (100) gold.
    * At the end of the turn, return any amount unspent.
 
-## Empty Hand (cost 1 (0) skill normal)
-   * Every card in your hand gains tithe this turn.
-
-## Mercenary Shield (cost 2 skill normal).
+## Entourage (cost 2 skill normal).
    * Tithe.
    * Gain 10 (14) block plus a fifth (fourth) of the gold spent this turn.
 
 ## Blessing (cost 1 skill uncommon)
    * Heal 8 (12), then heal all monsters 16 (24). Exhaust.
 
-## Circle of Protection (cost 1 skill normal, base deck)
+## Shelter (cost 1 skill normal, base deck)
    * Block 8 (12), Monsters gain block 8 (12).
 
 ## Mirror Shield (cost 0 skill uncommon)
    * Gain block equal to an enemy's block. (Draw a card)
 
-## Church Resources (cost 3 (2) skill normal)
+## Church Coffers (cost 3 (2) skill normal)
    * Tithe.
    * Draw 2 cards, gain 2 energy.
 
@@ -130,7 +127,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Give all enemies weak 3 (4), vulnerable 3 (4), and reduce their strength by
      3 (4).
 
-## Self Flagellation (cost 1 skill, uncommon)
+## Flagellation (cost 1 skill, uncommon)
    * Add 2 wounds to your hand and gain 12 (18) piety.
 
 ## Pristine Soul (cost 2 (1) skill, rare)
@@ -155,36 +152,31 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Powers:
 
 ## Vow of Poverty (cost 1 power common)
-   * You may not gain gold during the battle or as a reward. Regenerate 4.
-   * Enhanced: Regenerate 5 + innate.
+   * You may not gain gold during the battle or as a reward. At the beginning of
+     your turn, gain 1 strength. (Innate)
 
 ## Vow of Sobriety (cost 0 power uncommon)
-   * You may not consume or earn potions as a reward during this combat. Gain +2
-     (+3) dexterity.
-   * Enhanced: Innate.
+   * You may not consume or earn potions as a reward during this combat. At the
+     beginning of your turn, gain 1 dexterity. (Innate)
 
 ## Vow of Contemplation (cost 1 power rare)
    * Every turn, shuffle an unplayable meditation status card in your draw pile,
-     then draw two cards.
-   * Enhanced: Innate.
+     then draw two cards. (Innate)
 
-## Vow of Sanctity (cost 2 power common)
-   * You lose 4 extra piety when dealing damage.
-   * At the end of your turn, gain 6 (8) piety.
-   * Enhanced: Innate.
+## Vow of Sanctity (cost 1 power common)
+   * You lose 2 extra piety when dealing damage.
+   * At the end of your turn, gain 10 piety. (Innate)
 
-## Vow of Purity (cost 1 power rare)
-   * You may not inflict any negative status effects. Gain +2 artifact.
-   * Enhanced: Innate, +3 artifact.
+## Vow of Purity (cost 2 power rare)
+   * You may not inflict any negative status effects. At the start of your turn,
+     gain 1 artifact.
+   * Enhanced: Innate.
 
 ## Vow of Stability (cost 1 power rare)
    * You take double unblocked damage. At the end of your turn, double your
      block.
 
 ## Martyrdom (cost 1 power uncommon)
-   * At the end of your turn, lose 1 HP and gain 4 (6) piety.
-
-## Sin and Contrition (cost 1 power uncommon)
    * Shuffle 3 wounds into your deck.
    * Whenever you draw a status card, gain 4 (6) piety.
 
@@ -205,7 +197,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Discard all doubloons. Deal 4 (6) damage, plus 4 (6) for each doubloon
      discarded.
 
-## Mercenary Blade (cost 2 skill normal).
+## Mercenaries (cost 2 skill normal).
    * Tithe.
    * Deal 10 (14) damage plus a fifth (fourth) of the gold spent this turn.
 

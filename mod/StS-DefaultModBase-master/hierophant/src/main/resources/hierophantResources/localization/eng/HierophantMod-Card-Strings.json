@@ -73,5 +73,187 @@
   "hierophant:Smite": {
     "NAME": "Smite",
     "DESCRIPTION": "Deal !D! damage. NL Deals 1 additional damage per !M! piety."
-  }
+  },
+  "hierophant:MorningPrayer": {
+    "NAME": "Morning Prayer",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! hierophant:Enlightened."
+  },
+  "hierophant:HolyVerse": {
+    "NAME": "Holy Verse",
+    "DESCRIPTION": "Gain !M! hierophant:Piety."
+  },
+  "hierophant:ConvertCurrency": {
+    "NAME": "Convert Currency",
+    "DESCRIPTION": "Gain 1 Energy for each Doubloon in your hand. NL Discard all Doubloons. NL hierophant:Gilded",
+    "UPGRADE_DESCRIPTION": "Gain 1 Energy for each Doubloon in your hand. NL hierophant:Gilded"
+  },
+  "hierophant:RecallFunds": {
+    "NAME": "Recall Funds",
+    "DESCRIPTION": "Return up to !M! Doubloons from your exhaust pile to your hand. NL Exhaust. NL hierophant:Gilded."
+  },
+  "hierophant:Dazzle": {
+    "NAME": "Dazzle",
+    "DESCRIPTION": "Gain !B! block. NL Gain !M! block for each doubloon in your hand. NL hierophant:Gilded."
+  },
+  "hierophant:Borrow": {
+    "NAME": "Borrow",
+    "DESCRIPTION": "Gain !M! gold. NL At the end of the turn, return any of the !M! gold you did not spend."
+  },
+  "hierophant:Entourage": {
+    "NAME": "Entourage",
+    "DESCRIPTION": "Gain !B! block. NL Gain 1 additional block per !M! gold spent this turn. NL hierophant:Tithe."
+  },
+  "hierophant:Shelter": {
+    "NAME": "Shelter",
+    "DESCRIPTION": "Gain !B! block. NL ALL enemies gain !B! block."
+  },
+  "hierophant:MirrorShield": {
+    "NAME": "Mirror Shield",
+    "DESCRIPTION": "Gain block equal to an enemy's block.",
+    "UPGRADE_DESCRIPTION": "Gain block equal to an enemy's block. NL Draw a card."
+  },
+  "hierophant:ChurchCoffers": {
+    "NAME": "ChurchCoffers",
+    "DESCRIPTION": "Draw !M! cards. NL gain !M! energy. NL hierophant:Tithe."
+  },
+  "hierophant:Sermon": {
+    "NAME": "Sermon",
+    "DESCRIPTION": "Gain !M! hierophant:Piety. NL Gain !M! additional hierophant:Piety per unique active hierophant:Vow."
+  },
+  "hierophant:Miracle": {
+    "NAME": "Miracle",
+    "DESCRIPTION": "Exhaust ALL status cards in your hand. NL Gain !M! piety per card exhausted."
+  },
+  "hierophant:Bribe": {
+    "NAME": "Bribe",
+    "DESCRIPTION": "Apply !M! Weak and !M! Vulnerable to ALL enemies. NL ALL enemies lose !M! Strength. NL hierophant:Tithe."
+  },
+  "hierophant:Flagellation": {
+    "NAME": "Flagellation",
+    "DESCRIPTION": "Add 2 Wounds to your hand. NL Gain !M! hierophant:Piety."
+  },
+
+## Pristine Soul (cost 2 (1) skill, rare)
+   * Gain block equal to a half of your piety, then gain piety equal to half of
+     your block.
+
+## Prophecy (cost 0 skill, uncommon)
+   * Put the highest cost card from your draw pile in your hand.
+   * Enhanced: highest cost card from you draw pile and from your discard pile.
+
+## Doomsaying (cost 0 skill, uncommon)
+   * Discard the top two (four) card of your draw pile. Gain energy equal to the
+     highest energy cost among them.
+
+## Repentance (cost 1 skill, uncommon)
+   * Exhaust (no exhaust) Gain Piety equal to twice the piety lost this
+     combat.
+
+## Ornate Chest (cost 0 skill, rare)
+   * Unplayable. Ethereal. Hoard 30 (50).
+
+## Powers:
+
+## Vow of Poverty (cost 1 power common)
+   * You may not gain gold during the battle or as a reward. At the beginning of
+     your turn, gain 1 strength. (Innate)
+
+## Vow of Sobriety (cost 0 power uncommon)
+   * You may not consume or earn potions as a reward during this combat. At the
+     beginning of your turn, gain 1 dexterity. (Innate)
+
+## Vow of Contemplation (cost 1 power rare)
+   * Every turn, shuffle an unplayable meditation status card in your draw pile,
+     then draw two cards. (Innate)
+
+## Vow of Sanctity (cost 1 power common)
+   * You lose 2 extra piety when dealing damage.
+   * At the end of your turn, gain 10 piety. (Innate)
+
+## Vow of Purity (cost 2 power rare)
+   * You may not inflict any negative status effects. At the start of your turn,
+     gain 1 artifact.
+   * Enhanced: Innate.
+
+## Vow of Stability (cost 1 power rare)
+   * You take double unblocked damage. At the end of your turn, double your
+     block.
+
+## Martyrdom (cost 1 power uncommon)
+   * Shuffle 3 wounds into your deck.
+   * Whenever you draw a status card, gain 4 (6) piety.
+
+## Generosity (cost 1 power uncommon)
+   * Gilded.
+   * When you exhaust a doubloon, draw an additional card.
+   * Enhanced: Innate.
+
+## Cursed Gold (cost 0 power uncommon)
+   * Gilded
+   * At the end of your turn, move 1 (2) doubloon from the exhaust pile to the
+     discard pile.
+
+## Attacks:
+
+## Coin Fling (cost 0 attack)
+   * Gilded.
+   * Discard all doubloons. Deal 4 (6) damage, plus 4 (6) for each doubloon
+     discarded.
+
+## Mercenary Blade (cost 2 skill normal).
+   * Tithe.
+   * Deal 10 (14) damage plus a fifth (fourth) of the gold spent this turn.
+
+## Blinding Virtue (cost 2 attack uncommon)
+   * Deal 15 (20) damage, plus 5 (7) for each unique active Vow.
+
+## Strike the Bell (cost 1 attack normal)
+   * Deal 7 (10) damage and gain 1 (2) Enlightened.
+
+## Solar Flare (cost 5 attack uncommon)
+   * Tithe
+   * Deal 28 damage to an enemy and inflict 2 weak, 2 vuln.
+   * Enhanced: 36 damage, 3 weak, 3 vuln.
+
+## Wrath of God (cost 8 attack rare)
+   * Tithe
+   * Deal 50 damage to every enemy and 10 damage to yourself.
+   * Enhanced: 80 damage, 16 to yourself.
+
+## Admonish (cost 1 attack normal)
+   * Deal 5 damage, then gain 4 piety.
+   * Enhanced: Deal 8 damage, then gain 6 piety.
+
+## Crumble and Rebuild (cost 1 attack normal)
+   * Deal 10 (14) damage, then give the enemy 10 (14) block.
+
+## Smite (cost 2 attack normal)
+   * Deals 12 (18) damage.
+   * Deals 1 additional damage for every 3 (2) piety.
+
+## Upheaval (cost 3 attack uncommon)
+   * Tithe.
+   * Deal damage equal to twice the enemy's block.
+
+## Rod Slam (cost 2 attack uncommon)
+   * Deal 10 (15) damage. Enemy loses 1 strength.
+
+## Punish (cost 2 attack uncommon, base deck)
+   * Gain 10 (14) piety. Deal 2\*5 (2 * 7) damage. (Note: this immediately
+     removes all gained piety unless blocked)
+
+## Anathema (Cost 3 attack rare)
+   * Lose all vows. Deal 10 (15) damage to every enemy for each unique lost vow.
+     Exhaust.
+
+## Blasphemy (Cost 2 attack rare)
+   * Lose all piety. Deal 2 damage for each lost piety.
+
+## Golden Beam (cost 3 (2) attack normal)
+   * Deal damage equal to 1/10th of your gold.
+
+## Display of Power (cost 1 attack):
+   * Choose a card in your hand. Deal damage equal to 4 (6) times its cost.
+
+
 }
