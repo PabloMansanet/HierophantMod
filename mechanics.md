@@ -53,6 +53,9 @@ Since Piety can be built upon regardless of enemy block and is inherently AoE,
 the numbers are lower than average damage numbers and are generally modeled to
 be around Poison levels.
 
+Another buff (Enlightened) makes it so you gain 50% extra piety, similar to
+Vulnerability for attack damage.
+
 ## Vow
 
 There is a category of powers called Vows, which impose a restriction on your
@@ -68,12 +71,18 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * At the end of combat, if Doubloon is not in the exhaust pile, gain 10 (20)
      gold.
 
+## Morning Prayer (cost 2 skill normal)
+   * Gain 12 (16) block and 2 (3) Enlightened.
+
+## Holy Verse (cost 1 skill normal)
+   * Gain 6 (9) piety.
+
 ## Convert Currency (cost 0 skill normal)
    * Gilded.
    * Reduce the cost of a (all) card in your hand by 1 for each doubloon in your
      hand.
 
-## Recall Funds (cost 1 skill normal)
+## Recall Funds (cost 1 skill uncommon)
    * Gilded.
    * Exhaust. Return up to 3 (5) doubloons from your exhaust pile to your hand.
 
@@ -92,13 +101,13 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Tithe.
    * Gain 10 (14) block plus a fifth (fourth) of the gold spent this turn.
 
-## Blessing (cost 1 skill normal)
+## Blessing (cost 1 skill uncommon)
    * Heal 8 (12), then heal all monsters 16 (24). Exhaust.
 
 ## Circle of Protection (cost 1 skill normal, base deck)
    * Block 8 (12), Monsters gain block 8 (12).
 
-## Mirror Shield (cost 0 skill normal)
+## Mirror Shield (cost 0 skill uncommon)
    * Gain block equal to an enemy's block. (Draw a card)
 
 ## Church Resources (cost 3 (2) skill normal)
@@ -113,7 +122,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Restore all HP to an enemy. Gain 2 (3) piety for each HP healed.
 
 ## Miracle (cost 1 skill uncommon)
-   * Exhaust all status cards in your hand. Gain 2 (4) piety for each card
+   * Exhaust all status cards in your hand. Gain 4 (6) piety for each status card
      exhausted.
 
 ## Bribe (cost 4 skill, rare)
@@ -133,8 +142,8 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Enhanced: highest cost card from you draw pile and from your discard pile.
 
 ## Doomsaying (cost 0 skill, uncommon)
-   * Discard the top (two) card(s) of your draw pile. Gain energy equal to its
-     (their) cost.
+   * Discard the top two (four) card of your draw pile. Gain energy equal to the
+     highest energy cost among them.
 
 ## Repentance (cost 1 skill, uncommon)
    * Exhaust (no exhaust) Gain Piety equal to twice the piety lost this
@@ -197,13 +206,16 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Tithe.
    * Deal 10 (14) damage plus a fifth (fourth) of the gold spent this turn.
 
-## Blinding Virtue (cost 2 attack)
+## Blinding Virtue (cost 2 attack uncommon)
    * Deal 15 (20) damage, plus 5 (7) for each unique active Vow.
 
-## Solar Flare (cost 5 attack)
+## Strike the Bell (cost 1 attack normal)
+   * Deal 7 (10) damage and gain 1 (2) Enlightened.
+
+## Solar Flare (cost 5 attack uncommon)
    * Tithe
-   * Deal 24 damage to an enemy and inflict 2 weak, 2 vuln.
-   * Enhanced: 30 damage, 3 weak, 3 vuln.
+   * Deal 28 damage to an enemy and inflict 2 weak, 2 vuln.
+   * Enhanced: 36 damage, 3 weak, 3 vuln.
 
 ## Wrath of God (cost 8 attack rare)
    * Tithe
@@ -215,13 +227,13 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Enhanced: Deal 8 damage, then gain 6 piety.
 
 ## Crumble and Rebuild (cost 1 attack normal)
-   * Deal 10 (15) damage, then give the enemy 10 (15) block.
+   * Deal 10 (14) damage, then give the enemy 10 (14) block.
 
 ## Holy Strike (cost 2 attack normal)
    * Deals 12 (18) damage.
-   * Deals 1 additional damage for every 3 (2) piety you have.
+   * Deals 1 additional damage for every 3 (2) piety.
 
-## Upheaval (cost 2 attack uncommon)
+## Upheaval (cost 3 attack uncommon)
    * Tithe.
    * Deal damage equal to twice the enemy's block.
 
@@ -268,10 +280,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Whenever your attack damage is blocked, gain 2 piety.
 
 ## Flagellation Whip (normal):
-   * Whenever you draw a status card, gain 2 piety.
-
-## Golden Atrium (normal):
-   * When you defeat an enemy peacefully, gain gold equal to their remaining HP.
+   * Whenever you draw a status card or curse, gain 3 piety.
 
 ## Holy Edict (uncommon):
    * Regain half of the spent Tithe at the end of each combat.

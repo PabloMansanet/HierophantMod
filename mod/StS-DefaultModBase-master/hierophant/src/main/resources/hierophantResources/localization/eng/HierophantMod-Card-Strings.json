@@ -49,5 +49,9 @@
   "hierophant:OrbSkill": {
     "NAME": "Get Orb",
     "DESCRIPTION": "Channel 1 Default Orb."
+  },
+  "hierophant:Blessing": {
+    "NAME": "Blessing",
+    "DESCRIPTION": "Heal !M!. NL Heal ALL enemies !M!. NL Exhaust."
   }
 }

@@ -170,7 +170,7 @@ public class TheDefault extends CustomPlayer {
 
         retVal.add(DefaultAttackWithVariable.ID);
         retVal.add(DefaultSecondMagicNumberSkill.ID);
-        retVal.add(OrbSkill.ID);
+        retVal.add(Blessing.ID);
         return retVal;
     }
 
