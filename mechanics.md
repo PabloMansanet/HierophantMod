@@ -6,7 +6,7 @@ keywords. In order to facilitate the tactical play around gold, his base relic
 
 ## Doubloons (gilded)
 
-A doubloon is a normal, cost 0 ability with the following text:
+A doubloon is a common, cost 0 ability with the following text:
 
 - Exhaust: Draw 1 card. If Doubloon is not in the exhaust pile at the end of
   combat, gain 10 (20) gold.
@@ -66,52 +66,56 @@ be prevented through Artifact. A few cards key off the number of active vows.
 
 ## Skills:
 
-## Doubloon (cost 0 skill normal)
+## Doubloon (cost 0 skill common)
    * Exhaust. Draw 1 card.
-   * At the end of combat, if Doubloon is not in the exhaust pile, gain 10 (20)
+   * At the end of combat, if Doubloon is not in the exhaust pile, gain 8 (16)
      gold.
 
-## Morning Prayer (cost 2 skill normal)
+## Morning Prayer (cost 2 skill common)
    * Gain 12 (16) block and 2 (3) Enlightened.
 
-## Holy Verse (cost 1 skill normal)
+## Holy Verse (cost 1 skill common)
    * Gain 6 (9) piety.
 
-## Convert Currency (cost 0 skill normal)
+## Endure (cost 1 skill common)
+   * Gain 8 (12) block. Until your next turn, gain 2 (3) piety every time you are
+     attacked.
+
+## Convert Currency (cost 0 skill common)
    * Gilded.
-   * Gain 1 energy for each doubloon in your hand. Discard all doubloons. 
-   * Enhanced: No discard.
+   * Gain 1 energy for each doubloon in your hand. Exhaust a doubloon. 
+   * Enhanced: No exhaust.
 
 ## Recall Funds (cost 1 skill uncommon)
    * Gilded.
    * Exhaust. Return up to 3 (5) doubloons from your exhaust pile to your hand.
 
-## Dazzle (cost 0 skill normal)
+## Dazzle (cost 0 skill common)
    * Gilded.
-   * Gain 5 (8) block, then 3 (4) block for each doubloon in your hand.
+   * Gain 4 (6) block, then 3 (4) block for each doubloon in your hand.
 
-## Borrow (cost 0 skill normal)
-   * Gain 60 (100) gold.
-   * At the end of the turn, return any amount unspent.
+## Embezzle (cost 0 skill uncommon)
+   * Gain 60 (90) gold.
+   * At the end of combat, return any of the M gold you did not spend.
 
-## Entourage (cost 2 skill normal).
+## Entourage (cost 2 skill common).
    * Tithe.
    * Gain 10 (14) block plus a fifth (fourth) of the gold spent this turn.
 
 ## Blessing (cost 1 skill uncommon)
    * Heal 8 (12), then heal all monsters 16 (24). Exhaust.
 
-## Shelter (cost 1 skill normal, base deck)
+## Shelter (cost 1 skill common, base deck)
    * Block 8 (12), Monsters gain block 8 (12).
 
 ## Mirror Shield (cost 0 skill uncommon)
    * Gain block equal to an enemy's block. (Draw a card)
 
-## Church Coffers (cost 3 (2) skill normal)
+## Church Coffers (cost 3 (2) skill common)
    * Tithe.
    * Draw 2 cards, gain 2 energy.
 
-## Sermon (cost 1 skill normal)
+## Sermon (cost 1 skill uncommon)
    * Gain 5 piety, plus 5 piety for each unique active Vow.
    * Enhanced: 8, plus 8 per Vow.
 
@@ -128,31 +132,33 @@ be prevented through Artifact. A few cards key off the number of active vows.
      3 (4).
 
 ## Flagellation (cost 1 skill, uncommon)
-   * Add 2 wounds to your hand and gain 12 (18) piety.
+   * Add 2 wounds to your hand and gain 10 (15) piety.
 
 ## Pristine Soul (cost 2 (1) skill, rare)
    * Set your Piety and Block to the highest of the two values.
 
 ## Prophecy (cost 0 skill, uncommon)
-   * Put the highest cost card from your draw pile in your hand.
-   * Enhanced: highest cost card from you draw pile and from your discard pile.
+   * Reorder your draw pile in decreasing cost order. Exhaust.
+   * Enhanced: Shuffle your discard pile into your draw pile, then reorder it in
+     decreasing cost order. Exhaust.
 
 ## Doomsaying (cost 0 skill, uncommon)
-   * Discard the top two (four) card of your draw pile. Gain energy equal to the
-     highest energy cost among them.
+   * Discard the top two (four) cards of your draw pile. Gain energy equal to
+     the highest energy cost among them.
 
 ## Prayer (cost X skill, uncommon)
    * Play the highest cost card among the top X (X+1) cards of your draw pile.
 
-## Divination (cost 1 (0) skill, rare)
-   * Draw. If it's not among the lowest, keep going.
-
 ## Repentance (cost 1 skill, uncommon)
-   * Exhaust (no exhaust) Gain Piety equal to twice the piety lost this
-     combat.
+   * Exhaust (no exhaust) Gain Piety equal to twice the piety lost this combat.
 
 ## Secret Stash (cost 1 skill, uncommon)
    * Ethereal. Hoard 14 (20).
+
+## Levitation (cost 4 (3) skill, uncommon)
+   * Tithe.
+   * Gain 1 intangible.
+   * Exhaust.
 
 ## Bulky Chest (cost 0 skill, rare)
    * Unplayable. Hoard 30 (50). When you draw it, lose 1 energy.
@@ -160,7 +166,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Cornucopia (cost X skill, uncommon)
    * Add X (upgraded) doubloons to your hand. Exhaust
 
-## Racketeering (cost 1 (0) skill, common)
+## Racketeering (cost 1 (0) skill, uncommon)
    * Give an enemy 10 block. Draw a card for each 5 block on that enemy.
 
 ## Powers:
@@ -202,23 +208,33 @@ be prevented through Artifact. A few cards key off the number of active vows.
 
 ## Auric Form (cost 3 power rare)
    * At the beginning of your turn, lose 10% of your gold and gain that much
-     block.
+     block. 
 
 ## Attacks:
 
-## Coin Fling (cost 0 attack)
+## Coin Fling (cost 0 attack uncommon)
    * Gilded.
    * Discard all doubloons. Deal 4 (6) damage, plus 4 (6) for each doubloon
      discarded.
 
-## Mercenaries (cost 2 skill normal).
-   * Tithe.
-   * Deal 10 (14) damage plus a fifth (fourth) of the gold spent this turn.
+## Holy Strike (cost 1 attack common)
+   * Gain 8 piety, then deal 3(5)\*2 damage.
 
-## Blinding Virtue (cost 2 attack uncommon)
+## Batter (cost 1 attack uncommon)
+   * Deal 6 (9) damage.
+   * If fully blocked, attack again for 9 (12) damage.
+
+## Auric Lance (cost 1 attack uncommon)
+   * Deal 13 (18) damage, lose 10 gold.
+
+## Mercenaries (cost 2 attack common).
+   * Tithe.
+   * Deal 10 (14) damage plus a fifth (fourth) of the gold lost this turn.
+
+## Searing Virtue (cost 2 attack uncommon)
    * Deal 15 (20) damage, plus 5 (7) for each unique active Vow.
 
-## Strike the Bell (cost 1 attack normal)
+## Strike the Bell (cost 1 attack common)
    * Deal 7 (10) damage and gain 1 (2) Enlightened.
 
 ## Solar Flare (cost 5 attack uncommon)
@@ -226,20 +242,25 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Deal 28 damage to an enemy and inflict 2 weak, 2 vuln.
    * Enhanced: 36 damage, 3 weak, 3 vuln.
 
+## Locust Plague (cost 6 attack rare)
+   * Tithe
+   * Deal 4 (6) damage to a random enemy 10 times.
+   * Apply 1 Weak or 1 Vulnerable at random to each enemy hit.
+
 ## Wrath of God (cost 8 attack rare)
    * Tithe
    * Deal 50 damage to every enemy and 10 damage to yourself.
    * Enhanced: 80 damage, 16 to yourself.
 
-## Admonish (cost 1 attack normal)
-   * Deal 5 damage, then gain 4 piety.
-   * Enhanced: Deal 8 damage, then gain 6 piety.
+## Admonish (cost 1 attack common)
+   * Deal 6 damage, then gain 5 piety.
+   * Enhanced: Deal 9 damage, then gain 8 piety.
 
-## Crumble and Rebuild (cost 1 attack normal)
+## Crumble and Rebuild (cost 1 attack common)
    * Deal 10 (14) damage, then give the enemy 10 (14) block.
 
-## Smite (cost 2 attack normal)
-   * Deals 12 (18) damage.
+## Smite (cost 2 attack common)
+   * Deal 12 (18) damage.
    * Deals 1 additional damage for every 3 (2) piety.
 
 ## Upheaval (cost 3 attack uncommon)
@@ -249,7 +270,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Rod Slam (cost 2 attack uncommon)
    * Deal 10 (15) damage. Enemy loses 1 strength.
 
-## Punish (cost 2 attack uncommon, base deck)
+## Punish (cost 2 attack common, base deck)
    * Gain 10 (14) piety. Deal 2\*5 (2 * 7) damage. (Note: this immediately
      removes all gained piety unless blocked)
 
@@ -260,10 +281,10 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Blasphemy (Cost 2 attack rare)
    * Lose all piety. Deal 2 damage for each lost piety.
 
-## Golden Beam (cost 3 (2) attack normal)
+## Auric Beam (cost 3 (2) attack uncommon)
    * Deal damage equal to 1/10th of your gold.
 
-## Display of Power (cost 1 attack):
+## Display of Power (cost 1 attack uncommon):
    * Choose a card in your hand. Deal damage equal to 4 (6) times its cost.
 
 # Relics:
@@ -277,19 +298,16 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * When you exhaust a doubloon, gain 1 energy.
 
 ## Beggar's Robes (uncommon):
-   * When you have 30 or less gold, gain +3 strength and +3 dexterity.
-
-## Martyr's Crown (normal):
-   * Gain gold equal to four times your HP loss.
+   * When you have 50 or less gold, gain +3 strength and +3 dexterity.
 
 ## Writ of Virtue (uncommon):
    * Gain 4 block at the start of each turn for each unique active vow.
 
-## Apostle's Rod (normal):
+## Apostle's Rod (common):
    * Whenever your attack damage is blocked, gain 2 piety.
 
-## Flagellation Whip (normal):
+## Flagellation Whip (common):
    * Whenever you draw a status card or curse, gain 3 piety.
 
 ## Holy Edict (uncommon):
-   * Regain half of the spent Tithe at the end of each combat.
+   * Regain half of the gold lost at the end of each combat.
