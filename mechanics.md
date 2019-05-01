@@ -256,7 +256,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Deal 6 damage, then gain 5 piety.
    * Enhanced: Deal 9 damage, then gain 8 piety.
 
-## Crumble and Rebuild (cost 1 attack common)
+## Seal Away (cost 1 attack common)
    * Deal 10 (14) damage, then give the enemy 10 (14) block.
 
 ## Smite (cost 2 attack common)
@@ -271,21 +271,21 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Deal 10 (15) damage. Enemy loses 1 strength.
 
 ## Punish (cost 2 attack common, base deck)
-   * Gain 10 (14) piety. Deal 2\*5 (2 * 7) damage. (Note: this immediately
+   * Gain 8 (12) piety. Deal 2\*4 (2 * 6) damage. (Note: this immediately
      removes all gained piety unless blocked)
 
 ## Anathema (Cost 3 attack rare)
    * Lose all vows. Deal 10 (15) damage to every enemy for each unique lost vow.
      Exhaust.
 
-## Blasphemy (Cost 2 attack rare)
+## Blasphemy (Cost 2(1) attack rare)
    * Lose all piety. Deal 2 damage for each lost piety.
 
 ## Auric Beam (cost 3 (2) attack uncommon)
    * Deal damage equal to 1/10th of your gold.
 
 ## Display of Power (cost 1 attack uncommon):
-   * Choose a card in your hand. Deal damage equal to 4 (6) times its cost.
+   * Choose a card in your hand. Deal damage equal to 5 (8) times its cost.
 
 # Relics:
 
