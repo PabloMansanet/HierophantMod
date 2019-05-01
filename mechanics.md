@@ -86,9 +86,9 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Gilded.
    * Exhaust. Return up to 3 (5) doubloons from your exhaust pile to your hand.
 
-## Dazzle (cost 1 skill normal)
+## Dazzle (cost 0 skill normal)
    * Gilded.
-   * Gain 7 (10) block, then 3 (4) block for each doubloon in your hand.
+   * Gain 5 (8) block, then 3 (4) block for each doubloon in your hand.
 
 ## Borrow (cost 0 skill normal)
    * Gain 60 (100) gold.
@@ -151,8 +151,17 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Exhaust (no exhaust) Gain Piety equal to twice the piety lost this
      combat.
 
-## Ornate Chest (cost 0 skill, rare)
-   * Unplayable. Ethereal. Hoard 30 (50).
+## Secret Stash (cost 1 skill, uncommon)
+   * Ethereal. Hoard 14 (20).
+
+## Bulky Chest (cost 0 skill, rare)
+   * Unplayable. Hoard 30 (50). When you draw it, lose 1 energy.
+
+## Cornucopia (cost X skill, uncommon)
+   * Add X (upgraded) doubloons to your hand. Exhaust
+
+## Racketeering (cost 1 (0) skill, common)
+   * Give an enemy 10 block. Draw a card for each 5 block on that enemy.
 
 ## Powers:
 
@@ -164,16 +173,12 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * You may not consume or earn potions as a reward during this combat. At the
      beginning of your turn, gain 1 dexterity. (Innate)
 
-## Contemplation (cost 0 power rare)
-   * Every turn, shuffle 2 unplayable meditation status cards in your draw pile,
-     then draw 2(3) cards. 
-
 ## Vow of Sanctity (cost 1 power common)
    * You lose 3 extra piety when dealing damage.
    * At the end of your turn, gain 10 piety. (Innate)
 
 ## Vow of Purity (cost 2 power rare)
-   * You may not inflict any negative status effects. At the start of your turn,
+   * You may not inflict any negative status effects. At the end of your turn,
      gain 1 artifact.
    * Enhanced: Innate.
 
@@ -194,6 +199,10 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Gilded
    * At the end of your turn, move 1 (2) doubloon from the exhaust pile to the
      discard pile.
+
+## Auric Form (cost 3 power rare)
+   * At the beginning of your turn, lose 10% of your gold and gain that much
+     block.
 
 ## Attacks:
 

@@ -168,10 +168,6 @@
     "NAME":"Ornate Chest",
     "DESCRIPTION": "Unplayable. NL Ethereal. NL hierophant:Hoard !M!"
   },
-  "hierophant:Contemplation": {
-    "NAME":"Contemplation",
-    "DESCRIPTION": "At the beginning of your turn, put 2 unplayable Meditation status cards in your draw pile, then draw !M! cards."
-  },
   "hierophant:VowOfPoverty": {
     "NAME":"Vow Of Poverty",
     "DESCRIPTION": "You may not earn gold this combat. NL Gain 1 strength at the beginning of your turn.",
@@ -197,15 +193,15 @@
     "DESCRIPTION": "You take double unblocked attack damage. NL At the end of your turn, double your block.",
     "UPGRADE_DESCRIPTION": "You take double unblocked attack damage. NL At the end of your turn, double your block. NL Innate."
   },
-
-## Vow of Purity (cost 2 power rare)
-   * You may not inflict any negative status effects. At the start of your turn,
-     gain 1 artifact.
-   * Enhanced: Innate.
-
-## Vow of Stability (cost 1 power rare)
-   * You take double unblocked damage. At the end of your turn, double your
-     block.
+  "hierophant:VowOfPurity": {
+    "NAME":"Vow Of Purity",
+    "DESCRIPTION": "You may not inflict any negative status effects. NL At the end of your turn, gain 1 artifact.",
+    "UPGRADE_DESCRIPTION": "You may not inflict any negative status effects. NL At the end of your turn, gain 1 artifact. NL Innate."
+  },
+  "hierophant:Martyrdom": {
+    "NAME":"Martyrdom",
+    "DESCRIPTION": "Shuffle three Wounds into your draw pile. NL Whenever you draw a Status card, gain !M! hierophant:Piety."
+  },
 
 ## Martyrdom (cost 1 power uncommon)
    * Shuffle 3 wounds into your deck.
