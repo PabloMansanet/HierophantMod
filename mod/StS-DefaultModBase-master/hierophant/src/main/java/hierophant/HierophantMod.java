@@ -393,44 +393,145 @@ public class HierophantMod implements
         BaseMod.addDynamicVariable(new DefaultSecondMagicNumber());
         
         logger.info("Adding cards");
-        // Add the cards
-        // Don't comment out/delete these cards (yet). You need 1 of each type and rarity (technically) for your game not to crash
-        // when generating card rewards/shop screen items.
 
+        // Attacks
         BaseMod.addCard(new Strike_Hierophant());
-        BaseMod.addCard(new Defend_Hierophant());
-        BaseMod.addCard(new Blessing());
+        BaseMod.addCard(new CoinFling());
+        BaseMod.addCard(new HolyStrike());
+        BaseMod.addCard(new Batter());
+        BaseMod.addCard(new AuricLance());
+        BaseMod.addCard(new Mercenaries());
+        BaseMod.addCard(new SearingVirtue());
+        BaseMod.addCard(new PassingBell());
+        BaseMod.addCard(new SolarFlare());
+        BaseMod.addCard(new LocustPlague());
+        BaseMod.addCard(new WrathofGod());
+        BaseMod.addCard(new Admonish());
+        BaseMod.addCard(new SealAway());
         BaseMod.addCard(new Smite());
-        BaseMod.addCard(new Doubloon());
-        BaseMod.addCard(new DivineIntervention());
+        BaseMod.addCard(new Upheaval());
+        BaseMod.addCard(new RodSlam());
+        BaseMod.addCard(new Punish());
+        BaseMod.addCard(new Anathema());
+        BaseMod.addCard(new Blasphemy());
+        BaseMod.addCard(new AuricBeam());
+        BaseMod.addCard(new DisplayofPower());
 
-        BaseMod.addCard(new OrbSkill());
-        BaseMod.addCard(new DefaultSecondMagicNumberSkill());
-        BaseMod.addCard(new DefaultAttackWithVariable());
-        BaseMod.addCard(new DefaultCommonPower());
-        BaseMod.addCard(new DefaultUncommonAttack());
-        BaseMod.addCard(new DefaultUncommonPower());
-        BaseMod.addCard(new DefaultRareAttack());
-        BaseMod.addCard(new DefaultRarePower());
-        
+        // Skills
+        BaseMod.addCard(new Defend_Hierophant());
+        BaseMod.addCard(new Doubloon());
+        BaseMod.addCard(new MorningPrayer());
+        BaseMod.addCard(new HolyVerse());
+        BaseMod.addCard(new Endure());
+        BaseMod.addCard(new ConvertCurrency());
+        BaseMod.addCard(new RecallFunds());
+        BaseMod.addCard(new Dazzle());
+        BaseMod.addCard(new Embezzle());
+        BaseMod.addCard(new Entourage());
+        BaseMod.addCard(new Blessing());
+        BaseMod.addCard(new Shelter());
+        BaseMod.addCard(new MirrorShield());
+        BaseMod.addCard(new ChurchCoffers());
+        BaseMod.addCard(new Sermon());
+        BaseMod.addCard(new DivineIntervention());
+        BaseMod.addCard(new Miracle());
+        BaseMod.addCard(new Bribe());
+        BaseMod.addCard(new Flagellation());
+        BaseMod.addCard(new PristineSoul());
+        BaseMod.addCard(new Prophecy());
+        BaseMod.addCard(new Doomsaying());
+        BaseMod.addCard(new Prayer());
+        BaseMod.addCard(new Repentance());
+        BaseMod.addCard(new SecretStash());
+        BaseMod.addCard(new Levitation());
+        BaseMod.addCard(new BulkyChest());
+        BaseMod.addCard(new Cornucopia());
+        BaseMod.addCard(new Racketeering());
+        BaseMod.addCard(new TolltheBells());
+        BaseMod.addCard(new Encroach());
+
+        // Powers
+        BaseMod.addCard(new VowofPoverty());
+        BaseMod.addCard(new VowofSobriety());
+        BaseMod.addCard(new VowofSanctity());
+        BaseMod.addCard(new VowofPurity());
+        BaseMod.addCard(new VowofStability());
+        BaseMod.addCard(new Martyrdom());
+        BaseMod.addCard(new Generosity());
+        BaseMod.addCard(new CursedGold());
+        BaseMod.addCard(new AuricForm());
+        BaseMod.addCard(new Philactery());
+
         logger.info("Making sure the cards are unlocked.");
-        // Unlock the cards
-        // This is so that they are all "seen" in the library, for people who like to look at the card list
-        // before playing your mod.
+
+        // Attacks
         UnlockTracker.unlockCard(Strike_Hierophant.ID);
-        UnlockTracker.unlockCard(Defend_Hierophant.ID);
-        UnlockTracker.unlockCard(Blessing.ID);
+        UnlockTracker.unlockCard(CoinFling.ID);
+        UnlockTracker.unlockCard(HolyStrike.ID);
+        UnlockTracker.unlockCard(Batter.ID);
+        UnlockTracker.unlockCard(AuricLance.ID);
+        UnlockTracker.unlockCard(Mercenaries.ID);
+        UnlockTracker.unlockCard(SearingVirtue.ID);
+        UnlockTracker.unlockCard(PassingBell.ID);
+        UnlockTracker.unlockCard(SolarFlare.ID);
+        UnlockTracker.unlockCard(LocustPlague.ID);
+        UnlockTracker.unlockCard(WrathofGod.ID);
+        UnlockTracker.unlockCard(Admonish.ID);
+        UnlockTracker.unlockCard(SealAway.ID);
         UnlockTracker.unlockCard(Smite.ID);
+        UnlockTracker.unlockCard(Upheaval.ID);
+        UnlockTracker.unlockCard(RodSlam.ID);
+        UnlockTracker.unlockCard(Punish.ID);
+        UnlockTracker.unlockCard(Anathema.ID);
+        UnlockTracker.unlockCard(Blasphemy.ID);
+        UnlockTracker.unlockCard(AuricBeam.ID);
+        UnlockTracker.unlockCard(DisplayofPower.ID);
+
+        // Skills
+        UnlockTracker.unlockCard(Defend_Hierophant.ID);
         UnlockTracker.unlockCard(Doubloon.ID);
+        UnlockTracker.unlockCard(MorningPrayer.ID);
+        UnlockTracker.unlockCard(HolyVerse.ID);
+        UnlockTracker.unlockCard(Endure.ID);
+        UnlockTracker.unlockCard(ConvertCurrency.ID);
+        UnlockTracker.unlockCard(RecallFunds.ID);
+        UnlockTracker.unlockCard(Dazzle.ID);
+        UnlockTracker.unlockCard(Embezzle.ID);
+        UnlockTracker.unlockCard(Entourage.ID);
+        UnlockTracker.unlockCard(Blessing.ID);
+        UnlockTracker.unlockCard(Shelter.ID);
+        UnlockTracker.unlockCard(MirrorShield.ID);
+        UnlockTracker.unlockCard(ChurchCoffers.ID);
+        UnlockTracker.unlockCard(Sermon.ID);
         UnlockTracker.unlockCard(DivineIntervention.ID);
-        UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
-        UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);
-        UnlockTracker.unlockCard(DefaultCommonPower.ID);
-        UnlockTracker.unlockCard(DefaultUncommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultUncommonPower.ID);
-        UnlockTracker.unlockCard(DefaultRareAttack.ID);
-        UnlockTracker.unlockCard(DefaultRarePower.ID);
-        
+        UnlockTracker.unlockCard(Miracle.ID);
+        UnlockTracker.unlockCard(Bribe.ID);
+        UnlockTracker.unlockCard(Flagellation.ID);
+        UnlockTracker.unlockCard(PristineSoul.ID);
+        UnlockTracker.unlockCard(Prophecy.ID);
+        UnlockTracker.unlockCard(Doomsaying.ID);
+        UnlockTracker.unlockCard(Prayer.ID);
+        UnlockTracker.unlockCard(Repentance.ID);
+        UnlockTracker.unlockCard(SecretStash.ID);
+        UnlockTracker.unlockCard(Levitation.ID);
+        UnlockTracker.unlockCard(BulkyChest.ID);
+        UnlockTracker.unlockCard(Cornucopia.ID);
+        UnlockTracker.unlockCard(Racketeering.ID);
+        UnlockTracker.unlockCard(TolltheBells.ID);
+        UnlockTracker.unlockCard(Encroach.ID);
+
+        // Powers
+        UnlockTracker.unlockCard(VowofPoverty.ID);
+        UnlockTracker.unlockCard(VowofSobriety.ID);
+        UnlockTracker.unlockCard(VowofSanctity.ID);
+        UnlockTracker.unlockCard(VowofPurity.ID);
+        UnlockTracker.unlockCard(VowofStability.ID);
+        UnlockTracker.unlockCard(Martyrdom.ID);
+        UnlockTracker.unlockCard(Generosity.ID);
+        UnlockTracker.unlockCard(CursedGold.ID);
+        UnlockTracker.unlockCard(AuricForm.ID);
+        UnlockTracker.unlockCard(Philactery.ID);
+
         logger.info("Done adding cards!");
     }
     
