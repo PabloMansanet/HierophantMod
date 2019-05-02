@@ -12,7 +12,7 @@ import hierophant.powers.CommonPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class Philactery extends AbstractDynamicCard {
+public class Phylactery extends AbstractDynamicCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -23,7 +23,7 @@ public class Philactery extends AbstractDynamicCard {
 
     // TEXT DECLARATION 
 
-    public static final String ID = HierophantMod.makeID(Philactery.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(Phylactery.class.getSimpleName());
     public static final String IMG = makeCardPath("Power.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -51,7 +51,7 @@ public class Philactery extends AbstractDynamicCard {
     // /STAT DECLARATION/
 
 
-    public Philactery() {
+    public Phylactery() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
     }

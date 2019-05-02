@@ -242,7 +242,7 @@
     "NAME":"Batter",
     "DESCRIPTION": "Deal !D! damage. NL If fully blocked, deal !M! damage."
   },
-  "hierophant:Auric Lance": {
+  "hierophant:AuricLance": {
     "NAME":"Auric Lance",
     "DESCRIPTION": "Deal !D! damage. NL Lose 10 gold."
   },

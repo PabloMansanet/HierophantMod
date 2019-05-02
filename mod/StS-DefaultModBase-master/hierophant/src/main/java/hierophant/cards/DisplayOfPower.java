@@ -11,9 +11,9 @@ import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class WrathofGod extends AbstractDynamicCard {
+public class DisplayOfPower extends AbstractDynamicCard {
 
-    public static final String ID = HierophantMod.makeID(WrathofGod.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(DisplayOfPower.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
@@ -21,8 +21,8 @@ public class WrathofGod extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GRAY;
 
-    private static final int COST = 8;
-    private static final int UPGRADED_COST = 8;
+    private static final int COST = 1;
+    private static final int UPGRADED_COST = 1;
 
     private static final int DAMAGE = 12;
     private static final int UPGRADE_PLUS_DMG = 18;
@@ -32,7 +32,7 @@ public class WrathofGod extends AbstractDynamicCard {
 
 
 
-    public WrathofGod() {
+    public DisplayOfPower() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = MAGIC;
