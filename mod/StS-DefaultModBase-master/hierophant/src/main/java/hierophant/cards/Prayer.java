@@ -32,8 +32,7 @@ public class Prayer extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GRAY;
 
-    private static final int COST = X;
-    private static final int UPGRADED_COST = X;
+    private static final int COST = 0;
     private static final int MAGIC = 8;
 
     // /STAT DECLARATION/

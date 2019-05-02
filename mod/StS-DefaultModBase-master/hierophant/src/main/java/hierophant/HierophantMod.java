@@ -447,7 +447,7 @@ public class HierophantMod implements
         BaseMod.addCard(new BulkyChest());
         BaseMod.addCard(new Cornucopia());
         BaseMod.addCard(new Racketeering());
-        BaseMod.addCard(new TolltheBells());
+        BaseMod.addCard(new TollTheBells());
         BaseMod.addCard(new Encroach());
 
         // Powers
@@ -517,7 +517,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(BulkyChest.ID);
         UnlockTracker.unlockCard(Cornucopia.ID);
         UnlockTracker.unlockCard(Racketeering.ID);
-        UnlockTracker.unlockCard(TolltheBells.ID);
+        UnlockTracker.unlockCard(TollTheBells.ID);
         UnlockTracker.unlockCard(Encroach.ID);
 
         // Powers
