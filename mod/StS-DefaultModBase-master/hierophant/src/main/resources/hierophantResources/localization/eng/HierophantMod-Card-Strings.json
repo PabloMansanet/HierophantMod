@@ -70,10 +70,6 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
-  "hierophant:Smite": {
-    "NAME": "Smite",
-    "DESCRIPTION": "Deal !D! damage. NL Deals 1 additional damage per !M! piety."
-  },
   "hierophant:MorningPrayer": {
     "NAME": "Morning Prayer",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! hierophant:Enlightened."
@@ -314,5 +310,5 @@
   "hierophant:DisplayOfPower": {
     "NAME":"Display Of Power",
     "DESCRIPTION": "Choose a card in your hand. Deal damage equal to !M! times its cost."
-  },
-  
+  }
+}

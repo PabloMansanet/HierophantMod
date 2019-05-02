@@ -12,7 +12,7 @@ import hierophant.powers.CommonPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class VowofSanctity extends AbstractDynamicCard {
+public class VowOfStability extends AbstractDynamicCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -23,7 +23,7 @@ public class VowofSanctity extends AbstractDynamicCard {
 
     // TEXT DECLARATION 
 
-    public static final String ID = HierophantMod.makeID(VowofSanctity.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(VowOfStability.class.getSimpleName());
     public static final String IMG = makeCardPath("Power.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -51,7 +51,7 @@ public class VowofSanctity extends AbstractDynamicCard {
     // /STAT DECLARATION/
 
 
-    public VowofSanctity() {
+    public VowOfStability() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
     }

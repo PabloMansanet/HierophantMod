@@ -12,7 +12,7 @@ import hierophant.powers.CommonPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class VowofPurity extends AbstractDynamicCard {
+public class VowOfPoverty extends AbstractDynamicCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -23,7 +23,7 @@ public class VowofPurity extends AbstractDynamicCard {
 
     // TEXT DECLARATION 
 
-    public static final String ID = HierophantMod.makeID(VowofPurity.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(VowOfPoverty.class.getSimpleName());
     public static final String IMG = makeCardPath("Power.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -39,7 +39,7 @@ public class VowofPurity extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GRAY;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int MAGIC = 1;
     private static final int UPGRADE_MAGIC = 1;
 
@@ -51,7 +51,7 @@ public class VowofPurity extends AbstractDynamicCard {
     // /STAT DECLARATION/
 
 
-    public VowofPurity() {
+    public VowOfPoverty() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
     }
