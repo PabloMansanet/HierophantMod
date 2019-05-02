@@ -11,9 +11,9 @@ import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class Smite extends AbstractDynamicCard {
+public class LocustPlague extends AbstractDynamicCard {
 
-    public static final String ID = HierophantMod.makeID(Smite.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(LocustPlague.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
@@ -21,8 +21,8 @@ public class Smite extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GRAY;
 
-    private static final int COST = 2;
-    private static final int UPGRADED_COST = 2;
+    private static final int COST = 6;
+    private static final int UPGRADED_COST = 6;
 
     private static final int DAMAGE = 12;
     private static final int UPGRADE_PLUS_DMG = 18;
@@ -32,7 +32,7 @@ public class Smite extends AbstractDynamicCard {
 
 
 
-    public Smite() {
+    public LocustPlague() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = MAGIC;

@@ -11,9 +11,9 @@ import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class AuricLance extends AbstractDynamicCard {
+public class DisplayofPower extends AbstractDynamicCard {
 
-    public static final String ID = HierophantMod.makeID(AuricLance.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(DisplayofPower.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
@@ -32,7 +32,7 @@ public class AuricLance extends AbstractDynamicCard {
 
 
 
-    public AuricLance() {
+    public DisplayofPower() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = MAGIC;

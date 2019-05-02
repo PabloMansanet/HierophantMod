@@ -24,12 +24,19 @@ public class CoinFling extends AbstractDynamicCard {
     private static final int COST = 0;
     private static final int UPGRADED_COST = 0;
 
-    private static final int DAMAGE = 4;
-    private static final int UPGRADE_PLUS_DMG = 6;
+    private static final int DAMAGE = 12;
+    private static final int UPGRADE_PLUS_DMG = 18;
+
+    private static final int MAGIC = 3;
+    private static final int UPGRADE_PLUS_MAGIC = -1;
+
+
 
     public CoinFling() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        magicNumber = baseMagicNumber = MAGIC;
+
     }
 
     @Override
@@ -43,8 +50,7 @@ public class CoinFling extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeBaseCost(UPGRADED_COST);
-            initializeDescription();
+            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }

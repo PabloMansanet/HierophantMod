@@ -24,12 +24,19 @@ public class HolyStrike extends AbstractDynamicCard {
     private static final int COST = 1;
     private static final int UPGRADED_COST = 1;
 
-    private static final int DAMAGE = 3;
-    private static final int UPGRADE_PLUS_DMG = 2;
+    private static final int DAMAGE = 12;
+    private static final int UPGRADE_PLUS_DMG = 18;
+
+    private static final int MAGIC = 3;
+    private static final int UPGRADE_PLUS_MAGIC = -1;
+
+
 
     public HolyStrike() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        magicNumber = baseMagicNumber = MAGIC;
+
     }
 
     @Override
@@ -43,8 +50,7 @@ public class HolyStrike extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeBaseCost(UPGRADED_COST);
-            initializeDescription();
+            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }

@@ -11,9 +11,9 @@ import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class AuricLance extends AbstractDynamicCard {
+public class SolarFlare extends AbstractDynamicCard {
 
-    public static final String ID = HierophantMod.makeID(AuricLance.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(SolarFlare.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
@@ -21,8 +21,8 @@ public class AuricLance extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GRAY;
 
-    private static final int COST = 1;
-    private static final int UPGRADED_COST = 1;
+    private static final int COST = 5;
+    private static final int UPGRADED_COST = 5;
 
     private static final int DAMAGE = 12;
     private static final int UPGRADE_PLUS_DMG = 18;
@@ -32,7 +32,7 @@ public class AuricLance extends AbstractDynamicCard {
 
 
 
-    public AuricLance() {
+    public SolarFlare() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = MAGIC;

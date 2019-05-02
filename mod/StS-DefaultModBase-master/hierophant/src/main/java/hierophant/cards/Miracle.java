@@ -12,9 +12,9 @@ import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class Blessing extends AbstractDynamicCard {
+public class Miracle extends AbstractDynamicCard {
 
-    public static final String ID = HierophantMod.makeID(Blessing.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(Miracle.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Skill.png");
@@ -38,7 +38,7 @@ public class Blessing extends AbstractDynamicCard {
 
     // /STAT DECLARATION/
 
-    public Blessing() {
+    public Miracle() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
         exhaust = true;
