@@ -84,8 +84,7 @@
   },
   "hierophant:ConvertCurrency": {
     "NAME": "Convert Currency",
-    "DESCRIPTION": "Gain 1 Energy for each Doubloon in your hand. NL Exhaust a Doubloon. NL hierophant:Gilded",
-    "UPGRADE_DESCRIPTION": "Gain 1 Energy for each Doubloon in your hand. NL hierophant:Gilded"
+    "DESCRIPTION": "Exhaust a card in your hand. NL Gain !M! [E], or !M! [E] if you exhausted a doubloon. NL hierophant:Gilded. "
   },
   "hierophant:RecallFunds": {
     "NAME": "Recall Funds",
@@ -106,6 +105,10 @@
   "hierophant:Shelter": {
     "NAME": "Shelter",
     "DESCRIPTION": "Gain !B! Block. NL ALL enemies gain !B! Block."
+  },
+  "hierophant:Encroach": {
+    "NAME": "Encroach",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards if you have less block than an enemy."
   },
   "hierophant:MirrorShield": {
     "NAME": "Mirror Shield",
@@ -176,6 +179,10 @@
     "NAME":"Levitation",
     "DESCRIPTION": "Gain 1 Intangible. NL Exhaust. NL hierophant:Tithe."
   },
+  "hierophant:TollTheBells": {
+    "NAME":"Toll The Bells",
+    "DESCRIPTION": "Gain 2 [E]. NL Gain 2 hierophant:Enlightened. NL Shuffle 2 Dazed into your draw pile."
+  },
   "hierophant:Racketeering": {
     "NAME":"Racketeering",
     "DESCRIPTION": "Give an enemy 10 Block. Draw a card for each 5 Block on that enemy."
@@ -223,9 +230,13 @@
     "NAME":"Auric Form",
     "DESCRIPTION": "At the start of your turn, gain Block equal to 10% of your gold, then lose !M!% of your gold."
   },
+  "hierophant:Phylactery": {
+    "NAME":"Phylactery",
+    "DESCRIPTION": "When you would die, heal to !M!% of your max HP instead and remove this power. NL hierophant:Tithe."
+  },
   "hierophant:CoinFling": {
     "NAME":"Coin Fling",
-    "DESCRIPTION": "Deal !D! damage. NL Discard all Doubloons. Deals !D! additional damage for each doubloon discarded. NL hierophant:Gilded"
+    "DESCRIPTION": "Deal !D! damage. NL Discard a card. Deals !D! additional damage if you discarded a Doubloon. NL hierophant:Gilded."
   },
   "hierophant:HolyStrike": {
     "NAME":"Holy Strike",
@@ -247,8 +258,8 @@
     "NAME":"Searing Virtue",
     "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each unique active Vow."
   },
-  "hierophant:StrikeTheBell": {
-    "NAME":"Strike The Bell",
+  "hierophant:PassingBell": {
+    "NAME":"Passing Bell",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Enlightened."
   },
   "hierophant:SolarFlare": {

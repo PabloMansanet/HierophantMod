@@ -81,14 +81,19 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Gain 8 (12) block. Until your next turn, gain 2 (3) piety every time you are
      attacked.
 
+## Encroach (cost 1 skill uncommon)
+   * Gain 8 (12) block. Draw 2 (3) cards if you have less block than an enemy.
+
 ## Convert Currency (cost 0 skill common)
    * Gilded.
-   * Gain 1 energy for each doubloon in your hand. Exhaust a doubloon. 
-   * Enhanced: No exhaust.
+   * Exhaust a card, gain 1(2) energy, or 3(4) if doubloon.
 
 ## Recall Funds (cost 1 skill uncommon)
    * Gilded.
    * Exhaust. Return up to 3 (5) doubloons from your exhaust pile to your hand.
+
+## Toll the Bells (cost 1 (0) skill uncommon)
+   * Gain 2 energy, 2 enlightened, and shuffle 2 Daze into your draw pile.
 
 ## Dazzle (cost 0 skill common)
    * Gilded.
@@ -210,12 +215,15 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * At the beginning of your turn, lose 10% of your gold and gain that much
      block. 
 
+## Phylactery (cost 5 power rare).
+   * When you would die, heal to 15% (30%) max HP instead and remove this power.
+   * Tithe
+
 ## Attacks:
 
 ## Coin Fling (cost 0 attack uncommon)
    * Gilded.
-   * Discard all doubloons. Deal 4 (6) damage, plus 4 (6) for each doubloon
-     discarded.
+   * Discard a card. Deal 6 (9) damage, plus 6 (9) if doubloon.
 
 ## Holy Strike (cost 1 attack common)
    * Gain 8 piety, then deal 3(5)\*2 damage.
@@ -234,7 +242,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Searing Virtue (cost 2 attack uncommon)
    * Deal 15 (20) damage, plus 5 (7) for each unique active Vow.
 
-## Strike the Bell (cost 1 attack common)
+## Passing Bell (cost 1 attack common)
    * Deal 7 (10) damage and gain 1 (2) Enlightened.
 
 ## Solar Flare (cost 5 attack uncommon)
