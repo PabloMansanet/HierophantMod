@@ -7,16 +7,34 @@
   },
   {
     "NAMES": [
-      "piety"
+      "vow",
+      "vows"
     ],
-    "DESCRIPTION": "Defeat ALL enemies with HP equal or lower than your piety at the end of your turn. Lose #b2 piety when dealing attack damage."
+    "DESCRIPTION": "Special Power that imposes a restriction in exchange for an advantage."
   },
   {
     "NAMES": [
-      "keyword",
-      "keywords",
+      "tithe"
     ],
-    "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
+    "DESCRIPTION": "Can be partially paid with gold, at a rate of #b20 gold per Energy."
+  },
+  {
+    "NAMES": [
+      "gilded"
+    ],
+    "DESCRIPTION": "When you add this card to your deck, add a Doubloon to your deck."
+  },
+  {
+    "NAMES": [
+      "enlightened"
+    ],
+    "DESCRIPTION": "Gain an additional #b50% Piety."
+  },
+  {
+    "NAMES": [
+      "piety"
+    ],
+    "DESCRIPTION": "Defeat ALL enemies with HP equal or lower than your piety at the end of your turn. Lose #b2 piety when dealing attack damage."
   },
   {
     "PROPER_NAME": "Multiword Keyword",

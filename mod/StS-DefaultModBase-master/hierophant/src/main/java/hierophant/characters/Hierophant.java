@@ -30,7 +30,7 @@ import hierophant.relics.PlaceholderRelic2;
 import java.util.ArrayList;
 
 import static hierophant.HierophantMod.*;
-import static hierophant.characters.Hierophant.Enums.COLOR_GRAY;
+import static hierophant.characters.Hierophant.Enums.COLOR_GOLD;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
@@ -49,9 +49,9 @@ public class Hierophant extends CustomPlayer {
     public static class Enums {
         @SpireEnum
         public static AbstractPlayer.PlayerClass HIEROPHANT;
-        @SpireEnum(name = "DEFAULT_GRAY_COLOR") // These two HAVE to have the same absolutely identical name.
-        public static AbstractCard.CardColor COLOR_GRAY;
-        @SpireEnum(name = "DEFAULT_GRAY_COLOR") @SuppressWarnings("unused")
+        @SpireEnum(name = "HIEROPHANT_GOLD_COLOR") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor COLOR_GOLD;
+        @SpireEnum(name = "HIEROPHANT_GOLD_COLOR") @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
     }
 
@@ -64,15 +64,15 @@ public class Hierophant extends CustomPlayer {
     public static final int STARTING_HP = 75;
     public static final int MAX_HP = 75;
     public static final int STARTING_GOLD = 99;
-    public static final int CARD_DRAW = 9;
-    public static final int ORB_SLOTS = 3;
+    public static final int CARD_DRAW = 5;
+    public static final int ORB_SLOTS = 0;
 
     // =============== /BASE STATS/ =================
 
 
     // =============== STRINGS =================
 
-    private static final String ID = makeID("DefaultCharacter");
+    private static final String ID = makeID("HierophantCharacter");
     private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
     private static final String[] NAMES = characterStrings.NAMES;
     private static final String[] TEXT = characterStrings.TEXT;
@@ -110,9 +110,9 @@ public class Hierophant extends CustomPlayer {
 
         initializeClass(null, // required call to load textures and setup energy/loadout.
                 // I left these in HierophantMod.java (Ctrl+click them to see where they are, Ctrl+hover to see what they read.)
-                THE_DEFAULT_SHOULDER_1, // campfire pose
-                THE_DEFAULT_SHOULDER_2, // another campfire pose
-                THE_DEFAULT_CORPSE, // dead corpse
+                HIEROPHANT_SHOULDER_1, // campfire pose
+                HIEROPHANT_SHOULDER_2, // another campfire pose
+                HIEROPHANT_CORPSE, // dead corpse
                 getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN)); // energy manager
 
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
@@ -160,8 +160,8 @@ public class Hierophant extends CustomPlayer {
            retVal.add(Strike_Hierophant.ID);
            retVal.add(Defend_Hierophant.ID);
         }
-        //retVal.add(Punish.ID);
-        //retVal.add(Shelter.ID);
+        retVal.add(Punish.ID);
+        retVal.add(Shelter.ID);
         return retVal;
     }
 
@@ -204,13 +204,13 @@ public class Hierophant extends CustomPlayer {
     // Should return the card color enum to be associated with your character.
     @Override
     public AbstractCard.CardColor getCardColor() {
-        return COLOR_GRAY;
+        return COLOR_GOLD;
     }
 
     // Should return a color object to be used to color the trail of moving cards
     @Override
     public Color getCardTrailColor() {
-        return HierophantMod.DEFAULT_GRAY;
+        return HierophantMod.HIEROPHANT_GOLD;
     }
 
     // Should return a BitmapFont object that you can use to customize how your
@@ -247,14 +247,14 @@ public class Hierophant extends CustomPlayer {
     // Should return a Color object to be used to color the miniature card images in run history.
     @Override
     public Color getCardRenderColor() {
-        return HierophantMod.DEFAULT_GRAY;
+        return HierophantMod.HIEROPHANT_GOLD;
     }
 
     // Should return a Color object to be used as screen tint effect when your
     // character attacks the heart.
     @Override
     public Color getSlashAttackColor() {
-        return HierophantMod.DEFAULT_GRAY;
+        return HierophantMod.HIEROPHANT_GOLD;
     }
 
     // Should return an AttackEffect array of any size greater than 0. These effects

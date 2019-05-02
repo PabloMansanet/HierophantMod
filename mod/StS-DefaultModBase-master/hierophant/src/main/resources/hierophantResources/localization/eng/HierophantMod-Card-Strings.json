@@ -112,7 +112,7 @@
     "UPGRADE_DESCRIPTION": "Gain Block equal to an enemy's Block. NL Draw a card."
   },
   "hierophant:ChurchCoffers": {
-    "NAME": "ChurchCoffers",
+    "NAME": "Church Coffers",
     "DESCRIPTION": "Draw !M! cards. NL gain !M! energy. NL hierophant:Tithe."
   },
   "hierophant:Sermon": {
@@ -264,7 +264,7 @@
   },
   "hierophant:LocustPlague": {
     "NAME":"Locust Plague",
-    "DESCRIPTION": "Deal !D! damage to a random enemy 10 times. NL Apply !M! Weak or !M! Vulnerable to each enemy hit. NL hierophant:Tithe."
+    "DESCRIPTION": "Deal !D! damage and apply 1 Vulnerable to a random enemy 8 times. NL hierophant:Tithe."
   },
   "hierophant:WrathOfGod": {
     "NAME":"Wrath Of God",

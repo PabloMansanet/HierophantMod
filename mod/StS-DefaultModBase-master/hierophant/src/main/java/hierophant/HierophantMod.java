@@ -33,20 +33,6 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 
-//TODO: DON'T MASS RENAME/REFACTOR
-//TODO: DON'T MASS RENAME/REFACTOR
-//TODO: DON'T MASS RENAME/REFACTOR
-//TODO: DON'T MASS RENAME/REFACTOR
-// Please don't just mass replace "hierophant" with "yourMod" everywhere.
-// It'll be a bigger pain for you. You only need to replace it in 3 places.
-// I comment those places below, under the place where you set your ID.
-
-//TODO: FIRST THINGS FIRST: RENAME YOUR PACKAGE AND ID NAMES FIRST-THING!!!
-// Right click the package (Open the project pane on the left. Folder with black dot on it. The name's at the very top) -> Refactor -> Rename, and name it whatever you wanna call your mod.
-// Scroll down in this file. Change the ID from "hierophant:" to "yourModName:" or whatever your heart desires (don't use spaces). Dw, you'll see it.
-// In the JSON strings (resources>localization>eng>[all them files] make sure they all go "yourModName:" rather than "hierophant". You can ctrl+R to replace in 1 file, or ctrl+shift+r to mass replace in specific files/directories (Be careful.).
-// Start with the DefaultCommon cards - they are the most commented cards since I don't feel it's necessary to put identical comments on every card.
-// After you sorta get the hang of how to make cards, check out the card template which will make your life easier
 
 /*
  * With that out of the way:
@@ -75,52 +61,41 @@ public class HierophantMod implements
     private static String modID;
 
     // Mod-settings settings. This is if you want an on/off savable button
-    public static Properties theDefaultDefaultSettings = new Properties();
+    public static Properties hierophantDefaultSettings = new Properties();
     public static final String ENABLE_PLACEHOLDER_SETTINGS = "enablePlaceholder";
     public static boolean enablePlaceholder = true; // The boolean we'll be setting on/off (true/false)
 
     //This is for the in-game mod settings panel.
-    private static final String MODNAME = "Default Mod";
-    private static final String AUTHOR = "Gremious"; // And pretty soon - You!
-    private static final String DESCRIPTION = "A base for Slay the Spire to start your own mod from, feat. the Default.";
+    private static final String MODNAME = "Hierophant Mod";
+    private static final String AUTHOR = "Contrast"; // And pretty soon - You!
+    private static final String DESCRIPTION = "Hierophant Playable Character";
     
     // =============== INPUT TEXTURE LOCATION =================
     
     // Colors (RGB)
     // Character Color
-    public static final Color DEFAULT_GRAY = CardHelper.getColor(64.0f, 70.0f, 70.0f);
-    
-    // Potion Colors in RGB
-    public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
-    public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255.0f, 230.0f, 230.0f); // Near White
-    public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100.0f, 25.0f, 10.0f); // Super Dark Red/Brown
-    
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
+    public static final Color HIEROPHANT_GOLD = CardHelper.getColor(255.0f, 215.0f, 0.0f);
   
     // Card backgrounds - The actual rectangular card.
-    private static final String ATTACK_DEFAULT_GRAY = "hierophantResources/images/512/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY = "hierophantResources/images/512/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY = "hierophantResources/images/512/bg_power_default_gray.png";
+    private static final String ATTACK_HIEROPHANT_GOLD = "hierophantResources/images/512/bg_attack_hierophant_gold.png";
+    private static final String SKILL_HIEROPHANT_GOLD = "hierophantResources/images/512/bg_skill_hierophant_gold.png";
+    private static final String POWER_HIEROPHANT_GOLD = "hierophantResources/images/512/bg_power_hierophant_gold.png";
     
-    private static final String ENERGY_ORB_DEFAULT_GRAY = "hierophantResources/images/512/card_default_gray_orb.png";
+    private static final String ENERGY_ORB_HIEROPHANT_GOLD = "hierophantResources/images/512/card_hierophant_gold_orb.png";
     private static final String CARD_ENERGY_ORB = "hierophantResources/images/512/card_small_orb.png";
     
-    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "hierophantResources/images/1024/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "hierophantResources/images/1024/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "hierophantResources/images/1024/bg_power_default_gray.png";
-    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "hierophantResources/images/1024/card_default_gray_orb.png";
-    
+    private static final String ATTACK_HIEROPHANT_GOLD_PORTRAIT = "hierophantResources/images/1024/bg_attack_hierophant_gold.png";
+    private static final String SKILL_HIEROPHANT_GOLD_PORTRAIT = "hierophantResources/images/1024/bg_skill_hierophant_gold.png";
+    private static final String POWER_HIEROPHANT_GOLD_PORTRAIT = "hierophantResources/images/1024/bg_power_hierophant_gold.png";
+    private static final String ENERGY_ORB_HIEROPHANT_GOLD_PORTRAIT = "hierophantResources/images/1024/card_hierophant_gold_orb.png";
+
     // Character assets
-    private static final String THE_DEFAULT_BUTTON = "hierophantResources/images/charSelect/DefaultCharacterButton.png";
-    private static final String THE_DEFAULT_PORTRAIT = "hierophantResources/images/charSelect/DefaultCharacterPortraitBG.png";
-    public static final String THE_DEFAULT_SHOULDER_1 = "hierophantResources/images/char/defaultCharacter/shoulder.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "hierophantResources/images/char/defaultCharacter/shoulder2.png";
-    public static final String THE_DEFAULT_CORPSE = "hierophantResources/images/char/defaultCharacter/corpse.png";
+
+    private static final String HIEROPHANT_BUTTON = "hierophantResources/images/charSelect/DefaultCharacterButton.png";
+    private static final String HIEROPHANT_PORTRAIT = "hierophantResources/images/charSelect/DefaultCharacterPortraitBG.png";
+    public static final String HIEROPHANT_SHOULDER_1 = "hierophantResources/images/char/shoulder.png";
+    public static final String HIEROPHANT_SHOULDER_2 = "hierophantResources/images/char/shoulder2.png";
+    public static final String HIEROPHANT_CORPSE = "hierophantResources/images/char/defaultCharacter/corpse.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
     public static final String BADGE_IMAGE = "hierophantResources/images/Badge.png";
@@ -160,7 +135,7 @@ public class HierophantMod implements
     // =============== /INPUT TEXTURE LOCATION/ =================
     
     
-    // =============== SUBSCRIBE, CREATE THE COLOR_GRAY, INITIALIZE =================
+    // =============== SUBSCRIBE, CREATE THE COLOR_GOLD, INITIALIZE =================
     
     public HierophantMod() {
         logger.info("Subscribe to BaseMod hooks");
@@ -193,13 +168,13 @@ public class HierophantMod implements
         
         logger.info("Done subscribing");
         
-        logger.info("Creating the color " + Hierophant.Enums.COLOR_GRAY.toString());
+        logger.info("Creating the color " + Hierophant.Enums.COLOR_GOLD.toString());
         
-        BaseMod.addColor(Hierophant.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
-                DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
-                ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
-                ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
-                ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+        BaseMod.addColor(Hierophant.Enums.COLOR_GOLD, HIEROPHANT_GOLD, HIEROPHANT_GOLD, HIEROPHANT_GOLD,
+                HIEROPHANT_GOLD, HIEROPHANT_GOLD, HIEROPHANT_GOLD, HIEROPHANT_GOLD,
+                ATTACK_HIEROPHANT_GOLD, SKILL_HIEROPHANT_GOLD, POWER_HIEROPHANT_GOLD, ENERGY_ORB_HIEROPHANT_GOLD,
+                ATTACK_HIEROPHANT_GOLD_PORTRAIT, SKILL_HIEROPHANT_GOLD_PORTRAIT, POWER_HIEROPHANT_GOLD_PORTRAIT,
+                ENERGY_ORB_HIEROPHANT_GOLD_PORTRAIT, CARD_ENERGY_ORB);
         
         logger.info("Done creating the color");
         
@@ -207,9 +182,9 @@ public class HierophantMod implements
         logger.info("Adding mod settings");
         // This loads the mod settings.
         // The actual mod Button is added below in receivePostInitialize()
-        theDefaultDefaultSettings.setProperty(ENABLE_PLACEHOLDER_SETTINGS, "FALSE"); // This is the default setting. It's actually set...
+        hierophantDefaultSettings.setProperty(ENABLE_PLACEHOLDER_SETTINGS, "FALSE"); // This is the default setting. It's actually set...
         try {
-            SpireConfig config = new SpireConfig("defaultMod", "theDefaultConfig", theDefaultDefaultSettings); // ...right here
+            SpireConfig config = new SpireConfig("hierophantMod", "hierophantConfig", hierophantDefaultSettings); // ...right here
             // the "fileName" parameter is the name of the file MTS will create where it will save our setting.
             config.load(); // Load the setting and set the boolean to equal it
             enablePlaceholder = config.getBool(ENABLE_PLACEHOLDER_SETTINGS);
@@ -271,7 +246,7 @@ public class HierophantMod implements
         logger.info("========================= /Hierophant Mod Initialized. Hello World./ =========================");
     }
     
-    // ============== /SUBSCRIBE, CREATE THE COLOR_GRAY, INITIALIZE/ =================
+    // ============== /SUBSCRIBE, CREATE THE COLOR_GOLD, INITIALIZE/ =================
     
     
     // =============== LOAD THE CHARACTER =================
@@ -280,10 +255,9 @@ public class HierophantMod implements
     public void receiveEditCharacters() {
         logger.info("Beginning to edit characters. " + "Add " + Hierophant.Enums.HIEROPHANT.toString());
         
-        BaseMod.addCharacter(new Hierophant("the Default", Hierophant.Enums.HIEROPHANT),
-                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, Hierophant.Enums.HIEROPHANT);
+        BaseMod.addCharacter(new Hierophant("Hierophant", Hierophant.Enums.HIEROPHANT),
+                HIEROPHANT_BUTTON, HIEROPHANT_PORTRAIT, Hierophant.Enums.HIEROPHANT);
         
-        receiveEditPotions();
         logger.info("Added " + Hierophant.Enums.HIEROPHANT.toString());
     }
     
@@ -313,7 +287,7 @@ public class HierophantMod implements
             enablePlaceholder = button.enabled; // The boolean true/false will be whether the button is enabled or not
             try {
                 // And based on that boolean, set the settings and save them
-                SpireConfig config = new SpireConfig("defaultMod", "theDefaultConfig", theDefaultDefaultSettings);
+                SpireConfig config = new SpireConfig("hierophantMod", "hierophantConfig", hierophantDefaultSettings);
                 config.setBool(ENABLE_PLACEHOLDER_SETTINGS, enablePlaceholder);
                 config.save();
             } catch (Exception e) {
@@ -324,38 +298,10 @@ public class HierophantMod implements
         settingsPanel.addUIElement(enableNormalsButton); // Add the button to the settings panel. Button is a go.
         
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
-
-        
-        // =============== EVENTS =================
-        
-        // This event will be exclusive to the City (act 2). If you want an event that's present at any
-        // part of the game, simply don't include the dungeon ID
-        // If you want to have a character-specific event, look at slimebound (CityRemoveEventPatch).
-        // Essentially, you need to patch the game and say "if a player is not playing my character class, remove the event from the pool"
-        BaseMod.addEvent(IdentityCrisisEvent.ID, IdentityCrisisEvent.class, TheCity.ID);
-        
-        // =============== /EVENTS/ =================
         logger.info("Done loading badge Image and mod options");
     }
     
     // =============== / POST-INITIALIZE/ =================
-    
-    
-    // ================ ADD POTIONS ===================
-    
-    public void receiveEditPotions() {
-        logger.info("Beginning to edit potions");
-        
-        // Class Specific Potion. If you want your potion to not be class-specific,
-        // just remove the player class at the end (in this case the "TheDefaultEnum.HIEROPHANT".
-        // Remember, you can press ctrl+P inside parentheses like addPotions)
-        //BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, Hierophant.Enums.HIEROPHANT);
-        
-        logger.info("Done editing potions");
-    }
-    
-    // ================ /ADD POTIONS/ ===================
-    
     
     // ================ ADD RELICS ===================
     
@@ -364,9 +310,9 @@ public class HierophantMod implements
         logger.info("Adding relics");
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        //BaseMod.addRelicToCustomPool(new PlaceholderRelic(), Hierophant.Enums.COLOR_GRAY);
-        //BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), Hierophant.Enums.COLOR_GRAY);
-        //BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), Hierophant.Enums.COLOR_GRAY);
+        //BaseMod.addRelicToCustomPool(new PlaceholderRelic(), Hierophant.Enums.COLOR_GOLD);
+        //BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), Hierophant.Enums.COLOR_GOLD);
+        //BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), Hierophant.Enums.COLOR_GOLD);
         
         // This adds a relic to the Shared pool. Every character can find this relic.
         //BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);

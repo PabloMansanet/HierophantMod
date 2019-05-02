@@ -37,7 +37,7 @@ public class Phylactery extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = Hierophant.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 5;
     private static final int MAGIC = 1;
