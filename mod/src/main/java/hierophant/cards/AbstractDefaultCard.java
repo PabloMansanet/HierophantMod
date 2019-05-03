@@ -1,6 +1,8 @@
 package hierophant.cards;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public abstract class AbstractDefaultCard extends CustomCard {
 

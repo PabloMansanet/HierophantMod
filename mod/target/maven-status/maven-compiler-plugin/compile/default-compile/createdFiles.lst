@@ -22,6 +22,7 @@ hierophant/cards/Flagellation.class
 hierophant/HierophantMod.class
 hierophant/cards/MorningPrayer.class
 hierophant/patches/DefaultInsertPatch$Locator.class
+hierophant/cards/AbstractTitheCard.class
 hierophant/cards/Mercenaries.class
 hierophant/cards/SealAway.class
 hierophant/cards/Encroach.class

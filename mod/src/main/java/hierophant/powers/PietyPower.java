@@ -35,8 +35,8 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("piety_big.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("piety_small.png"));
 
     public PietyPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
         name = NAME;
@@ -78,11 +78,10 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
            }
         }
     }  
-    
+
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (damageAmount > 0 && target != this.owner && info.type == DamageInfo.DamageType.NORMAL) {
-            this.flash();
             AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, POWER_ID, 2));
         }
 

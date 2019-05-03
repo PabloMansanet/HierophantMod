@@ -162,6 +162,8 @@ public class Hierophant extends CustomPlayer {
         }
         retVal.add(HolyVerse.ID);
         retVal.add(HolyVerse.ID);
+        retVal.add(ChurchCoffers.ID);
+        retVal.add(ChurchCoffers.ID);
         return retVal;
     }
 
