@@ -261,8 +261,8 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Enhanced: 80 damage, 16 to yourself.
 
 ## Admonish (cost 1 attack common)
-   * Deal 6 damage, then gain 5 piety.
-   * Enhanced: Deal 9 damage, then gain 8 piety.
+   * Deal 6 damage, then gain 6 piety.
+   * Enhanced: Deal 9 damage, then gain 6 piety.
 
 ## Seal Away (cost 1 attack common)
    * Deal 10 (14) damage, then give the enemy 10 (14) block.

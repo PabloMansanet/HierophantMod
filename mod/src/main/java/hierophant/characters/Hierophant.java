@@ -156,7 +156,7 @@ public class Hierophant extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
    
-        for(int i = 0; i < 4; i = i + 1) {
+        for(int i = 0; i < 2; i = i + 1) {
            retVal.add(Strike_Hierophant.ID);
            retVal.add(Defend_Hierophant.ID);
         }
@@ -164,6 +164,10 @@ public class Hierophant extends CustomPlayer {
         retVal.add(HolyVerse.ID);
         retVal.add(ChurchCoffers.ID);
         retVal.add(ChurchCoffers.ID);
+        retVal.add(Admonish.ID);
+        retVal.add(Admonish.ID);
+        retVal.add(AuricBeam.ID);
+        retVal.add(AuricBeam.ID);
         return retVal;
     }
 

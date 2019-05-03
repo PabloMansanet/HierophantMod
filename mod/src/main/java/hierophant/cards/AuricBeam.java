@@ -22,19 +22,12 @@ public class AuricBeam extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 3;
-    private static final int UPGRADED_COST = 3;
+    private static final int UPGRADED_COST = 2;
 
-    private static final int DAMAGE = 12;
-    private static final int UPGRADE_PLUS_DMG = 18;
-
-    private static final int MAGIC = 3;
-    private static final int UPGRADE_PLUS_MAGIC = -1;
-
-
+    private static final int MAGIC = 10;
 
     public AuricBeam() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = MAGIC;
 
     }
@@ -42,15 +35,14 @@ public class AuricBeam extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                new DamageAction(m, new DamageInfo(p, AbstractDungeon.player.gold / magicNumber, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
-            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
+            upgradeBaseCost(UPGRADED_COST);
         }
     }
 }

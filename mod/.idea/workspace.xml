@@ -2,23 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28490e81-f8c8-4c76-92dc-f5ccedbf1228" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/AbstractDefaultCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/AbstractDefaultCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/AbstractDynamicCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/AbstractDynamicCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mechanics.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mechanics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Admonish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Admonish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/AuricBeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/AuricBeam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/ChurchCoffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/ChurchCoffers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/powers/PietyPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/powers/PietyPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/HierophantMod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/actions/UncommonPowerAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AbstractDefaultCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AbstractDynamicCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AbstractTitheCard.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Admonish.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Anathema.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AuricBeam.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AuricForm.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AuricLance.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Batter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Blasphemy.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Blessing.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Bribe.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/BulkyChest.class" beforeDir="false" />
@@ -49,7 +46,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Encroach.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Endure.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Entourage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Flagellation.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Generosity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/HolyStrike.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/HolyVerse.class" beforeDir="false" />
@@ -97,6 +93,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/relics/BottledPlaceholderField.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/potions/PlaceholderPotion.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/CommonPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/PietyPower.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/RarePower.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/BottledPlaceholderRelic.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/DefaultClickableRelic.class" beforeDir="false" />
@@ -106,6 +103,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/util/TextureLoader.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/variables/DefaultCustomVariable.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/variables/DefaultSecondMagicNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -135,10 +133,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/AbstractCard.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/ChurchCoffers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="1030" column="25" selection-start-line="1030" selection-start-column="25" selection-end-line="1030" selection-end-column="25" />
+            <state relative-caret-position="1053">
+              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/AbstractTitheCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,35 +154,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/characters/AbstractPlayer.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/AuricBeam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="854" column="38" selection-start-line="854" selection-start-column="38" selection-end-line="854" selection-end-column="38" />
-              <folding>
-                <element signature="e#75406#75407#0" expanded="true" />
-                <element signature="e#75446#75447#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/ChurchCoffers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/AbstractTitheCard.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Admonish.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="293">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -183,7 +174,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/exordium/GremlinThief.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1539">
+            <state relative-caret-position="1134">
               <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
             </state>
           </provider>
@@ -192,7 +183,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/localization/eng/monsters.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
+            <state relative-caret-position="8586">
               <caret line="318" column="15" selection-start-line="318" selection-start-column="10" selection-end-line="318" selection-end-column="15" />
             </state>
           </provider>
@@ -212,10 +203,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
               <caret line="38" column="53" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="53" />
-              <folding>
-                <element signature="e#6499#6500#0" expanded="true" />
-                <element signature="e#6525#6526#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -232,7 +219,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/AbstractGameAction.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
+            <state relative-caret-position="108">
               <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
             </state>
           </provider>
@@ -309,6 +296,8 @@
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/AbstractDynamicCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/ChurchCoffers.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/AbstractTitheCard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/AuricBeam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Admonish.java" />
       </list>
     </option>
   </component>
@@ -339,7 +328,7 @@
     <option name="x" value="25" />
     <option name="y" value="-8" />
     <option name="width" value="1870" />
-    <option name="height" value="1019" />
+    <option name="height" value="986" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -463,17 +452,18 @@
       <workItem from="1556858070219" duration="1516000" />
       <workItem from="1556860545436" duration="7112000" />
       <workItem from="1556882399412" duration="7408000" />
+      <workItem from="1556891017568" duration="248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48232000" />
+    <option name="totallyTimeSpent" value="48480000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="25" y="-8" width="1870" height="1019" extended-state="0" />
+    <frame x="25" y="-8" width="1870" height="986" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4986226" weight="0.3393057" />
-      <window_info id="Structure" order="1" sideWeight="0.5013774" side_tool="true" visible="true" weight="0.10414334" />
+      <window_info id="Structure" order="1" sideWeight="0.5013774" side_tool="true" visible="true" weight="0.10638298" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -481,7 +471,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.09589041" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36737236" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36623377" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -554,23 +544,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Doubloon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="41" column="38" selection-start-line="41" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/DivineIntervention.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Strike.java" />
     <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/events/beyond/Falling.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -852,17 +825,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/SuicideAction.class">
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/AbstractCard.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="26217">
+          <caret line="1030" column="25" selection-start-line="1030" selection-start-column="25" selection-end-line="1030" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/AbstractGameAction.class">
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/characters/AbstractPlayer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        <state relative-caret-position="20169">
+          <caret line="854" column="5" selection-start-line="854" selection-start-column="5" selection-end-line="854" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/ChurchCoffers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/exordium/GremlinThief.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/localization/eng/monsters.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8586">
+          <caret line="318" column="15" selection-start-line="318" selection-start-column="10" selection-end-line="318" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -877,62 +871,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="38" column="53" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="53" />
-          <folding>
-            <element signature="e#6499#6500#0" expanded="true" />
-            <element signature="e#6525#6526#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/AbstractCard.class">
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/SuicideAction.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="1030" column="25" selection-start-line="1030" selection-start-column="25" selection-end-line="1030" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="594">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/exordium/GremlinThief.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1539">
-          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/localization/eng/monsters.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="318" column="15" selection-start-line="318" selection-start-column="10" selection-end-line="318" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/characters/AbstractPlayer.class">
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/AbstractGameAction.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="854" column="38" selection-start-line="854" selection-start-column="38" selection-end-line="854" selection-end-column="38" />
-          <folding>
-            <element signature="e#75406#75407#0" expanded="true" />
-            <element signature="e#75446#75447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/ChurchCoffers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/AbstractTitheCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="196">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/AuricBeam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Admonish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>

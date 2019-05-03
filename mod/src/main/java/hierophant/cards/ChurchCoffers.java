@@ -31,14 +31,12 @@ public class ChurchCoffers extends AbstractTitheCard {
     private static final int COST = 3;
     private static final int UPGRADED_COST = 2;
     private static final int MAGIC = 2;
-    private static final int UPGRADE_PLUS_MAGIC = 1;
 
     // /STAT DECLARATION/
 
     public ChurchCoffers() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
-        exhaust = true;
     }
 
     // Actions the card should do.
@@ -54,7 +52,6 @@ public class ChurchCoffers extends AbstractTitheCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBaseCost(UPGRADED_COST);
-            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }
