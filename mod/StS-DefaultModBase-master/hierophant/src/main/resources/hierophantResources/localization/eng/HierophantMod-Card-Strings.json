@@ -252,7 +252,7 @@
   },
   "hierophant:SearingVirtue": {
     "NAME":"Searing Virtue",
-    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each unique active Vow."
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each unique active hierophant:Vow."
   },
   "hierophant:PassingBell": {
     "NAME":"Passing Bell",
@@ -297,7 +297,7 @@
   },
   "hierophant:Anathema": {
     "NAME":"Anathema",
-    "DESCRIPTION": "Deal !D! damage to each enemy per unique active Vow. NL Lose all Vows."
+    "DESCRIPTION": "Deal !D! damage to each enemy per unique active hierophant:Vow. NL Lose all hierophant:Vows."
   },
   "hierophant:Blasphemy": {
     "NAME":"Blasphemy",

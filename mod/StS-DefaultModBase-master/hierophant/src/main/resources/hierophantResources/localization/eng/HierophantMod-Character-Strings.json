@@ -1,11 +1,11 @@
 {
   "hierophant:HierophantCharacter": {
     "NAMES": [
-      "Hierophant",
-      "hierophant"
+      "The Hierophant",
+      "the hierophant"
     ],
     "TEXT": [
-      "The Hierophant is a holy creature of grand aspirations, tested by greed. NL Convert your enemies through piety and belevolence, or succumb to the temptations of the material.",
+      "A Holy creature of grand aspirations, tested by greed. NL Converts its enemies through benevolence or bribery.",
       "NL You SMITE the heart.",
       "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~father,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
     ]

@@ -309,13 +309,16 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * When you have 50 or less gold, gain +3 strength and +3 dexterity.
 
 ## Writ of Virtue (uncommon):
-   * Gain 4 block at the start of each turn for each unique active vow.
+   * Gain 4 block at the start of your turn for each unique active vow.
 
 ## Apostle's Rod (common):
    * Whenever your attack damage is blocked, gain 2 piety.
 
 ## Flagellation Whip (common):
    * Whenever you draw a status card or curse, gain 3 piety.
+
+## Atrium (common):
+   * Retain the highest cost card of your hand every turn.
 
 ## Holy Edict (uncommon):
    * Regain half of the gold lost at the end of each combat.

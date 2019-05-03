@@ -102,14 +102,12 @@ public class Hierophant extends CustomPlayer {
     public Hierophant(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
                 "hierophantResources/images/char/defaultCharacter/orb/vfx.png", null,
-                new SpriterAnimation(
-                        "hierophantResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
+                HIEROPHANT_SKELETON_JSON);
 
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
 
         initializeClass(null, // required call to load textures and setup energy/loadout.
-                // I left these in HierophantMod.java (Ctrl+click them to see where they are, Ctrl+hover to see what they read.)
                 HIEROPHANT_SHOULDER_1, // campfire pose
                 HIEROPHANT_SHOULDER_2, // another campfire pose
                 HIEROPHANT_CORPSE, // dead corpse
@@ -121,11 +119,13 @@ public class Hierophant extends CustomPlayer {
         // =============== ANIMATIONS =================  
 
         loadAnimation(
-                THE_DEFAULT_SKELETON_ATLAS,
-                THE_DEFAULT_SKELETON_JSON,
+                HIEROPHANT_SKELETON_ATLAS,
+                HIEROPHANT_SKELETON_JSON,
                 1.0f);
-        AnimationState.TrackEntry e = state.setAnimation(0, "animation", true);
+        AnimationState.TrackEntry e = state.setAnimation(0, "Idle", true);
         e.setTime(e.getEndTime() * MathUtils.random());
+        stateData.setMix("Hit", "Idle", 0.1F);
+        e.setTimeScale(0.6F);
 
         // =============== /ANIMATIONS/ =================
 
