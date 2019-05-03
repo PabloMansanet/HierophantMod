@@ -83,17 +83,17 @@ public class Hierophant extends CustomPlayer {
     // =============== TEXTURES OF BIG ENERGY ORB ===============
 
     public static final String[] orbTextures = {
-            "hierophantResources/images/char/defaultCharacter/orb/layer1.png",
-            "hierophantResources/images/char/defaultCharacter/orb/layer2.png",
-            "hierophantResources/images/char/defaultCharacter/orb/layer3.png",
-            "hierophantResources/images/char/defaultCharacter/orb/layer4.png",
-            "hierophantResources/images/char/defaultCharacter/orb/layer5.png",
-            "hierophantResources/images/char/defaultCharacter/orb/layer6.png",
-            "hierophantResources/images/char/defaultCharacter/orb/layer1d.png",
-            "hierophantResources/images/char/defaultCharacter/orb/layer2d.png",
-            "hierophantResources/images/char/defaultCharacter/orb/layer3d.png",
-            "hierophantResources/images/char/defaultCharacter/orb/layer4d.png",
-            "hierophantResources/images/char/defaultCharacter/orb/layer5d.png",};
+            "hierophantResources/images/char/hierophantCharacter/orb/layer1.png",
+            "hierophantResources/images/char/hierophantCharacter/orb/layer2.png",
+            "hierophantResources/images/char/hierophantCharacter/orb/layer3.png",
+            "hierophantResources/images/char/hierophantCharacter/orb/layer4.png",
+            "hierophantResources/images/char/hierophantCharacter/orb/layer5.png",
+            "hierophantResources/images/char/hierophantCharacter/orb/layer6.png",
+            "hierophantResources/images/char/hierophantCharacter/orb/layer1d.png",
+            "hierophantResources/images/char/hierophantCharacter/orb/layer2d.png",
+            "hierophantResources/images/char/hierophantCharacter/orb/layer3d.png",
+            "hierophantResources/images/char/hierophantCharacter/orb/layer4d.png",
+            "hierophantResources/images/char/hierophantCharacter/orb/layer5d.png",};
 
     // =============== /TEXTURES OF BIG ENERGY ORB/ ===============
 
@@ -101,7 +101,7 @@ public class Hierophant extends CustomPlayer {
 
     public Hierophant(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
-                "hierophantResources/images/char/defaultCharacter/orb/vfx.png", null,
+                "hierophantResources/images/char/hierophantCharacter/orb/vfx.png", null,
                 HIEROPHANT_SKELETON_JSON);
 
 
