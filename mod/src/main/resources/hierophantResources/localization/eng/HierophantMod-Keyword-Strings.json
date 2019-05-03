@@ -1,0 +1,50 @@
+[
+  {
+    "NAMES": [
+      "hoard"
+    ],
+    "DESCRIPTION": "Earn gold at the end of combat if this card is not exhausted."
+  },
+  {
+    "NAMES": [
+      "vow",
+      "vows"
+    ],
+    "DESCRIPTION": "Special Power that imposes a restriction in exchange for an advantage."
+  },
+  {
+    "NAMES": [
+      "tithe"
+    ],
+    "DESCRIPTION": "Can be partially paid with gold, at a rate of #b20 gold per Energy."
+  },
+  {
+    "NAMES": [
+      "gilded"
+    ],
+    "DESCRIPTION": "When you add this card to your deck, add a Doubloon to your deck."
+  },
+  {
+    "NAMES": [
+      "enlightened"
+    ],
+    "DESCRIPTION": "Gain an additional #b50% Piety."
+  },
+  {
+    "NAMES": [
+      "piety"
+    ],
+    "DESCRIPTION": "Defeat ALL enemies with HP equal or lower than your piety at the end of your turn. Lose #b2 piety when dealing attack damage."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "Multiword Keyword",
+      "multiword_keyword",
+      "multiword_keywords",
+      "multikey",
+      "multikeyword"
+    ],
+    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  }
+]

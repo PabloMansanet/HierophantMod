@@ -1,0 +1,314 @@
+{
+  "hierophant:DefaultCommonAttack": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! Damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+  },
+  "hierophant:DefaultCommonSkill": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block. NL hierophant:Multiword_Keyword."
+  },
+  "hierophant:DefaultCommonPower": {
+    "NAME": "Hold Place",
+    "DESCRIPTION": "Gain !M! hierophant:Keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! hierophant:Keywords."
+  },
+  "hierophant:DefaultUncommonAttack": {
+    "NAME": "Big slap",
+    "DESCRIPTION": "Deal !D! Damage."
+  },
+  "hierophant:DefaultUncommonSkill": {
+    "NAME": "A Better Defend",
+    "DESCRIPTION": "Gain !B! Plated Armor. Affected by Dexterity."
+  },
+  "hierophant:DefaultUncommonPower": {
+    "NAME": "Weirdness",
+    "DESCRIPTION": "Gain X hierophant:Keywords.",
+    "UPGRADE_DESCRIPTION": "Gain X +1 hierophant:Keywords."
+  },
+  "hierophant:DefaultRareAttack": {
+    "NAME": "TOUCH",
+    "DESCRIPTION": "Deal !D! Damage."
+  },
+  "hierophant:DefaultRareSkill": {
+    "NAME": "For Each Loop x2",
+    "DESCRIPTION": "Apply !M! vulnerable to all enemies, 2 times.",
+    "UPGRADE_DESCRIPTION": "Apply !M! vulnerable to all enemies, 3 times."
+  },
+  "hierophant:DefaultRarePower": {
+    "NAME": "In-Progress Form",
+    "DESCRIPTION": "At the start of your turn, play a TOUCH."
+  },
+  "hierophant:DefaultAttackWithVariable": {
+    "NAME": "Special Strike",
+    "DESCRIPTION": "Deal !D! Damage [E] times. NL (Deal !hierophant:ENERGY_DAMAGE! damage total.)"
+  },
+  "hierophant:DefaultSecondMagicNumberSkill": {
+    "NAME": "Cool 2 Number Card",
+    "DESCRIPTION": "Apply !M! vulnerable and !hierophant:SecondMagic! poison to an enemy."
+  },
+  "hierophant:OrbSkill": {
+    "NAME": "Get Orb",
+    "DESCRIPTION": "Channel 1 Default Orb."
+  },
+  "hierophant:Blessing": {
+    "NAME": "Blessing",
+    "DESCRIPTION": "Heal !M!. NL Heal ALL enemies !M!. NL Exhaust."
+  },
+  "hierophant:Doubloon": {
+    "NAME": "Doubloon",
+    "DESCRIPTION": "Draw 1 card. NL Exhaust. NL hierophant:Hoard !M!."
+  },
+  "hierophant:DivineIntervention": {
+    "NAME": "Divine intervention",
+    "DESCRIPTION": "Fully heal an enemy. NL Gain !M! hierophant:Piety per HP healed."
+  },
+  "hierophant:Strike_Hierophant": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "hierophant:Defend_Hierophant": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "hierophant:MorningPrayer": {
+    "NAME": "Morning Prayer",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! hierophant:Enlightened."
+  },
+  "hierophant:HolyVerse": {
+    "NAME": "Holy Verse",
+    "DESCRIPTION": "Gain !M! hierophant:Piety."
+  },
+  "hierophant:ConvertCurrency": {
+    "NAME": "Convert Currency",
+    "DESCRIPTION": "Exhaust a card in your hand. NL Gain !M! [E], or !M! [E] if you exhausted a doubloon. NL hierophant:Gilded. "
+  },
+  "hierophant:RecallFunds": {
+    "NAME": "Recall Funds",
+    "DESCRIPTION": "Return up to !M! Doubloons from your exhaust pile to your hand. NL Exhaust. NL hierophant:Gilded."
+  },
+  "hierophant:Dazzle": {
+    "NAME": "Dazzle",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Block for each Doubloon in your hand. NL hierophant:Gilded."
+  },
+  "hierophant:Embezzle": {
+    "NAME": "Borrow",
+    "DESCRIPTION": "Gain !M! gold. NL At the end of combat, return any of the !M! gold you did not spend."
+  },
+  "hierophant:Entourage": {
+    "NAME": "Entourage",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 additional Block per !M! gold spent this turn. NL hierophant:Tithe."
+  },
+  "hierophant:Shelter": {
+    "NAME": "Shelter",
+    "DESCRIPTION": "Gain !B! Block. NL ALL enemies gain !B! Block."
+  },
+  "hierophant:Encroach": {
+    "NAME": "Encroach",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards if you have less block than an enemy."
+  },
+  "hierophant:MirrorShield": {
+    "NAME": "Mirror Shield",
+    "DESCRIPTION": "Gain Block equal to an enemy's Block.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to an enemy's Block. NL Draw a card."
+  },
+  "hierophant:ChurchCoffers": {
+    "NAME": "Church Coffers",
+    "DESCRIPTION": "Draw !M! cards. NL gain !M! energy. NL hierophant:Tithe."
+  },
+  "hierophant:Sermon": {
+    "NAME": "Sermon",
+    "DESCRIPTION": "Gain !M! hierophant:Piety. NL Gain !M! additional hierophant:Piety per unique active hierophant:Vow."
+  },
+  "hierophant:Miracle": {
+    "NAME": "Miracle",
+    "DESCRIPTION": "Exhaust ALL status cards in your hand. NL Gain !M! piety per card exhausted."
+  },
+  "hierophant:Bribe": {
+    "NAME": "Bribe",
+    "DESCRIPTION": "Apply !M! Weak and !M! Vulnerable to ALL enemies. NL ALL enemies lose !M! Strength. NL hierophant:Tithe."
+  },
+  "hierophant:Flagellation": {
+    "NAME": "Flagellation",
+    "DESCRIPTION": "Add 2 Wounds to your hand. NL Gain !M! hierophant:Piety."
+  },
+  "hierophant:PristineSoul": {
+    "NAME": "Pristine Soul",
+    "DESCRIPTION": "Set your Block and hierophant:Piety to the highest of their values."
+  },
+  "hierophant:Prophecy": {
+    "NAME": "Prophecy",
+    "DESCRIPTION": "Reorder your draw pile in decreasing cost order. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your draw pile, then reorder it in decreasing cost order."
+  },
+  "hierophant:Doomsaying": {
+    "NAME":"Doomsaying",
+    "DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain energy equal to the highest cost among the discarded cards."
+  },
+  "hierophant:Prayer": {
+    "NAME":"Prayer",
+    "DESCRIPTION": "Play the highest cost card among the top X cards of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Play the highest cost card among the top X+1 cards of your draw pile."
+  },
+  "hierophant:Repentance": {
+    "NAME":"Repentance",
+    "DESCRIPTION": "Gain hierophant:Piety equal to twice the hierophant:Piety lost this combat. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain hierophant:Piety equal to twice the hierophant:Piety lost this combat."
+  },
+  "hierophant:SecretStash": {
+    "NAME":"Secret Stash",
+    "DESCRIPTION": "Ethereal. NL hierophant:Hoard !M!."
+  },
+  "hierophant:BulkyChest": {
+    "NAME":"Bulky Chest",
+    "DESCRIPTION": "Unplayable. NL When you draw Bulky Chest, lose [E]. NL hierophant:Hoard !M!."
+  },
+  "hierophant:Cornucopia": {
+    "NAME":"Cornucopia",
+    "DESCRIPTION": "Add X Doubloons to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add X upgraded Doubloons to your hand. NL Exhaust."
+  },
+  "hierophant:Endure": {
+    "NAME":"Endure",
+    "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, gain !M! hierophant:Piety."
+  },
+  "hierophant:Levitation": {
+    "NAME":"Levitation",
+    "DESCRIPTION": "Gain 1 Intangible. NL Exhaust. NL hierophant:Tithe."
+  },
+  "hierophant:TollTheBells": {
+    "NAME":"Toll The Bells",
+    "DESCRIPTION": "Gain 2 [E]. NL Gain 2 hierophant:Enlightened. NL Shuffle 2 Dazed into your draw pile."
+  },
+  "hierophant:Racketeering": {
+    "NAME":"Racketeering",
+    "DESCRIPTION": "Give an enemy 10 Block. Draw a card for each 5 Block on that enemy."
+  },
+  "hierophant:VowOfPoverty": {
+    "NAME":"Vow Of Poverty",
+    "DESCRIPTION": "You may not earn gold this combat. NL Gain 1 strength at the start of your turn.",
+    "UPGRADE_DESCRIPTION": "You may not earn gold this combat. NL Gain 1 strength at the start of your turn. NL Innate."
+  },
+  "hierophant:VowOfSobriety": {
+    "NAME":"Vow Of Sobriety",
+    "DESCRIPTION": "You may not consume or earn potions this combat. NL Gain 1 dexterity at the start of your turn.",
+    "UPGRADE_DESCRIPTION": "You may not consume or earn potions this combat. NL Gain 1 dexterity at the start of your turn. NL Innate."
+  },
+  "hierophant:VowOfSanctity": {
+    "NAME":"Vow Of Sanctity",
+    "DESCRIPTION": "Lose 3 additional piety when dealing damage. NL At the end of your turn, gain 10 piety.",
+    "UPGRADE_DESCRIPTION": "Lose 3 additional piety when dealing damage. NL At the end of your turn, gain 10 piety. NL Innate."
+  },
+  "hierophant:VowOfStability": {
+    "NAME":"Vow Of Stability",
+    "DESCRIPTION": "You take double unblocked attack damage. NL At the end of your turn, double your Block.",
+    "UPGRADE_DESCRIPTION": "You take double unblocked attack damage. NL At the end of your turn, double your Block. NL Innate."
+  },
+  "hierophant:VowOfPurity": {
+    "NAME":"Vow Of Purity",
+    "DESCRIPTION": "You may not inflict any negative status effects. NL At the end of your turn, gain 1 artifact.",
+    "UPGRADE_DESCRIPTION": "You may not inflict any negative status effects. NL Gain 1 artifact at the start of your turn. NL Innate."
+  },
+  "hierophant:Martyrdom": {
+    "NAME":"Martyrdom",
+    "DESCRIPTION": "Shuffle three Wounds into your draw pile. NL Whenever you draw a Status card, gain !M! hierophant:Piety."
+  },
+  "hierophant:Generosity": {
+    "NAME":"Generosity",
+    "DESCRIPTION": "Whenever you exhaust a Doubloon, draw an additional card. NL hierophant:Gilded.",
+    "UPGRADE_DESCRIPTION": "Whenever you exhaust a Doubloon, draw an additional card. NL Innate. NL hierophant:Gilded."
+  },
+  "hierophant:CursedGold": {
+    "NAME":"Cursed Gold",
+    "DESCRIPTION": "At the end of your turn, move !M! Doubloon from the exhaust pile to the discard pile.",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, move !M! Doubloons from the exhaust pile to the discard pile."
+  },
+  "hierophant:AuricForm": {
+    "NAME":"Auric Form",
+    "DESCRIPTION": "At the start of your turn, gain Block equal to 10% of your gold, then lose !M!% of your gold."
+  },
+  "hierophant:Phylactery": {
+    "NAME":"Phylactery",
+    "DESCRIPTION": "When you would die, heal to !M!% of your max HP instead and remove this power. NL hierophant:Tithe."
+  },
+  "hierophant:CoinFling": {
+    "NAME":"Coin Fling",
+    "DESCRIPTION": "Deal !D! damage. NL Discard a card. Deals !D! additional damage if you discarded a Doubloon. NL hierophant:Gilded."
+  },
+  "hierophant:HolyStrike": {
+    "NAME":"Holy Strike",
+    "DESCRIPTION": "Gain !M! Piety, NL then deal !D! damage twice."
+  },
+  "hierophant:Batter": {
+    "NAME":"Batter",
+    "DESCRIPTION": "Deal !D! damage. NL If fully blocked, deal !M! damage."
+  },
+  "hierophant:AuricLance": {
+    "NAME":"Auric Lance",
+    "DESCRIPTION": "Deal !D! damage. NL Lose 10 gold."
+  },
+  "hierophant:Mercenaries": {
+    "NAME":"Mercenaries",
+    "DESCRIPTION": "Deal !D! damage. NL Deals 1 additional damage for each !M! gold lost this turn. NL hierophant:Tithe."
+  },
+  "hierophant:SearingVirtue": {
+    "NAME":"Searing Virtue",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each unique active hierophant:Vow."
+  },
+  "hierophant:PassingBell": {
+    "NAME":"Passing Bell",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Enlightened."
+  },
+  "hierophant:SolarFlare": {
+    "NAME":"Solar Flare",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak and !M! Vulnerable. NL hierophant:Tithe."
+  },
+  "hierophant:LocustPlague": {
+    "NAME":"Locust Plague",
+    "DESCRIPTION": "Deal !D! damage and apply 1 Vulnerable to a random enemy 8 times. NL hierophant:Tithe."
+  },
+  "hierophant:WrathOfGod": {
+    "NAME":"Wrath Of God",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Deals !M! damage to you. NL hierophant:Tithe."
+  },
+  "hierophant:Admonish": {
+    "NAME":"Admonish",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! piety."
+  },
+  "hierophant:SealAway": {
+    "NAME":"Seal Away",
+    "DESCRIPTION": "Deal !D! damage. NL Give the enemy !M! Block."
+  },
+  "hierophant:Smite": {
+    "NAME":"Smite",
+    "DESCRIPTION": "Deal !D! damage. NL Deals 1 additional damage for every !M! hierophant:Piety."
+  },
+  "hierophant:Upheaval": {
+    "NAME":"Upheaval",
+    "DESCRIPTION": "Deal damage equal to twice the enemy's block. NL hierophant:Tithe."
+  },
+  "hierophant:RodSlam": {
+    "NAME":"Rod Slam",
+    "DESCRIPTION": "Deal !D! damage. NL Enemy loses 1 Strength."
+  },
+  "hierophant:Punish": {
+    "NAME":"Punish",
+    "DESCRIPTION": "Gain !M! hierophant:Piety. NL Deal 2 damage four times.",
+    "UPGRADE_DESCRIPTION": "Gain !M! hierophant:Piety. NL Deal 2 damage six times."
+  },
+  "hierophant:Anathema": {
+    "NAME":"Anathema",
+    "DESCRIPTION": "Deal !D! damage to each enemy per unique active hierophant:Vow. NL Lose all hierophant:Vows."
+  },
+  "hierophant:Blasphemy": {
+    "NAME":"Blasphemy",
+    "DESCRIPTION": "Deal damage equal to twice your hierophant:Piety. NL Lose all hierophant:Piety."
+  },
+  "hierophant:AuricBeam": {
+    "NAME":"AuricBeam",
+    "DESCRIPTION": "Deal damage equal to 10% of your gold."
+  },
+  "hierophant:DisplayOfPower": {
+    "NAME":"Display Of Power",
+    "DESCRIPTION": "Choose a card in your hand. Deal damage equal to !M! times its cost."
+  }
+}
