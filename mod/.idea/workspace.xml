@@ -2,186 +2,108 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28490e81-f8c8-4c76-92dc-f5ccedbf1228" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/.attach_pid14817" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/git" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/HierophantMod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/actions/UncommonPowerAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/AbstractDefaultCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/AbstractDynamicCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Admonish.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Anathema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/AuricBeam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/AuricForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/AuricLance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Batter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Blasphemy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Blessing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Bribe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/BulkyChest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/CardTemplate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/ChurchCoffers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/CoinFling.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/ConvertCurrency.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Cornucopia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/CursedGold.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Dazzle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DefaultAttackWithVariable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DefaultCommonAttack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DefaultCommonPower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DefaultCommonSkill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DefaultRareAttack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DefaultRarePower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DefaultRareSkill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DefaultSecondMagicNumberSkill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DefaultUncommonAttack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DefaultUncommonPower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DefaultUncommonSkill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Defend_Hierophant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DisplayOfPower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/DivineIntervention.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Doomsaying.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Doubloon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Embezzle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Encroach.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Endure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Entourage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Flagellation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Generosity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/HolyStrike.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/HolyVerse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Levitation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/LocustPlague.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Martyrdom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Mercenaries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Miracle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/MirrorShield.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/MorningPrayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/OrbSkill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/PassingBell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Phylactery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Prayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/PristineSoul.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Prophecy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Punish.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Racketeering.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/RecallFunds.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Repentance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/RodSlam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/SealAway.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/SearingVirtue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/SecretStash.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Sermon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Shelter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Smite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/SolarFlare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Strike_Hierophant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/TollTheBells.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/Upheaval.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/VowOfPoverty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/VowOfPurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/VowOfSanctity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/VowOfSobriety.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/VowOfStability.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/cards/WrathOfGod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/characters/Hierophant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/events/IdentityCrisisEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/orbs/DefaultOrb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/patches/DefaultInsertPatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/patches/relics/BottledPlaceholderField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/potions/PlaceholderPotion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/powers/CommonPower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/powers/RarePower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/relics/BottledPlaceholderRelic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/relics/DefaultClickableRelic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/relics/PlaceholderRelic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/relics/PlaceholderRelic2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/util/IDCheckDontTouchPls.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/util/TextureLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/variables/DefaultCustomVariable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/java/hierophant/variables/DefaultSecondMagicNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/IDCheckStringsDONT-EDIT-AT-ALL.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/ModTheSpire.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/1024/bg_attack_hierophant_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/1024/bg_power_hierophant_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/1024/bg_skill_hierophant_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/1024/bigCards.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/1024/card_hierophant_gold_orb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/1024/card_hierophant_gold_orb.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/512/bg_attack_hierophant_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/512/bg_power_hierophant_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/512/bg_skill_hierophant_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/512/card_hierophant_gold_orb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/512/card_small_orb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/Badge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/cards/Attack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/cards/Attack_p.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/cards/Attack_p.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/cards/Power.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/cards/Power_p.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/cards/Power_p.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/cards/Skill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/cards/Skill_p.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/cards/Skill_p.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/cards/beautifu -bouquet color by Studio 7042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/Spriter/object1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/Spriter/object2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/Spriter/object3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/Spriter/skeleton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/corpse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/hierophant.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/main2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/layer1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/layer1d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/layer2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/layer2d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/layer3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/layer3d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/layer4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/layer4d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/layer5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/layer5d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/layer6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/orb/vfx.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/shoulder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/shoulder2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/skeleton.atlas" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/skeleton.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/char/defaultCharacter/skeleton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/charSelect/Button.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/charSelect/DefaultCharacterButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/charSelect/hierophantPortrait.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/convert_color.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/events/Events.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/events/IdentityCrisisEvent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/events/IdentityCrisisEvent2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/orbs/default_orb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/powers/placeholder_power.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/powers/placeholder_power32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/powers/placeholder_power84.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/relics/BottledPlaceholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/relics/Relics.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/relics/default_clickable_relic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/relics/outline/BottledPlaceholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/relics/outline/default_clickable_relic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/relics/outline/placeholder_relic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/relics/outline/placeholder_relic2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/relics/placeholder_relic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/relics/placeholder_relic2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/images/ui/missing_texture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/localization/eng/HierophantMod-Character-Strings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/localization/eng/HierophantMod-Event-Strings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/localization/eng/HierophantMod-Keyword-Strings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/localization/eng/HierophantMod-Orb-Strings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/localization/eng/HierophantMod-Potion-Strings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/localization/eng/HierophantMod-Power-Strings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/resources/hierophantResources/localization/eng/HierophantMod-Relic-Strings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StS-DefaultModBase-master/hierophant/src/main/tags" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/HolyVerse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/HolyVerse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Power-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Power-Strings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/HierophantMod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/actions/UncommonPowerAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AbstractDefaultCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AbstractDynamicCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Admonish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Anathema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AuricBeam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AuricForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AuricLance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Batter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Blasphemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Blessing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Bribe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/BulkyChest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/CardTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/ChurchCoffers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/CoinFling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/ConvertCurrency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Cornucopia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/CursedGold.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Dazzle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultAttackWithVariable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultCommonAttack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultCommonPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultCommonSkill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultRareAttack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultRarePower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultRareSkill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultSecondMagicNumberSkill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultUncommonAttack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultUncommonPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultUncommonSkill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Defend_Hierophant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DisplayOfPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DivineIntervention.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Doomsaying.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Doubloon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Embezzle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Encroach.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Endure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Entourage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Flagellation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Generosity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/HolyStrike.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/HolyVerse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Levitation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/LocustPlague.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Martyrdom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Mercenaries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Miracle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/MirrorShield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/MorningPrayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/OrbSkill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/PassingBell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Phylactery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Prayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/PristineSoul.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Prophecy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Punish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Racketeering.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/RecallFunds.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Repentance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/RodSlam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SealAway.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SearingVirtue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SecretStash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Sermon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Shelter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Smite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SolarFlare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Strike_Hierophant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/TollTheBells.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Upheaval.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfPoverty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfPurity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfSanctity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfSobriety.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfStability.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/WrathOfGod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/characters/Hierophant$Enums.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/characters/Hierophant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/events/IdentityCrisisEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/orbs/DefaultOrb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/DefaultInsertPatch$Locator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/DefaultInsertPatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/relics/BottledPlaceholderField$MakeStatEquivalentCopy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/relics/BottledPlaceholderField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/potions/PlaceholderPotion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/CommonPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/RarePower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/BottledPlaceholderRelic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/DefaultClickableRelic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/PlaceholderRelic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/PlaceholderRelic2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/util/IDCheckDontTouchPls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/util/TextureLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/variables/DefaultCustomVariable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/variables/DefaultSecondMagicNumber.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -209,7 +131,111 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/PietyPower.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+              <folding>
+                <element signature="e#3816#3817#0" expanded="true" />
+                <element signature="e#3888#3889#0" expanded="true" />
+                <element signature="e#4001#4002#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/exordium/SlimeBoss.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="130" column="67" lean-forward="true" selection-start-line="130" selection-start-column="67" selection-end-line="130" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/city/BronzeAutomaton.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="175" column="52" selection-start-line="175" selection-end-line="176" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/green/Envenom.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-194">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/EnvenomPower.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/AbstractMonster.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-883">
+              <caret line="1008" column="16" selection-start-line="1008" selection-start-column="16" selection-end-line="1008" selection-end-column="16" />
+              <folding>
+                <element signature="e#40143#40144#0" expanded="true" />
+                <element signature="e#40173#40174#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/HolyVerse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="44" column="57" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/AbstractPower.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-59">
+              <caret line="217" column="17" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
+              <folding>
+                <element signature="e#7503#7504#0" expanded="true" />
+                <element signature="e#7532#7533#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/core/AbstractCreature.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="458" column="35" selection-start-line="458" selection-start-column="32" selection-end-line="458" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/SuicideAction.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -221,11 +247,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>perfected</find>
-      <find>Perfected</find>
-      <find>Weak</find>
-      <find>uppercut</find>
-      <find>Strength</find>
       <find>vulnera</find>
       <find>vulneraN</find>
       <find>Apply 1</find>
@@ -251,6 +272,11 @@
       <find>SHOULDER</find>
       <find>SHOULD</find>
       <find>CORPSE</find>
+      <find>vfx</find>
+      <find>alive</find>
+      <find>is</find>
+      <find>die</find>
+      <find>suicidea</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -274,6 +300,8 @@
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Cornucopia.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/HolyVerse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/powers/PietyPower.java" />
       </list>
     </option>
   </component>
@@ -302,9 +330,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="25" />
-    <option name="y" value="-8" />
+    <option name="y" value="25" />
     <option name="width" value="1870" />
-    <option name="height" value="1019" />
+    <option name="height" value="986" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -323,6 +351,17 @@
               <item name="HierophantMod" type="b2602c69:ProjectViewProjectNode" />
               <item name="mod" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HierophantMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HierophantMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -336,7 +375,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -366,26 +405,28 @@
       <workItem from="1556696773438" duration="4894000" />
       <workItem from="1556778222982" duration="7815000" />
       <workItem from="1556858070219" duration="1516000" />
-      <workItem from="1556860545436" duration="29000" />
+      <workItem from="1556860545436" duration="7112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33741000" />
+    <option name="totallyTimeSpent" value="40824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="25" width="1870" height="986" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3393057" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3393057" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44956413" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47142857" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -440,43 +481,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/localization/LocalizedStrings.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/blue/SelfRepair.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/colorless/Bite.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="49" column="53" selection-start-line="49" selection-end-line="50" />
-          <folding>
-            <element signature="e#0#2774#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/HealAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/red/Shockwave.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -540,13 +544,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/AbstractMonster.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="894" column="62" selection-start-line="894" selection-start-column="56" selection-end-line="894" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -752,6 +749,110 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/vfx/combat/ShockWaveEffect.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/green/PiercingWail.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="46" column="79" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/AbstractPower.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="217" column="17" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
+          <folding>
+            <element signature="e#7503#7504#0" expanded="true" />
+            <element signature="e#7532#7533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/HolyVerse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="44" column="57" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/core/AbstractCreature.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="458" column="35" selection-start-line="458" selection-start-column="32" selection-end-line="458" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/SuicideAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/AbstractMonster.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-883">
+          <caret line="1008" column="16" selection-start-line="1008" selection-start-column="16" selection-end-line="1008" selection-end-column="16" />
+          <folding>
+            <element signature="e#40143#40144#0" expanded="true" />
+            <element signature="e#40173#40174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/green/Envenom.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/EnvenomPower.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/exordium/SlimeBoss.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="130" column="67" lean-forward="true" selection-start-line="130" selection-start-column="67" selection-end-line="130" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/city/BronzeAutomaton.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="175" column="52" selection-start-line="175" selection-end-line="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/PietyPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+          <folding>
+            <element signature="e#3816#3817#0" expanded="true" />
+            <element signature="e#3888#3889#0" expanded="true" />
+            <element signature="e#4001#4002#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

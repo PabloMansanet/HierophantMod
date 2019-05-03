@@ -66,6 +66,7 @@ hierophant/powers/RarePower.class
 hierophant/cards/BulkyChest.class
 hierophant/cards/Racketeering.class
 hierophant/patches/DefaultInsertPatch.class
+hierophant/powers/PietyPower.class
 hierophant/cards/WrathOfGod.class
 hierophant/cards/Phylactery.class
 hierophant/cards/AuricLance.class
