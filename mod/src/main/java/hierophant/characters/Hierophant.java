@@ -1,7 +1,6 @@
 package hierophant.characters;
 
 import basemod.abstracts.CustomPlayer;
-import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
@@ -20,13 +19,10 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import hierophant.HierophantMod;
+import hierophant.cards.*;
 import hierophant.relics.DonationBoxRelic;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import hierophant.cards.*;
-import hierophant.relics.DefaultClickableRelic;
-import hierophant.relics.PlaceholderRelic;
-import hierophant.relics.PlaceholderRelic2;
 
 import java.util.ArrayList;
 
@@ -157,14 +153,16 @@ public class Hierophant extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
    
-        for(int i = 0; i < 2; i = i + 1) {
+        for(int i = 0; i < 4; i = i + 1) {
            retVal.add(Strike_Hierophant.ID);
            retVal.add(Defend_Hierophant.ID);
         }
         retVal.add(ChurchCoffers.ID);
-        retVal.add(Blessing.ID);
-        retVal.add(Bribe.ID);
-        retVal.add(Batter.ID);
+        retVal.add(Punish.ID);
+        retVal.add(ConvertCurrency.ID);
+        retVal.add(ConvertCurrency.ID);
+        retVal.add(Doubloon.ID);
+        retVal.add(Doubloon.ID);
         return retVal;
     }
 

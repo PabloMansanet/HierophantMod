@@ -42,7 +42,7 @@ current HP at the end of your turn, that monster converts to the Hierophant's
 religion and is peacefully defeated. Strategies can range from building up piety
 exclusively to finish fights, to a hybrid between damage and piety.
 
-However, dealing unblocked damage through an attack decreases your piety in 2.
+However, dealing unblocked damage through an attack decreases your piety in 1.
 
 Many cards that generate piety do so before attacking, so the hierophant may
 actually benefit from focusing on enemies with active block, in order to build
@@ -75,16 +75,16 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Gain 12 (16) block and 2 (3) Enlightened.
 
 ## Holy Verse (cost 1 skill common) DONE
-   * Gain 6 (9) piety.
+   * Gain 8 (12) piety.
 
 ## Endure (cost 1 skill common)
-   * Gain 8 (12) block. Until your next turn, gain 2 (3) piety every time you are
+   * Gain 8 (12) block. Until your next turn, gain 4 (6) piety every time you are
      attacked.
 
 ## Encroach (cost 1 skill uncommon)
-   * Gain 8 (12) block. Draw 2 (3) cards if you have less block than an enemy.
+   * Gain 8 block. Draw 2 (3) cards if you have less block than an enemy.
 
-## Convert Currency (cost 0 skill common)
+## Convert Currency (cost 0 skill uncommon) PARTIAL
    * Gilded.
    * Exhaust a card, gain 1(2) energy, or 3(4) if doubloon.
 
@@ -110,34 +110,34 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Blessing (cost 1 skill uncommon) DONE
    * Heal 8 (12). NL Heal ALL enemies 8 (12). Exhaust.
 
-## Shelter (cost 1 skill common, base deck)
+## Shelter (cost 1 skill common)
    * Block 8 (12), Monsters gain block 8 (12).
 
 ## Mirror Shield (cost 0 skill uncommon)
    * Gain block equal to an enemy's block. (Draw a card)
 
-## Church Coffers (cost 3 (2) skill common) DONE
+## Church Coffers (cost 3 (2) skill base) DONE
    * Tithe.
    * Draw 2 cards, gain 2 energy.
 
 ## Sermon (cost 1 skill uncommon)
-   * Gain 5 piety, plus 5 piety for each unique active Vow.
-   * Enhanced: 8, plus 8 per Vow.
+   * Gain 7 piety, plus 7 piety for each unique active Vow.
+   * Enhanced: 10, plus 10 per Vow.
 
 ## Divine Intervention (cost 2 skill rare)
    * Restore all HP to an enemy. Gain 2 (3) piety for each HP healed.
 
 ## Miracle (cost 1 skill uncommon)
-   * Exhaust all status cards in your hand. Gain 4 (6) piety for each status card
+   * Exhaust all status cards in your hand. Gain 5 (8) piety for each status card
      exhausted.
 
-## Bribe (cost 4 skill, uncommon)
+## Bribe (cost 4 skill, uncommon) DONE
    * Tithe.
    * Give all enemies weak 2 (3), and reduce their strength by
      2 (3). Exhaust
 
 ## Flagellation (cost 1 skill, uncommon)
-   * Add 2 wounds to your hand and gain 10 (15) piety.
+   * Add 2 wounds to your hand and gain 12 (16) piety.
 
 ## Pristine Soul (cost 2 (1) skill, rare)
    * Set your Piety and Block to the highest of the two values.
@@ -155,7 +155,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Play the highest cost card among the top X (X+1) cards of your draw pile.
 
 ## Repentance (cost 1 skill, uncommon)
-   * Exhaust (no exhaust) Gain Piety equal to twice the piety lost this combat.
+   * Exhaust (no exhaust) Gain Piety equal to three times the piety lost this combat.
 
 ## Secret Stash (cost 1 skill, uncommon)
    * Ethereal. Hoard 14 (20).
@@ -165,13 +165,13 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Gain 1 intangible.
    * Exhaust.
 
-## Bulky Chest (cost 0 skill, rare)
+## Bulky Chest (cost 0 skill, rare) DONE
    * Unplayable. Hoard 30 (50). When you draw it, lose 1 energy.
 
 ## Cornucopia (cost X skill, uncommon)
    * Add X (upgraded) doubloons to your hand. Exhaust
 
-## Racketeering (cost 1 (0) skill, uncommon)
+## Racketeering (cost 1 (0) skill, uncommon) DONE (bugged?)
    * Give an enemy 10 block. Draw a card for each 5 block on that enemy.
 
 ## Powers:
@@ -185,7 +185,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
      beginning of your turn, gain 1 dexterity. (Innate)
 
 ## Vow of Sanctity (cost 1 power common)
-   * You lose 3 extra piety when dealing damage.
+   * You lose 2 extra piety when dealing damage.
    * At the end of your turn, gain 10 piety. (Innate)
 
 ## Vow of Purity (cost 2 power rare)
@@ -225,8 +225,11 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Gilded.
    * Discard a card. Deal 6 (9) damage, plus 6 (9) if doubloon.
 
-## Holy Strike (cost 1 attack common) MEH
-   * Gain 8 piety, then deal 3(5)\*2 damage.
+## Zeal (cost 1 attack common) 
+   * Deal 10 (14) damage. Gain Piety equal to the amount blocked.
+
+## Three Lashes (cost 0 attack uncommon)
+   * Gain 6 piety. Deal 1 (2) damage three times.
 
 ## Batter (cost 1 attack uncommon) DONE
    * Deal 7 (10) damage.
@@ -235,7 +238,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Auric Lance (cost 1 attack uncommon) DONE
    * Deal 13 (18) damage, lose 10 gold.
 
-## Mercenaries (cost 2 attack common).
+## Mercenaries (cost 2 attack uncommon).
    * Tithe.
    * Deal 10 (14) damage plus a fifth (fourth) of the gold lost this turn.
 
@@ -260,10 +263,6 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Deal 50 damage to every enemy and 10 damage to yourself.
    * Enhanced: 80 damage, 16 to yourself.
 
-## Admonish (cost 1 attack common) DONE
-   * Deal 6 damage, then gain 6 piety.
-   * Enhanced: Deal 9 damage, then gain 6 piety.
-
 ## Seal Away (cost 1 attack common)
    * Deal 10 (14) damage, then give the enemy 10 (14) block.
 
@@ -279,8 +278,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Deal 10 (15) damage. Enemy loses 1 strength.
 
 ## Punish (cost 2 attack common, base deck)
-   * Gain 8 (12) piety. Deal 5\*2 (7 * 2) damage. (Note: this immediately
-     removes all gained piety unless blocked)
+   * Deal 8 (10) damage. Gain 8 (10) piety.
 
 ## Anathema (Cost 3 attack rare)
    * Lose all vows. Deal 10 (15) damage to every enemy for each unique lost vow.
@@ -290,7 +288,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Lose all piety. Deal 2 damage for each lost piety.
 
 ## Auric Beam (cost 3 (2) attack uncommon) DONE
-   * Deal damage equal to 1/10th of your gold.
+   * Lose 1/10th of your gold. Deal damage equal to the amount lost.
 
 ## Display of Power (cost 1 attack uncommon):
    * Choose a card in your hand. Deal damage equal to 5 (8) times its cost.

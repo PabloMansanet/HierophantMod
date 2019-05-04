@@ -1,11 +1,15 @@
 {
 "hierophant:PietyPower": {
         "NAME": "Piety",
-        "DESCRIPTIONS": ["Defeat enemies with HP equal or lower than #b", " at the end of your turn. Lose #b2 Piety when dealing unblocked attack damage."]
+        "DESCRIPTIONS": ["Defeat enemies with HP equal or lower than #b", " at the end of your turn. Lose #b1 Piety when dealing unblocked attack damage."]
 },
 "hierophant:AuricFormPower": {
         "NAME": "Auric Form",
         "DESCRIPTIONS": ["At the start of your turn, lose #b,", "% of your Gold, then gain that much block."]
+},
+"hierophant:GenerosityPower": {
+        "NAME": "Generosity",
+        "DESCRIPTIONS": ["When you exhaust a Doubloon, draw #b", " additional card.", " additional cards."]
 },
 "hierophant:CommonPower": {
         "NAME": "Placeholder Power",

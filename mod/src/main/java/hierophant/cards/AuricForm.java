@@ -27,7 +27,7 @@ public class AuricForm extends AbstractDynamicCard {
 
     private static final int COST = 3;
     private static final int UPGRADED_COST = 2;
-    private static final int MAGIC = 10;
+    private static final int MAGIC = 5;
 
     public AuricForm() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

@@ -80,7 +80,8 @@
   },
   "hierophant:ConvertCurrency": {
     "NAME": "Convert Currency",
-    "DESCRIPTION": "Exhaust a card in your hand. NL Gain !M! [E], or !M! [E] if you exhausted a doubloon. NL hierophant:Gilded. "
+    "DESCRIPTION": "Exhaust a card in your hand. NL Gain [E], or [E] [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. ",
+    "UPGRADE_DESCRIPTION": "Exhaust a card in your hand. NL Gain [E] [E], or [E] [E] [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. "
   },
   "hierophant:RecallFunds": {
     "NAME": "Recall Funds",
@@ -113,7 +114,7 @@
   },
   "hierophant:ChurchCoffers": {
     "NAME": "Church Coffers",
-    "DESCRIPTION": "Draw !M! cards. NL gain !M! energy. NL hierophant:Tithe."
+    "DESCRIPTION": "Draw !M! cards. NL gain [E] [E]. NL hierophant:Tithe."
   },
   "hierophant:Sermon": {
     "NAME": "Sermon",
@@ -121,7 +122,7 @@
   },
   "hierophant:Miracle": {
     "NAME": "Miracle",
-    "DESCRIPTION": "Exhaust ALL status cards in your hand. NL Gain !M! piety per card exhausted."
+    "DESCRIPTION": "Exhaust ALL status cards in your hand. NL Gain !M! hierophant:Piety per card exhausted."
   },
   "hierophant:Bribe": {
     "NAME": "Bribe",
@@ -160,7 +161,10 @@
   },
   "hierophant:BulkyChest": {
     "NAME":"Bulky Chest",
-    "DESCRIPTION": "Unplayable. NL When you draw Bulky Chest, lose [E]. NL hierophant:Hoard !M!."
+    "DESCRIPTION": "Unplayable. NL When you draw Bulky Chest, lose [E]. NL hierophant:Hoard !M!.",
+    "EXTENDED_DESCRIPTION": [
+      "I can't play this card."
+    ]
   },
   "hierophant:Cornucopia": {
     "NAME":"Cornucopia",
@@ -195,8 +199,8 @@
   },
   "hierophant:VowOfSanctity": {
     "NAME":"Vow Of Sanctity",
-    "DESCRIPTION": "Lose 3 additional piety when dealing damage. NL At the end of your turn, gain 10 piety.",
-    "UPGRADE_DESCRIPTION": "Lose 3 additional piety when dealing damage. NL At the end of your turn, gain 10 piety. NL Innate."
+    "DESCRIPTION": "Lose 3 additional hierophant:Piety when dealing damage. NL At the end of your turn, gain 10 hierophant:Piety.",
+    "UPGRADE_DESCRIPTION": "Lose 3 additional hierophant:Piety when dealing damage. NL At the end of your turn, gain 10 hierophant:Piety. NL Innate."
   },
   "hierophant:VowOfStability": {
     "NAME":"Vow Of Stability",
@@ -240,7 +244,7 @@
   },
   "hierophant:Batter": {
     "NAME":"Batter",
-    "DESCRIPTION": "Deal !D! damage. NL If fully blocked, strike again for !D! additional damage."
+    "DESCRIPTION": "Deal !D! damage. NL If fully blocked, hit again for !D! additional damage."
   },
   "hierophant:AuricLance": {
     "NAME":"Auric Lance",
@@ -270,9 +274,13 @@
     "NAME":"Wrath Of God",
     "DESCRIPTION": "Deal !D! damage to all enemies. NL Deals !M! damage to you. NL hierophant:Tithe."
   },
-  "hierophant:Admonish": {
-    "NAME":"Admonish",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! piety."
+  "hierophant:Zeal": {
+    "NAME":"Zeal",
+    "DESCRIPTION": "Deal !D! damage. NL Gain hierophant:Piety equal to the damage blocked."
+  },
+  "hierophant:ThreeLashes": {
+    "NAME":"Three Lashes",
+    "DESCRIPTION": "NL Gain !M! hierophant:Piety. Deal !D! damage three times."
   },
   "hierophant:SealAway": {
     "NAME":"Seal Away",
@@ -292,8 +300,7 @@
   },
   "hierophant:Punish": {
     "NAME":"Punish",
-    "DESCRIPTION": "Gain !M! hierophant:Piety. NL Deal 2 damage four times.",
-    "UPGRADE_DESCRIPTION": "Gain !M! hierophant:Piety. NL Deal 2 damage six times."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Piety."
   },
   "hierophant:Anathema": {
     "NAME":"Anathema",
@@ -306,7 +313,8 @@
   },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",
-    "DESCRIPTION": "Deal damage equal to 10% of your gold."
+    "DESCRIPTION": "Lose 10% of your gold, then deal that much damage.",
+    "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:DisplayOfPower": {
     "NAME":"Display Of Power",

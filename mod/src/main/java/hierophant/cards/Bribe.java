@@ -30,7 +30,7 @@ public class Bribe extends AbstractTitheCard {
 
     private static final int COST = 4;
     private static final int MAGIC = 3;
-    private static final int UPGRADE_PLUS_MAGIC = 4;
+    private static final int UPGRADE_PLUS_MAGIC = 1;
 
     // /STAT DECLARATION/
 

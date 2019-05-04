@@ -34,7 +34,7 @@
     "NAMES": [
       "piety"
     ],
-    "DESCRIPTION": "Defeat ALL enemies with HP equal or lower than your piety at the end of your turn. Lose #b2 piety when dealing attack damage."
+    "DESCRIPTION": "Defeat ALL enemies with HP equal or lower than your piety at the end of your turn. Lose #b1 piety when dealing unblocked attack damage."
   },
   {
     "PROPER_NAME": "Multiword Keyword",

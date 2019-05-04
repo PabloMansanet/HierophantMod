@@ -26,7 +26,7 @@ public class Strike_Hierophant extends AbstractDynamicCard {
     private static final int COST = 1;
 
     private static final int DAMAGE = 6;
-    private static final int UPGRADE_PLUS_DMG = 9;
+    private static final int UPGRADE_PLUS_DMG = 3;
 
     public Strike_Hierophant() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

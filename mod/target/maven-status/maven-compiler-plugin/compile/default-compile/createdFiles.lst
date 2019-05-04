@@ -8,6 +8,7 @@ hierophant/cards/Punish.class
 hierophant/cards/AuricBeam.class
 hierophant/cards/Miracle.class
 hierophant/DonationReward.class
+com/megacrit/cardcrawl/actions/defect/CurrencyExchangeAction.class
 hierophant/events/IdentityCrisisEvent.class
 hierophant/cards/PristineSoul.class
 hierophant/util/TextureLoader.class
@@ -22,6 +23,7 @@ hierophant/relics/DonationBoxRelic.class
 hierophant/cards/MirrorShield.class
 hierophant/cards/DefaultUncommonPower.class
 hierophant/cards/Flagellation.class
+hierophant/cards/ThreeLashes.class
 hierophant/HierophantMod.class
 hierophant/cards/MorningPrayer.class
 hierophant/patches/DefaultInsertPatch$Locator.class
@@ -30,6 +32,7 @@ hierophant/cards/Mercenaries.class
 hierophant/cards/SealAway.class
 hierophant/cards/Encroach.class
 hierophant/cards/HolyVerse.class
+hierophant/patches/GildedPatch$FastCardObtainConstructorPatch.class
 hierophant/cards/SearingVirtue.class
 hierophant/cards/DefaultUncommonAttack.class
 hierophant/cards/DefaultCommonSkill.class
@@ -39,10 +42,12 @@ hierophant/cards/Blasphemy.class
 hierophant/cards/Prophecy.class
 hierophant/cards/Cornucopia.class
 hierophant/variables/DefaultCustomVariable.class
+hierophant/patches/GildedPatch.class
 hierophant/powers/CommonPower.class
 hierophant/characters/Hierophant.class
 hierophant/cards/ChurchCoffers.class
 hierophant/cards/Smite.class
+hierophant/powers/GenerosityPower.class
 hierophant/cards/Upheaval.class
 hierophant/cards/DefaultAttackWithVariable.class
 hierophant/cards/DefaultCommonPower.class
@@ -67,6 +72,7 @@ hierophant/relics/DefaultClickableRelic.class
 hierophant/cards/Prayer.class
 hierophant/util/IDCheckDontTouchPls.class
 hierophant/cards/Entourage.class
+hierophant/patches/GildedPatch$ObtainCardConstructorPatch.class
 hierophant/powers/RarePower.class
 hierophant/cards/BulkyChest.class
 hierophant/powers/AuricFormPower.class
@@ -82,7 +88,6 @@ hierophant/cards/CursedGold.class
 hierophant/cards/DisplayOfPower.class
 hierophant/cards/AuricForm.class
 hierophant/cards/RodSlam.class
-hierophant/cards/Admonish.class
 hierophant/relics/BottledPlaceholderRelic.class
 hierophant/cards/OrbSkill.class
 hierophant/cards/VowOfSanctity.class
