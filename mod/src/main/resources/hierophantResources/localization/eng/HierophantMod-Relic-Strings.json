@@ -3,7 +3,7 @@
     "NAME": "Donation Box",
     "FLAVOR": "Beggars can't be choosers.",
     "DESCRIPTIONS": [
-      "At the end of a fight, if you have less than #b100 gold, earn gold up to a minimum of #b100."
+      "At the end of each combat, earn enough gold to reach #b100."
     ]
   },
   "hierophant:PlaceholderRelic": {

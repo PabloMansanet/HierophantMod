@@ -113,7 +113,7 @@
   },
   "hierophant:ChurchCoffers": {
     "NAME": "Church Coffers",
-    "DESCRIPTION": "Draw !M! cards. NL gain !M! energy. NL hierophant:Tithe."
+    "DESCRIPTION": "Draw !M! cards. NL Gain [E] [E]. NL hierophant:Tithe."
   },
   "hierophant:Sermon": {
     "NAME": "Sermon",

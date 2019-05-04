@@ -2,117 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28490e81-f8c8-4c76-92dc-f5ccedbf1228" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/rewards/DonationReward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/rewards/DonationReward.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Relic-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Relic-Strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/DonationReward.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/DonationRewardTypePatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/HierophantMod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/HierophantTags.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/HoardRewardTypePatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/actions/UncommonPowerAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AbstractDefaultCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AbstractDynamicCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AbstractTitheCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Admonish.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Anathema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AuricBeam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AuricForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AuricLance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Batter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Blasphemy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Blessing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Bribe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/BulkyChest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/CardTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/ChurchCoffers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/CoinFling.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/ConvertCurrency.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Cornucopia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/CursedGold.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Dazzle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultAttackWithVariable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultCommonAttack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultCommonPower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultCommonSkill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultRareAttack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultRarePower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultRareSkill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultSecondMagicNumberSkill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultUncommonAttack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultUncommonPower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DefaultUncommonSkill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Defend_Hierophant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DisplayOfPower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DivineIntervention.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Doomsaying.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Doubloon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Embezzle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Encroach.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Endure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Entourage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Flagellation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Generosity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/HolyStrike.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/HolyVerse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Levitation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/LocustPlague.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Martyrdom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Mercenaries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Miracle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/MirrorShield.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/MorningPrayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/OrbSkill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/PassingBell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Phylactery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Prayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/PristineSoul.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Prophecy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Punish.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Racketeering.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/RecallFunds.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Repentance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/RodSlam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SealAway.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SearingVirtue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SecretStash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Sermon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Shelter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Smite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SolarFlare.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Strike_Hierophant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/TollTheBells.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Upheaval.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfPoverty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfPurity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfSanctity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfSobriety.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfStability.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/WrathOfGod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/characters/Hierophant$Enums.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/characters/Hierophant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/events/IdentityCrisisEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/orbs/DefaultOrb.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/DefaultInsertPatch$Locator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/DefaultInsertPatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/relics/BottledPlaceholderField$MakeStatEquivalentCopy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/relics/BottledPlaceholderField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/potions/PlaceholderPotion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/CommonPower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/PietyPower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/RarePower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/BottledPlaceholderRelic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/DefaultClickableRelic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/PlaceholderRelic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/PlaceholderRelic2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/util/IDCheckDontTouchPls.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/util/TextureLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/variables/DefaultCustomVariable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/variables/DefaultSecondMagicNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hierophantResources/localization/eng/HierophantMod-Relic-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hierophantResources/localization/eng/HierophantMod-Relic-Strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Attack.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Attack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Attack_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Attack_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Power.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Power.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Power_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Power_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Skill.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Skill.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Skill_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Skill_p.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -157,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
-              <caret line="176" selection-start-line="176" selection-end-line="176" />
+              <caret line="178" selection-start-line="178" selection-end-line="178" />
             </state>
           </provider>
         </entry>
@@ -165,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/relics/DonationBoxRelic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="378">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -497,12 +393,12 @@
       <workItem from="1556860545436" duration="7112000" />
       <workItem from="1556882399412" duration="7408000" />
       <workItem from="1556891017568" duration="248000" />
-      <workItem from="1556935299328" duration="7544000" />
+      <workItem from="1556935299328" duration="8674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56024000" />
+    <option name="totallyTimeSpent" value="57154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="25" width="1870" height="986" extended-state="0" />
@@ -960,14 +856,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="176" selection-start-line="176" selection-end-line="176" />
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/relics/DonationBoxRelic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="378">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
         </state>
       </provider>
     </entry>
