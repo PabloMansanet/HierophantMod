@@ -18,6 +18,7 @@ hierophant/cards/Defend_Hierophant.class
 hierophant/cards/Batter.class
 hierophant/cards/RecallFunds.class
 hierophant/cards/CardTemplate.class
+hierophant/relics/DonationBoxRelic.class
 hierophant/cards/MirrorShield.class
 hierophant/cards/DefaultUncommonPower.class
 hierophant/cards/Flagellation.class

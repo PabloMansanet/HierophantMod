@@ -1,4 +1,11 @@
 {
+  "hierophant:DonationBoxRelic": {
+    "NAME": "Donation Box",
+    "FLAVOR": "Beggars can't be choosers.",
+    "DESCRIPTIONS": [
+      "At the end of a fight, earn enough gold to reach #b100."
+    ]
+  },
   "hierophant:PlaceholderRelic": {
     "NAME": "Placeholder Energy Relic",
     "FLAVOR": "The snake is a friend.",

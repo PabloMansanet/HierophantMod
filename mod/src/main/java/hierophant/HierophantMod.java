@@ -23,6 +23,7 @@ import com.megacrit.cardcrawl.rewards.RewardSave;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import hierophant.characters.Hierophant;
+import hierophant.relics.DonationBoxRelic;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import hierophant.cards.*;
@@ -335,7 +336,7 @@ public class HierophantMod implements
         logger.info("Adding relics");
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        //BaseMod.addRelicToCustomPool(new PlaceholderRelic(), Hierophant.Enums.COLOR_GOLD);
+        BaseMod.addRelicToCustomPool(new DonationBoxRelic(), Hierophant.Enums.COLOR_GOLD);
         //BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), Hierophant.Enums.COLOR_GOLD);
         //BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), Hierophant.Enums.COLOR_GOLD);
         
