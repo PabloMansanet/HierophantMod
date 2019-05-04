@@ -125,7 +125,7 @@
   },
   "hierophant:Bribe": {
     "NAME": "Bribe",
-    "DESCRIPTION": "Apply !M! Weak and !M! Vulnerable to ALL enemies. NL ALL enemies lose !M! Strength. NL hierophant:Tithe."
+    "DESCRIPTION": "NL ALL enemies lose !M! Strength. NL hierophant:Tithe. NL Exhaust."
   },
   "hierophant:Flagellation": {
     "NAME": "Flagellation",
@@ -301,7 +301,8 @@
   },
   "hierophant:Blasphemy": {
     "NAME":"Blasphemy",
-    "DESCRIPTION": "Deal damage equal to twice your hierophant:Piety. NL Lose all hierophant:Piety."
+    "DESCRIPTION": "Deal damage equal to twice your hierophant:Piety. NL Lose all hierophant:Piety.",
+    "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",

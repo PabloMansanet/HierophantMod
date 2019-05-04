@@ -107,8 +107,8 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Tithe.
    * Gain 10 (14) block plus a fifth (fourth) of the gold spent this turn.
 
-## Blessing (cost 1 skill uncommon)
-   * Heal 8 (12), then heal all monsters 16 (24). Exhaust.
+## Blessing (cost 1 skill uncommon) DONE
+   * Heal 8 (12). NL Heal ALL enemies 8 (12). Exhaust.
 
 ## Shelter (cost 1 skill common, base deck)
    * Block 8 (12), Monsters gain block 8 (12).
@@ -131,10 +131,10 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Exhaust all status cards in your hand. Gain 4 (6) piety for each status card
      exhausted.
 
-## Bribe (cost 4 skill, rare)
+## Bribe (cost 4 skill, uncommon)
    * Tithe.
-   * Give all enemies weak 3 (4), vulnerable 3 (4), and reduce their strength by
-     3 (4).
+   * Give all enemies weak 2 (3), and reduce their strength by
+     2 (3). Exhaust
 
 ## Flagellation (cost 1 skill, uncommon)
    * Add 2 wounds to your hand and gain 10 (15) piety.
@@ -228,7 +228,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Holy Strike (cost 1 attack common) MEH
    * Gain 8 piety, then deal 3(5)\*2 damage.
 
-## Batter (cost 1 attack uncommon)
+## Batter (cost 1 attack uncommon) DONE
    * Deal 7 (10) damage.
    * If fully blocked, attack again for 7 (10) damage.
 

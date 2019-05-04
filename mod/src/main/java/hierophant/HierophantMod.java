@@ -101,8 +101,8 @@ public class HierophantMod implements
 
     private static final String HIEROPHANT_BUTTON = "hierophantResources/images/charSelect/DefaultCharacterButton.png";
     private static final String HIEROPHANT_PORTRAIT = "hierophantResources/images/charSelect/hierophantPortrait.jpg";
-    public static final String HIEROPHANT_SHOULDER_1 = "hierophantResources/images/char/shoulder.png";
-    public static final String HIEROPHANT_SHOULDER_2 = "hierophantResources/images/char/shoulder2.png";
+    public static final String HIEROPHANT_SHOULDER_1 = "hierophantResources/images/char/hierophantCharacter/shoulder.png";
+    public static final String HIEROPHANT_SHOULDER_2 = "hierophantResources/images/char/hierophantCharacter/shoulder2.png";
     public static final String HIEROPHANT_CORPSE = "hierophantResources/images/char/hierophantCharacter/corpse.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.

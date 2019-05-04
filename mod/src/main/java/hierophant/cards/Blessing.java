@@ -1,12 +1,12 @@
 
 package hierophant.cards;
 
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 
@@ -27,14 +27,14 @@ public class Blessing extends AbstractDynamicCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int UPGRADED_COST = 1;
-    private static final int MAGIC = 8;
+    private static final int MAGIC = 7;
+    private static final int UPGRADE_PLUS_MAGIC = 3;
 
     // /STAT DECLARATION/
 
@@ -44,17 +44,19 @@ public class Blessing extends AbstractDynamicCard {
         exhaust = true;
     }
 
-    // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, magicNumber));
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            AbstractDungeon.actionManager.addToBottom(new HealAction(mo, p, magicNumber));
+        }
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(8);
+            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }
