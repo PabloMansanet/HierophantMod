@@ -74,7 +74,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Morning Prayer (cost 2 skill common)
    * Gain 12 (16) block and 2 (3) Enlightened.
 
-## Holy Verse (cost 1 skill common)
+## Holy Verse (cost 1 skill common) DONE
    * Gain 6 (9) piety.
 
 ## Endure (cost 1 skill common)
@@ -116,7 +116,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Mirror Shield (cost 0 skill uncommon)
    * Gain block equal to an enemy's block. (Draw a card)
 
-## Church Coffers (cost 3 (2) skill common)
+## Church Coffers (cost 3 (2) skill common) DONE
    * Tithe.
    * Draw 2 cards, gain 2 energy.
 
@@ -225,7 +225,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Gilded.
    * Discard a card. Deal 6 (9) damage, plus 6 (9) if doubloon.
 
-## Holy Strike (cost 1 attack common)
+## Holy Strike (cost 1 attack common) MEH
    * Gain 8 piety, then deal 3(5)\*2 damage.
 
 ## Batter (cost 1 attack uncommon)
@@ -260,7 +260,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Deal 50 damage to every enemy and 10 damage to yourself.
    * Enhanced: 80 damage, 16 to yourself.
 
-## Admonish (cost 1 attack common)
+## Admonish (cost 1 attack common) DONE
    * Deal 6 damage, then gain 6 piety.
    * Enhanced: Deal 9 damage, then gain 6 piety.
 
@@ -279,7 +279,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Deal 10 (15) damage. Enemy loses 1 strength.
 
 ## Punish (cost 2 attack common, base deck)
-   * Gain 8 (12) piety. Deal 2\*4 (2 * 6) damage. (Note: this immediately
+   * Gain 8 (12) piety. Deal 5\*2 (7 * 2) damage. (Note: this immediately
      removes all gained piety unless blocked)
 
 ## Anathema (Cost 3 attack rare)
@@ -289,7 +289,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Blasphemy (Cost 2(1) attack rare)
    * Lose all piety. Deal 2 damage for each lost piety.
 
-## Auric Beam (cost 3 (2) attack uncommon)
+## Auric Beam (cost 3 (2) attack uncommon) DONE
    * Deal damage equal to 1/10th of your gold.
 
 ## Display of Power (cost 1 attack uncommon):

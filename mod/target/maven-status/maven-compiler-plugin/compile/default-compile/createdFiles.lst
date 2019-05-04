@@ -1,4 +1,5 @@
 hierophant/cards/HolyStrike.class
+hierophant/DonationRewardTypePatch.class
 hierophant/characters/Hierophant$Enums.class
 hierophant/cards/Doomsaying.class
 hierophant/cards/Bribe.class
@@ -6,6 +7,7 @@ hierophant/cards/SolarFlare.class
 hierophant/cards/Punish.class
 hierophant/cards/AuricBeam.class
 hierophant/cards/Miracle.class
+hierophant/DonationReward.class
 hierophant/events/IdentityCrisisEvent.class
 hierophant/cards/PristineSoul.class
 hierophant/util/TextureLoader.class
@@ -31,6 +33,7 @@ hierophant/cards/SearingVirtue.class
 hierophant/cards/DefaultUncommonAttack.class
 hierophant/cards/DefaultCommonSkill.class
 hierophant/cards/DefaultSecondMagicNumberSkill.class
+hierophant/HierophantTags.class
 hierophant/cards/Blasphemy.class
 hierophant/cards/Prophecy.class
 hierophant/cards/Cornucopia.class
@@ -72,6 +75,7 @@ hierophant/cards/WrathOfGod.class
 hierophant/cards/Phylactery.class
 hierophant/cards/AuricLance.class
 hierophant/relics/PlaceholderRelic.class
+hierophant/HoardRewardTypePatch.class
 hierophant/cards/CursedGold.class
 hierophant/cards/DisplayOfPower.class
 hierophant/cards/AuricForm.class
@@ -85,6 +89,7 @@ hierophant/cards/Shelter.class
 hierophant/cards/PassingBell.class
 hierophant/cards/DefaultRareSkill.class
 hierophant/cards/DefaultRarePower.class
+hierophant/HoardReward.class
 hierophant/cards/VowOfStability.class
 hierophant/cards/AbstractDefaultCard.class
 hierophant/potions/PlaceholderPotion.class

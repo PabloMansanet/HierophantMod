@@ -12,11 +12,15 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.rewards.RewardSave;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import hierophant.characters.Hierophant;
 import org.apache.logging.log4j.LogManager;
@@ -32,6 +36,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Properties;
+
+import static hierophant.HoardReward.addHoardedGoldToRewards;
 
 
 /*
@@ -54,6 +60,7 @@ public class HierophantMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         EditCharactersSubscriber,
+        PostBattleSubscriber,
         PostInitializeSubscriber {
     // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
     // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
@@ -299,6 +306,24 @@ public class HierophantMod implements
         
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
         logger.info("Done loading badge Image and mod options");
+
+        // Registering hoard and donation rewards
+        BaseMod.registerCustomReward(
+                hierophant.HoardRewardTypePatch.HIEROPHANT_HOARD_REWARD,
+                (rewardSave) -> { 
+                    return new hierophant.HoardReward(rewardSave.amount);
+                }, 
+                (customReward) -> { 
+                    return new RewardSave(customReward.type.toString(), null, ((hierophant.HoardReward)customReward).amount, 0);
+                });
+        BaseMod.registerCustomReward(
+                hierophant.DonationRewardTypePatch.HIEROPHANT_DONATION_REWARD,
+                (rewardSave) -> { 
+                    return new hierophant.DonationReward(rewardSave.amount);
+                }, 
+                (customReward) -> { 
+                    return new RewardSave(customReward.type.toString(), null, ((hierophant.DonationReward)customReward).amount, 0);
+                });
     }
     
     // =============== / POST-INITIALIZE/ =================
@@ -547,6 +572,27 @@ public class HierophantMod implements
             for (Keyword keyword : keywords) {
                 BaseMod.addKeyword(getModID().toLowerCase(), keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
                 //  getModID().toLowerCase() makes your keyword mod specific (it won't show up in other cards that use that word)
+            }
+        }
+    }
+
+    // ================ /SPECIAL POST BATTLE REWARDS/ ===================    
+    @Override
+    public void receivePostBattle(AbstractRoom room)
+    {
+        for (AbstractCard c : AbstractDungeon.player.hand.group) {
+            if (c.hasTag(hierophant.HierophantTags.HIEROPHANT_HOARD)) {
+                addHoardedGoldToRewards(c.magicNumber);
+            }
+        }
+        for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
+            if (c.hasTag(hierophant.HierophantTags.HIEROPHANT_HOARD)) {
+                addHoardedGoldToRewards(c.magicNumber);
+            }
+        }
+        for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
+            if (c.hasTag(hierophant.HierophantTags.HIEROPHANT_HOARD)) {
+                addHoardedGoldToRewards(c.magicNumber);
             }
         }
     }
