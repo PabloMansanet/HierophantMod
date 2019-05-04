@@ -223,7 +223,7 @@
     "UPGRADE_DESCRIPTION": "At the end of your turn, move !M! Doubloons from the exhaust pile to the discard pile."
   },
   "hierophant:AuricForm": {
-     NAME":"Auric Form",
+     "NAME":"Auric Form",
     "DESCRIPTION": "At the start of your turn, lose !M!% of your gold, then gain that much Block."
   },
   "hierophant:Phylactery": {
@@ -240,7 +240,7 @@
   },
   "hierophant:Batter": {
     "NAME":"Batter",
-    "DESCRIPTION": "Deal !D! damage. NL If fully blocked, deal !M! damage."
+    "DESCRIPTION": "Deal !D! damage. NL If fully blocked, strike again for !D! additional damage."
   },
   "hierophant:AuricLance": {
     "NAME":"Auric Lance",

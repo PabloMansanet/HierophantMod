@@ -211,7 +211,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * At the end of your turn, move 1 (2) doubloon from the exhaust pile to the
      discard pile.
 
-## Auric Form (cost 3 power rare)
+## Auric Form (cost 3(2) power rare) DONE
    * At the beginning of your turn, lose 10% of your gold and gain that much
      block. 
 
@@ -229,10 +229,10 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Gain 8 piety, then deal 3(5)\*2 damage.
 
 ## Batter (cost 1 attack uncommon)
-   * Deal 6 (9) damage.
-   * If fully blocked, attack again for 9 (12) damage.
+   * Deal 7 (10) damage.
+   * If fully blocked, attack again for 7 (10) damage.
 
-## Auric Lance (cost 1 attack uncommon)
+## Auric Lance (cost 1 attack uncommon) DONE
    * Deal 13 (18) damage, lose 10 gold.
 
 ## Mercenaries (cost 2 attack common).

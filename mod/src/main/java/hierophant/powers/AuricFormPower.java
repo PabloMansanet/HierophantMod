@@ -63,6 +63,7 @@ public class AuricFormPower extends AbstractPower implements CloneablePowerInter
 
     @Override
     public void atStartOfTurn() {
+        this.flash();
         int goldToLose = (AbstractDungeon.player.gold * this.amount) / 100;
         AbstractPlayer p = AbstractDungeon.player;
         p.loseGold(goldToLose);
