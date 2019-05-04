@@ -223,8 +223,8 @@
     "UPGRADE_DESCRIPTION": "At the end of your turn, move !M! Doubloons from the exhaust pile to the discard pile."
   },
   "hierophant:AuricForm": {
-    "NAME":"Auric Form",
-    "DESCRIPTION": "At the start of your turn, gain Block equal to 10% of your gold, then lose !M!% of your gold."
+     NAME":"Auric Form",
+    "DESCRIPTION": "At the start of your turn, lose !M!% of your gold, then gain that much Block."
   },
   "hierophant:Phylactery": {
     "NAME":"Phylactery",

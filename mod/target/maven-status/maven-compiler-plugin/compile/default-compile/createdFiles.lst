@@ -69,6 +69,7 @@ hierophant/util/IDCheckDontTouchPls.class
 hierophant/cards/Entourage.class
 hierophant/powers/RarePower.class
 hierophant/cards/BulkyChest.class
+hierophant/powers/AuricFormPower.class
 hierophant/cards/Racketeering.class
 hierophant/patches/DefaultInsertPatch.class
 hierophant/powers/PietyPower.class
