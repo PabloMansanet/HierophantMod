@@ -403,7 +403,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new MirrorShield());
         BaseMod.addCard(new ChurchCoffers());
         // BaseMod.addCard(new Sermon());
-        // BaseMod.addCard(new DivineIntervention());
+        BaseMod.addCard(new DivineIntervention());
         // BaseMod.addCard(new Miracle());
         BaseMod.addCard(new Bribe());
         // BaseMod.addCard(new Flagellation());
@@ -471,7 +471,7 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(MirrorShield.ID);
         UnlockTracker.unlockCard(ChurchCoffers.ID);
         // UnlockTracker.unlockCard(Sermon.ID);
-        // UnlockTracker.unlockCard(DivineIntervention.ID);
+        UnlockTracker.unlockCard(DivineIntervention.ID);
         // UnlockTracker.unlockCard(Miracle.ID);
         UnlockTracker.unlockCard(Bribe.ID);
         // UnlockTracker.unlockCard(Flagellation.ID);
