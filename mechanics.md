@@ -229,7 +229,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Gilded.
    * Discard a card. Deal 6 (9) damage, plus 6 (9) if doubloon.
 
-## Zeal (cost 1 attack common) 
+## Zeal (cost 1 attack uncommon) 
    * Deal 10 (14) damage. Gain Piety equal to the amount blocked.
 
 ## Three Lashes (cost 0 attack uncommon)
