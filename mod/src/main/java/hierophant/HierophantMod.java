@@ -380,7 +380,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new WrathOfGod());
         BaseMod.addCard(new SealAway());
         // BaseMod.addCard(new Smite());
-        // BaseMod.addCard(new Upheaval());
+        BaseMod.addCard(new Upheaval());
         // BaseMod.addCard(new RodSlam());
         BaseMod.addCard(new Punish());
         // BaseMod.addCard(new Anathema());
@@ -449,7 +449,7 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(WrathOfGod.ID);
         UnlockTracker.unlockCard(SealAway.ID);
         // UnlockTracker.unlockCard(Smite.ID);
-        // UnlockTracker.unlockCard(Upheaval.ID);
+        UnlockTracker.unlockCard(Upheaval.ID);
         // UnlockTracker.unlockCard(RodSlam.ID);
         UnlockTracker.unlockCard(Punish.ID);
         // UnlockTracker.unlockCard(Anathema.ID);

@@ -280,7 +280,7 @@
   },
   "hierophant:SealAway": {
     "NAME":"Seal Away",
-    "DESCRIPTION": "Deal !D! damage. NL Give the enemy !M! Block."
+    "DESCRIPTION": "Deal !D! damage. NL Enemy gains !M! Block."
   },
   "hierophant:Smite": {
     "NAME":"Smite",
@@ -288,7 +288,8 @@
   },
   "hierophant:Upheaval": {
     "NAME":"Upheaval",
-    "DESCRIPTION": "Deal damage equal to twice the enemy's block. NL hierophant:Tithe."
+    "DESCRIPTION": "Deal damage equal to twice the enemy's block. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:RodSlam": {
     "NAME":"Rod Slam",

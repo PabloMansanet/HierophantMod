@@ -44,5 +44,7 @@ public class CornucopiaAction extends com.megacrit.cardcrawl.actions.AbstractGam
         if (!this.freeToPlayOnce) {
             this.p.energy.use(EnergyPanel.totalCount);
         }
+
+        this.isDone = true;
     }
 }

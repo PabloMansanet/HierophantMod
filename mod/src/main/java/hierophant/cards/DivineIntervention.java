@@ -48,7 +48,7 @@ public class DivineIntervention extends AbstractDynamicCard {
         }
         AbstractDungeon.actionManager.addToBottom(new HealAction(m, p, healAmount));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PietyPower(p, p, magicNumber), healAmount * magicNumber));
+                new PietyPower(p, p, healAmount * magicNumber), healAmount * magicNumber));
     }
 
     @Override
