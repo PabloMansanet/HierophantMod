@@ -95,7 +95,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Toll the Bells (cost 1 (0) skill uncommon)
    * Gain 2 energy, 2 enlightened, and shuffle 2 Daze into your draw pile.
 
-## Dazzle (cost 0 skill common)
+## Dazzle (cost 0 skill uncommon)
    * Gilded.
    * Gain 4 (6) block, then 3 (4) block for each doubloon in your hand.
 

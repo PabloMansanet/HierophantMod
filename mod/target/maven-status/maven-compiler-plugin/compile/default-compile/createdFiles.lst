@@ -49,6 +49,7 @@ hierophant/characters/Hierophant.class
 hierophant/cards/ChurchCoffers.class
 hierophant/cards/Smite.class
 hierophant/powers/GenerosityPower.class
+com/megacrit/cardcrawl/actions/defect/DazzleAction.class
 hierophant/cards/Upheaval.class
 hierophant/cards/DefaultAttackWithVariable.class
 hierophant/cards/DefaultCommonPower.class

@@ -161,6 +161,7 @@ public class Hierophant extends CustomPlayer {
         retVal.add(Punish.ID);
         // test
         retVal.add(Cornucopia.ID);
+        retVal.add(Dazzle.ID);
         return retVal;
     }
 

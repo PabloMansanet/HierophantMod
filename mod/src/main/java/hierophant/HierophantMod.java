@@ -395,7 +395,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new Endure());
         BaseMod.addCard(new ConvertCurrency());
         // BaseMod.addCard(new RecallFunds());
-        // BaseMod.addCard(new Dazzle());
+        BaseMod.addCard(new Dazzle());
         // BaseMod.addCard(new Embezzle());
         // BaseMod.addCard(new Entourage());
         BaseMod.addCard(new Blessing());
@@ -463,7 +463,7 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(Endure.ID);
         UnlockTracker.unlockCard(ConvertCurrency.ID);
         // UnlockTracker.unlockCard(RecallFunds.ID);
-        // UnlockTracker.unlockCard(Dazzle.ID);
+        UnlockTracker.unlockCard(Dazzle.ID);
         // UnlockTracker.unlockCard(Embezzle.ID);
         // UnlockTracker.unlockCard(Entourage.ID);
         UnlockTracker.unlockCard(Blessing.ID);
