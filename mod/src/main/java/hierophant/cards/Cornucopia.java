@@ -1,12 +1,13 @@
 
 package hierophant.cards;
 
+import com.megacrit.cardcrawl.actions.defect.CornucopiaAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 
@@ -21,39 +22,33 @@ public class Cornucopia extends AbstractDynamicCard {
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-
-    // /TEXT DECLARATION/
-
-
-    // STAT DECLARATION
-
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 0;
-    private static final int MAGIC = 8;
-
-    // /STAT DECLARATION/
+    private static final int COST = -1; // X
 
     public Cornucopia() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        magicNumber = baseMagicNumber = MAGIC;
         exhaust = true;
     }
 
-    // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
+        if (this.energyOnUse < EnergyPanel.totalCount) {
+          this.energyOnUse = EnergyPanel.totalCount;
+        }
+ 
+        AbstractDungeon.actionManager.addToBottom(
+                new CornucopiaAction(p, this.freeToPlayOnce, this.upgraded, this.energyOnUse));
+
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(8);
         }
     }
 }

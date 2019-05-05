@@ -32,7 +32,7 @@ public class CurrencyExchangeAction extends com.megacrit.cardcrawl.actions.Abstr
                 return; 
             }
             if (this.p.hand.size() == 1) {
-                if (this.p.hand.getBottomCard().cardID == DOUBLOON_ID) {
+                if (this.p.hand.getBottomCard().cardID.equals(DOUBLOON_ID)) {
                     AbstractDungeon.actionManager.addToTop(new GainEnergyAction(this.amount + DOUBLOON_BONUS));
                 } else {
                     AbstractDungeon.actionManager.addToTop(new GainEnergyAction(this.amount));
@@ -48,7 +48,7 @@ public class CurrencyExchangeAction extends com.megacrit.cardcrawl.actions.Abstr
 
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                if (c.cardID == DOUBLOON_ID) {
+                if (c.cardID.equals(DOUBLOON_ID)) {
                     AbstractDungeon.actionManager.addToTop(new GainEnergyAction(this.amount + DOUBLOON_BONUS));
                 } else {
                     AbstractDungeon.actionManager.addToTop(new GainEnergyAction(this.amount));

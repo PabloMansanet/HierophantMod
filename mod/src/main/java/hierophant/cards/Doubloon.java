@@ -47,10 +47,16 @@ public class Doubloon extends AbstractDynamicCard {
         exhaust = true;
     }
 
+    public Doubloon(boolean upgraded) {
+        this();
+        if (upgraded) {
+            upgrade();
+        }
+    }
+
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int draw = DRAW;
         if (p.hasPower(GENEROSITY_ID)) {
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW + p.getPower(GENEROSITY_ID).amount));
         } else {

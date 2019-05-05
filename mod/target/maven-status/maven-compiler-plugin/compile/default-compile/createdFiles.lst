@@ -18,6 +18,7 @@ hierophant/cards/Martyrdom.class
 hierophant/cards/Defend_Hierophant.class
 hierophant/cards/Batter.class
 hierophant/cards/RecallFunds.class
+com/megacrit/cardcrawl/actions/defect/CoinFlingAction.class
 hierophant/cards/CardTemplate.class
 hierophant/relics/DonationBoxRelic.class
 hierophant/cards/MirrorShield.class
@@ -70,6 +71,7 @@ hierophant/cards/AbstractDynamicCard.class
 hierophant/cards/Blessing.class
 hierophant/relics/DefaultClickableRelic.class
 hierophant/cards/Prayer.class
+com/megacrit/cardcrawl/actions/defect/CornucopiaAction.class
 hierophant/util/IDCheckDontTouchPls.class
 hierophant/cards/Entourage.class
 hierophant/patches/GildedPatch$ObtainCardConstructorPatch.class

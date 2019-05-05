@@ -206,13 +206,17 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * When you exhaust a doubloon, draw an additional card.
    * Enhanced: Innate.
 
+## Charity (cost 1 power uncommon)
+   * Gilded
+   * When you play a Doubloon, gain 4 (6) piety.
+
 ## Cursed Gold (cost 0 power uncommon)
    * Gilded
    * At the end of your turn, move 1 (2) doubloon from the exhaust pile to the
      discard pile.
 
 ## Auric Form (cost 3(2) power rare) DONE
-   * At the beginning of your turn, lose 10% of your gold and gain that much
+   * At the beginning of your turn, lose 5% of your gold and gain that much
      block. 
 
 ## Phylactery (cost 5 power rare).

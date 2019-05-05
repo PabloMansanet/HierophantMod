@@ -80,8 +80,8 @@
   },
   "hierophant:ConvertCurrency": {
     "NAME": "Convert Currency",
-    "DESCRIPTION": "Exhaust a card in your hand. NL Gain [E], or [E] [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. ",
-    "UPGRADE_DESCRIPTION": "Exhaust a card in your hand. NL Gain [E] [E], or [E] [E] [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. "
+    "DESCRIPTION": "Exhaust a card. NL Gain [E] , or [E] [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. ",
+    "UPGRADE_DESCRIPTION": "Exhaust a card. NL Gain [E] [E] , or [E] [E] [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. "
   },
   "hierophant:RecallFunds": {
     "NAME": "Recall Funds",
@@ -161,7 +161,7 @@
   },
   "hierophant:BulkyChest": {
     "NAME":"Bulky Chest",
-    "DESCRIPTION": "Unplayable. NL When you draw Bulky Chest, lose [E]. NL hierophant:Hoard !M!.",
+    "DESCRIPTION": "Unplayable. NL When you draw this card, lose [E]. NL hierophant:Hoard !M!.",
     "EXTENDED_DESCRIPTION": [
       "I can't play this card."
     ]
@@ -228,7 +228,7 @@
   },
   "hierophant:AuricForm": {
      "NAME":"Auric Form",
-    "DESCRIPTION": "At the start of your turn, lose !M!% of your gold, then gain that much Block."
+    "DESCRIPTION": "At the start of your turn, lose !M! % of your gold, then gain that much Block."
   },
   "hierophant:Phylactery": {
     "NAME":"Phylactery",
@@ -236,11 +236,7 @@
   },
   "hierophant:CoinFling": {
     "NAME":"Coin Fling",
-    "DESCRIPTION": "Deal !D! damage. NL Discard a card. Deals !D! additional damage if you discarded a Doubloon. NL hierophant:Gilded."
-  },
-  "hierophant:HolyStrike": {
-    "NAME":"Holy Strike",
-    "DESCRIPTION": "Gain !M! Piety, NL then deal !D! damage twice."
+    "DESCRIPTION": "NL Discard a card. NL Deal !D! damage. NL Deals double damage if you discarded a Doubloon. NL hierophant:Gilded."
   },
   "hierophant:Batter": {
     "NAME":"Batter",
@@ -280,7 +276,7 @@
   },
   "hierophant:ThreeLashes": {
     "NAME":"Three Lashes",
-    "DESCRIPTION": "NL Gain !M! hierophant:Piety. Deal !D! damage three times."
+    "DESCRIPTION": "NL Gain !M! hierophant:Piety. NL Deal !D! damage three times."
   },
   "hierophant:SealAway": {
     "NAME":"Seal Away",

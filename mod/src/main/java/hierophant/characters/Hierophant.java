@@ -159,10 +159,8 @@ public class Hierophant extends CustomPlayer {
         }
         retVal.add(ChurchCoffers.ID);
         retVal.add(Punish.ID);
-        retVal.add(ConvertCurrency.ID);
-        retVal.add(ConvertCurrency.ID);
-        retVal.add(Doubloon.ID);
-        retVal.add(Doubloon.ID);
+        // test
+        retVal.add(Cornucopia.ID);
         return retVal;
     }
 
