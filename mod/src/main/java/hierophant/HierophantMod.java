@@ -377,7 +377,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new SolarFlare());
         // BaseMod.addCard(new LocustPlague());
         // BaseMod.addCard(new WrathOfGod());
-        // BaseMod.addCard(new SealAway());
+        BaseMod.addCard(new SealAway());
         // BaseMod.addCard(new Smite());
         // BaseMod.addCard(new Upheaval());
         // BaseMod.addCard(new RodSlam());
@@ -399,7 +399,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new Embezzle());
         // BaseMod.addCard(new Entourage());
         BaseMod.addCard(new Blessing());
-        // BaseMod.addCard(new Shelter());
+        BaseMod.addCard(new Shelter());
         // BaseMod.addCard(new MirrorShield());
         BaseMod.addCard(new ChurchCoffers());
         // BaseMod.addCard(new Sermon());
@@ -445,7 +445,7 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(SolarFlare.ID);
         // UnlockTracker.unlockCard(LocustPlague.ID);
         // UnlockTracker.unlockCard(WrathOfGod.ID);
-        // UnlockTracker.unlockCard(SealAway.ID);
+        UnlockTracker.unlockCard(SealAway.ID);
         // UnlockTracker.unlockCard(Smite.ID);
         // UnlockTracker.unlockCard(Upheaval.ID);
         // UnlockTracker.unlockCard(RodSlam.ID);
@@ -467,7 +467,7 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(Embezzle.ID);
         // UnlockTracker.unlockCard(Entourage.ID);
         UnlockTracker.unlockCard(Blessing.ID);
-        // UnlockTracker.unlockCard(Shelter.ID);
+        UnlockTracker.unlockCard(Shelter.ID);
         // UnlockTracker.unlockCard(MirrorShield.ID);
         UnlockTracker.unlockCard(ChurchCoffers.ID);
         // UnlockTracker.unlockCard(Sermon.ID);

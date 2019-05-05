@@ -101,7 +101,7 @@
   },
   "hierophant:Shelter": {
     "NAME": "Shelter",
-    "DESCRIPTION": "Gain !B! Block. NL ALL enemies gain !B! Block."
+    "DESCRIPTION": "Gain !B! Block. NL ALL enemies gain !M! Block."
   },
   "hierophant:Encroach": {
     "NAME": "Encroach",

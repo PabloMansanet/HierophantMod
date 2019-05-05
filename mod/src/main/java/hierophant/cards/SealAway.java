@@ -2,6 +2,7 @@ package hierophant.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -24,13 +25,9 @@ public class SealAway extends AbstractDynamicCard {
     private static final int COST = 1;
     private static final int UPGRADED_COST = 1;
 
-    private static final int DAMAGE = 12;
-    private static final int UPGRADE_PLUS_DMG = 18;
-
-    private static final int MAGIC = 3;
-    private static final int UPGRADE_PLUS_MAGIC = -1;
-
-
+    private static final int DAMAGE = 10;
+    private static final int UPGRADE_PLUS_DMG = 5 ;
+    private static final int MAGIC = 10;
 
     public SealAway() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -42,7 +39,8 @@ public class SealAway extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(m, p, magicNumber));
     }
 
     @Override
@@ -50,7 +48,6 @@ public class SealAway extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }

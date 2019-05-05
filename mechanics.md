@@ -111,7 +111,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Heal 8 (12). NL Heal ALL enemies 8 (12). Exhaust.
 
 ## Shelter (cost 1 skill common)
-   * Block 8 (12), Monsters gain block 8 (12).
+   * Block 10 (15), Monsters gain block 10 (15).
 
 ## Mirror Shield (cost 0 skill uncommon)
    * Gain block equal to an enemy's block. (Draw a card)
@@ -268,7 +268,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Enhanced: 80 damage, 16 to yourself.
 
 ## Seal Away (cost 1 attack common)
-   * Deal 10 (14) damage, then give the enemy 10 (14) block.
+   * Deal 10 (15) damage, then give the enemy 10 block.
 
 ## Smite (cost 2 attack common)
    * Deal 12 (18) damage.
