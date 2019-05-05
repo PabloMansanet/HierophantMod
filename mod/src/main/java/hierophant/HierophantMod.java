@@ -374,7 +374,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Zeal());
         // BaseMod.addCard(new Mercenaries());
         // BaseMod.addCard(new SearingVirtue());
-        // BaseMod.addCard(new PassingBell());
+        BaseMod.addCard(new PassingBell());
         // BaseMod.addCard(new SolarFlare());
         // BaseMod.addCard(new LocustPlague());
         // BaseMod.addCard(new WrathOfGod());
@@ -419,7 +419,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Cornucopia());
         BaseMod.addCard(new Racketeering());
         // BaseMod.addCard(new TollTheBells());
-        // BaseMod.addCard(new Encroach());
+        BaseMod.addCard(new Encroach());
 
         // // Powers
         // BaseMod.addCard(new VowOfPoverty());
@@ -443,7 +443,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Zeal.ID);
         // UnlockTracker.unlockCard(Mercenaries.ID);
         // UnlockTracker.unlockCard(SearingVirtue.ID);
-        // UnlockTracker.unlockCard(PassingBell.ID);
+        UnlockTracker.unlockCard(PassingBell.ID);
         // UnlockTracker.unlockCard(SolarFlare.ID);
         // UnlockTracker.unlockCard(LocustPlague.ID);
         // UnlockTracker.unlockCard(WrathOfGod.ID);
@@ -488,7 +488,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Cornucopia.ID);
         UnlockTracker.unlockCard(Racketeering.ID);
         // UnlockTracker.unlockCard(TollTheBells.ID);
-        // UnlockTracker.unlockCard(Encroach.ID);
+        UnlockTracker.unlockCard(Encroach.ID);
 
         // // Powers
         // UnlockTracker.unlockCard(VowOfPoverty.ID);

@@ -171,8 +171,8 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Cornucopia (cost X skill, uncommon)
    * Add X (upgraded) doubloons to your hand. Exhaust
 
-## Racketeering (cost 1 (0) skill, uncommon) DONE (bugged?)
-   * Give an enemy 10 block. Draw a card for each 5 block on that enemy.
+## Racketeering (cost 0) skill, uncommon) DONE 
+   * Give an enemy 5(10) block. Draw a card for each 5 block on that enemy.
 
 ## Powers:
 

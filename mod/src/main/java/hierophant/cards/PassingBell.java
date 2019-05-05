@@ -1,6 +1,7 @@
 package hierophant.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -8,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
+import hierophant.powers.EnlightenedPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
@@ -24,13 +26,11 @@ public class PassingBell extends AbstractDynamicCard {
     private static final int COST = 1;
     private static final int UPGRADED_COST = 1;
 
-    private static final int DAMAGE = 12;
-    private static final int UPGRADE_PLUS_DMG = 18;
+    private static final int DAMAGE = 7;
+    private static final int UPGRADE_PLUS_DMG = 9;
 
-    private static final int MAGIC = 3;
-    private static final int UPGRADE_PLUS_MAGIC = -1;
-
-
+    private static final int MAGIC = 1;
+    private static final int UPGRADE_PLUS_MAGIC = 1;
 
     public PassingBell() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -42,7 +42,9 @@ public class PassingBell extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new EnlightenedPower(p, p, magicNumber), magicNumber));
     }
 
     @Override

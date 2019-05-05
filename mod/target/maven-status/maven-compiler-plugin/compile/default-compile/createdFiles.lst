@@ -83,6 +83,7 @@ hierophant/cards/Racketeering.class
 hierophant/patches/DefaultInsertPatch.class
 hierophant/powers/PietyPower.class
 hierophant/cards/WrathOfGod.class
+hierophant/powers/EnlightenedPower.class
 hierophant/cards/Phylactery.class
 hierophant/cards/AuricLance.class
 hierophant/relics/PlaceholderRelic.class

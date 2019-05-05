@@ -240,7 +240,7 @@
   },
   "hierophant:Batter": {
     "NAME":"Batter",
-    "DESCRIPTION": "Deal !D! damage. NL If fully blocked, hit again for !D! additional damage."
+    "DESCRIPTION": "Deal !D! damage. NL If any of it is blocked, hit again for !D! additional damage."
   },
   "hierophant:AuricLance": {
     "NAME":"Auric Lance",

@@ -24,8 +24,8 @@ public class Batter extends AbstractDynamicCard {
     private static final int COST = 1;
     private static final int UPGRADED_COST = 1;
 
-    private static final int DAMAGE = 7;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int DAMAGE = 9;
+    private static final int UPGRADE_PLUS_DMG = 4;
 
 
     public Batter() {
@@ -35,7 +35,7 @@ public class Batter extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (damage <= m.currentBlock) {
+        if (m.currentBlock > 0) {
             AbstractDungeon.actionManager.addToBottom(
                     new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
             AbstractDungeon.actionManager.addToBottom(

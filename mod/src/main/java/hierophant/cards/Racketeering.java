@@ -28,9 +28,9 @@ public class Racketeering extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 1;
-    private static final int UPGRADED_COST = 0;
-    private static final int MAGIC = 10;
+    private static final int COST = 0;
+    private static final int MAGIC = 5;
+    private static final int UPGRADE_PLUS_MAGIC = 5;
     private static final int BLOCK_PER_DRAW = 5;
 
     public Racketeering() {
@@ -48,7 +48,7 @@ public class Racketeering extends AbstractDynamicCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(UPGRADED_COST);
+            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }

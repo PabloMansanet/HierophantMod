@@ -155,6 +155,8 @@ public class Hierophant extends CustomPlayer {
    
         for(int i = 0; i < 4; i = i + 1) {
            retVal.add(Strike_Hierophant.ID);
+        }
+        for(int i = 0; i < 4; i = i + 1) {
            retVal.add(Defend_Hierophant.ID);
         }
         retVal.add(ChurchCoffers.ID);
