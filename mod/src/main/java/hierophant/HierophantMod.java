@@ -414,7 +414,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new Prayer());
         // BaseMod.addCard(new Repentance());
         // BaseMod.addCard(new SecretStash());
-        // BaseMod.addCard(new Levitation());
+        BaseMod.addCard(new Levitation());
         BaseMod.addCard(new BulkyChest());
         BaseMod.addCard(new Cornucopia());
         BaseMod.addCard(new Racketeering());
@@ -483,7 +483,7 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(Prayer.ID);
         // UnlockTracker.unlockCard(Repentance.ID);
         // UnlockTracker.unlockCard(SecretStash.ID);
-        // UnlockTracker.unlockCard(Levitation.ID);
+        UnlockTracker.unlockCard(Levitation.ID);
         UnlockTracker.unlockCard(BulkyChest.ID);
         UnlockTracker.unlockCard(Cornucopia.ID);
         UnlockTracker.unlockCard(Racketeering.ID);

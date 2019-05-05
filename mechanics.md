@@ -160,7 +160,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Secret Stash (cost 1 skill, uncommon)
    * Ethereal. Hoard 14 (20).
 
-## Levitation (cost 4 (3) skill, uncommon)
+## Levitation (cost 5 (3) skill, uncommon)
    * Tithe.
    * Gain 1 intangible.
    * Exhaust.
