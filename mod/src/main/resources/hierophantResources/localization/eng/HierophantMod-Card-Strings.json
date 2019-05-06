@@ -76,12 +76,12 @@
   },
   "hierophant:HolyVerse": {
     "NAME": "Holy Verse",
-    "DESCRIPTION": "Gain !M! hierophant:Piety."
+    "DESCRIPTION": "Gain !hierophant:P! hierophant:Piety."
   },
   "hierophant:ConvertCurrency": {
     "NAME": "Convert Currency",
-    "DESCRIPTION": "Exhaust a card. NL Gain [E] , or [E] [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. ",
-    "UPGRADE_DESCRIPTION": "Exhaust a card. NL Gain [E] [E] , or [E] [E] [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. "
+    "DESCRIPTION": "Exhaust a card. NL Gain [E] , then  [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. ",
+    "UPGRADE_DESCRIPTION": "Exhaust a card. NL Gain [E] [E] , then [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. "
   },
   "hierophant:RecallFunds": {
     "NAME": "Recall Funds",
@@ -118,11 +118,11 @@
   },
   "hierophant:Sermon": {
     "NAME": "Sermon",
-    "DESCRIPTION": "Gain !M! hierophant:Piety. NL Gain !M! additional hierophant:Piety per unique active hierophant:Vow."
+    "DESCRIPTION": "Gain !hierophant:P! hierophant:Piety. NL Gain !hierophant:P! additional hierophant:Piety per unique active hierophant:Vow."
   },
   "hierophant:Miracle": {
     "NAME": "Miracle",
-    "DESCRIPTION": "Exhaust ALL status cards in your hand. NL Gain !M! hierophant:Piety per card exhausted."
+    "DESCRIPTION": "Exhaust ALL status cards in your hand. NL Gain !hierophant:P! hierophant:Piety per card exhausted."
   },
   "hierophant:Bribe": {
     "NAME": "Bribe",
@@ -130,7 +130,7 @@
   },
   "hierophant:Flagellation": {
     "NAME": "Flagellation",
-    "DESCRIPTION": "Add 2 Wounds to your hand. NL Gain !M! hierophant:Piety."
+    "DESCRIPTION": "Add 2 Wounds to your hand. NL Gain !hierophant:P! hierophant:Piety."
   },
   "hierophant:PristineSoul": {
     "NAME": "Pristine Soul",
@@ -185,7 +185,7 @@
   },
   "hierophant:Racketeering": {
     "NAME":"Racketeering",
-    "DESCRIPTION": "Give an enemy 10 Block. Draw a card for each 5 Block on that enemy."
+    "DESCRIPTION": "Give an enemy !M! Block. Draw a card for each 5 Block on that enemy."
   },
   "hierophant:VowOfPoverty": {
     "NAME":"Vow Of Poverty",
@@ -199,8 +199,8 @@
   },
   "hierophant:VowOfSanctity": {
     "NAME":"Vow Of Sanctity",
-    "DESCRIPTION": "Lose 3 additional hierophant:Piety when dealing damage. NL At the end of your turn, gain 10 hierophant:Piety.",
-    "UPGRADE_DESCRIPTION": "Lose 3 additional hierophant:Piety when dealing damage. NL At the end of your turn, gain 10 hierophant:Piety. NL Innate."
+    "DESCRIPTION": "Lose 3 additional hierophant:Piety when dealing damage. NL At the end of your turn, gain !hierophant:P! hierophant:Piety.",
+    "UPGRADE_DESCRIPTION": "Lose 3 additional hierophant:Piety when dealing damage. NL At the end of your turn, gain !hierophant:P! hierophant:Piety. NL Innate."
   },
   "hierophant:VowOfStability": {
     "NAME":"Vow Of Stability",
@@ -214,12 +214,12 @@
   },
   "hierophant:Martyrdom": {
     "NAME":"Martyrdom",
-    "DESCRIPTION": "Shuffle three Wounds into your draw pile. NL Whenever you draw a Status card, gain !M! hierophant:Piety."
+    "DESCRIPTION": "Shuffle three Wounds into your draw pile. NL Whenever you draw a Status card, gain !hierophant:P! hierophant:Piety."
   },
   "hierophant:Generosity": {
     "NAME":"Generosity",
     "DESCRIPTION": "Whenever you exhaust a Doubloon, draw an additional card. NL hierophant:Gilded.",
-    "UPGRADE_DESCRIPTION": "Whenever you exhaust a Doubloon, draw an additional card. NL Innate. NL hierophant:Gilded."
+    "UPGRADE_DESCRIPTION": "Whenever you exhaust a Doubloon, draw an additional card. NL hierophant:Gilded. NL Innate."
   },
   "hierophant:CursedGold": {
     "NAME":"Cursed Gold",
@@ -240,7 +240,7 @@
   },
   "hierophant:Batter": {
     "NAME":"Batter",
-    "DESCRIPTION": "Deal !D! damage. NL If any of it is blocked, hit again for !D! additional damage."
+    "DESCRIPTION": "Deal !D! damage. NL If any damage is blocked, deal !D! additional damage."
   },
   "hierophant:AuricLance": {
     "NAME":"Auric Lance",
@@ -276,7 +276,7 @@
   },
   "hierophant:ThreeLashes": {
     "NAME":"Three Lashes",
-    "DESCRIPTION": "NL Gain !M! hierophant:Piety. NL Deal !D! damage three times."
+    "DESCRIPTION": "NL Gain !hierophant:P! hierophant:Piety. NL Deal !D! damage three times."
   },
   "hierophant:SealAway": {
     "NAME":"Seal Away",
@@ -288,7 +288,7 @@
   },
   "hierophant:Upheaval": {
     "NAME":"Upheaval",
-    "DESCRIPTION": "Deal damage equal to twice the enemy's block. NL hierophant:Tithe.",
+    "DESCRIPTION": "Deal damage equal to twice the enemy's Block. NL hierophant:Tithe.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:RodSlam": {
@@ -297,7 +297,7 @@
   },
   "hierophant:Punish": {
     "NAME":"Punish",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Piety."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !hierophant:P! hierophant:Piety."
   },
   "hierophant:Anathema": {
     "NAME":"Anathema",
@@ -310,7 +310,7 @@
   },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",
-    "DESCRIPTION": "Lose 10% of your gold, then deal that much damage.",
+    "DESCRIPTION": "Lose 10% of your gold. NL Deal that much damage.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:DisplayOfPower": {

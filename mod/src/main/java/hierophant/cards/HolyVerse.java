@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 import hierophant.powers.PietyPower;
@@ -30,28 +29,25 @@ public class HolyVerse extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int MAGIC = 8;
-    private static final int UPGRADE_PLUS_MAGIC = 4;
-
-    // /STAT DECLARATION/
+    private static final int PIETY = 8;
+    private static final int UPGRADE_PLUS_PIETY = 4;
 
     public HolyVerse() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        magicNumber = baseMagicNumber = MAGIC;
+        piety = basePiety = PIETY;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PietyPower(p, p, magicNumber), magicNumber));
-
+                new PietyPower(p, p, piety), piety));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
+            this.upgradePiety(UPGRADE_PLUS_PIETY);
         }
     }
 }

@@ -15,7 +15,6 @@ import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
@@ -24,14 +23,13 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import hierophant.characters.Hierophant;
 import hierophant.relics.DonationBoxRelic;
+import hierophant.variables.PietyNumber;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import hierophant.cards.*;
-import hierophant.events.IdentityCrisisEvent;
 import hierophant.util.IDCheckDontTouchPls;
 import hierophant.util.TextureLoader;
 import hierophant.variables.DefaultCustomVariable;
-import hierophant.variables.DefaultSecondMagicNumber;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -359,10 +357,9 @@ public class HierophantMod implements
         //Ignore this
         pathCheck();
         // Add the Custom Dynamic Variables
-        logger.info("Add variabls");
+        logger.info("Add variables");
         // Add the Custom Dynamic variabls
-        BaseMod.addDynamicVariable(new DefaultCustomVariable());
-        BaseMod.addDynamicVariable(new DefaultSecondMagicNumber());
+        BaseMod.addDynamicVariable(new PietyNumber());
         
         logger.info("Adding cards");
         // Attacks
@@ -386,14 +383,14 @@ public class HierophantMod implements
         // BaseMod.addCard(new Anathema());
         BaseMod.addCard(new Blasphemy());
         BaseMod.addCard(new AuricBeam());
-        // BaseMod.addCard(new DisplayOfPower());
+        BaseMod.addCard(new DisplayOfPower());
 
         // // Skills
         BaseMod.addCard(new Defend_Hierophant());
         BaseMod.addCard(new Doubloon());
-        // BaseMod.addCard(new MorningPrayer());
+        BaseMod.addCard(new MorningPrayer());
         BaseMod.addCard(new HolyVerse());
-        // BaseMod.addCard(new Endure());
+        BaseMod.addCard(new Endure());
         BaseMod.addCard(new ConvertCurrency());
         // BaseMod.addCard(new RecallFunds());
         BaseMod.addCard(new Dazzle());
@@ -410,7 +407,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new Flagellation());
         // BaseMod.addCard(new PristineSoul());
         // BaseMod.addCard(new Prophecy());
-        // BaseMod.addCard(new Doomsaying());
+        BaseMod.addCard(new Doomsaying());
         // BaseMod.addCard(new Prayer());
         // BaseMod.addCard(new Repentance());
         // BaseMod.addCard(new SecretStash());
@@ -455,14 +452,14 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(Anathema.ID);
         UnlockTracker.unlockCard(Blasphemy.ID);
         UnlockTracker.unlockCard(AuricBeam.ID);
-        // UnlockTracker.unlockCard(DisplayOfPower.ID);
+        UnlockTracker.unlockCard(DisplayOfPower.ID);
 
         // // Skills
         UnlockTracker.unlockCard(Defend_Hierophant.ID);
         UnlockTracker.unlockCard(Doubloon.ID);
-        // UnlockTracker.unlockCard(MorningPrayer.ID);
+        UnlockTracker.unlockCard(MorningPrayer.ID);
         UnlockTracker.unlockCard(HolyVerse.ID);
-        // UnlockTracker.unlockCard(Endure.ID);
+        UnlockTracker.unlockCard(Endure.ID);
         UnlockTracker.unlockCard(ConvertCurrency.ID);
         // UnlockTracker.unlockCard(RecallFunds.ID);
         UnlockTracker.unlockCard(Dazzle.ID);
@@ -479,8 +476,8 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(Flagellation.ID);
         // UnlockTracker.unlockCard(PristineSoul.ID);
         // UnlockTracker.unlockCard(Prophecy.ID);
-        // UnlockTracker.unlockCard(Doomsaying.ID);
-        // UnlockTracker.unlockCard(Prayer.ID);
+        UnlockTracker.unlockCard(Doomsaying.ID);
+        UnlockTracker.unlockCard(Prayer.ID);
         // UnlockTracker.unlockCard(Repentance.ID);
         // UnlockTracker.unlockCard(SecretStash.ID);
         UnlockTracker.unlockCard(Levitation.ID);

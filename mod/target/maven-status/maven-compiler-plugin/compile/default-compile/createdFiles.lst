@@ -1,5 +1,5 @@
-hierophant/cards/HolyStrike.class
 hierophant/DonationRewardTypePatch.class
+hierophant/powers/EndurePower.class
 hierophant/characters/Hierophant$Enums.class
 hierophant/cards/Doomsaying.class
 hierophant/cards/Bribe.class
@@ -12,6 +12,7 @@ com/megacrit/cardcrawl/actions/defect/CurrencyExchangeAction.class
 hierophant/events/IdentityCrisisEvent.class
 hierophant/cards/PristineSoul.class
 hierophant/util/TextureLoader.class
+hierophant/cards/AbstractHierophantCard.class
 hierophant/cards/DefaultCommonAttack.class
 hierophant/orbs/DefaultOrb.class
 hierophant/cards/Martyrdom.class
@@ -21,6 +22,7 @@ hierophant/cards/RecallFunds.class
 com/megacrit/cardcrawl/actions/defect/CoinFlingAction.class
 hierophant/cards/CardTemplate.class
 hierophant/relics/DonationBoxRelic.class
+hierophant/variables/PietyNumber.class
 hierophant/cards/MirrorShield.class
 hierophant/cards/DefaultUncommonPower.class
 hierophant/cards/Flagellation.class
@@ -54,7 +56,6 @@ hierophant/cards/Upheaval.class
 hierophant/cards/DefaultAttackWithVariable.class
 hierophant/cards/DefaultCommonPower.class
 hierophant/cards/Doubloon.class
-hierophant/variables/DefaultSecondMagicNumber.class
 hierophant/patches/relics/BottledPlaceholderField.class
 hierophant/patches/relics/BottledPlaceholderField$MakeStatEquivalentCopy.class
 hierophant/cards/DivineIntervention.class
@@ -70,6 +71,7 @@ hierophant/cards/DefaultRareAttack.class
 hierophant/cards/Dazzle.class
 hierophant/cards/AbstractDynamicCard.class
 hierophant/cards/Blessing.class
+com/megacrit/cardcrawl/actions/defect/DisplayOfPowerAction.class
 hierophant/relics/DefaultClickableRelic.class
 hierophant/cards/Prayer.class
 com/megacrit/cardcrawl/actions/defect/CornucopiaAction.class
@@ -102,7 +104,6 @@ hierophant/cards/DefaultRareSkill.class
 hierophant/cards/DefaultRarePower.class
 hierophant/HoardReward.class
 hierophant/cards/VowOfStability.class
-hierophant/cards/AbstractDefaultCard.class
 hierophant/potions/PlaceholderPotion.class
 hierophant/cards/Strike_Hierophant.class
 hierophant/relics/PlaceholderRelic2.class

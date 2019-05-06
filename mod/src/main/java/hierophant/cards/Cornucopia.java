@@ -49,6 +49,7 @@ public class Cornucopia extends AbstractDynamicCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.initializeDescription();
         }
     }
 }

@@ -77,7 +77,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 ## Holy Verse (cost 1 skill common) DONE
    * Gain 8 (12) piety.
 
-## Endure (cost 1 skill common)
+## Endure (cost 1 skill uncommon)
    * Gain 8 (12) block. Until your next turn, gain 4 (6) piety every time you are
      attacked.
 
@@ -148,10 +148,10 @@ be prevented through Artifact. A few cards key off the number of active vows.
      decreasing cost order. Exhaust.
 
 ## Doomsaying (cost 0 skill, uncommon)
-   * Discard the top two (four) cards of your draw pile. Gain energy equal to
-     the highest energy cost among them.
+   * Gain energy equal to the highest energy cost among the top 2 (4) cards of
+     your deck.
 
-## Prayer (cost X skill, uncommon)
+## Deep Prayer (cost X skill, uncommon)
    * Play the highest cost card among the top X (X+1) cards of your draw pile.
 
 ## Repentance (cost 1 skill, uncommon)
@@ -295,7 +295,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
    * Lose 1/10th of your gold. Deal damage equal to the amount lost.
 
 ## Display of Power (cost 1 attack uncommon):
-   * Choose a card in your hand. Deal damage equal to 5 (8) times its cost.
+   * Choose a card in your hand. Deal damage equal to 6 (8) times its cost.
 
 # Relics:
 

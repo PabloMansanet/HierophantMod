@@ -22,6 +22,7 @@ import static hierophant.HierophantMod.makePowerPath;
 public class EnlightenedPower extends AbstractPower implements CloneablePowerInterface {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
     public AbstractCreature source;
+    public static final int PIETY_BONUS = 150;
 
     public static final String POWER_ID = HierophantMod.makeID("EnlightenedPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
@@ -67,6 +68,16 @@ public class EnlightenedPower extends AbstractPower implements CloneablePowerInt
             description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
         } else {
             description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+        }
+    }
+
+    @Override
+    public void atEndOfRound()
+    {
+        if (this.amount == 0) {
+            AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+        } else {
+            AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.ReducePowerAction(this.owner, this.owner, POWER_ID, 1));
         }
     }
 

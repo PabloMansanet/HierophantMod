@@ -23,6 +23,7 @@ public class DivineIntervention extends AbstractDynamicCard {
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -33,11 +34,10 @@ public class DivineIntervention extends AbstractDynamicCard {
     private static final int MAGIC = 2;
     private static final int UPGRADE_PLUS_MAGIC = 1;
 
-    // /STAT DECLARATION/
-
     public DivineIntervention() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
+        basePiety = 0;
     }
 
     @Override
@@ -46,9 +46,11 @@ public class DivineIntervention extends AbstractDynamicCard {
         if (healAmount == 0) {
             return;
         }
+        basePiety = healAmount * magicNumber;
+        applyPowers();
         AbstractDungeon.actionManager.addToBottom(new HealAction(m, p, healAmount));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PietyPower(p, p, healAmount * magicNumber), healAmount * magicNumber));
+                new PietyPower(p, p, piety), piety));
     }
 
     @Override

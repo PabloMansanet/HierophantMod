@@ -27,7 +27,6 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
     public AbstractCreature source;
 
     public static final String POWER_ID = HierophantMod.makeID("PietyPower");
-    public static final String ENLIGHTENED_POWER_ID = HierophantMod.makeID("EnlightenedPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -51,10 +50,6 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
         
         this.description = DESCRIPTIONS[0];
-
-        if (owner.hasPower(ENLIGHTENED_POWER_ID)) {
-            this.amount = (this.amount * 150) / 100;
-        }
 
         updateDescription();
     }

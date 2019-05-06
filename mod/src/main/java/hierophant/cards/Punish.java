@@ -28,15 +28,13 @@ public class Punish extends AbstractDynamicCard {
     private static final int DAMAGE = 8;
     private static final int UPGRADE_PLUS_DMG = 2;
 
-    private static final int MAGIC = 8;
-    private static final int UPGRADE_PLUS_MAGIC = 2;
-
-
+    private static final int PIETY = 8;
+    private static final int UPGRADE_PLUS_PIETY = 2;
 
     public Punish() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        magicNumber = baseMagicNumber = MAGIC;
+        piety = basePiety = PIETY;
 
     }
 
@@ -45,7 +43,7 @@ public class Punish extends AbstractDynamicCard {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PietyPower(p, p, magicNumber), magicNumber));
+                new PietyPower(p, p, piety), piety));
     }
 
     @Override
@@ -53,7 +51,7 @@ public class Punish extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
+            upgradePiety(UPGRADE_PLUS_PIETY);
         }
     }
 }

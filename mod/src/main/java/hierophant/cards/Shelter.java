@@ -51,7 +51,7 @@ public class Shelter extends AbstractDynamicCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_PLUS_BLOCK);
+            this.upgradeBlock(UPGRADE_PLUS_BLOCK);
             this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }

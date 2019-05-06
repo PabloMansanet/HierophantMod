@@ -3,6 +3,10 @@
         "NAME": "Piety",
         "DESCRIPTIONS": ["Defeat enemies with HP equal or lower than #b", " at the end of your turn. Lose #b1 Piety when dealing unblocked attack damage."]
 },
+"hierophant:EndurePower": {
+        "NAME": "Enduring",
+        "DESCRIPTIONS": ["Gain #b", " Piety whenever you are attacked."]
+},
 "hierophant:AuricFormPower": {
         "NAME": "Auric Form",
         "DESCRIPTIONS": ["At the start of your turn, lose #b", "% of your Gold, then gain that much block."]
