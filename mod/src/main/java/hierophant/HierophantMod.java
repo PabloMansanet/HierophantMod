@@ -398,7 +398,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new Entourage());
         BaseMod.addCard(new Blessing());
         BaseMod.addCard(new Shelter());
-        // BaseMod.addCard(new MirrorShield());
+        BaseMod.addCard(new MirrorShield());
         BaseMod.addCard(new ChurchCoffers());
         // BaseMod.addCard(new Sermon());
         BaseMod.addCard(new DivineIntervention());
@@ -467,7 +467,7 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(Entourage.ID);
         UnlockTracker.unlockCard(Blessing.ID);
         UnlockTracker.unlockCard(Shelter.ID);
-        // UnlockTracker.unlockCard(MirrorShield.ID);
+        UnlockTracker.unlockCard(MirrorShield.ID);
         UnlockTracker.unlockCard(ChurchCoffers.ID);
         // UnlockTracker.unlockCard(Sermon.ID);
         UnlockTracker.unlockCard(DivineIntervention.ID);

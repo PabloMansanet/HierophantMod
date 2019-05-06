@@ -26,7 +26,7 @@ public class Defend_Hierophant extends AbstractDynamicCard {
     public Defend_Hierophant() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.baseBlock = 5;
-        this.tags.add(BaseModCardTags.BASIC_DEFEND); //Tag your strike, defend and form (Wraith form, Demon form, Echo form, etc.) cards so that they function correctly.
+        this.tags.add(BaseModCardTags.BASIC_DEFEND);
     }
 
     @Override

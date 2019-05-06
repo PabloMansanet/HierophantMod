@@ -5,6 +5,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/actions/PrayerAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/actions/PrayerAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/CursedGold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/CursedGold.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Defend_Hierophant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Defend_Hierophant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/MirrorShield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/MirrorShield.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/OrbSkill.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/WrathOfGod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/WrathOfGod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/powers/GenerosityPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/powers/GenerosityPower.java" afterDir="false" />
@@ -111,16 +114,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/CursedGoldPower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+            <state relative-caret-position="344">
+              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/CursedGoldAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -375,12 +378,12 @@
       <workItem from="1556975528173" duration="1149000" />
       <workItem from="1556986716807" duration="1050000" />
       <workItem from="1557022941321" duration="14142000" />
-      <workItem from="1557124009857" duration="5363000" />
+      <workItem from="1557124009857" duration="5640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94393000" />
+    <option name="totallyTimeSpent" value="94670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-34" width="1922" height="1115" extended-state="0" />
@@ -835,17 +838,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/CursedGoldPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/CursedGoldAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/CursedGoldPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
         </state>
       </provider>
     </entry>
