@@ -51,6 +51,7 @@ hierophant/cards/Smite.class
 hierophant/powers/GenerosityPower.class
 com/megacrit/cardcrawl/actions/defect/DazzleAction.class
 hierophant/cards/Upheaval.class
+hierophant/powers/CharityPower.class
 hierophant/cards/Doubloon.class
 hierophant/patches/relics/BottledPlaceholderField.class
 hierophant/patches/relics/BottledPlaceholderField$MakeStatEquivalentCopy.class
@@ -92,11 +93,13 @@ hierophant/cards/VowOfSanctity.class
 hierophant/cards/CoinFling.class
 hierophant/cards/Shelter.class
 hierophant/cards/PassingBell.class
+hierophant/cards/Charity.class
 hierophant/HoardReward.class
 hierophant/cards/VowOfStability.class
 hierophant/potions/PlaceholderPotion.class
 hierophant/cards/Strike_Hierophant.class
 hierophant/relics/PlaceholderRelic2.class
+com/megacrit/cardcrawl/actions/defect/RecallFundsAction.class
 hierophant/cards/Levitation.class
 hierophant/actions/UncommonPowerAction.class
 com/megacrit/cardcrawl/actions/defect/DoomsayingAction.class

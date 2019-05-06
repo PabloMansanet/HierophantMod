@@ -1,20 +1,24 @@
 
 package hierophant.cards;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import hierophant.HierophantMod;
 import hierophant.HierophantTags;
 import hierophant.characters.Hierophant;
+import hierophant.powers.CharityPower;
+import hierophant.powers.EnlightenedPower;
+import hierophant.powers.GenerosityPower;
+import hierophant.powers.PietyPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
 public class Doubloon extends AbstractDynamicCard {
-    public static final String GENEROSITY_ID = HierophantMod.makeID("GenerosityPower");
     public static final String ID = HierophantMod.makeID(Doubloon.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
@@ -57,10 +61,19 @@ public class Doubloon extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (p.hasPower(GENEROSITY_ID)) {
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW + p.getPower(GENEROSITY_ID).amount));
+        if (p.hasPower(GenerosityPower.POWER_ID)) {
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW + p.getPower(GenerosityPower.POWER_ID).amount));
         } else {
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW));
+        }
+
+        if (p.hasPower(CharityPower.POWER_ID)) {
+            int piety = p.getPower(CharityPower.POWER_ID).amount;
+            if (p.hasPower(EnlightenedPower.POWER_ID)) {
+                piety = (piety * EnlightenedPower.PIETY_BONUS) / 100;
+            }
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new PietyPower(p, p, piety), piety));
         }
     }
 

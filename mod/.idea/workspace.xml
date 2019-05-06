@@ -3,51 +3,96 @@
   <component name="ChangeListManager">
     <list default="true" id="28490e81-f8c8-4c76-92dc-f5ccedbf1228" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/actions/PrayerAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/actions/PrayerAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/actions/CursedGoldAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/actions/CursedGoldAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/CursedGold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/CursedGold.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Defend_Hierophant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Defend_Hierophant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/MirrorShield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/MirrorShield.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/OrbSkill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/WrathOfGod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/WrathOfGod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Doubloon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Doubloon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/RecallFunds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/RecallFunds.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/powers/GenerosityPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/powers/GenerosityPower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Power-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Power-Strings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/megacrit/cardcrawl/actions/defect/CoinFlingAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/megacrit/cardcrawl/actions/defect/CurrencyExchangeAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/DonationRewardTypePatch.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/HoardRewardTypePatch.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/actions/UncommonPowerAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Anathema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AuricForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/AuricLance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Batter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Blessing.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Bribe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/BulkyChest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/CardTemplate.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/ChurchCoffers.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/CoinFling.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/ConvertCurrency.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Cornucopia.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/CursedGold.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Dazzle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Defend_Hierophant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DisplayOfPower.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/DivineIntervention.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Doomsaying.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Doubloon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Embezzle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Encroach.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Endure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Entourage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Generosity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/HolyVerse.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/LocustPlague.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Martyrdom.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Mercenaries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Miracle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/MirrorShield.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/MorningPrayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/PassingBell.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Phylactery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Prayer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/PristineSoul.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Prophecy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Punish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Racketeering.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/RecallFunds.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Repentance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/RodSlam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SealAway.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SearingVirtue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SecretStash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Sermon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Shelter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Smite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/SolarFlare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Strike_Hierophant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/TollTheBells.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Upheaval.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfPoverty.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfPurity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfSanctity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfSobriety.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/VowOfStability.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/WrathOfGod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/cards/Zeal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/characters/Hierophant$Enums.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/characters/Hierophant.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/events/IdentityCrisisEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/orbs/DefaultOrb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/DefaultInsertPatch$Locator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/DefaultInsertPatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/relics/BottledPlaceholderField$MakeStatEquivalentCopy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/patches/relics/BottledPlaceholderField.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/potions/PlaceholderPotion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/AuricFormPower.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/CommonPower.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/EndurePower.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/powers/EnlightenedPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/BottledPlaceholderRelic.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/DefaultClickableRelic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/DonationBoxRelic.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/PlaceholderRelic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/relics/PlaceholderRelic2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hierophant/util/IDCheckDontTouchPls.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/util/TextureLoader.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/variables/DefaultCustomVariable.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/variables/PietyNumber.class" beforeDir="false" />
@@ -82,20 +127,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/PlayTopCardAction.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/CardGroup.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="1378" column="5" selection-start-line="1378" selection-start-column="5" selection-end-line="1378" selection-end-column="5" />
+            <state relative-caret-position="111">
+              <caret line="1116" column="34" lean-forward="true" selection-start-line="1116" selection-start-column="34" selection-end-line="1116" selection-end-column="34" />
               <folding>
                 <element signature="e#4225#4226#0" expanded="true" />
                 <element signature="e#4270#4271#0" expanded="true" />
@@ -114,11 +150,68 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/CursedGoldPower.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="344">
-              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/MirrorShield.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/HierophantTags.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/RecallFunds.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/RecallFundsAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Doubloon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Charity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -127,56 +220,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/CursedGoldAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/PrayerAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/DoomsayingAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="233" selection-start-line="233" selection-end-line="233" />
-              <folding>
-                <element signature="e#9252#9253#0" expanded="true" />
-                <element signature="e#9300#9301#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Doomsaying.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Prayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -240,9 +284,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/hierophant/rewards/HoardReward.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hierophant/relics/DonationBoxRelic.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/powers/AuricFormPower.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/AuricForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Batter.java" />
@@ -262,7 +303,6 @@
         <option value="$PROJECT_DIR$/src/main/java/hierophant/actions/CurrencyExchangeAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/actions/CoinFlingAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/CoinFling.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Doubloon.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/actions/CornucopiaAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Cornucopia.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Dazzle.java" />
@@ -291,6 +331,10 @@
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/WrathOfGod.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/powers/CursedGoldPower.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/actions/CursedGoldAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/MirrorShield.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/RecallFunds.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/actions/RecallFundsAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Doubloon.java" />
       </list>
     </option>
   </component>
@@ -378,16 +422,15 @@
       <workItem from="1556975528173" duration="1149000" />
       <workItem from="1556986716807" duration="1050000" />
       <workItem from="1557022941321" duration="14142000" />
-      <workItem from="1557124009857" duration="5640000" />
+      <workItem from="1557124009857" duration="9237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94670000" />
+    <option name="totallyTimeSpent" value="98267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-34" width="1922" height="1115" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8142665" weight="0.3393057" />
       <window_info id="Structure" order="1" sideWeight="0.18573351" side_tool="true" visible="true" weight="0.26441786" />
@@ -398,7 +441,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.40348694" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37931034" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37931034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -471,34 +514,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/vfx/cardManip/ShowCardAndObtainEffect.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/patches/GildedPatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/CurrencyExchangeAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1431">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/CoinFlingAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/screens/CardRewardScreen.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3240">
@@ -527,16 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/HierophantTags.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Generosity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -555,13 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Doubloon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
@@ -817,10 +815,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/CursedGoldAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/CursedGoldPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/MirrorShield.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/HierophantTags.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/RecallFunds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/RecallFundsAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Charity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Doubloon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/CardGroup.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="1378" column="5" selection-start-line="1378" selection-start-column="5" selection-end-line="1378" selection-end-column="5" />
+        <state relative-caret-position="111">
+          <caret line="1116" column="34" lean-forward="true" selection-start-line="1116" selection-start-column="34" selection-end-line="1116" selection-end-column="34" />
           <folding>
             <element signature="e#4225#4226#0" expanded="true" />
             <element signature="e#4270#4271#0" expanded="true" />
@@ -835,20 +892,6 @@
             <element signature="e#46696#46697#0" expanded="true" />
             <element signature="e#46736#46737#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/CursedGoldAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/CursedGoldPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -392,7 +392,7 @@ public class HierophantMod implements
         BaseMod.addCard(new HolyVerse());
         BaseMod.addCard(new Endure());
         BaseMod.addCard(new ConvertCurrency());
-        // BaseMod.addCard(new RecallFunds());
+        BaseMod.addCard(new RecallFunds());
         BaseMod.addCard(new Dazzle());
         // BaseMod.addCard(new Embezzle());
         // BaseMod.addCard(new Entourage());
@@ -426,6 +426,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new VowOfStability());
         // BaseMod.addCard(new Martyrdom());
         BaseMod.addCard(new Generosity());
+        BaseMod.addCard(new Charity());
         BaseMod.addCard(new CursedGold());
         BaseMod.addCard(new AuricForm());
         // BaseMod.addCard(new Phylactery());
@@ -461,7 +462,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(HolyVerse.ID);
         UnlockTracker.unlockCard(Endure.ID);
         UnlockTracker.unlockCard(ConvertCurrency.ID);
-        // UnlockTracker.unlockCard(RecallFunds.ID);
+        UnlockTracker.unlockCard(RecallFunds.ID);
         UnlockTracker.unlockCard(Dazzle.ID);
         // UnlockTracker.unlockCard(Embezzle.ID);
         // UnlockTracker.unlockCard(Entourage.ID);
@@ -495,6 +496,7 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(VowOfStability.ID);
         // UnlockTracker.unlockCard(Martyrdom.ID);
         UnlockTracker.unlockCard(Generosity.ID);
+        UnlockTracker.unlockCard(Charity.ID);
         UnlockTracker.unlockCard(CursedGold.ID);
         UnlockTracker.unlockCard(AuricForm.ID);
         // UnlockTracker.unlockCard(Phylactery.ID);

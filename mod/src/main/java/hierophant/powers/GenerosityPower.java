@@ -39,9 +39,6 @@ public class GenerosityPower extends AbstractPower implements CloneablePowerInte
         this.source = source;
 
         type = PowerType.BUFF;
-        isTurnBased = true;
-
-        // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
         
@@ -62,11 +59,7 @@ public class GenerosityPower extends AbstractPower implements CloneablePowerInte
 
     @Override
     public void updateDescription() {
-        if (amount > 1) {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
-        } else {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
-        }
+        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
 
     @Override

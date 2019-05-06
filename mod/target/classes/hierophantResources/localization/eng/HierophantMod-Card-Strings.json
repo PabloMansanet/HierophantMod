@@ -218,13 +218,17 @@
   },
   "hierophant:Generosity": {
     "NAME":"Generosity",
-    "DESCRIPTION": "Whenever you exhaust a Doubloon, draw an additional card. NL hierophant:Gilded.",
-    "UPGRADE_DESCRIPTION": "Whenever you exhaust a Doubloon, draw an additional card. NL hierophant:Gilded. NL Innate."
+    "DESCRIPTION": "Whenever you play a Doubloon, draw an additional card. NL hierophant:Gilded.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a Doubloon, draw an additional card. NL hierophant:Gilded. NL Innate."
+  },
+  "hierophant:Charity": {
+    "NAME":"Charity",
+    "DESCRIPTION": "Whenever you play a Doubloon, gain !M! hierophant:Piety. NL hierophant:Gilded."
   },
   "hierophant:CursedGold": {
     "NAME":"Cursed Gold",
-    "DESCRIPTION": "At the start of your turn, shuffle !M! Doubloon from your exhaust pile into your draw pile.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, shuffle !M! Doubloons from your exhaust into your draw pile."
+    "DESCRIPTION": "At the start of your turn, shuffle !M! Doubloon from your exhaust pile into your draw pile. NL hierophant:Gilded.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, shuffle !M! Doubloons from your exhaust into your draw pile. NL hierophant:Gilded."
   },
   "hierophant:AuricForm": {
      "NAME":"Auric Form",

@@ -21,8 +21,10 @@ public class CursedGoldAction extends com.megacrit.cardcrawl.actions.AbstractGam
             this.isDone = true;
             return;
         }
-        AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(doubloon, true, false));
+
         p.exhaustPile.removeCard(doubloon);
+        p.exhaustPile.moveToDeck(doubloon, true);
+        doubloon.unfadeOut();
         this.isDone = true;
     }
 }

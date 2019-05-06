@@ -33,8 +33,8 @@ public class CursedGold extends AbstractDynamicCard {
     public CursedGold() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         tags.add(HierophantTags.HIEROPHANT_GILDED);
+        this.magicNumber = this.baseMagicNumber = MAGIC;
     }
-
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
