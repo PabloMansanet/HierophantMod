@@ -18,7 +18,6 @@ import org.apache.logging.log4j.Logger;
 
 import static hierophant.HierophantMod.makePowerPath;
 
-// Defeat any enemies with lower or equal HP than your Generosity at end of turn.
 public class GenerosityPower extends AbstractPower implements CloneablePowerInterface {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
     public AbstractCreature source;

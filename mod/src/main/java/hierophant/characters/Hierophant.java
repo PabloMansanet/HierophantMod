@@ -159,15 +159,14 @@ public class Hierophant extends CustomPlayer {
         for(int i = 0; i < 4; i = i + 1) {
            retVal.add(Defend_Hierophant.ID);
         }
-        retVal.add(Blasphemy.ID);
-        retVal.add(Blasphemy.ID);
-        retVal.add(Blasphemy.ID);
-        retVal.add(DivineIntervention.ID);
-        retVal.add(DivineIntervention.ID);
-        retVal.add(DivineIntervention.ID);
-        retVal.add(HolyVerse.ID);
-        retVal.add(HolyVerse.ID);
-        retVal.add(HolyVerse.ID);
+        retVal.add(Punish.ID);
+        retVal.add(WrathOfGod.ID);
+        retVal.add(WrathOfGod.ID);
+        retVal.add(Doomsaying.ID);
+        retVal.add(Doomsaying.ID);
+        retVal.add(Prayer.ID);
+        retVal.add(Prayer.ID);
+
         return retVal;
     }
 

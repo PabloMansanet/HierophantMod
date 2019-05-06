@@ -12,7 +12,6 @@ import static java.lang.Integer.min;
 
 public class PrayerAction extends com.megacrit.cardcrawl.actions.AbstractGameAction
 {
-    public static final String DOUBLOON_ID = HierophantMod.makeID(Doubloon.class.getSimpleName());
     private boolean freeToPlayOnce = false;
     boolean upgraded;
     private AbstractPlayer p;

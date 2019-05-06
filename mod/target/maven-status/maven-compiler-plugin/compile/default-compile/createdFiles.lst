@@ -5,6 +5,7 @@ hierophant/cards/Doomsaying.class
 hierophant/cards/Bribe.class
 hierophant/cards/SolarFlare.class
 hierophant/cards/Punish.class
+com/megacrit/cardcrawl/actions/defect/CursedGoldAction.class
 hierophant/cards/AuricBeam.class
 hierophant/cards/Miracle.class
 hierophant/DonationReward.class
@@ -44,6 +45,7 @@ hierophant/variables/DefaultCustomVariable.class
 hierophant/patches/GildedPatch.class
 hierophant/powers/CommonPower.class
 hierophant/characters/Hierophant.class
+hierophant/powers/CursedGoldPower.class
 hierophant/cards/ChurchCoffers.class
 hierophant/cards/Smite.class
 hierophant/powers/GenerosityPower.class

@@ -15,6 +15,10 @@
         "NAME": "Generosity",
         "DESCRIPTIONS": ["When you exhaust a Doubloon, draw #b", " additional card.", " additional cards."]
 },
+"hierophant:CursedGoldPower": {
+        "NAME": "Cursed Gold",
+        "DESCRIPTIONS": ["At the start of your turn, shuffle #b", " Doubloon from your exhaust pile into your draw pile.", " Doubloons from your exhaust pile into your draw pile."]
+},
 "hierophant:EnlightenedPower": {
         "NAME": "Enlightened",
         "DESCRIPTIONS": ["Gain #b50% additional Piety for #b", " turn", " turns."]

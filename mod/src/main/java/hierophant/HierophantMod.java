@@ -374,7 +374,7 @@ public class HierophantMod implements
         BaseMod.addCard(new PassingBell());
         // BaseMod.addCard(new SolarFlare());
         // BaseMod.addCard(new LocustPlague());
-        // BaseMod.addCard(new WrathOfGod());
+        BaseMod.addCard(new WrathOfGod());
         BaseMod.addCard(new SealAway());
         // BaseMod.addCard(new Smite());
         BaseMod.addCard(new Upheaval());
@@ -408,7 +408,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new PristineSoul());
         // BaseMod.addCard(new Prophecy());
         BaseMod.addCard(new Doomsaying());
-        // BaseMod.addCard(new Prayer());
+        BaseMod.addCard(new Prayer());
         // BaseMod.addCard(new Repentance());
         // BaseMod.addCard(new SecretStash());
         BaseMod.addCard(new Levitation());
@@ -426,7 +426,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new VowOfStability());
         // BaseMod.addCard(new Martyrdom());
         BaseMod.addCard(new Generosity());
-        // BaseMod.addCard(new CursedGold());
+        BaseMod.addCard(new CursedGold());
         BaseMod.addCard(new AuricForm());
         // BaseMod.addCard(new Phylactery());
 
@@ -443,7 +443,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(PassingBell.ID);
         // UnlockTracker.unlockCard(SolarFlare.ID);
         // UnlockTracker.unlockCard(LocustPlague.ID);
-        // UnlockTracker.unlockCard(WrathOfGod.ID);
+        UnlockTracker.unlockCard(WrathOfGod.ID);
         UnlockTracker.unlockCard(SealAway.ID);
         // UnlockTracker.unlockCard(Smite.ID);
         UnlockTracker.unlockCard(Upheaval.ID);
@@ -495,7 +495,7 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(VowOfStability.ID);
         // UnlockTracker.unlockCard(Martyrdom.ID);
         UnlockTracker.unlockCard(Generosity.ID);
-        // UnlockTracker.unlockCard(CursedGold.ID);
+        UnlockTracker.unlockCard(CursedGold.ID);
         UnlockTracker.unlockCard(AuricForm.ID);
         // UnlockTracker.unlockCard(Phylactery.ID);
 

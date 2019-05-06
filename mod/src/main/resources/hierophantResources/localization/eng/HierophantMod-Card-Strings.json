@@ -143,7 +143,7 @@
   },
   "hierophant:Doomsaying": {
     "NAME":"Doomsaying",
-    "DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain energy equal to the highest cost among the discarded cards."
+    "DESCRIPTION": "Gain Energy equal to the highest cost among the top !M! cards of your draw pile."
   },
   "hierophant:Prayer": {
     "NAME":"Prayer",
@@ -223,8 +223,8 @@
   },
   "hierophant:CursedGold": {
     "NAME":"Cursed Gold",
-    "DESCRIPTION": "At the end of your turn, move !M! Doubloon from the exhaust pile to the discard pile.",
-    "UPGRADE_DESCRIPTION": "At the end of your turn, move !M! Doubloons from the exhaust pile to the discard pile."
+    "DESCRIPTION": "At the start of your turn, shuffle !M! Doubloon from your exhaust pile into your draw pile.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, shuffle !M! Doubloons from your exhaust into your draw pile."
   },
   "hierophant:AuricForm": {
      "NAME":"Auric Form",
