@@ -1,12 +1,12 @@
 
 package hierophant.cards;
 
+import com.megacrit.cardcrawl.actions.defect.DoomsayingAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 
