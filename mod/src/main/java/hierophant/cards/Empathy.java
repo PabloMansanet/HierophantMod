@@ -14,6 +14,7 @@ import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;
+import static java.lang.Integer.min;
 
 public class Empathy extends AbstractDynamicCard {
 
@@ -32,6 +33,7 @@ public class Empathy extends AbstractDynamicCard {
 
     private static final int COST = 1;
     private static final int MAGIC = 5;
+    private static final int HEAL = 15;
     private static final int UPGRADE_PLUS_MAGIC = -2;
 
     // /STAT DECLARATION/
@@ -43,12 +45,12 @@ public class Empathy extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            int healAmount = mo.maxHealth - mo.currentHealth;
+            int healAmount = min(15, mo.maxHealth - mo.currentHealth);
             if (healAmount == 0) {
                 continue;
             }
-            AbstractDungeon.actionManager.addToBottom(new HealAction(mo, p, magicNumber));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, healAmount / magicNumber, false), healAmount / magicNumber));
+            AbstractDungeon.actionManager.addToBottom(new HealAction(mo, p, healAmount));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, healAmount / magicNumber, false), healAmount / magicNumber ));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new VulnerablePower(mo, healAmount / magicNumber, false), healAmount / magicNumber));
         }
     }

@@ -343,6 +343,6 @@
   },
   "hierophant:DisplayOfPower": {
     "NAME":"Display Of Power",
-    "DESCRIPTION": "Choose a card in your hand. Deal damage equal to !M! times its cost."
+    "DESCRIPTION": "Choose a card in your hand. Deal damage equal to !D! times its cost."
   }
 }
