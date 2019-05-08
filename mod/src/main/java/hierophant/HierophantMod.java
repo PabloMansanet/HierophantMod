@@ -400,6 +400,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Blessing());
         BaseMod.addCard(new Empathy());
         BaseMod.addCard(new Torch());
+        BaseMod.addCard(new Kindle());
         BaseMod.addCard(new Shelter());
         BaseMod.addCard(new MirrorShield());
         BaseMod.addCard(new ChurchCoffers());
@@ -471,6 +472,9 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(Embezzle.ID);
         // UnlockTracker.unlockCard(Entourage.ID);
         UnlockTracker.unlockCard(Blessing.ID);
+        UnlockTracker.unlockCard(Empathy.ID);
+        UnlockTracker.unlockCard(Torch.ID);
+        UnlockTracker.unlockCard(Kindle.ID);
         UnlockTracker.unlockCard(Shelter.ID);
         UnlockTracker.unlockCard(MirrorShield.ID);
         UnlockTracker.unlockCard(ChurchCoffers.ID);

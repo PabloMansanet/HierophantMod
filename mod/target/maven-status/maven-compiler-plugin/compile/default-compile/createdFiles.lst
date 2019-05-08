@@ -30,6 +30,7 @@ hierophant/cards/Flagellation.class
 hierophant/cards/ThreeLashes.class
 hierophant/HierophantMod.class
 hierophant/cards/MorningPrayer.class
+hierophant/cards/Kindle.class
 hierophant/patches/DefaultInsertPatch$Locator.class
 hierophant/cards/AbstractTitheCard.class
 hierophant/cards/Mercenaries.class

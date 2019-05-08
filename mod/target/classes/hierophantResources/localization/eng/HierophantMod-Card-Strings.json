@@ -324,6 +324,10 @@
     "NAME":"Empathy",
     "DESCRIPTION": "Heal ALL enemies 15. NL Apply 1 Weak and 1 Vulnerable per !M! HP healed."
   },
+  "hierophant:Kindle": {
+    "NAME":"Kindle",
+    "DESCRIPTION": "Gain 1 Strength. NL Gain 5 hierophant:Fervor."
+  },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",
     "DESCRIPTION": "Lose 10% of your gold. NL Deal that much damage.",

@@ -72,7 +72,7 @@ Last Pass:
 ## Death Knell (Cost 1 skill rare)
    * Gain 30 Fervor. You can't attack during 3(2) turns.
 
-## The Turning Wheel (cost 2 attack uncommon)
+## Flaming Chariot (cost 2 attack uncommon)
    * Deal 15 (20) damage. This attack does not consume Fervor.
 
 ## Kindle (cost 1(0) skill rare)
@@ -330,11 +330,11 @@ Last Pass:
    * When you obtain Gilded Ark, obtain 3 doubloons.
    * When you exhaust a doubloon, gain 1 energy.
 
-## Beggar's Robes (uncommon):
+## Beggar's Robes (Rare):
    * When you have 50 or less gold, gain +3 strength and +3 dexterity.
 
-## Writ of Virtue (uncommon):
-   * Gain 4 block at the start of your turn for each unique active vow.
+## Slanted Cross (uncommon):
+   * When you heal an enemy, deal that much damage instead.
 
 ## Apostle's Rod (common):
    * Whenever your attack damage is blocked, gain 2 piety.
@@ -347,3 +347,7 @@ Last Pass:
 
 ## Holy Edict (uncommon):
    * Regain half of the gold lost at the end of each combat.
+
+## Book of Reckoning (Rare):
+      "If you do not play any #yAttacks during your turn, gain 4 Fervor next
+      turn."
