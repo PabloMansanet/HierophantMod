@@ -43,15 +43,6 @@ public abstract class AbstractHierophantCard extends CustomCard {
 
     }
 
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p,m);
-        if (canUse && (AbstractDungeon.player.hasPower(DeathKnellPower.POWER_ID)) && (this.type == CardType.ATTACK)) {
-            this.cantUseMessage = "The #rDeath #rKnell has rung. NL Can't play Hierophant Attacks.";
-            return false;
-        }
-        return canUse;
-    }
-
     public void upgradePiety(int amount) { 
         basePiety += amount;
         piety = basePiety;

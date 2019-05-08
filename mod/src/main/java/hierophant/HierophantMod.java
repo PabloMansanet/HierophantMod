@@ -13,6 +13,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -21,15 +22,15 @@ import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.rewards.RewardSave;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import hierophant.cards.*;
 import hierophant.characters.Hierophant;
+import hierophant.powers.PietyPower;
 import hierophant.relics.DonationBoxRelic;
+import hierophant.util.IDCheckDontTouchPls;
+import hierophant.util.TextureLoader;
 import hierophant.variables.PietyNumber;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import hierophant.cards.*;
-import hierophant.util.IDCheckDontTouchPls;
-import hierophant.util.TextureLoader;
-import hierophant.variables.DefaultCustomVariable;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -60,11 +61,14 @@ public class HierophantMod implements
         EditKeywordsSubscriber,
         EditCharactersSubscriber,
         PostBattleSubscriber,
+        OnStartBattleSubscriber,
+        OnPowersModifiedSubscriber,
         PostInitializeSubscriber {
-    // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
-    // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
     private static String modID;
+
+    public static int lastPietyValue = 0;
+    public static int pietyLostInCombat = 0;
 
     // Mod-settings settings. This is if you want an on/off savable button
     public static Properties hierophantDefaultSettings = new Properties();
@@ -159,19 +163,6 @@ public class HierophantMod implements
       */
       
         setModID("hierophant");
-        // cool
-        // TODO: NOW READ THIS!!!!!!!!!!!!!!!:
-        
-        // 1. Go to your resources folder in the project panel, and refactor> rename hierophantResources to
-        // yourModIDResources.
-        
-        // 2. Click on the localization > eng folder and press ctrl+shift+r, then select "Directory" (rather than in Project)
-        // replace all instances of hierophant with yourModID.
-        // Because your mod ID isn't the default. Your cards (and everything else) should have Your mod id. Not mine.
-        
-        // 3. FINALLY and most importantly: Scroll up a bit. You may have noticed the image locations above don't use getModID()
-        // Change their locations to reflect your actual ID rather than hierophant. They get loaded before getID is a thing.
-        
         logger.info("Done subscribing");
         
         logger.info("Creating the color " + Hierophant.Enums.COLOR_GOLD.toString());
@@ -415,7 +406,7 @@ public class HierophantMod implements
         // BaseMod.addCard(new Prophecy());
         BaseMod.addCard(new Doomsaying());
         BaseMod.addCard(new Prayer());
-        // BaseMod.addCard(new Repentance());
+        BaseMod.addCard(new Repentance());
         // BaseMod.addCard(new SecretStash());
         BaseMod.addCard(new Levitation());
         BaseMod.addCard(new BulkyChest());
@@ -491,7 +482,7 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(Prophecy.ID);
         UnlockTracker.unlockCard(Doomsaying.ID);
         UnlockTracker.unlockCard(Prayer.ID);
-        // UnlockTracker.unlockCard(Repentance.ID);
+        UnlockTracker.unlockCard(Repentance.ID);
         // UnlockTracker.unlockCard(SecretStash.ID);
         UnlockTracker.unlockCard(Levitation.ID);
         UnlockTracker.unlockCard(BulkyChest.ID);
@@ -587,7 +578,32 @@ public class HierophantMod implements
         }
     }
 
+    // ================ /PRE BATTLE STAT RESET/ ===================    
+    @Override
+    public void receiveOnBattleStart(AbstractRoom r) {
+        HierophantMod.pietyLostInCombat = 0;
+        HierophantMod.lastPietyValue = 0;
+    }
+
+    // ================ /PIETY TRACKING/ ===================    
+    @Override
+    public void receivePowersModified()
+    {
+        AbstractPlayer p = AbstractDungeon.player;
+        int currentPiety = 0;
+
+        if (p.hasPower(PietyPower.POWER_ID)) {
+            currentPiety = p.getPower(PietyPower.POWER_ID).amount;
+        }
+        int pietyDelta = currentPiety - HierophantMod.lastPietyValue;
+        HierophantMod.lastPietyValue = currentPiety;
+        if (pietyDelta < 0) {
+            HierophantMod.pietyLostInCombat -= pietyDelta;
+        }
+    }
+
     // ================ /SPECIAL POST BATTLE REWARDS/ ===================    
+    //
     @Override
     public void receivePostBattle(AbstractRoom room)
     {

@@ -26,8 +26,8 @@ public class AuricForm extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 3;
-    private static final int UPGRADED_COST = 2;
-    private static final int MAGIC = 10;
+    private static final int MAGIC = 5;
+    private static final int MAGIC_PLUS_UPGRADE = 3;
 
     public AuricForm() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -45,7 +45,7 @@ public class AuricForm extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADED_COST);
+            upgradeMagicNumber(MAGIC_PLUS_UPGRADE);
         }
     }
 }

@@ -87,6 +87,12 @@ Last Pass:
 ## Fiery Strike (cost 1 skill common)
    * Deal 6 (8) damage. Gain 3 (5) Fervor.
 
+## Archangel Halo (cost 3 (2) power rare)
+   At the end of your turn, gain Fervor equal to your Piety.
+
+## Archangel Wings (cost 3 (2) power rare)
+   At the start of your turn, gain Piety equal to your Fervor.
+
 
 ## Skills:
 

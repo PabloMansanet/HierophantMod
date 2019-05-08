@@ -1,14 +1,15 @@
 
 package hierophant.cards;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
+import hierophant.powers.PietyPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
@@ -21,11 +22,8 @@ public class Repentance extends AbstractDynamicCard {
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-
-    // /TEXT DECLARATION/
-
-
-    // STAT DECLARATION
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -33,28 +31,57 @@ public class Repentance extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int UPGRADED_COST = 1;
-    private static final int MAGIC = 8;
-
-    // /STAT DECLARATION/
 
     public Repentance() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        magicNumber = baseMagicNumber = MAGIC;
         exhaust = true;
     }
 
-    // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new PietyPower(p, p, HierophantMod.pietyLostInCombat), HierophantMod.pietyLostInCombat));
+        if (upgraded) {
+            rawDescription = UPGRADE_DESCRIPTION;
+        } else {
+            rawDescription = DESCRIPTION;
+        }
+        initializeDescription();
+    }
+
+    public void applyPowers()
+    {
+      super.applyPowers();
+      int count = HierophantMod.pietyLostInCombat;
+      
+      if (upgraded) {
+          rawDescription = UPGRADE_DESCRIPTION;
+      } else {
+          rawDescription = DESCRIPTION;
+      }
+      rawDescription = (rawDescription + EXTENDED_DESCRIPTION[0] + count);
+      
+      rawDescription += EXTENDED_DESCRIPTION[1];
+      initializeDescription();
+    }
+
+    public void onMoveToDiscard()
+    {
+        if (upgraded) {
+            rawDescription = UPGRADE_DESCRIPTION;
+        } else {
+            rawDescription = DESCRIPTION;
+        }
+        initializeDescription();
     }
 
     @Override
     public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.upgradeMagicNumber(8);
+        if (!upgraded) {
+            upgradeName();
+            exhaust = false;
+            rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }

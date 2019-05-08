@@ -54,7 +54,6 @@ public class Hierophant extends CustomPlayer {
 
     // =============== CHARACTER ENUMERATORS  =================
 
-
     // =============== BASE STATS =================
 
     public static final int ENERGY_PER_TURN = 3;
@@ -162,10 +161,12 @@ public class Hierophant extends CustomPlayer {
         }
         retVal.add(ChurchCoffers.ID);
         retVal.add(DeathKnell.ID);
-        retVal.add(FieryStrike.ID);
-        retVal.add(Empathy.ID);
-        retVal.add(Torch.ID);
-        retVal.add(Kindle.ID);
+        retVal.add(Repentance.ID);
+        retVal.add(Repentance.ID);
+        retVal.add(Blasphemy.ID);
+        retVal.add(Blasphemy.ID);
+        retVal.add(HolyVerse.ID);
+        retVal.add(HolyVerse.ID);
 
         return retVal;
     }

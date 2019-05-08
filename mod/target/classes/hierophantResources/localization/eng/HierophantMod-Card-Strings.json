@@ -153,7 +153,11 @@
   "hierophant:Repentance": {
     "NAME":"Repentance",
     "DESCRIPTION": "Gain hierophant:Piety equal to twice the hierophant:Piety lost this combat. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Gain hierophant:Piety equal to twice the hierophant:Piety lost this combat."
+    "UPGRADE_DESCRIPTION": "Gain hierophant:Piety equal to twice the hierophant:Piety lost this combat.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (",
+      " hierophant:Piety lost.)"
+    ]
   },
   "hierophant:SecretStash": {
     "NAME":"Secret Stash",
@@ -296,8 +300,7 @@
   },
   "hierophant:Upheaval": {
     "NAME":"Upheaval",
-    "DESCRIPTION": "Deal damage equal to twice the enemy's Block. NL hierophant:Tithe.",
-    "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
+    "DESCRIPTION": "Deal damage to ALL enemies equal to twice their Block. NL hierophant:Tithe."
   },
   "hierophant:RodSlam": {
     "NAME":"Rod Slam",
@@ -326,7 +329,7 @@
   },
   "hierophant:DeathKnell": {
     "NAME":"Death Knell",
-    "DESCRIPTION": "Gain 30 hierophant:Fervor. You can't play Hierophant attacks for !M! turns."
+    "DESCRIPTION": "Your attacks deal 0 damage for !M! turns. NL After !M! turns, gain 30 Fervor."
   },
   "hierophant:Empathy": {
     "NAME":"Empathy",

@@ -79,6 +79,7 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (damageAmount > 0 && target != this.owner && info.type == DamageInfo.DamageType.NORMAL) {
             AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, POWER_ID, 1));
+            HierophantMod.pietyLostInCombat++;
         }
 
     }

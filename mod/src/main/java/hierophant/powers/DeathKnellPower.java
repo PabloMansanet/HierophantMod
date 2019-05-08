@@ -3,7 +3,10 @@ package hierophant.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -16,10 +19,9 @@ import org.apache.logging.log4j.Logger;
 
 import static hierophant.HierophantMod.makePowerPath;
 
-// Defeat any enemies with lower or equal HP than your DeathKnell at end of turn.
 public class DeathKnellPower extends AbstractPower implements CloneablePowerInterface {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
-    public static final int PIETY_BONUS = 150;
+    private static final int FERVOR = 30;
 
     public static final String POWER_ID = HierophantMod.makeID("DeathKnellPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
@@ -32,29 +34,38 @@ public class DeathKnellPower extends AbstractPower implements CloneablePowerInte
     public DeathKnellPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
-
+        
         this.owner = owner;
         this.amount = amount;
 
-        type = PowerType.DEBUFF;
+        type = PowerType.BUFF;
         isTurnBased = true;
 
         // We load those txtures here.
-        this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
-        this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
+        region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
+        region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
         
-        this.description = DESCRIPTIONS[0];
+        description = DESCRIPTIONS[0];
 
         updateDescription();
     }
 
     @Override
+    public float atDamageGive(float damage, DamageInfo.DamageType type)
+    {
+        if (type == DamageInfo.DamageType.NORMAL) {
+            return 0;
+        }
+        return damage;
+    }
+
+    @Override
     public void stackPower(int stackAmount)
     {
-        this.fontScale = 8.0F;
-        this.amount += stackAmount;
-        if (this.amount == 0) {
-            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+        fontScale = 8.0F;
+        amount += stackAmount;
+        if (amount == 0) {
+            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
        }
    }
 
@@ -66,10 +77,13 @@ public class DeathKnellPower extends AbstractPower implements CloneablePowerInte
     @Override
     public void atEndOfRound()
     {
-        if (this.amount == 0) {
-            AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+        AbstractPlayer p = AbstractDungeon.player;
+        if (amount == 0) {
+            AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction(owner, owner, POWER_ID));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+            new FervorPower(p, p, FERVOR), FERVOR));
         } else {
-            AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.ReducePowerAction(this.owner, this.owner, POWER_ID, 1));
+            AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.ReducePowerAction(owner, owner, POWER_ID, 1));
         }
     }
 

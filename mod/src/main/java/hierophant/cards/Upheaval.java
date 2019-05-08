@@ -22,7 +22,7 @@ public class Upheaval extends AbstractTitheCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
@@ -39,17 +39,16 @@ public class Upheaval extends AbstractTitheCard {
     {
         this.baseDamage = 2 * mo.currentBlock;
         super.calculateCardDamage(mo);
-        this.rawDescription = DESCRIPTION;
-        this.rawDescription += UPGRADE_DESCRIPTION;
-        initializeDescription();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         payTithe();
-        calculateCardDamage(m);
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            calculateCardDamage(mo);
+            AbstractDungeon.actionManager.addToBottom(
+                new DamageAction(mo, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+        }
     }
 
     @Override
