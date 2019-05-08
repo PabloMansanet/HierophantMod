@@ -29,11 +29,11 @@
 },
 "hierophant:FervorPower": {
         "NAME": "Fervor",
-        "DESCRIPTIONS": ["Your next attack deals #b", "0% additional damage."]
+        "DESCRIPTIONS": ["Your next Attack deals #b", "0% additional damage."]
 },
 "hierophant:DeathKnellPower": {
         "NAME": "Death Knell",
-        "DESCRIPTIONS": ["You can't play Hierophant attacks for #b"," turns."]
+        "DESCRIPTIONS": ["Your Attacks deal no damage for #b"," turns."]
 },
 "hierophant:CommonPower": {
         "NAME": "Placeholder Power",

@@ -22,39 +22,28 @@ public class SecretStash extends AbstractDynamicCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    // /TEXT DECLARATION/
-
-
-    // STAT DECLARATION
-
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
+    private static final int MAGIC = 15;
+    private static final int UPGRADE_PLUS_MAGIC = 30;
 
     private static final int COST = 1;
-    private static final int UPGRADED_COST = 1;
-    private static final int MAGIC = 8;
-
-    // /STAT DECLARATION/
 
     public SecretStash() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
-        exhaust = true;
     }
 
-    // Actions the card should do.
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
-    }
+    public void use(AbstractPlayer p, AbstractMonster m) { }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(8);
+            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }

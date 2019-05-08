@@ -1,36 +1,34 @@
 package hierophant.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
+import hierophant.powers.FervorPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class SolarFlare extends AbstractDynamicCard {
+public class SolarFlare extends AbstractTitheCard {
 
     public static final String ID = HierophantMod.makeID(SolarFlare.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 5;
-    private static final int UPGRADED_COST = 5;
-
-    private static final int DAMAGE = 12;
-    private static final int UPGRADE_PLUS_DMG = 18;
-
-    private static final int MAGIC = 3;
-    private static final int UPGRADE_PLUS_MAGIC = -1;
-
-
+    private static final int DAMAGE = 28;
+    private static final int UPGRADE_PLUS_DMG = 8;
+    private static final int MAGIC = 10;
 
     public SolarFlare() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -41,8 +39,13 @@ public class SolarFlare extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        payTithe();
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
         AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new FervorPower(p, p, magicNumber), magicNumber));
+
     }
 
     @Override
@@ -50,7 +53,6 @@ public class SolarFlare extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }

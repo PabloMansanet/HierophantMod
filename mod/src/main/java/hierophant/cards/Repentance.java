@@ -35,12 +35,14 @@ public class Repentance extends AbstractDynamicCard {
     public Repentance() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         exhaust = true;
+        piety = basePiety = 0;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        applyPowers();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PietyPower(p, p, HierophantMod.pietyLostInCombat), HierophantMod.pietyLostInCombat));
+                new PietyPower(p, p, piety), piety));
         if (upgraded) {
             rawDescription = UPGRADE_DESCRIPTION;
         } else {
@@ -51,17 +53,15 @@ public class Repentance extends AbstractDynamicCard {
 
     public void applyPowers()
     {
+      this.basePiety = 2 * HierophantMod.pietyLostInCombat;
       super.applyPowers();
-      int count = HierophantMod.pietyLostInCombat;
       
       if (upgraded) {
           rawDescription = UPGRADE_DESCRIPTION;
       } else {
           rawDescription = DESCRIPTION;
       }
-      rawDescription = (rawDescription + EXTENDED_DESCRIPTION[0] + count);
-      
-      rawDescription += EXTENDED_DESCRIPTION[1];
+      rawDescription = rawDescription + EXTENDED_DESCRIPTION[0];
       initializeDescription();
     }
 

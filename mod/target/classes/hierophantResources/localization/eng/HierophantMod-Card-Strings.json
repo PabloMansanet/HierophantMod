@@ -152,11 +152,10 @@
   },
   "hierophant:Repentance": {
     "NAME":"Repentance",
-    "DESCRIPTION": "Gain hierophant:Piety equal to twice the hierophant:Piety lost this combat. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Gain hierophant:Piety equal to twice the hierophant:Piety lost this combat.",
+    "DESCRIPTION": "Gain twice the hierophant:Piety lost this combat. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain twice the hierophant:Piety lost this combat.",
     "EXTENDED_DESCRIPTION": [
-      " NL (",
-      " hierophant:Piety lost.)"
+      " NL (Gain !hierophant:P! hierophant:Piety .)"
     ]
   },
   "hierophant:SecretStash": {
@@ -272,7 +271,7 @@
   },
   "hierophant:SolarFlare": {
     "NAME":"Solar Flare",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak and !M! Vulnerable. NL hierophant:Tithe."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Fervor. NL hierophant:Tithe."
   },
   "hierophant:LocustPlague": {
     "NAME":"Locust Plague",
@@ -329,7 +328,7 @@
   },
   "hierophant:DeathKnell": {
     "NAME":"Death Knell",
-    "DESCRIPTION": "Your attacks deal 0 damage for !M! turns. NL After !M! turns, gain 30 Fervor."
+    "DESCRIPTION": "Your Attacks deal no damage for !M! turns. NL After !M! turns, gain 30 hierophant:Fervor."
   },
   "hierophant:Empathy": {
     "NAME":"Empathy",

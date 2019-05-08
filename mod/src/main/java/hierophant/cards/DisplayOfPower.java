@@ -20,8 +20,8 @@ public class DisplayOfPower extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 6;
-    private static final int UPGRADE_PLUS_DAMAGE = 2;
+    private static final int DAMAGE = 5;
+    private static final int UPGRADE_PLUS_DAMAGE = 3;
 
     public DisplayOfPower() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

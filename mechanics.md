@@ -150,10 +150,6 @@ Last Pass:
    * Tithe.
    * Draw 2 cards, gain 2 energy.
 
-## Sermon (cost 1 skill uncommon)
-   * Gain 7 piety, plus 7 piety for each unique active Vow.
-   * Enhanced: 10, plus 10 per Vow.
-
 ## Divine Intervention (cost 2 skill rare)
    * Restore all HP to an enemy. Gain 2 (3) piety for each HP healed.
 
@@ -208,22 +204,13 @@ Last Pass:
 
 ## Vow of Poverty (cost 1 power common)
    * You may not gain gold during the battle or as a reward. At the beginning of
-     your turn, gain 1 strength. (Innate)
+     your turn, gain 10 Piety. (Innate)
 
 ## Vow of Sobriety (cost 0 power uncommon)
    * You may not consume or earn potions as a reward during this combat. At the
-     beginning of your turn, gain 1 dexterity. (Innate)
+     end of your turn, gain 5 Fervor. (Innate)
 
-## Vow of Sanctity (cost 1 power common)
-   * You lose 2 extra piety when dealing damage.
-   * At the end of your turn, gain 10 piety. (Innate)
-
-## Vow of Purity (cost 2 power rare)
-   * You may not inflict any negative status effects. At the end of your turn,
-     gain 1 artifact.
-   * Enhanced: Innate.
-
-## Vow of Stability (cost 1 power rare)
+## Vow of Purity (cost 1 power rare)
    * You take double unblocked damage. At the end of your turn, double your
      block.
 
@@ -245,8 +232,8 @@ Last Pass:
    * At the end of your turn, move 1 (2) doubloon from the exhaust pile to the
      discard pile.
 
-## Auric Form (cost 3(2) power rare) DONE
-   * At the beginning of your turn, lose 5% of your gold and gain that much
+## Auric Form (cost 3 power rare) DONE
+   * At the beginning of your turn, lose 5(8)% of your gold and gain that much
      block. 
 
 ## Phylactery (cost 5 power rare).
@@ -276,15 +263,12 @@ Last Pass:
    * Tithe.
    * Deal 10 (14) damage plus a fifth (fourth) of the gold lost this turn.
 
-## Searing Virtue (cost 2 attack uncommon)
-   * Deal 15 (20) damage, plus 5 (7) for each unique active Vow.
-
 ## Passing Bell (cost 1 attack common)
    * Deal 7 (10) damage and gain 1 (2) Enlightened.
 
 ## Solar Flare (cost 5 attack uncommon)
    * Tithe
-   * Deal 28 damage to an enemy and gain 10 Fervor.
+   * Deal 28 (36) damage to an enemy and gain 10 Fervor.
 
 ## Locust Plague (cost 6 attack rare)
    * Tithe
@@ -313,10 +297,6 @@ Last Pass:
 ## Punish (cost 2 attack common, base deck)
    * Deal 8 (10) damage. Gain 8 (10) piety.
 
-## Anathema (Cost 3 attack rare)
-   * Lose all vows. Deal 10 (15) damage to every enemy for each unique lost vow.
-     Exhaust.
-
 ## Blasphemy (Cost 2(1) attack rare)
    * Lose all piety. Deal 2 damage for each lost piety.
 
@@ -324,7 +304,7 @@ Last Pass:
    * Lose 1/10th of your gold. Deal damage equal to the amount lost.
 
 ## Display of Power (cost 1 attack uncommon):
-   * Choose a card in your hand. Deal damage equal to 6 (8) times its cost.
+   * Choose a card in your hand. Deal damage equal to 5 (8) times its cost.
 
 # Relics:
 

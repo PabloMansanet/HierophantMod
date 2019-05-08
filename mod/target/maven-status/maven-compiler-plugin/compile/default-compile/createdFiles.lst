@@ -18,7 +18,6 @@ hierophant/orbs/DefaultOrb.class
 hierophant/cards/Martyrdom.class
 hierophant/cards/Defend_Hierophant.class
 hierophant/cards/Batter.class
-hierophant/cards/Torch.class
 hierophant/cards/RecallFunds.class
 hierophant/cards/DeathKnell.class
 com/megacrit/cardcrawl/actions/defect/CoinFlingAction.class
