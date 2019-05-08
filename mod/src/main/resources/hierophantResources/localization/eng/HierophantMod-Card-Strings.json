@@ -316,6 +316,14 @@
     "NAME":"Patience",
     "DESCRIPTION": "Gain hierophant:Fervor equal to an enemy's Block."
   },
+  "hierophant:Torch": {
+    "NAME":"Torch",
+    "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 3 hierophant:Fervor."
+  },
+  "hierophant:Empathy": {
+    "NAME":"Empathy",
+    "DESCRIPTION": "Heal ALL enemies 15. NL Apply 1 Weak and 1 Vulnerable per !M! HP healed."
+  },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",
     "DESCRIPTION": "Lose 10% of your gold. NL Deal that much damage.",

@@ -18,6 +18,7 @@ hierophant/orbs/DefaultOrb.class
 hierophant/cards/Martyrdom.class
 hierophant/cards/Defend_Hierophant.class
 hierophant/cards/Batter.class
+hierophant/cards/Torch.class
 hierophant/cards/RecallFunds.class
 com/megacrit/cardcrawl/actions/defect/CoinFlingAction.class
 hierophant/cards/CardTemplate.class
@@ -46,6 +47,7 @@ hierophant/patches/GildedPatch.class
 hierophant/powers/CommonPower.class
 hierophant/characters/Hierophant.class
 hierophant/powers/CursedGoldPower.class
+hierophant/cards/Empathy.class
 hierophant/cards/ChurchCoffers.class
 hierophant/powers/FervorPower.class
 hierophant/cards/Smite.class

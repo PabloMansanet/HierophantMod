@@ -78,8 +78,8 @@ Last Pass:
 ## Kindle (cost 1(0) skill rare)
    * Gain 1 Strength and 5 Fervor.
 
-## Torchlight (cost 1 skill common)
-   * Enemies gain 1(2) Weak. Gain 4 (6) Fervor.
+## Torch (cost 1 skill common)
+   * Enemies gain 1(2) Weak. Gain 3 Fervor.
 
 ## Empathy (cost 1 skill uncommon)
    * Heal enemies for 15 HP. Apply 1 Weak and 1 Vulnerable per 5 (3) HP healed.

@@ -398,6 +398,8 @@ public class HierophantMod implements
         // BaseMod.addCard(new Embezzle());
         // BaseMod.addCard(new Entourage());
         BaseMod.addCard(new Blessing());
+        BaseMod.addCard(new Empathy());
+        BaseMod.addCard(new Torch());
         BaseMod.addCard(new Shelter());
         BaseMod.addCard(new MirrorShield());
         BaseMod.addCard(new ChurchCoffers());
