@@ -1,7 +1,10 @@
 package hierophant.cards;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import hierophant.powers.DeathKnellPower;
 import hierophant.powers.EnlightenedPower;
 
 public abstract class AbstractHierophantCard extends CustomCard {
@@ -38,6 +41,15 @@ public abstract class AbstractHierophantCard extends CustomCard {
             isPietyModified = true; 
         }
 
+    }
+
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        boolean canUse = super.canUse(p,m);
+        if (canUse && (AbstractDungeon.player.hasPower(DeathKnellPower.POWER_ID)) && (this.type == CardType.ATTACK)) {
+            this.cantUseMessage = TEXT[10];
+            return false;
+        }
+        return canUse;
     }
 
     public void upgradePiety(int amount) { 

@@ -85,7 +85,7 @@ Last Pass:
    * Heal enemies for 15 HP. Apply 1 Weak and 1 Vulnerable per 5 (3) HP healed.
 
 ## Fiery Strike (cost 1 skill common)
-   * Deal 7 (10) damage. Gain 3 (5) Fervor.
+   * Deal 6 (8) damage. Gain 3 (5) Fervor.
 
 
 ## Skills:

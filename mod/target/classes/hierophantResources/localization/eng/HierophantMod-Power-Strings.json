@@ -31,6 +31,10 @@
         "NAME": "Fervor",
         "DESCRIPTIONS": ["Your next attack deals #b", "0% additional damage."]
 },
+"hierophant:DeathKnellPower": {
+        "NAME": "Death Knell",
+        "DESCRIPTIONS": ["You can't play Hierophant attacks for #b"," turns."]
+},
 "hierophant:CommonPower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]

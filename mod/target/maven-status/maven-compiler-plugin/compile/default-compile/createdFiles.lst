@@ -20,6 +20,7 @@ hierophant/cards/Defend_Hierophant.class
 hierophant/cards/Batter.class
 hierophant/cards/Torch.class
 hierophant/cards/RecallFunds.class
+hierophant/cards/DeathKnell.class
 com/megacrit/cardcrawl/actions/defect/CoinFlingAction.class
 hierophant/cards/CardTemplate.class
 com/megacrit/cardcrawl/actions/defect/PrayerAction.class
@@ -90,6 +91,7 @@ hierophant/cards/AuricLance.class
 hierophant/relics/PlaceholderRelic.class
 hierophant/HoardRewardTypePatch.class
 hierophant/cards/CursedGold.class
+hierophant/powers/DeathKnellPower.class
 hierophant/cards/DisplayOfPower.class
 hierophant/cards/AuricForm.class
 hierophant/cards/RodSlam.class
@@ -98,6 +100,7 @@ hierophant/cards/VowOfSanctity.class
 hierophant/cards/CoinFling.class
 hierophant/cards/Shelter.class
 hierophant/cards/PassingBell.class
+hierophant/cards/FieryStrike.class
 hierophant/cards/Charity.class
 hierophant/HoardReward.class
 hierophant/cards/VowOfStability.class

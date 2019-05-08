@@ -262,6 +262,10 @@
     "NAME":"Passing Bell",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Enlightened."
   },
+  "hierophant:FieryStrike": {
+    "NAME":"Fiery Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Fervor."
+  },
   "hierophant:SolarFlare": {
     "NAME":"Solar Flare",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak and !M! Vulnerable. NL hierophant:Tithe."
@@ -319,6 +323,10 @@
   "hierophant:Torch": {
     "NAME":"Torch",
     "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 3 hierophant:Fervor."
+  },
+  "hierophant:DeathKnell": {
+    "NAME":"Death Knell",
+    "DESCRIPTION": "Gain 30 hierophant:Fervor. You can't play Hierophant attacks for !M! turns."
   },
   "hierophant:Empathy": {
     "NAME":"Empathy",
