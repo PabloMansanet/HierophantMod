@@ -47,6 +47,7 @@ hierophant/powers/CommonPower.class
 hierophant/characters/Hierophant.class
 hierophant/powers/CursedGoldPower.class
 hierophant/cards/ChurchCoffers.class
+hierophant/powers/FervorPower.class
 hierophant/cards/Smite.class
 hierophant/powers/GenerosityPower.class
 com/megacrit/cardcrawl/actions/defect/DazzleAction.class
@@ -74,6 +75,7 @@ hierophant/util/IDCheckDontTouchPls.class
 hierophant/cards/Entourage.class
 hierophant/patches/GildedPatch$ObtainCardConstructorPatch.class
 hierophant/cards/BulkyChest.class
+hierophant/cards/Patience.class
 hierophant/powers/AuricFormPower.class
 hierophant/cards/Racketeering.class
 hierophant/patches/DefaultInsertPatch.class

@@ -64,6 +64,30 @@ be prevented through Artifact. A few cards key off the number of active vows.
 
 # Cards
 
+Last Pass:
+
+## Patience (Cost 2 (1) skill uncommon)
+   * Gain Fervor equal to an enemy's block.
+
+## Death Knell (Cost 1 skill rare)
+   * Gain 30 Fervor. You can't attack during 3(2) turns.
+
+## The Turning Wheel (cost 2 attack uncommon)
+   * Deal 15 (20) damage. This attack does not consume Fervor.
+
+## Kindle (cost 1(0) skill rare)
+   * Gain 1 Strength and 5 Fervor.
+
+## Torchlight (cost 1 skill common)
+   * Enemies gain 1(2) Weak. Gain 4 (6) Fervor.
+
+## Empathy (cost 1 skill uncommon)
+   * Heal enemies for 15 HP. Apply 1 Weak and 1 Vulnerable per 5 (3) HP healed.
+
+## Fiery Strike (cost 1 skill common)
+   * Deal 7 (10) damage. Gain 3 (5) Fervor.
+
+
 ## Skills:
 
 ## Doubloon (cost 0 skill common)
@@ -254,8 +278,7 @@ be prevented through Artifact. A few cards key off the number of active vows.
 
 ## Solar Flare (cost 5 attack uncommon)
    * Tithe
-   * Deal 28 damage to an enemy and inflict 2 weak, 2 vuln.
-   * Enhanced: 36 damage, 3 weak, 3 vuln.
+   * Deal 28 damage to an enemy and gain 10 Fervor.
 
 ## Locust Plague (cost 6 attack rare)
    * Tithe

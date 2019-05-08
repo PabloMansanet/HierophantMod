@@ -390,6 +390,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Doubloon());
         BaseMod.addCard(new MorningPrayer());
         BaseMod.addCard(new HolyVerse());
+        BaseMod.addCard(new Patience());
         BaseMod.addCard(new Endure());
         BaseMod.addCard(new ConvertCurrency());
         BaseMod.addCard(new RecallFunds());
@@ -460,6 +461,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Doubloon.ID);
         UnlockTracker.unlockCard(MorningPrayer.ID);
         UnlockTracker.unlockCard(HolyVerse.ID);
+        UnlockTracker.unlockCard(Patience.ID);
         UnlockTracker.unlockCard(Endure.ID);
         UnlockTracker.unlockCard(ConvertCurrency.ID);
         UnlockTracker.unlockCard(RecallFunds.ID);

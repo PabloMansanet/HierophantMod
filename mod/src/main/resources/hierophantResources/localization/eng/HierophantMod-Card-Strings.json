@@ -80,8 +80,8 @@
   },
   "hierophant:ConvertCurrency": {
     "NAME": "Convert Currency",
-    "DESCRIPTION": "Exhaust a card. NL Gain [E] , then  [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. ",
-    "UPGRADE_DESCRIPTION": "Exhaust a card. NL Gain [E] [E] , then [E] [E] if you exhausted a doubloon. NL hierophant:Gilded. "
+    "DESCRIPTION": "Exhaust a card. NL Gain [E] , then  [E] [E] if you exhausted a Doubloon. NL hierophant:Gilded. ",
+    "UPGRADE_DESCRIPTION": "Exhaust a card. NL Gain [E] [E] , then [E] [E] if you exhausted a Doubloon. NL hierophant:Gilded. "
   },
   "hierophant:RecallFunds": {
     "NAME": "Recall Funds",
@@ -105,7 +105,7 @@
   },
   "hierophant:Encroach": {
     "NAME": "Encroach",
-    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards if you have less block than an enemy."
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards if an enemy has 7 or more Block."
   },
   "hierophant:MirrorShield": {
     "NAME": "Mirror Shield",
@@ -311,6 +311,10 @@
     "NAME":"Blasphemy",
     "DESCRIPTION": "Deal damage equal to twice your hierophant:Piety. NL Lose all hierophant:Piety.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
+  },
+  "hierophant:Patience": {
+    "NAME":"Patience",
+    "DESCRIPTION": "Gain hierophant:Fervor equal to an enemy's Block."
   },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",

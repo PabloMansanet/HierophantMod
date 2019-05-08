@@ -42,6 +42,7 @@ public class Prayer extends AbstractDynamicCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.initializeDescription();
         }
     }
 }

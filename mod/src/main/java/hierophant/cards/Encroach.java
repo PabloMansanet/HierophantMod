@@ -29,6 +29,7 @@ public class Encroach extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
+    private static final int BLOCK_LIMIT = 7;
     private static final int BLOCK = 7;
     private static final int UPGRADE_PLUS_BLOCK = 2;
     private static final int MAGIC= 2;
@@ -44,7 +45,7 @@ public class Encroach extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         boolean draw = false;
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (mo.currentBlock > (p.currentBlock + this.block)) {
+            if (mo.currentBlock >= 7) {
                 draw = true;
             }
         }

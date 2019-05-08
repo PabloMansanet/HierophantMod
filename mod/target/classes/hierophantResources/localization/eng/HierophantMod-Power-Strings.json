@@ -25,7 +25,11 @@
 },
 "hierophant:EnlightenedPower": {
         "NAME": "Enlightened",
-        "DESCRIPTIONS": ["Gain #b50% additional Piety for #b", " turn", " turns."]
+        "DESCRIPTIONS": ["Gain #b50% additional Piety for #b", " turn.", " turns."]
+},
+"hierophant:FervorPower": {
+        "NAME": "Fervor",
+        "DESCRIPTIONS": ["Your next attack deals #b", "0% additional damage."]
 },
 "hierophant:CommonPower": {
         "NAME": "Placeholder Power",
