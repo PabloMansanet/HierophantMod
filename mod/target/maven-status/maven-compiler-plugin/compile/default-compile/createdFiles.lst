@@ -39,6 +39,7 @@ hierophant/cards/Encroach.class
 hierophant/cards/HolyVerse.class
 hierophant/patches/GildedPatch$FastCardObtainConstructorPatch.class
 hierophant/cards/SearingVirtue.class
+hierophant/powers/EmbezzlePower.class
 hierophant/HierophantTags.class
 hierophant/cards/Blasphemy.class
 hierophant/cards/Prophecy.class
@@ -95,10 +96,12 @@ hierophant/cards/DisplayOfPower.class
 hierophant/cards/AuricForm.class
 hierophant/cards/RodSlam.class
 hierophant/relics/BottledPlaceholderRelic.class
+com/megacrit/cardcrawl/actions/defect/MiracleAction.class
 hierophant/cards/VowOfSanctity.class
 hierophant/cards/CoinFling.class
 hierophant/cards/Shelter.class
 hierophant/cards/PassingBell.class
+hierophant/patches/LostGoldPatch.class
 hierophant/cards/FieryStrike.class
 hierophant/cards/Charity.class
 hierophant/HoardReward.class

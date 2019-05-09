@@ -116,13 +116,9 @@
     "NAME": "Church Coffers",
     "DESCRIPTION": "Draw !M! cards. NL gain [E] [E]. NL hierophant:Tithe."
   },
-  "hierophant:Sermon": {
-    "NAME": "Sermon",
-    "DESCRIPTION": "Gain !hierophant:P! hierophant:Piety. NL Gain !hierophant:P! additional hierophant:Piety per unique active hierophant:Vow."
-  },
   "hierophant:Miracle": {
     "NAME": "Miracle",
-    "DESCRIPTION": "Exhaust ALL status cards in your hand. NL Gain !hierophant:P! hierophant:Piety per card exhausted."
+    "DESCRIPTION": "Exhaust ALL Status cards in your hand. NL Gain !hierophant:P! hierophant:Piety per card Exhausted."
   },
   "hierophant:Bribe": {
     "NAME": "Bribe",
@@ -134,7 +130,8 @@
   },
   "hierophant:PristineSoul": {
     "NAME": "Pristine Soul",
-    "DESCRIPTION": "Set your Block and hierophant:Piety to the highest of their values."
+    "DESCRIPTION": "Gain Block equal to your hierophant:Piety. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to your hierophant:Piety."
   },
   "hierophant:Prophecy": {
     "NAME": "Prophecy",
@@ -230,8 +227,8 @@
   },
   "hierophant:CursedGold": {
     "NAME":"Cursed Gold",
-    "DESCRIPTION": "At the start of your turn, shuffle !M! Doubloon from your exhaust pile into your draw pile. NL hierophant:Gilded.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, shuffle !M! Doubloons from your exhaust into your draw pile. NL hierophant:Gilded."
+    "DESCRIPTION": "At the start of your turn, shuffle !M! Doubloon from your exhaust pile into your discard pile. NL hierophant:Gilded.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, shuffle !M! Doubloons from your exhaust into your discard pile. NL hierophant:Gilded."
   },
   "hierophant:AuricForm": {
      "NAME":"Auric Form",
@@ -322,8 +319,8 @@
     "NAME":"Patience",
     "DESCRIPTION": "Gain hierophant:Fervor equal to an enemy's Block."
   },
-  "hierophant:Torch": {
-    "NAME":"Torch",
+  "hierophant:Sermon": {
+    "NAME":"Sermon",
     "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 3 hierophant:Fervor."
   },
   "hierophant:DeathKnell": {

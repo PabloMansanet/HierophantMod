@@ -1,14 +1,15 @@
 
 package hierophant.cards;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
+import hierophant.powers.EmbezzlePower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
@@ -34,27 +35,26 @@ public class Embezzle extends AbstractDynamicCard {
 
     private static final int COST = 0;
     private static final int UPGRADED_COST = 0;
-    private static final int MAGIC = 8;
-
-    // /STAT DECLARATION/
+    private static final int MAGIC = 60;
+    private static final int UPGRADE_PLUS_MAGIC = 40;
 
     public Embezzle() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
-        exhaust = true;
     }
 
-    // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new EmbezzlePower(p, magicNumber), magicNumber));
+        p.gainGold(magicNumber);
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(8);
+            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }

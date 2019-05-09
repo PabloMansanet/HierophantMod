@@ -27,9 +27,9 @@ public class Doomsaying extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 0;
-    private static final int MAGIC = 2;
-    private static final int UPGRADE_PLUS_MAGIC = 2;
+    private static final int COST = 1;
+    private static final int UPGRADED_COST = 0;
+    private static final int MAGIC = 3;
 
     public Doomsaying() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -45,7 +45,7 @@ public class Doomsaying extends AbstractDynamicCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
+            this.upgradeBaseCost(UPGRADED_COST);
         }
     }
 }

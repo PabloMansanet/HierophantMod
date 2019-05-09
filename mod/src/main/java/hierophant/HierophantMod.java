@@ -24,6 +24,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import hierophant.cards.*;
 import hierophant.characters.Hierophant;
+import hierophant.powers.EmbezzlePower;
 import hierophant.powers.PietyPower;
 import hierophant.relics.DonationBoxRelic;
 import hierophant.util.IDCheckDontTouchPls;
@@ -361,7 +362,6 @@ public class HierophantMod implements
         BaseMod.addCard(new ThreeLashes());
         BaseMod.addCard(new Zeal());
         // BaseMod.addCard(new Mercenaries());
-        // BaseMod.addCard(new SearingVirtue());
         BaseMod.addCard(new PassingBell());
         BaseMod.addCard(new SolarFlare());
         // BaseMod.addCard(new LocustPlague());
@@ -397,11 +397,13 @@ public class HierophantMod implements
         BaseMod.addCard(new MirrorShield());
         BaseMod.addCard(new ChurchCoffers());
         BaseMod.addCard(new Sermon());
+        //BaseMod.addCard(new ArchangelHalo());
+        //BaseMod.addCard(new ArchangelWings());
         BaseMod.addCard(new DivineIntervention());
-        // BaseMod.addCard(new Miracle());
+        BaseMod.addCard(new Miracle());
         BaseMod.addCard(new Bribe());
         BaseMod.addCard(new Flagellation());
-        // BaseMod.addCard(new PristineSoul());
+        BaseMod.addCard(new PristineSoul());
         // BaseMod.addCard(new Prophecy());
         BaseMod.addCard(new Doomsaying());
         BaseMod.addCard(new Prayer());
@@ -436,7 +438,6 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(ThreeLashes.ID);
         UnlockTracker.unlockCard(Zeal.ID);
         // UnlockTracker.unlockCard(Mercenaries.ID);
-        // UnlockTracker.unlockCard(SearingVirtue.ID);
         UnlockTracker.unlockCard(PassingBell.ID);
         UnlockTracker.unlockCard(SolarFlare.ID);
         // UnlockTracker.unlockCard(LocustPlague.ID);
@@ -446,7 +447,6 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Upheaval.ID);
         // UnlockTracker.unlockCard(RodSlam.ID);
         UnlockTracker.unlockCard(Punish.ID);
-        // UnlockTracker.unlockCard(Anathema.ID);
         UnlockTracker.unlockCard(Blasphemy.ID);
         UnlockTracker.unlockCard(AuricBeam.ID);
         UnlockTracker.unlockCard(DisplayOfPower.ID);
@@ -472,11 +472,13 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(MirrorShield.ID);
         UnlockTracker.unlockCard(ChurchCoffers.ID);
         UnlockTracker.unlockCard(Sermon.ID);
+        //UnlockTracker.unlockCard(ArchangelHalo.ID);
+        //UnlockTracker.unlockCard(ArchangelWings.ID);
         UnlockTracker.unlockCard(DivineIntervention.ID);
-        // UnlockTracker.unlockCard(Miracle.ID);
+        UnlockTracker.unlockCard(Miracle.ID);
         UnlockTracker.unlockCard(Bribe.ID);
         UnlockTracker.unlockCard(Flagellation.ID);
-        // UnlockTracker.unlockCard(PristineSoul.ID);
+        UnlockTracker.unlockCard(PristineSoul.ID);
         // UnlockTracker.unlockCard(Prophecy.ID);
         UnlockTracker.unlockCard(Doomsaying.ID);
         UnlockTracker.unlockCard(Prayer.ID);
@@ -619,6 +621,10 @@ public class HierophantMod implements
             if (c.hasTag(hierophant.HierophantTags.HIEROPHANT_HOARD)) {
                 addHoardedGoldToRewards(c.magicNumber);
             }
+        }
+
+        if (AbstractDungeon.player.hasPower(EmbezzlePower.POWER_ID)) {
+            AbstractDungeon.player.loseGold(AbstractDungeon.player.getPower(EmbezzlePower.POWER_ID).amount);
         }
     }
     

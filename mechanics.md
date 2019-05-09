@@ -78,7 +78,7 @@ Last Pass:
 ## Kindle (cost 1(0) skill rare)
    * Gain 1 Strength and 5 Fervor.
 
-## Torch (cost 1 skill common)
+## Sermon (cost 1 skill common)
    * Enemies gain 1(2) Weak. Gain 3 Fervor.
 
 ## Empathy (cost 1 skill uncommon)
@@ -90,7 +90,7 @@ Last Pass:
 ## Archangel Halo (cost 3 (2) power rare)
    At the end of your turn, gain Fervor equal to your Piety.
 
-## Archangel Wings (cost 3 (2) power rare)
+## Archangel Wings (cost 2 (1) power rare)
    At the start of your turn, gain Piety equal to your Fervor.
 
 
@@ -165,8 +165,9 @@ Last Pass:
 ## Flagellation (cost 1 skill, uncommon)
    * Add 2 wounds to your hand and gain 12 (16) piety.
 
-## Pristine Soul (cost 2 (1) skill, rare)
-   * Set your Piety and Block to the highest of the two values.
+## Pristine Soul (cost 1 skill, rare)
+   * Gain Block equal to your Piety. Exhaust
+   * Gain Block equal to your Piety.
 
 ## Prophecy (cost 0 skill, uncommon)
    * Reorder your draw pile in decreasing cost order. Exhaust.

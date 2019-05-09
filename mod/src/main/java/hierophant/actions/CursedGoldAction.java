@@ -23,7 +23,7 @@ public class CursedGoldAction extends com.megacrit.cardcrawl.actions.AbstractGam
         }
 
         p.exhaustPile.removeCard(doubloon);
-        p.exhaustPile.moveToDeck(doubloon, true);
+        p.exhaustPile.moveToDiscardPile(doubloon);
         doubloon.unfadeOut();
         this.isDone = true;
     }

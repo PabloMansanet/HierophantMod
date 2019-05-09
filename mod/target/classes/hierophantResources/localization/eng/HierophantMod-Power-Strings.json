@@ -15,6 +15,10 @@
         "NAME": "Generosity",
         "DESCRIPTIONS": ["When you play a Doubloon, draw #b", " additional card.", " additional cards."]
 },
+"hierophant:EmbezzlePower": {
+        "NAME": "Embezzled",
+        "DESCRIPTIONS": ["You have embezzled #b", " Gold. Spend it or you'll lose it at the end of the combat."]
+},
 "hierophant:CharityPower": {
         "NAME": "Charity",
         "DESCRIPTIONS": ["When you play a Doubloon, gain #b", " Piety."]
