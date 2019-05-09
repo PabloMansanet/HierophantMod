@@ -92,12 +92,12 @@
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Block for each Doubloon in your hand. NL hierophant:Gilded."
   },
   "hierophant:Embezzle": {
-    "NAME": "Borrow",
-    "DESCRIPTION": "Gain !M! gold. NL At the end of combat, return any of the !M! gold you did not spend."
+    "NAME": "Embezzle",
+    "DESCRIPTION": "Gain !M! Gold. NL At the end of combat, return any of the !M! Gold you did not spend."
   },
   "hierophant:Entourage": {
     "NAME": "Entourage",
-    "DESCRIPTION": "Gain !B! Block. NL Gain 1 additional Block per !M! gold spent this turn. NL hierophant:Tithe."
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 additional Block per !M! Gold spent this turn. NL hierophant:Tithe."
   },
   "hierophant:Shelter": {
     "NAME": "Shelter",
@@ -189,8 +189,8 @@
   },
   "hierophant:VowOfPoverty": {
     "NAME":"Vow Of Poverty",
-    "DESCRIPTION": "You may not earn gold this combat. NL Gain 1 strength at the start of your turn.",
-    "UPGRADE_DESCRIPTION": "You may not earn gold this combat. NL Gain 1 strength at the start of your turn. NL Innate."
+    "DESCRIPTION": "You may not earn Gold this combat. NL Gain 1 strength at the start of your turn.",
+    "UPGRADE_DESCRIPTION": "You may not earn Gold this combat. NL Gain 1 strength at the start of your turn. NL Innate."
   },
   "hierophant:VowOfSobriety": {
     "NAME":"Vow Of Sobriety",
@@ -232,7 +232,7 @@
   },
   "hierophant:AuricForm": {
      "NAME":"Auric Form",
-    "DESCRIPTION": "At the start of your turn, lose !M! % of your gold, then gain that much Block."
+    "DESCRIPTION": "At the start of your turn, lose !M! % of your Gold, then gain that much Block."
   },
   "hierophant:Phylactery": {
     "NAME":"Phylactery",
@@ -248,11 +248,12 @@
   },
   "hierophant:AuricLance": {
     "NAME":"Auric Lance",
-    "DESCRIPTION": "Deal !D! damage. NL Lose 10 gold."
+    "DESCRIPTION": "Deal !D! damage. NL Lose 10 Gold."
   },
   "hierophant:Mercenaries": {
     "NAME":"Mercenaries",
-    "DESCRIPTION": "Deal !D! damage. NL Deals 1 additional damage for each !M! gold lost this turn. NL hierophant:Tithe."
+    "DESCRIPTION": "Deal !D! damage. NL Deals 1 additional damage for each !M! Gold lost this turn. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:SearingVirtue": {
     "NAME":"Searing Virtue",
@@ -337,7 +338,7 @@
   },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",
-    "DESCRIPTION": "Lose 10% of your gold. NL Deal that much damage.",
+    "DESCRIPTION": "Lose 10% of your Gold. NL Deal that much damage.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:DisplayOfPower": {

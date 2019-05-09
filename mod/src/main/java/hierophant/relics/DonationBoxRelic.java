@@ -2,9 +2,11 @@ package hierophant.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import hierophant.DonationReward;
 import hierophant.HierophantMod;
+import hierophant.powers.EmbezzlePower;
 import hierophant.util.TextureLoader;
 
 import static hierophant.HierophantMod.makeRelicOutlinePath;
@@ -23,7 +25,14 @@ public class DonationBoxRelic extends CustomRelic {
 
     @Override
     public void onVictory() {
-        int reward = (100 - AbstractDungeon.player.gold);
+        // Don't count embezzled gold
+        int reward = 0;
+        AbstractPlayer p = AbstractDungeon.player;
+        if (p.hasPower(EmbezzlePower.POWER_ID)) {
+            reward = (100 - AbstractDungeon.player.gold + p.getPower(EmbezzlePower.POWER_ID).amount);
+        } else {
+            reward = (100 - AbstractDungeon.player.gold);
+        }
         if (reward > 0) {
             AbstractDungeon.getCurrRoom().rewards.add(new DonationReward(reward));
             flash();

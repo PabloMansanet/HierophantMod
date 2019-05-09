@@ -2,31 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28490e81-f8c8-4c76-92dc-f5ccedbf1228" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../mechanics.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mechanics.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/actions/CursedGoldAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/actions/CursedGoldAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Cornucopia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Cornucopia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/CursedGold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/CursedGold.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Defend_Hierophant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Defend_Hierophant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Doomsaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Doomsaying.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Doubloon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Doubloon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Embezzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Embezzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Empathy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Empathy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Miracle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Miracle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/PristineSoul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/PristineSoul.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Repentance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Repentance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Strike_Hierophant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Strike_Hierophant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Entourage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Entourage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Mercenaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Mercenaries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/RodSlam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/RodSlam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/TollTheBells.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/TollTheBells.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Skill.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Skill.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Skill_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Skill_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/patches/LostGoldPatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/patches/LostGoldPatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/relics/DonationBoxRelic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/relics/DonationBoxRelic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Power-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Power-Strings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HierophantMod.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/HierophantMod.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/HierophantMod.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophant/HoardReward.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,33 +49,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/DeathKnellPower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/SolarFlare.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Flagellation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1053">
-              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/PristineSoul.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
@@ -97,8 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/patches/LostGoldPatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+            <state relative-caret-position="270">
+              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/relics/DonationBoxRelic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -112,24 +84,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/EmbezzlePower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+            <state relative-caret-position="232">
+              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
               <folding>
                 <element signature="e#2466#2467#0" expanded="true" />
                 <element signature="e#2529#2530#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/actions/MiracleAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -143,11 +106,45 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="619" column="42" selection-start-line="619" selection-start-column="42" selection-end-line="619" selection-end-column="42" />
+            <state relative-caret-position="135">
+              <caret line="612" column="20" selection-start-line="612" selection-start-column="20" selection-end-line="612" selection-end-column="20" />
+              <folding>
+                <element signature="e#6652#6653#0" expanded="true" />
+                <element signature="e#6720#6721#0" expanded="true" />
+                <element signature="e#11050#11051#0" expanded="true" />
+                <element signature="e#11097#11098#0" expanded="true" />
+                <element signature="e#12499#12526#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/RodSlam.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Mercenaries.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/TollTheBells.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -202,10 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/hierophant/actions/CornucopiaAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Cornucopia.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Dazzle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hierophant/actions/DazzleAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/DivineIntervention.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Shelter.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/SealAway.java" />
@@ -249,10 +242,14 @@
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Miracle.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/PristineSoul.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/patches/OnSpendGoldPatch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hierophant/patches/LostGoldPatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Embezzle.java" />
         <option value="$PROJECT_DIR$/src/main/java/hierophant/powers/EmbezzlePower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/patches/LostGoldPatch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/relics/DonationBoxRelic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/Mercenaries.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/TollTheBells.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/cards/RodSlam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" />
       </list>
     </option>
   </component>
@@ -344,12 +341,12 @@
       <workItem from="1557134283283" duration="29000" />
       <workItem from="1557304540420" duration="11567000" />
       <workItem from="1557368003266" duration="1751000" />
-      <workItem from="1557403932011" duration="1363000" />
+      <workItem from="1557403932011" duration="3859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112977000" />
+    <option name="totallyTimeSpent" value="115473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="-8" width="1870" height="1019" extended-state="0" />
@@ -437,34 +434,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/MorningPrayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Levitation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/AbstractPower.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4995">
-          <caret line="228" selection-start-line="228" selection-end-line="228" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/EndurePower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="999">
-          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/EnlightenedPower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1620">
@@ -750,13 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="619" column="42" selection-start-line="619" selection-start-column="42" selection-end-line="619" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/patches/OnSpendGoldPatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -771,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/patches/LostGoldPatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Embezzle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -787,11 +742,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/powers/EmbezzlePower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+        <state relative-caret-position="232">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding>
             <element signature="e#2466#2467#0" expanded="true" />
             <element signature="e#2529#2530#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/patches/LostGoldPatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/relics/DonationBoxRelic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/Mercenaries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/TollTheBells.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/cards/RodSlam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="612" column="20" selection-start-line="612" selection-start-column="20" selection-end-line="612" selection-end-column="20" />
+          <folding>
+            <element signature="e#6652#6653#0" expanded="true" />
+            <element signature="e#6720#6721#0" expanded="true" />
+            <element signature="e#11050#11051#0" expanded="true" />
+            <element signature="e#11097#11098#0" expanded="true" />
+            <element signature="e#12499#12526#0" expanded="true" />
           </folding>
         </state>
       </provider>

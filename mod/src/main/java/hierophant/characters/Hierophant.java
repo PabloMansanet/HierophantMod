@@ -160,6 +160,10 @@ public class Hierophant extends CustomPlayer {
            retVal.add(Defend_Hierophant.ID);
         }
         retVal.add(ChurchCoffers.ID);
+        retVal.add(Mercenaries.ID);
+        retVal.add(RodSlam.ID);
+        retVal.add(TollTheBells.ID);
+        retVal.add(Embezzle.ID);
 
         return retVal;
     }

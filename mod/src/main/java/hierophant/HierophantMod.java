@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rewards.RewardSave;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -64,12 +65,14 @@ public class HierophantMod implements
         PostBattleSubscriber,
         OnStartBattleSubscriber,
         OnPowersModifiedSubscriber,
+        PreMonsterTurnSubscriber,
         PostInitializeSubscriber {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
     private static String modID;
 
     public static int lastPietyValue = 0;
     public static int pietyLostInCombat = 0;
+    public static int goldLostThisTurn = 0;
 
     // Mod-settings settings. This is if you want an on/off savable button
     public static Properties hierophantDefaultSettings = new Properties();
@@ -361,7 +364,7 @@ public class HierophantMod implements
         BaseMod.addCard(new AuricLance());
         BaseMod.addCard(new ThreeLashes());
         BaseMod.addCard(new Zeal());
-        // BaseMod.addCard(new Mercenaries());
+        BaseMod.addCard(new Mercenaries());
         BaseMod.addCard(new PassingBell());
         BaseMod.addCard(new SolarFlare());
         // BaseMod.addCard(new LocustPlague());
@@ -369,7 +372,7 @@ public class HierophantMod implements
         BaseMod.addCard(new SealAway());
         // BaseMod.addCard(new Smite());
         BaseMod.addCard(new Upheaval());
-        // BaseMod.addCard(new RodSlam());
+        BaseMod.addCard(new RodSlam());
         BaseMod.addCard(new Punish());
         // BaseMod.addCard(new Anathema());
         BaseMod.addCard(new Blasphemy());
@@ -386,7 +389,7 @@ public class HierophantMod implements
         BaseMod.addCard(new ConvertCurrency());
         BaseMod.addCard(new RecallFunds());
         BaseMod.addCard(new Dazzle());
-        // BaseMod.addCard(new Embezzle());
+        BaseMod.addCard(new Embezzle());
         // BaseMod.addCard(new Entourage());
         BaseMod.addCard(new Blessing());
         BaseMod.addCard(new Empathy());
@@ -413,7 +416,7 @@ public class HierophantMod implements
         BaseMod.addCard(new BulkyChest());
         BaseMod.addCard(new Cornucopia());
         BaseMod.addCard(new Racketeering());
-        // BaseMod.addCard(new TollTheBells());
+        BaseMod.addCard(new TollTheBells());
         BaseMod.addCard(new Encroach());
 
         // // Powers
@@ -437,7 +440,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(AuricLance.ID);
         UnlockTracker.unlockCard(ThreeLashes.ID);
         UnlockTracker.unlockCard(Zeal.ID);
-        // UnlockTracker.unlockCard(Mercenaries.ID);
+        UnlockTracker.unlockCard(Mercenaries.ID);
         UnlockTracker.unlockCard(PassingBell.ID);
         UnlockTracker.unlockCard(SolarFlare.ID);
         // UnlockTracker.unlockCard(LocustPlague.ID);
@@ -445,7 +448,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(SealAway.ID);
         // UnlockTracker.unlockCard(Smite.ID);
         UnlockTracker.unlockCard(Upheaval.ID);
-        // UnlockTracker.unlockCard(RodSlam.ID);
+        UnlockTracker.unlockCard(RodSlam.ID);
         UnlockTracker.unlockCard(Punish.ID);
         UnlockTracker.unlockCard(Blasphemy.ID);
         UnlockTracker.unlockCard(AuricBeam.ID);
@@ -461,7 +464,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(ConvertCurrency.ID);
         UnlockTracker.unlockCard(RecallFunds.ID);
         UnlockTracker.unlockCard(Dazzle.ID);
-        // UnlockTracker.unlockCard(Embezzle.ID);
+        UnlockTracker.unlockCard(Embezzle.ID);
         // UnlockTracker.unlockCard(Entourage.ID);
         UnlockTracker.unlockCard(Blessing.ID);
         UnlockTracker.unlockCard(Empathy.ID);
@@ -488,7 +491,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(BulkyChest.ID);
         UnlockTracker.unlockCard(Cornucopia.ID);
         UnlockTracker.unlockCard(Racketeering.ID);
-        // UnlockTracker.unlockCard(TollTheBells.ID);
+        UnlockTracker.unlockCard(TollTheBells.ID);
         UnlockTracker.unlockCard(Encroach.ID);
 
         // // Powers
@@ -602,11 +605,22 @@ public class HierophantMod implements
         }
     }
 
+    // ================ /GOLD TRACKING/ ===================    
+    @Override
+    public boolean receivePreMonsterTurn(AbstractMonster m)
+    {
+        HierophantMod.goldLostThisTurn = 0;
+        return true;
+    }
+
+
     // ================ /SPECIAL POST BATTLE REWARDS/ ===================    
-    //
     @Override
     public void receivePostBattle(AbstractRoom room)
     {
+        if (AbstractDungeon.player.hasPower(EmbezzlePower.POWER_ID)) {
+            AbstractDungeon.player.loseGold(AbstractDungeon.player.getPower(EmbezzlePower.POWER_ID).amount);
+        }
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.hasTag(hierophant.HierophantTags.HIEROPHANT_HOARD)) {
                 addHoardedGoldToRewards(c.magicNumber);
@@ -621,10 +635,6 @@ public class HierophantMod implements
             if (c.hasTag(hierophant.HierophantTags.HIEROPHANT_HOARD)) {
                 addHoardedGoldToRewards(c.magicNumber);
             }
-        }
-
-        if (AbstractDungeon.player.hasPower(EmbezzlePower.POWER_ID)) {
-            AbstractDungeon.player.loseGold(AbstractDungeon.player.getPower(EmbezzlePower.POWER_ID).amount);
         }
     }
     
