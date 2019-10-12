@@ -23,6 +23,7 @@ import static hierophant.HierophantMod.makePowerPath;
 
 // Defeat any enemies with lower or equal HP than your Piety at end of turn.
 public class PietyPower extends AbstractPower implements CloneablePowerInterface {
+
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
     public AbstractCreature source;
 
@@ -33,6 +34,8 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
 
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("piety_big.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("piety_small.png"));
+
+    public static final int REDUCTION_FACTOR = 3;
 
     public PietyPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
         name = NAME;
@@ -48,7 +51,7 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
-        
+
         this.description = DESCRIPTIONS[0];
 
         updateDescription();
@@ -73,15 +76,14 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
                AbstractDungeon.actionManager.addToBottom(new SuicideAction(mo));
            }
         }
-    }  
+
+        int toReduce = this.amount / REDUCTION_FACTOR;
+        AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, POWER_ID, toReduce));
+        HierophantMod.pietyLostInCombat += toReduce;
+    }
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (damageAmount > 0 && target != this.owner && info.type == DamageInfo.DamageType.NORMAL) {
-            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, POWER_ID, 1));
-            HierophantMod.pietyLostInCombat++;
-        }
-
     }
 
     @Override

@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 public abstract class AbstractTitheCard extends AbstractDynamicCard {
-    private static final int GOLD_PER_ENERGY = 20;
+    public static final int GOLD_PER_ENERGY = 20;
 
     public AbstractTitheCard(final String id,
                              final String img,
@@ -30,7 +30,7 @@ public abstract class AbstractTitheCard extends AbstractDynamicCard {
 
     public boolean hasEnoughEnergy()
     {
-        return super.hasEnoughEnergy() 
+        return super.hasEnoughEnergy()
             || (AbstractDungeon.player.gold > GOLD_PER_ENERGY * (this.costForTurn - EnergyPanel.totalCount));
     }
 

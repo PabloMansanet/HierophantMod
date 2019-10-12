@@ -101,7 +101,7 @@ public class Hierophant extends CustomPlayer {
                 HIEROPHANT_SKELETON_JSON);
 
 
-        // =============== TEXTURES, ENERGY, LOADOUT =================  
+        // =============== TEXTURES, ENERGY, LOADOUT =================
 
         initializeClass(null, // required call to load textures and setup energy/loadout.
                 HIEROPHANT_SHOULDER_1, // campfire pose
@@ -112,7 +112,7 @@ public class Hierophant extends CustomPlayer {
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
 
 
-        // =============== ANIMATIONS =================  
+        // =============== ANIMATIONS =================
 
         loadAnimation(
                 HIEROPHANT_SKELETON_ATLAS,
@@ -136,7 +136,7 @@ public class Hierophant extends CustomPlayer {
     }
 
     // =============== /CHARACTER CLASS END/ =================
-
+    //
     // Starting description and loadout
     @Override
     public CharSelectInfo getLoadout() {
@@ -151,7 +151,7 @@ public class Hierophant extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-   
+
         for(int i = 0; i < 4; i = i + 1) {
            retVal.add(Strike_Hierophant.ID);
         }
@@ -160,15 +160,13 @@ public class Hierophant extends CustomPlayer {
            retVal.add(Defend_Hierophant.ID);
         }
         retVal.add(ChurchCoffers.ID);
+        retVal.add(Entourage.ID);
         retVal.add(Mercenaries.ID);
-        retVal.add(RodSlam.ID);
-        retVal.add(TollTheBells.ID);
-        retVal.add(Embezzle.ID);
 
         return retVal;
     }
 
-    // Starting Relics	
+    // Starting Relics
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 

@@ -39,7 +39,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 
-import static hierophant.HoardReward.addHoardedGoldToRewards;
+import static hierophant.rewards.HoardReward.addHoardedGoldToRewards;
 
 
 /*
@@ -83,21 +83,21 @@ public class HierophantMod implements
     private static final String MODNAME = "Hierophant Mod";
     private static final String AUTHOR = "Contrast"; // And pretty soon - You!
     private static final String DESCRIPTION = "Hierophant Playable Character";
-    
+
     // =============== INPUT TEXTURE LOCATION =================
-    
+
     // Colors (RGB)
     // Character Color
-    public static final Color HIEROPHANT_GOLD = CardHelper.getColor(255.0f, 215.0f, 0.0f);
-  
+    public static final Color HIEROPHANT_GOLD = CardHelper.getColor(255, 215, 0);
+
     // Card backgrounds - The actual rectangular card.
     private static final String ATTACK_HIEROPHANT_GOLD = "hierophantResources/images/512/bg_attack_hierophant_gold.png";
     private static final String SKILL_HIEROPHANT_GOLD = "hierophantResources/images/512/bg_skill_hierophant_gold.png";
     private static final String POWER_HIEROPHANT_GOLD = "hierophantResources/images/512/bg_power_hierophant_gold.png";
-    
+
     private static final String ENERGY_ORB_HIEROPHANT_GOLD = "hierophantResources/images/512/card_hierophant_gold_orb.png";
     private static final String CARD_ENERGY_ORB = "hierophantResources/images/512/card_small_orb.png";
-    
+
     private static final String ATTACK_HIEROPHANT_GOLD_PORTRAIT = "hierophantResources/images/1024/bg_attack_hierophant_gold.png";
     private static final String SKILL_HIEROPHANT_GOLD_PORTRAIT = "hierophantResources/images/1024/bg_skill_hierophant_gold.png";
     private static final String POWER_HIEROPHANT_GOLD_PORTRAIT = "hierophantResources/images/1024/bg_power_hierophant_gold.png";
@@ -110,52 +110,52 @@ public class HierophantMod implements
     public static final String HIEROPHANT_SHOULDER_1 = "hierophantResources/images/char/hierophantCharacter/shoulder.png";
     public static final String HIEROPHANT_SHOULDER_2 = "hierophantResources/images/char/hierophantCharacter/shoulder2.png";
     public static final String HIEROPHANT_CORPSE = "hierophantResources/images/char/hierophantCharacter/corpse.png";
-    
+
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
     public static final String BADGE_IMAGE = "hierophantResources/images/Badge.png";
-    
+
     // Atlas and JSON files for the Animations
     public static final String HIEROPHANT_SKELETON_ATLAS = "hierophantResources/images/char/hierophantCharacter/skeleton.atlas";
     public static final String HIEROPHANT_SKELETON_JSON = "hierophantResources/images/char/hierophantCharacter/skeleton.json";
-    
+
     // =============== MAKE IMAGE PATHS =================
-    
+
     public static String makeCardPath(String resourcePath) {
         return getModID() + "Resources/images/cards/" + resourcePath;
     }
-    
+
     public static String makeRelicPath(String resourcePath) {
         return getModID() + "Resources/images/relics/" + resourcePath;
     }
-    
+
     public static String makeRelicOutlinePath(String resourcePath) {
         return getModID() + "Resources/images/relics/outline/" + resourcePath;
     }
-    
+
     public static String makeOrbPath(String resourcePath) {
         return getModID() + "Resources/orbs/" + resourcePath;
     }
-    
+
     public static String makePowerPath(String resourcePath) {
         return getModID() + "Resources/images/powers/" + resourcePath;
     }
-    
+
     public static String makeEventPath(String resourcePath) {
         return getModID() + "Resources/images/events/" + resourcePath;
     }
-    
+
     // =============== /MAKE IMAGE PATHS/ =================
-    
+
     // =============== /INPUT TEXTURE LOCATION/ =================
-    
-    
+
+
     // =============== SUBSCRIBE, CREATE THE COLOR_GOLD, INITIALIZE =================
-    
+
     public HierophantMod() {
         logger.info("Subscribe to BaseMod hooks");
-        
+
         BaseMod.subscribe(this);
-        
+
       /*
            (   ( /(  (     ( /( (            (  `   ( /( )\ )    )\ ))\ )
            )\  )\()) )\    )\()))\ )   (     )\))(  )\()|()/(   (()/(()/(
@@ -165,21 +165,21 @@ public class HierophantMod implements
          | (__| __ |/ _ \ | .` | (_ | _|  | |\/| | (_) | |) |  | | | |) |
           \___|_||_/_/ \_\|_|\_|\___|___| |_|  |_|\___/|___/  |___||___(_)
       */
-      
+
         setModID("hierophant");
         logger.info("Done subscribing");
-        
+
         logger.info("Creating the color " + Hierophant.Enums.COLOR_GOLD.toString());
-        
+
         BaseMod.addColor(Hierophant.Enums.COLOR_GOLD, HIEROPHANT_GOLD, HIEROPHANT_GOLD, HIEROPHANT_GOLD,
                 HIEROPHANT_GOLD, HIEROPHANT_GOLD, HIEROPHANT_GOLD, HIEROPHANT_GOLD,
                 ATTACK_HIEROPHANT_GOLD, SKILL_HIEROPHANT_GOLD, POWER_HIEROPHANT_GOLD, ENERGY_ORB_HIEROPHANT_GOLD,
                 ATTACK_HIEROPHANT_GOLD_PORTRAIT, SKILL_HIEROPHANT_GOLD_PORTRAIT, POWER_HIEROPHANT_GOLD_PORTRAIT,
                 ENERGY_ORB_HIEROPHANT_GOLD_PORTRAIT, CARD_ENERGY_ORB);
-        
+
         logger.info("Done creating the color");
-        
-        
+
+
         logger.info("Adding mod settings");
         // This loads the mod settings.
         // The actual mod Button is added below in receivePostInitialize()
@@ -193,13 +193,13 @@ public class HierophantMod implements
             e.printStackTrace();
         }
         logger.info("Done adding mod settings");
-        
+
     }
-    
+
     // ====== NO EDIT AREA ======
     // DON'T TOUCH THIS STUFF. IT IS HERE FOR STANDARDIZATION BETWEEN MODS AND TO ENSURE GOOD CODE PRACTICES.
     // IF YOU MODIFY THIS I WILL HUNT YOU DOWN AND DOWNVOTE YOUR MOD ON WORKSHOP
-    
+
     public static void setModID(String ID) { // DON'T EDIT
         Gson coolG = new Gson(); // EY DON'T EDIT THIS
         //   String IDjson = Gdx.files.internal("IDCheckStringsDONT-EDIT-AT-ALL.json").readString(String.valueOf(StandardCharsets.UTF_8)); // i hate u Gdx.files
@@ -215,11 +215,11 @@ public class HierophantMod implements
         } // NO
         logger.info("Success! ID is " + modID); // WHY WOULD U WANT IT NOT TO LOG?? DON'T EDIT THIS.
     } // NO
-    
+
     public static String getModID() { // NO
         return modID; // DOUBLE NO
     } // NU-UH
-    
+
     private static void pathCheck() { // ALSO NO
         Gson coolG = new Gson(); // NOPE DON'T EDIT THIS
         //   String IDjson = Gdx.files.internal("IDCheckStringsDONT-EDIT-AT-ALL.json").readString(String.valueOf(StandardCharsets.UTF_8)); // i still hate u btw Gdx.files
@@ -236,47 +236,47 @@ public class HierophantMod implements
             }// NO
         }// NO
     }// NO
-    
+
     // ====== YOU CAN EDIT AGAIN ======
-    
-    
+
+
     @SuppressWarnings("unused")
     public static void initialize() {
         logger.info("========================= Initializing Hierophant Mod. =========================");
         HierophantMod defaultmod = new HierophantMod();
         logger.info("========================= /Hierophant Mod Initialized. Hello World./ =========================");
     }
-    
+
     // ============== /SUBSCRIBE, CREATE THE COLOR_GOLD, INITIALIZE/ =================
-    
-    
+
+
     // =============== LOAD THE CHARACTER =================
-    
+
     @Override
     public void receiveEditCharacters() {
         logger.info("Beginning to edit characters. " + "Add " + Hierophant.Enums.HIEROPHANT.toString());
-        
+
         BaseMod.addCharacter(new Hierophant("Hierophant", Hierophant.Enums.HIEROPHANT),
                 HIEROPHANT_BUTTON, HIEROPHANT_PORTRAIT, Hierophant.Enums.HIEROPHANT);
-        
+
         logger.info("Added " + Hierophant.Enums.HIEROPHANT.toString());
     }
-    
+
     // =============== /LOAD THE CHARACTER/ =================
-    
-    
+
+
     // =============== POST-INITIALIZE =================
-    
+
     @Override
     public void receivePostInitialize() {
         logger.info("Loading badge image and mod options");
-        
+
         // Load the Mod Badge
         Texture badgeTexture = TextureLoader.getTexture(BADGE_IMAGE);
-        
+
         // Create the Mod Menu
         ModPanel settingsPanel = new ModPanel();
-        
+
         // Create the on/off button:
         ModLabeledToggleButton enableNormalsButton = new ModLabeledToggleButton("This is the text which goes next to the checkbox.",
                 350.0f, 700.0f, Settings.CREAM_COLOR, FontHelper.charDescFont, // Position (trial and error it), color, font
@@ -284,7 +284,7 @@ public class HierophantMod implements
                 settingsPanel, // The mod panel in which this button will be in
                 (label) -> {}, // thing??????? idk
                 (button) -> { // The actual button:
-            
+
             enablePlaceholder = button.enabled; // The boolean true/false will be whether the button is enabled or not
             try {
                 // And based on that boolean, set the settings and save them
@@ -295,57 +295,57 @@ public class HierophantMod implements
                 e.printStackTrace();
             }
         });
-        
+
         settingsPanel.addUIElement(enableNormalsButton); // Add the button to the settings panel. Button is a go.
-        
+
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
         logger.info("Done loading badge Image and mod options");
 
         // Registering hoard and donation rewards
         BaseMod.registerCustomReward(
-                hierophant.HoardRewardTypePatch.HIEROPHANT_HOARD_REWARD,
-                (rewardSave) -> { 
-                    return new hierophant.HoardReward(rewardSave.amount);
-                }, 
-                (customReward) -> { 
-                    return new RewardSave(customReward.type.toString(), null, ((hierophant.HoardReward)customReward).amount, 0);
+                hierophant.patches.HoardRewardTypePatch.HIEROPHANT_HOARD_REWARD,
+                (rewardSave) -> {
+                    return new hierophant.rewards.HoardReward(rewardSave.amount);
+                },
+                (customReward) -> {
+                    return new RewardSave(customReward.type.toString(), null, ((hierophant.rewards.HoardReward)customReward).amount, 0);
                 });
         BaseMod.registerCustomReward(
-                hierophant.DonationRewardTypePatch.HIEROPHANT_DONATION_REWARD,
-                (rewardSave) -> { 
-                    return new hierophant.DonationReward(rewardSave.amount);
-                }, 
-                (customReward) -> { 
-                    return new RewardSave(customReward.type.toString(), null, ((hierophant.DonationReward)customReward).amount, 0);
+                hierophant.patches.DonationRewardTypePatch.HIEROPHANT_DONATION_REWARD,
+                (rewardSave) -> {
+                    return new hierophant.rewards.DonationReward(rewardSave.amount);
+                },
+                (customReward) -> {
+                    return new RewardSave(customReward.type.toString(), null, ((hierophant.rewards.DonationReward)customReward).amount, 0);
                 });
     }
-    
+
     // =============== / POST-INITIALIZE/ =================
-    
+
     // ================ ADD RELICS ===================
-    
+
     @Override
     public void receiveEditRelics() {
         logger.info("Adding relics");
-        
+
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         BaseMod.addRelicToCustomPool(new DonationBoxRelic(), Hierophant.Enums.COLOR_GOLD);
         //BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), Hierophant.Enums.COLOR_GOLD);
         //BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), Hierophant.Enums.COLOR_GOLD);
-        
+
         // This adds a relic to the Shared pool. Every character can find this relic.
         //BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
-        
+
         // Mark relics as seen (the others are all starters so they're marked as seen in the character file
         // UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
         logger.info("Done adding relics!");
     }
-    
+
     // ================ /ADD RELICS/ ===================
-    
-    
+
+
     // ================ ADD CARDS ===================
-    
+
     @Override
     public void receiveEditCards() {
         logger.info("Adding variables");
@@ -355,7 +355,7 @@ public class HierophantMod implements
         logger.info("Add variables");
         // Add the Custom Dynamic variabls
         BaseMod.addDynamicVariable(new PietyNumber());
-        
+
         logger.info("Adding cards");
         // Attacks
         BaseMod.addCard(new Strike_Hierophant());
@@ -372,7 +372,7 @@ public class HierophantMod implements
         BaseMod.addCard(new SealAway());
         // BaseMod.addCard(new Smite());
         BaseMod.addCard(new Upheaval());
-        BaseMod.addCard(new RodSlam());
+        BaseMod.addCard(new FlamingChariot());
         BaseMod.addCard(new Punish());
         // BaseMod.addCard(new Anathema());
         BaseMod.addCard(new Blasphemy());
@@ -390,7 +390,7 @@ public class HierophantMod implements
         BaseMod.addCard(new RecallFunds());
         BaseMod.addCard(new Dazzle());
         BaseMod.addCard(new Embezzle());
-        // BaseMod.addCard(new Entourage());
+        BaseMod.addCard(new Entourage());
         BaseMod.addCard(new Blessing());
         BaseMod.addCard(new Empathy());
         BaseMod.addCard(new FieryStrike());
@@ -448,7 +448,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(SealAway.ID);
         // UnlockTracker.unlockCard(Smite.ID);
         UnlockTracker.unlockCard(Upheaval.ID);
-        UnlockTracker.unlockCard(RodSlam.ID);
+        UnlockTracker.unlockCard(FlamingChariot.ID);
         UnlockTracker.unlockCard(Punish.ID);
         UnlockTracker.unlockCard(Blasphemy.ID);
         UnlockTracker.unlockCard(AuricBeam.ID);
@@ -465,7 +465,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(RecallFunds.ID);
         UnlockTracker.unlockCard(Dazzle.ID);
         UnlockTracker.unlockCard(Embezzle.ID);
-        // UnlockTracker.unlockCard(Entourage.ID);
+        UnlockTracker.unlockCard(Entourage.ID);
         UnlockTracker.unlockCard(Blessing.ID);
         UnlockTracker.unlockCard(Empathy.ID);
         UnlockTracker.unlockCard(FieryStrike.ID);
@@ -509,56 +509,56 @@ public class HierophantMod implements
 
         // logger.info("Done adding cards!");
     }
-    
+
     // There are better ways to do this than listing every single individual card, but I do not want to complicate things
     // in a "tutorial" mod. This will do and it's completely ok to use. If you ever want to clean up and
     // shorten all the imports, go look take a look at other mods, such as Hubris.
-    
+
     // ================ /ADD CARDS/ ===================
-    
-    
+
+
     // ================ LOAD THE TEXT ===================
-    
+
     @Override
     public void receiveEditStrings() {
         logger.info("You seeing this?");
         logger.info("Beginning to edit strings for mod with ID: " + getModID());
-        
+
         // CardStrings
         BaseMod.loadCustomStringsFile(CardStrings.class,
                 getModID() + "Resources/localization/eng/HierophantMod-Card-Strings.json");
-        
+
         // PowerStrings
         BaseMod.loadCustomStringsFile(PowerStrings.class,
                 getModID() + "Resources/localization/eng/HierophantMod-Power-Strings.json");
-        
+
         // RelicStrings
         BaseMod.loadCustomStringsFile(RelicStrings.class,
                 getModID() + "Resources/localization/eng/HierophantMod-Relic-Strings.json");
-        
+
         // Event Strings
         BaseMod.loadCustomStringsFile(EventStrings.class,
                 getModID() + "Resources/localization/eng/HierophantMod-Event-Strings.json");
-        
+
         // PotionStrings
         BaseMod.loadCustomStringsFile(PotionStrings.class,
                 getModID() + "Resources/localization/eng/HierophantMod-Potion-Strings.json");
-        
+
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class,
                 getModID() + "Resources/localization/eng/HierophantMod-Character-Strings.json");
-        
+
         // OrbStrings
         BaseMod.loadCustomStringsFile(OrbStrings.class,
                 getModID() + "Resources/localization/eng/HierophantMod-Orb-Strings.json");
-        
+
         logger.info("Done edittting strings");
     }
-    
+
     // ================ /LOAD THE TEXT/ ===================
-    
+
     // ================ LOAD THE KEYWORDS ===================
-    
+
     @Override
     public void receiveEditKeywords() {
         // Keywords on cards are supposed to be Capitalized, while in Keyword-String.json they're lowercase
@@ -568,11 +568,11 @@ public class HierophantMod implements
         // If you're using multiword keywords, the first element in your NAMES array in your keywords-strings.json has to be the same as the PROPER_NAME.
         // That is, in Card-Strings.json you would have #yA_Long_Keyword (#y highlights the keyword in yellow).
         // In Keyword-Strings.json you would have PROPER_NAME as A Long Keyword and the first element in NAMES be a long keyword, and the second element be a_long_keyword
-        
+
         Gson gson = new Gson();
         String json = Gdx.files.internal(getModID() + "Resources/localization/eng/HierophantMod-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
         com.evacipated.cardcrawl.mod.stslib.Keyword[] keywords = gson.fromJson(json, com.evacipated.cardcrawl.mod.stslib.Keyword[].class);
-        
+
         if (keywords != null) {
             for (Keyword keyword : keywords) {
                 BaseMod.addKeyword(getModID().toLowerCase(), keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
@@ -581,14 +581,14 @@ public class HierophantMod implements
         }
     }
 
-    // ================ /PRE BATTLE STAT RESET/ ===================    
+    // ================ /PRE BATTLE STAT RESET/ ===================
     @Override
     public void receiveOnBattleStart(AbstractRoom r) {
         HierophantMod.pietyLostInCombat = 0;
         HierophantMod.lastPietyValue = 0;
     }
 
-    // ================ /PIETY TRACKING/ ===================    
+    // ================ /PIETY TRACKING/ ===================
     @Override
     public void receivePowersModified()
     {
@@ -605,7 +605,7 @@ public class HierophantMod implements
         }
     }
 
-    // ================ /GOLD TRACKING/ ===================    
+    // ================ /GOLD TRACKING/ ===================
     @Override
     public boolean receivePreMonsterTurn(AbstractMonster m)
     {
@@ -614,7 +614,7 @@ public class HierophantMod implements
     }
 
 
-    // ================ /SPECIAL POST BATTLE REWARDS/ ===================    
+    // ================ /SPECIAL POST BATTLE REWARDS/ ===================
     @Override
     public void receivePostBattle(AbstractRoom room)
     {
@@ -636,10 +636,12 @@ public class HierophantMod implements
                 addHoardedGoldToRewards(c.magicNumber);
             }
         }
+
+        HierophantMod.goldLostThisTurn = 0;
     }
-    
-    // ================ /LOAD THE KEYWORDS/ ===================    
-    
+
+    // ================ /LOAD THE KEYWORDS/ ===================
+
     // this adds "ModName:" before the ID of any card/relic/power etc.
     // in order to avoid conflicts if any other mod uses the same ID.
     public static String makeID(String idText) {

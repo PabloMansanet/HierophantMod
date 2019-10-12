@@ -97,7 +97,8 @@
   },
   "hierophant:Entourage": {
     "NAME": "Entourage",
-    "DESCRIPTION": "Gain !B! Block. NL Gain 1 additional Block per !M! Gold spent this turn. NL hierophant:Tithe."
+    "DESCRIPTION": "Gain 1 Block per !M! Gold spent this turn. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": " NL (Gain !B! block.)"
   },
   "hierophant:Shelter": {
     "NAME": "Shelter",
@@ -252,7 +253,7 @@
   },
   "hierophant:Mercenaries": {
     "NAME":"Mercenaries",
-    "DESCRIPTION": "Deal !D! damage. NL Deals 1 additional damage for each !M! Gold lost this turn. NL hierophant:Tithe.",
+    "DESCRIPTION": "Deal 1 damage for each !M! Gold lost this turn. NL hierophant:Tithe.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:SearingVirtue": {

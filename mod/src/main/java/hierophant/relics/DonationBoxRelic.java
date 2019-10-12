@@ -4,7 +4,7 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import hierophant.DonationReward;
+import hierophant.rewards.DonationReward;
 import hierophant.HierophantMod;
 import hierophant.powers.EmbezzlePower;
 import hierophant.util.TextureLoader;

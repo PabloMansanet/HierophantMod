@@ -97,7 +97,8 @@
   },
   "hierophant:Entourage": {
     "NAME": "Entourage",
-    "DESCRIPTION": "Gain !B! Block. NL Gain 1 additional Block per !M! Gold spent this turn. NL hierophant:Tithe."
+    "DESCRIPTION": "Gain 1 Block per !M! Gold spent this turn. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": " NL (Gain !B! block.)"
   },
   "hierophant:Shelter": {
     "NAME": "Shelter",

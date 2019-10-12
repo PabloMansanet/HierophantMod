@@ -8,12 +8,13 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class Mercenaries extends AbstractDynamicCard {
+public class Mercenaries extends AbstractTitheCard {
 
     public static final String ID = HierophantMod.makeID(Mercenaries.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
@@ -26,30 +27,21 @@ public class Mercenaries extends AbstractDynamicCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
-    private static final int COST = 2;
-    private static final int UPGRADED_COST = 2;
-
-    private static final int DAMAGE = 10;
-    private static final int UPGRADE_PLUS_DMG = 4;
-
-    private static final int MAGIC = 4;
+    private static final int COST = 1;
+    private static final int MAGIC = 3;
     private static final int UPGRADE_PLUS_MAGIC = -1;
-
-
 
     public Mercenaries() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
+        baseDamage = 0;
         magicNumber = baseMagicNumber = MAGIC;
 
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.baseDamage = DAMAGE + HierophantMod.goldLostThisTurn / magicNumber;
-        if (this.upgraded) {
-            this.baseDamage += UPGRADE_PLUS_DMG;
-        }
+        payTithe();
+        this.baseDamage = HierophantMod.goldLostThisTurn / magicNumber;
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         this.rawDescription = DESCRIPTION;
@@ -68,10 +60,9 @@ public class Mercenaries extends AbstractDynamicCard {
     @Override
     public void applyPowers()
     {
-        this.baseDamage = DAMAGE + HierophantMod.goldLostThisTurn / magicNumber;
-        if (this.upgraded) {
-            this.baseDamage += UPGRADE_PLUS_DMG;
-        }
+        int tithe = GOLD_PER_ENERGY * (this.costForTurn - EnergyPanel.totalCount);
+
+        this.baseDamage = (tithe + HierophantMod.goldLostThisTurn) / magicNumber;
         super.applyPowers();
         this.rawDescription = DESCRIPTION;
         this.rawDescription += UPGRADE_DESCRIPTION;
@@ -89,7 +80,6 @@ public class Mercenaries extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
             this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
