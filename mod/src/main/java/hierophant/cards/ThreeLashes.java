@@ -28,7 +28,7 @@ public class ThreeLashes extends AbstractDynamicCard {
     private static final int DAMAGE = 1;
     private static final int UPGRADE_PLUS_DMG = 1;
 
-    private static final int PIETY = 6;
+    private static final int PIETY = 3;
 
     public ThreeLashes() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

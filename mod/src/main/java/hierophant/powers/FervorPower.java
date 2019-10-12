@@ -40,7 +40,7 @@ public class FervorPower extends AbstractPower implements CloneablePowerInterfac
         type = PowerType.BUFF;
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
-        
+
         this.description = DESCRIPTIONS[0];
 
         updateDescription();
@@ -53,8 +53,8 @@ public class FervorPower extends AbstractPower implements CloneablePowerInterfac
         this.amount += stackAmount;
         if (this.amount == 0) {
             AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
-       }
-   }
+        }
+    }
 
     @Override
     public float atDamageGive(float damage, DamageInfo.DamageType type)
@@ -67,9 +67,11 @@ public class FervorPower extends AbstractPower implements CloneablePowerInterfac
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (damageAmount > 0 && target != this.owner && info.type == DamageInfo.DamageType.NORMAL) {
+        if (damageAmount > 0 && target != this.owner
+                && info.type == DamageInfo.DamageType.NORMAL
+                && info.name != "FlamingChariot") {
             AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
-        }
+                }
     }
 
     @Override

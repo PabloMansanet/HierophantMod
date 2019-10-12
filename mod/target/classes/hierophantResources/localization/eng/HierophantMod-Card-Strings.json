@@ -182,7 +182,7 @@
   },
   "hierophant:TollTheBells": {
     "NAME":"Toll The Bells",
-    "DESCRIPTION": "Gain 2 [E]. NL Gain 2 hierophant:Enlightened. NL Shuffle 2 Dazed into your draw pile."
+    "DESCRIPTION": "Gain [E] [E]. NL Gain 2 hierophant:Enlightened. NL Shuffle 2 Dazed into your draw pile."
   },
   "hierophant:Racketeering": {
     "NAME":"Racketeering",
@@ -253,7 +253,7 @@
   },
   "hierophant:Mercenaries": {
     "NAME":"Mercenaries",
-    "DESCRIPTION": "Deal 1 damage for each !M! Gold lost this turn. NL hierophant:Tithe.",
+    "DESCRIPTION": "Deal 1 damage per !M! Gold lost this turn. NL hierophant:Tithe.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:SearingVirtue": {
@@ -300,9 +300,9 @@
     "NAME":"Upheaval",
     "DESCRIPTION": "Deal damage to ALL enemies equal to twice their Block. NL hierophant:Tithe."
   },
-  "hierophant:RodSlam": {
-    "NAME":"Rod Slam",
-    "DESCRIPTION": "Deal !D! damage. NL Enemy loses 1 Strength."
+  "hierophant:FlamingChariot": {
+    "NAME":"Flaming Chariot",
+    "DESCRIPTION": "Deal !D! damage. NL Doesn't consume hierophant:Fervor."
   },
   "hierophant:Punish": {
     "NAME":"Punish",
@@ -310,11 +310,7 @@
   },
   "hierophant:Anathema": {
     "NAME":"Anathema",
-    "DESCRIPTION": "Deal !D! damage to each enemy per unique active hierophant:Vow. NL Lose all hierophant:Vows."
-  },
-  "hierophant:Blasphemy": {
-    "NAME":"Blasphemy",
-    "DESCRIPTION": "Deal damage equal to twice your hierophant:Piety. NL Lose all hierophant:Piety.",
+    "DESCRIPTION": "Deal damage equal to three times your hierophant:Piety. NL Lose all hierophant:Piety.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:Patience": {

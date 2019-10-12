@@ -41,6 +41,14 @@ public class Entourage extends AbstractTitheCard {
         magicNumber = baseMagicNumber = MAGIC;
     }
 
+    @Override
+    public void calculateCardDamage(AbstractMonster mo)
+    {
+        super.calculateCardDamage(mo);
+        this.rawDescription = DESCRIPTION;
+        initializeDescription();
+    }
+
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

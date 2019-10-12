@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import static java.lang.Integer.min;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 import hierophant.powers.PietyPower;
@@ -30,9 +31,9 @@ public class DivineIntervention extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 2;
-    private static final int MAGIC = 2;
-    private static final int UPGRADE_PLUS_MAGIC = 1;
+    private static final int COST = 1;
+    private static final int MAGIC = 15;
+    private static final int UPGRADE_PLUS_MAGIC = 15;
 
     public DivineIntervention() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -42,11 +43,11 @@ public class DivineIntervention extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int healAmount = m.maxHealth - m.currentHealth;
+        int healAmount = min(magicNumber, m.maxHealth - m.currentHealth);
         if (healAmount == 0) {
             return;
         }
-        basePiety = healAmount * magicNumber;
+        basePiety = healAmount * 2;
         applyPowers();
         AbstractDungeon.actionManager.addToBottom(new HealAction(m, p, healAmount));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,

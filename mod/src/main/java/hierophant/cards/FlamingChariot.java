@@ -40,10 +40,11 @@ public class FlamingChariot extends AbstractDynamicCard {
         if (p.hasPower("FervorPower")) {
             savedFervor = p.getPower("FervorPower").amount;
         }
+
+        DamageInfo info = new DamageInfo(p, damage, damageTypeForTurn);
+        info.name = "FlamingChariot";
         AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new FervorPower(p, p, savedFervor), savedFervor));
+                new DamageAction(m, info, AbstractGameAction.AttackEffect.FIRE));
     }
 
     @Override

@@ -375,7 +375,7 @@ public class HierophantMod implements
         BaseMod.addCard(new FlamingChariot());
         BaseMod.addCard(new Punish());
         // BaseMod.addCard(new Anathema());
-        BaseMod.addCard(new Blasphemy());
+        BaseMod.addCard(new Anathema());
         BaseMod.addCard(new AuricBeam());
         BaseMod.addCard(new DisplayOfPower());
 
@@ -390,7 +390,7 @@ public class HierophantMod implements
         BaseMod.addCard(new RecallFunds());
         BaseMod.addCard(new Dazzle());
         BaseMod.addCard(new Embezzle());
-        BaseMod.addCard(new Entourage());
+        //BaseMod.addCard(new Entourage());
         BaseMod.addCard(new Blessing());
         BaseMod.addCard(new Empathy());
         BaseMod.addCard(new FieryStrike());
@@ -450,7 +450,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Upheaval.ID);
         UnlockTracker.unlockCard(FlamingChariot.ID);
         UnlockTracker.unlockCard(Punish.ID);
-        UnlockTracker.unlockCard(Blasphemy.ID);
+        UnlockTracker.unlockCard(Anathema.ID);
         UnlockTracker.unlockCard(AuricBeam.ID);
         UnlockTracker.unlockCard(DisplayOfPower.ID);
 
@@ -465,7 +465,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(RecallFunds.ID);
         UnlockTracker.unlockCard(Dazzle.ID);
         UnlockTracker.unlockCard(Embezzle.ID);
-        UnlockTracker.unlockCard(Entourage.ID);
+        //UnlockTracker.unlockCard(Entourage.ID);
         UnlockTracker.unlockCard(Blessing.ID);
         UnlockTracker.unlockCard(Empathy.ID);
         UnlockTracker.unlockCard(FieryStrike.ID);
@@ -586,6 +586,7 @@ public class HierophantMod implements
     public void receiveOnBattleStart(AbstractRoom r) {
         HierophantMod.pietyLostInCombat = 0;
         HierophantMod.lastPietyValue = 0;
+        HierophantMod.goldLostThisTurn = 0;
     }
 
     // ================ /PIETY TRACKING/ ===================
@@ -622,21 +623,20 @@ public class HierophantMod implements
             AbstractDungeon.player.loseGold(AbstractDungeon.player.getPower(EmbezzlePower.POWER_ID).amount);
         }
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.hasTag(hierophant.HierophantTags.HIEROPHANT_HOARD)) {
+            if (c.hasTag(hierophant.tags.HierophantTags.HIEROPHANT_HOARD)) {
                 addHoardedGoldToRewards(c.magicNumber);
             }
         }
         for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
-            if (c.hasTag(hierophant.HierophantTags.HIEROPHANT_HOARD)) {
+            if (c.hasTag(hierophant.tags.HierophantTags.HIEROPHANT_HOARD)) {
                 addHoardedGoldToRewards(c.magicNumber);
             }
         }
         for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
-            if (c.hasTag(hierophant.HierophantTags.HIEROPHANT_HOARD)) {
+            if (c.hasTag(hierophant.tags.HierophantTags.HIEROPHANT_HOARD)) {
                 addHoardedGoldToRewards(c.magicNumber);
             }
         }
-
         HierophantMod.goldLostThisTurn = 0;
     }
 

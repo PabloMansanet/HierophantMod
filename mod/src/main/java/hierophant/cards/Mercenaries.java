@@ -27,7 +27,7 @@ public class Mercenaries extends AbstractTitheCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final int MAGIC = 3;
     private static final int UPGRADE_PLUS_MAGIC = -1;
 
@@ -35,7 +35,6 @@ public class Mercenaries extends AbstractTitheCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = 0;
         magicNumber = baseMagicNumber = MAGIC;
-
     }
 
     @Override
@@ -61,7 +60,6 @@ public class Mercenaries extends AbstractTitheCard {
     public void applyPowers()
     {
         int tithe = GOLD_PER_ENERGY * (this.costForTurn - EnergyPanel.totalCount);
-
         this.baseDamage = (tithe + HierophantMod.goldLostThisTurn) / magicNumber;
         super.applyPowers();
         this.rawDescription = DESCRIPTION;
