@@ -193,7 +193,7 @@
   },
   "hierophant:Alms": {
     "NAME":"Alms",
-    "DESCRIPTION": "Draw cards equal to the highest cost among the cards on your hand."
+    "DESCRIPTION": "Draw cards equal to the highest cost among cards in your hand."
   },
   "hierophant:VowOfPoverty": {
     "NAME":"Vow Of Poverty",
