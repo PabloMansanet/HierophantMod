@@ -23,7 +23,7 @@
         "NAME": "Cursed Gold",
         "DESCRIPTIONS": ["At the start of your turn, move #b", " doubloon from your exhaust pile to your discard pile.", " doubloons from your exhaust pile to your discard pile."]
 },
-"hierophant:Martyrdom": {
+"hierophant:MartyrdomPower": {
         "NAME": "Martyrdom",
         "DESCRIPTIONS": ["When you draw a Status card, gain #b", " Fervor." ]
 },
