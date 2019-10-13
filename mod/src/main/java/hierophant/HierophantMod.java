@@ -390,6 +390,7 @@ public class HierophantMod implements
         BaseMod.addCard(new RecallFunds());
         BaseMod.addCard(new Dazzle());
         BaseMod.addCard(new Embezzle());
+        BaseMod.addCard(new Alms());
         BaseMod.addCard(new Blessing());
         BaseMod.addCard(new Empathy());
         BaseMod.addCard(new FieryStrike());
@@ -462,6 +463,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(RecallFunds.ID);
         UnlockTracker.unlockCard(Dazzle.ID);
         UnlockTracker.unlockCard(Embezzle.ID);
+        UnlockTracker.unlockCard(Alms.ID);
         UnlockTracker.unlockCard(Blessing.ID);
         UnlockTracker.unlockCard(Empathy.ID);
         UnlockTracker.unlockCard(FieryStrike.ID);
