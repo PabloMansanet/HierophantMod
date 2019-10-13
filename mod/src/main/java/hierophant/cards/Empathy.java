@@ -12,6 +12,8 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
+import hierophant.powers.VocationPower;
+import hierophant.powers.FervorPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 import static java.lang.Integer.min;
@@ -32,9 +34,9 @@ public class Empathy extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 0;
-    private static final int MAGIC = 4;
+    private static final int MAGIC = 3;
     private static final int HEAL = 12;
-    private static final int UPGRADE_PLUS_MAGIC = -2;
+    private static final int UPGRADE_PLUS_MAGIC = -1;
 
     // /STAT DECLARATION/
     public Empathy() {
@@ -45,13 +47,20 @@ public class Empathy extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            int healAmount = min(15, mo.maxHealth - mo.currentHealth);
+            int healAmount = min(HEAL, mo.maxHealth - mo.currentHealth);
             if (healAmount == 0) {
                 continue;
             }
             AbstractDungeon.actionManager.addToBottom(new HealAction(mo, p, healAmount));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, healAmount / magicNumber, false), healAmount / magicNumber ));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new VulnerablePower(mo, healAmount / magicNumber, false), healAmount / magicNumber));
+
+
+            if (p.hasPower(VocationPower.POWER_ID)) {
+                int fervor = healAmount * p.getPower(VocationPower.POWER_ID).amount;
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                    new FervorPower(p, p, fervor), fervor));
+            }
         }
     }
 

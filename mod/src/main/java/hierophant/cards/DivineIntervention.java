@@ -12,6 +12,8 @@ import static java.lang.Integer.min;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 import hierophant.powers.PietyPower;
+import hierophant.powers.VocationPower;
+import hierophant.powers.FervorPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
@@ -32,8 +34,8 @@ public class DivineIntervention extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int MAGIC = 10;
-    private static final int UPGRADE_PLUS_MAGIC = 10;
+    private static final int MAGIC = 15;
+    private static final int UPGRADE_PLUS_MAGIC = 15;
 
     public DivineIntervention() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -47,11 +49,16 @@ public class DivineIntervention extends AbstractDynamicCard {
         if (healAmount == 0) {
             return;
         }
-        basePiety = healAmount * 3;
+        basePiety = healAmount * 2;
         applyPowers();
         AbstractDungeon.actionManager.addToBottom(new HealAction(m, p, healAmount));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new PietyPower(p, p, piety), piety));
+        if (p.hasPower(VocationPower.POWER_ID)) {
+            int fervor = healAmount * p.getPower(VocationPower.POWER_ID).amount;
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new FervorPower(p, p, fervor), fervor));
+        }
     }
 
     @Override

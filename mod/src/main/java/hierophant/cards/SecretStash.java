@@ -26,8 +26,8 @@ public class SecretStash extends AbstractDynamicCard {
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
-    private static final int MAGIC = 15;
-    private static final int UPGRADE_PLUS_MAGIC = 15;
+    private static final int MAGIC = 20;
+    private static final int UPGRADE_PLUS_MAGIC = 10;
 
     private static final int COST = 1;
 

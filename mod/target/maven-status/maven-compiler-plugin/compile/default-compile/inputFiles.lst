@@ -16,6 +16,7 @@
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Chorus.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Smite.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Generosity.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/powers/MartyrdomPower.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/actions/DoomsayingAction.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/variables/PietyNumber.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/ChurchCoffers.java
@@ -56,8 +57,10 @@
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/events/IdentityCrisisEvent.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/powers/CommonPower.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/FieryStrike.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/RustyCrate.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/potions/PlaceholderPotion.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Doomsaying.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Alms.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/patches/HoardRewardTypePatch.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Flagellation.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/rewards/DonationReward.java
@@ -68,10 +71,12 @@
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Levitation.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/patches/GildedPatch.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Punish.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Purify.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/HolyVerse.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/actions/CurrencyExchangeAction.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Racketeering.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/SearingVirtue.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Vocation.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/patches/relics/BottledPlaceholderField.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Zeal.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/PassingBell.java
@@ -103,6 +108,7 @@
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/util/IDCheckDontTouchPls.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/relics/DonationBoxRelic.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/powers/FervorPower.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/powers/VocationPower.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/FlamingChariot.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/actions/ProphecyAction.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/DisplayOfPower.java
@@ -112,6 +118,7 @@
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Repentance.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/BulkyChest.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Entourage.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/actions/AlmsAction.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/MirrorShield.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/actions/DisplayOfPowerAction.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Batter.java

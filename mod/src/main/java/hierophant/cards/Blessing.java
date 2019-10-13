@@ -8,7 +8,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
+import static java.lang.Integer.min;
 import hierophant.characters.Hierophant;
+import hierophant.powers.VocationPower;
+import hierophant.powers.FervorPower;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 
 import static hierophant.HierophantMod.makeCardPath;
 
@@ -48,7 +52,16 @@ public class Blessing extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, magicNumber));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            int healAmount = min(magicNumber, mo.maxHealth - mo.currentHealth);
+            if (healAmount == 0) {
+                continue;
+            }
             AbstractDungeon.actionManager.addToBottom(new HealAction(mo, p, magicNumber));
+            if (p.hasPower(VocationPower.POWER_ID)) {
+                int fervor = magicNumber * p.getPower(VocationPower.POWER_ID).amount;
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                    new FervorPower(p, p, fervor), fervor));
+            }
         }
     }
 

@@ -374,6 +374,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Upheaval());
         BaseMod.addCard(new FlamingChariot());
         BaseMod.addCard(new Punish());
+        BaseMod.addCard(new Purify());
         BaseMod.addCard(new Anathema());
         BaseMod.addCard(new AuricBeam());
         BaseMod.addCard(new DisplayOfPower());
@@ -410,6 +411,7 @@ public class HierophantMod implements
         BaseMod.addCard(new SecretStash());
         BaseMod.addCard(new Levitation());
         BaseMod.addCard(new BulkyChest());
+        BaseMod.addCard(new RustyCrate());
         BaseMod.addCard(new Cornucopia());
         BaseMod.addCard(new Racketeering());
         BaseMod.addCard(new TollTheBells());
@@ -417,7 +419,8 @@ public class HierophantMod implements
         BaseMod.addCard(new AuricShield());
 
         // // Powers
-        // BaseMod.addCard(new Martyrdom());
+        BaseMod.addCard(new Martyrdom());
+        BaseMod.addCard(new Vocation());
         BaseMod.addCard(new Generosity());
         BaseMod.addCard(new Charity());
         BaseMod.addCard(new CursedGold());
@@ -443,6 +446,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Upheaval.ID);
         UnlockTracker.unlockCard(FlamingChariot.ID);
         UnlockTracker.unlockCard(Punish.ID);
+        UnlockTracker.unlockCard(Purify.ID);
         UnlockTracker.unlockCard(Anathema.ID);
         UnlockTracker.unlockCard(AuricBeam.ID);
         UnlockTracker.unlockCard(DisplayOfPower.ID);
@@ -479,6 +483,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(SecretStash.ID);
         UnlockTracker.unlockCard(Levitation.ID);
         UnlockTracker.unlockCard(BulkyChest.ID);
+        UnlockTracker.unlockCard(RustyCrate.ID);
         UnlockTracker.unlockCard(Cornucopia.ID);
         UnlockTracker.unlockCard(Racketeering.ID);
         UnlockTracker.unlockCard(TollTheBells.ID);
@@ -490,8 +495,8 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(VowOfSobriety.ID);
         // UnlockTracker.unlockCard(VowOfSanctity.ID);
         // UnlockTracker.unlockCard(VowOfPurity.ID);
-        // UnlockTracker.unlockCard(VowOfStability.ID);
-        // UnlockTracker.unlockCard(Martyrdom.ID);
+        UnlockTracker.unlockCard(Vocation.ID);
+        UnlockTracker.unlockCard(Martyrdom.ID);
         UnlockTracker.unlockCard(Generosity.ID);
         UnlockTracker.unlockCard(Charity.ID);
         UnlockTracker.unlockCard(CursedGold.ID);

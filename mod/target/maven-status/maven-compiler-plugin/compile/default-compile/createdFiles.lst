@@ -7,6 +7,7 @@ hierophant/cards/SolarFlare.class
 hierophant/cards/Punish.class
 com/megacrit/cardcrawl/actions/defect/CursedGoldAction.class
 hierophant/cards/AuricBeam.class
+hierophant/powers/VocationPower.class
 hierophant/cards/Miracle.class
 com/megacrit/cardcrawl/actions/defect/CurrencyExchangeAction.class
 hierophant/events/IdentityCrisisEvent.class
@@ -21,6 +22,7 @@ hierophant/cards/Defend_Hierophant.class
 hierophant/cards/Batter.class
 com/megacrit/cardcrawl/actions/defect/ProphecyAction.class
 hierophant/cards/RecallFunds.class
+hierophant/cards/Vocation.class
 hierophant/cards/DeathKnell.class
 hierophant/cards/CardTemplate.class
 hierophant/relics/DonationBoxRelic.class
@@ -39,11 +41,13 @@ hierophant/cards/AbstractTitheCard.class
 hierophant/cards/Mercenaries.class
 hierophant/patches/HoardRewardTypePatch.class
 hierophant/cards/SealAway.class
+hierophant/cards/Purify.class
 hierophant/cards/Encroach.class
 hierophant/cards/HolyVerse.class
 hierophant/patches/GildedPatch$FastCardObtainConstructorPatch.class
 hierophant/cards/SearingVirtue.class
 hierophant/powers/EmbezzlePower.class
+com/megacrit/cardcrawl/actions/defect/AlmsAction.class
 hierophant/cards/Prophecy.class
 hierophant/cards/Cornucopia.class
 hierophant/variables/DefaultCustomVariable.class
@@ -94,6 +98,7 @@ hierophant/cards/WrathOfGod.class
 hierophant/powers/EnlightenedPower.class
 hierophant/cards/Phylactery.class
 hierophant/cards/AuricLance.class
+hierophant/cards/RustyCrate.class
 hierophant/relics/PlaceholderRelic.class
 hierophant/cards/CursedGold.class
 hierophant/powers/DeathKnellPower.class
@@ -111,6 +116,8 @@ hierophant/cards/Charity.class
 hierophant/cards/VowOfStability.class
 hierophant/potions/PlaceholderPotion.class
 hierophant/cards/Strike_Hierophant.class
+hierophant/powers/MartyrdomPower.class
+hierophant/cards/Alms.class
 hierophant/relics/PlaceholderRelic2.class
 hierophant/cards/Levitation.class
 hierophant/actions/UncommonPowerAction.class

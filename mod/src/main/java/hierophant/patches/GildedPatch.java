@@ -16,9 +16,12 @@ public class GildedPatch {
     })
     public static class ObtainCardConstructorPatch
     {
-        public static void Prefix(ShowCardAndObtainEffect _instance, AbstractCard  card, float x, float y, boolean convergeCards) 
+        public static void Prefix(ShowCardAndObtainEffect _instance, AbstractCard  card, float x, float y, boolean convergeCards)
         {
             if (card.hasTag(hierophant.tags.HierophantTags.HIEROPHANT_GILDED)) {
+                AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(new Doubloon(), x, y));
+            } else if (card.hasTag(hierophant.tags.HierophantTags.HIEROPHANT_DOUBLE_GILDED)) {
+                AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(new Doubloon(), x, y));
                 AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(new Doubloon(), x, y));
             }
         }
@@ -35,6 +38,9 @@ public class GildedPatch {
         {
             if (card.hasTag(hierophant.tags.HierophantTags.HIEROPHANT_GILDED)) {
                 AbstractDungeon.effectList.add(new FastCardObtainEffect(new Doubloon(), x + 50, y));
+            } else if (card.hasTag(hierophant.tags.HierophantTags.HIEROPHANT_DOUBLE_GILDED)) {
+                AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(new Doubloon(), x + 25, y));
+                AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(new Doubloon(), x + 50, y));
             }
         }
     }

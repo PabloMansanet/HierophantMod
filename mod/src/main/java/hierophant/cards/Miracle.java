@@ -28,8 +28,8 @@ public class Miracle extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int PIETY = 5;
-    private static final int PIETY_PLUS_UPGRADE = 3;
+    private static final int PIETY = 8;
+    private static final int PIETY_PLUS_UPGRADE = 4;
 
     public Miracle() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

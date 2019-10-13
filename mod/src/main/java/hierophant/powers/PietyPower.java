@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import hierophant.HierophantMod;
+import static java.lang.Math.ceil;
 import hierophant.util.TextureLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -71,15 +72,23 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
 
     @Override
     public void atEndOfTurn(final boolean isPlayer) {
+        boolean allMonstersPacified = true;
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if ((mo.currentHealth <= this.amount) && (mo.currentHealth > 0)) {
                 this.flash();
                 AbstractDungeon.actionManager.addToTop(new HideHealthBarAction(mo));
                 AbstractDungeon.actionManager.addToBottom(new SuicideAction(mo));
+            } else if (mo.currentHealth > 0) {
+                allMonstersPacified = false;
             }
         }
 
-        int toReduce = this.amount / REDUCTION_FACTOR;
+        if (allMonstersPacified) {
+            // Prevent darkling softlock
+            AbstractDungeon.getCurrRoom().cannotLose = false;
+        }
+
+        int toReduce = (int)ceil(amount / (float)REDUCTION_FACTOR);
         AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, POWER_ID, toReduce));
     }
 

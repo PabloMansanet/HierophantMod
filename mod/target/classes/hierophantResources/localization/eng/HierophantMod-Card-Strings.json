@@ -60,7 +60,7 @@
   },
   "hierophant:DivineIntervention": {
     "NAME": "Divine intervention",
-    "DESCRIPTION": "Heal an enemy up to !M! HP. NL Gain 3 hierophant:Piety per HP healed."
+    "DESCRIPTION": "Heal an enemy up to !M! HP. NL Gain 2 hierophant:Piety per HP healed."
   },
   "hierophant:Strike_Hierophant": {
     "NAME": "Strike",
@@ -162,6 +162,13 @@
       "I can't play this card."
     ]
   },
+  "hierophant:RustyCrate": {
+    "NAME":"Rusty Crate",
+    "DESCRIPTION": "Unplayable. NL hierophant:Hoard !M!. NL hierophant:Gilded 2.",
+    "EXTENDED_DESCRIPTION": [
+      "I can't play this card."
+    ]
+  },
   "hierophant:Cornucopia": {
     "NAME":"Cornucopia",
     "DESCRIPTION": "Add X Doubloons to your hand. NL Exhaust.",
@@ -183,6 +190,10 @@
   "hierophant:Racketeering": {
     "NAME":"Racketeering",
     "DESCRIPTION": "Give an enemy !M! Block. Draw a card for each 5 Block on that enemy."
+  },
+  "hierophant:Alms": {
+    "NAME":"Alms",
+    "DESCRIPTION": "Draw cards equal to the highest cost among the cards on your hand."
   },
   "hierophant:VowOfPoverty": {
     "NAME":"Vow Of Poverty",
@@ -211,12 +222,17 @@
   },
   "hierophant:Martyrdom": {
     "NAME":"Martyrdom",
-    "DESCRIPTION": "Shuffle three Wounds into your draw pile. NL Whenever you draw a Status card, gain !hierophant:P! hierophant:Piety."
+    "DESCRIPTION": "Shuffle three Wounds into your draw pile. NL Whenever you draw a Status card, gain !M! hierophant:Fervor."
   },
   "hierophant:Generosity": {
     "NAME":"Generosity",
     "DESCRIPTION": "Whenever you play a Doubloon, draw an additional card. NL hierophant:Gilded.",
     "UPGRADE_DESCRIPTION": "Whenever you play a Doubloon, draw an additional card. NL hierophant:Gilded. NL Innate."
+  },
+  "hierophant:Vocation": {
+    "NAME":"Vocation",
+    "DESCRIPTION": "When you heal an enemy, gain that much hierophant:Fervor.",
+    "UPGRADE_DESCRIPTION":"When you heal an enemy, gain that much hierophant:Fervor. NL Innate."
   },
   "hierophant:Charity": {
     "NAME":"Charity",
@@ -225,7 +241,7 @@
   "hierophant:CursedGold": {
     "NAME":"Cursed Gold",
     "DESCRIPTION": "At the start of your turn, shuffle !M! Doubloon from your exhaust pile into your discard pile. NL hierophant:Gilded.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, shuffle !M! Doubloons from your exhaust into your discard pile. NL hierophant:Gilded."
+    "UPGRADE_DESCRIPTION": "At the start of your turn, shuffle !M! Doubloons from your exhaust pile into your discard pile. NL hierophant:Gilded."
   },
   "hierophant:ArchangelShield": {
     "NAME":"Archangel Shield",
@@ -282,7 +298,7 @@
   },
   "hierophant:Zeal": {
     "NAME":"Zeal",
-    "DESCRIPTION": "Deal !D! damage. NL Gain hierophant:Piety equal to the damage blocked."
+    "DESCRIPTION": "Deal !D! damage. NL Gain hierophant:Piety equal to twice the damage blocked."
   },
   "hierophant:ThreeLashes": {
     "NAME":"Three Lashes",
@@ -309,6 +325,10 @@
     "NAME":"Punish",
     "DESCRIPTION": "Deal !D! damage. NL Gain !hierophant:P! hierophant:Piety."
   },
+  "hierophant:Purify": {
+    "NAME":"Purify",
+    "DESCRIPTION": "Heal an enemy !M! HP. NL Deal !D! damage."
+  },
   "hierophant:Anathema": {
     "NAME":"Anathema",
     "DESCRIPTION": "Deal damage equal to three times your hierophant:Piety. NL Lose all hierophant:Piety.",
@@ -320,7 +340,7 @@
   },
   "hierophant:Sermon": {
     "NAME":"Sermon",
-    "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 5 hierophant:Fervor."
+    "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 6 hierophant:Fervor."
   },
   "hierophant:DeathKnell": {
     "NAME":"Death Knell",
@@ -328,7 +348,7 @@
   },
   "hierophant:Empathy": {
     "NAME":"Empathy",
-    "DESCRIPTION": "Heal ALL enemies 15. NL Apply 1 Weak and 1 Vulnerable per !M! HP healed."
+    "DESCRIPTION": "Heal ALL enemies 12. NL Apply 1 Weak and 1 Vulnerable per !M! HP healed."
   },
   "hierophant:Kindle": {
     "NAME":"Kindle",
@@ -336,7 +356,7 @@
   },
   "hierophant:Chorus": {
     "NAME":"Chorus",
-    "DESCRIPTION": "Gain 3 hierophant:Fervor. NL Double your hierophant:Fervor. NL Exhaust",
+    "DESCRIPTION": "Gain 3 hierophant:Fervor. NL Double your hierophant:Fervor. NL Exhaust.",
     "UPGRADE_DESCRIPTION":"Gain 3 hierophant:Fervor. NL Double your hierophant:Fervor."
   },
   "hierophant:AuricBeam": {
@@ -348,7 +368,7 @@
     "NAME":"Auric Shield",
     "DESCRIPTION": "Lose 5% of your Gold. NL Gain that much Block.",
     "EXTENDED_DESCRIPTION": [
-       "NL (Gains !B! Block.)"
+       " NL (Gains !B! Block.)"
     ]
   },
   "hierophant:DisplayOfPower": {

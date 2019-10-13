@@ -15,6 +15,18 @@
         "NAME": "Generosity",
         "DESCRIPTIONS": ["When you play a Doubloon, draw #b", " additional card.", " additional cards."]
 },
+"hierophant:VocationPower": {
+        "NAME": "Vocation",
+        "DESCRIPTIONS": ["When you heal an enemy, gain that much Fervor."]
+},
+"hierophant:CursedGoldPower": {
+        "NAME": "Cursed Gold",
+        "DESCRIPTIONS": ["At the start of your turn, move #b", " doubloon from your exhaust pile to your discard pile.", " doubloons from your exhaust pile to your discard pile."]
+},
+"hierophant:Martyrdom": {
+        "NAME": "Martyrdom",
+        "DESCRIPTIONS": ["When you draw a Status card, gain #b", " Fervor." ]
+},
 "hierophant:EmbezzlePower": {
         "NAME": "Embezzled",
         "DESCRIPTIONS": ["You have embezzled #b", " Gold. Spend it or you'll lose it at the end of the combat."]
