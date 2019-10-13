@@ -21,7 +21,7 @@ import static hierophant.HierophantMod.makePowerPath;
 
 public class DeathKnellPower extends AbstractPower implements CloneablePowerInterface {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
-    private static final int FERVOR = 30;
+    private static final int FERVOR = 50;
 
     public static final String POWER_ID = HierophantMod.makeID("DeathKnellPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
@@ -34,7 +34,7 @@ public class DeathKnellPower extends AbstractPower implements CloneablePowerInte
     public DeathKnellPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
-        
+
         this.owner = owner;
         this.amount = amount;
 
@@ -44,7 +44,7 @@ public class DeathKnellPower extends AbstractPower implements CloneablePowerInte
         // We load those txtures here.
         region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
-        
+
         description = DESCRIPTIONS[0];
 
         updateDescription();

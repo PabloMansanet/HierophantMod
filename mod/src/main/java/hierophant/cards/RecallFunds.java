@@ -1,14 +1,14 @@
 
 package hierophant.cards;
 
-import com.megacrit.cardcrawl.actions.defect.RecallFundsAction;
+import hierophant.actions.RecallFundsAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
-import hierophant.HierophantTags;
+import hierophant.tags.HierophantTags;
 import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;

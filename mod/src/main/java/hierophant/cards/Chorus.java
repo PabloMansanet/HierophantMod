@@ -1,20 +1,22 @@
 
 package hierophant.cards;
 
-import com.megacrit.cardcrawl.actions.defect.PrayerAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
+import hierophant.powers.FervorPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class Prayer extends AbstractDynamicCard {
+public class Chorus extends AbstractDynamicCard {
 
-    public static final String ID = HierophantMod.makeID(Prayer.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(Chorus.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Skill.png");
@@ -27,22 +29,31 @@ public class Prayer extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = -1;
+    private static final int COST = 1;
+    private static final int FERVOR = 3;
 
-    public Prayer() {
+    public Chorus() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new PrayerAction(p, this.freeToPlayOnce, this.upgraded, this.energyOnUse));
+        int fervor = FERVOR;
+        if (p.hasPower(FervorPower.POWER_ID)) {
+            fervor += p.getPower(FervorPower.POWER_ID).amount;
+        }
+        fervor *= 2;
+
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new FervorPower(p, p, fervor), fervor));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.initializeDescription();
+            this.exhaust = false;
         }
     }
 }

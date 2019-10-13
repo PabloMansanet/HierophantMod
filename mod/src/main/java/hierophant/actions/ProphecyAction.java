@@ -10,14 +10,14 @@ import hierophant.cards.Doubloon;
 
 import static java.lang.Integer.min;
 
-public class PrayerAction extends com.megacrit.cardcrawl.actions.AbstractGameAction
+public class ProphecyAction extends com.megacrit.cardcrawl.actions.AbstractGameAction
 {
     private boolean freeToPlayOnce = false;
     boolean upgraded;
     private AbstractPlayer p;
     private int energyOnUse = -1;
 
-    public PrayerAction(AbstractPlayer p, boolean freeToPlayOnce, boolean upgraded, int energyOnUse) {
+    public ProphecyAction(AbstractPlayer p, boolean freeToPlayOnce, boolean upgraded, int energyOnUse) {
         this.actionType = AbstractGameAction.ActionType.SPECIAL;
         this.p = p;
         this.freeToPlayOnce = freeToPlayOnce;

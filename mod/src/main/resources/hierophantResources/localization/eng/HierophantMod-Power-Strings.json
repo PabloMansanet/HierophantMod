@@ -23,9 +23,9 @@
         "NAME": "Charity",
         "DESCRIPTIONS": ["When you play a Doubloon, gain #b", " Piety."]
 },
-"hierophant:CursedGoldPower": {
-        "NAME": "Cursed Gold",
-        "DESCRIPTIONS": ["At the start of your turn, shuffle #b", " Doubloon from your exhaust pile into your draw pile.", " Doubloons from your exhaust pile into your draw pile."]
+"hierophant:ArchangelShieldPower": {
+        "NAME": "Archangel Shield",
+        "DESCRIPTIONS": ["At the end of your turn, gain Block equal to twice your Fervor."]
 },
 "hierophant:EnlightenedPower": {
         "NAME": "Enlightened",

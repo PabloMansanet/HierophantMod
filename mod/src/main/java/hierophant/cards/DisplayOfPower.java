@@ -37,7 +37,7 @@ public class DisplayOfPower extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_PLUS_DAMAGE);
+            upgradeDamage(UPGRADE_PLUS_DAMAGE);
         }
     }
 }

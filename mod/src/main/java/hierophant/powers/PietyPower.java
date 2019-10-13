@@ -1,6 +1,7 @@
 package hierophant.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.actions.utility.HideHealthBarAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -64,22 +66,21 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
         this.amount += stackAmount;
         if (this.amount == 0) {
             AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
-       }
-   }
+        }
+    }
 
     @Override
     public void atEndOfTurn(final boolean isPlayer) {
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-           if ((mo.currentHealth <= this.amount) && (mo.currentHealth > 0)) {
-               this.flash();
-               AbstractDungeon.actionManager.addToTop(new HideHealthBarAction(mo));
-               AbstractDungeon.actionManager.addToBottom(new SuicideAction(mo));
-           }
+            if ((mo.currentHealth <= this.amount) && (mo.currentHealth > 0)) {
+                this.flash();
+                AbstractDungeon.actionManager.addToTop(new HideHealthBarAction(mo));
+                AbstractDungeon.actionManager.addToBottom(new SuicideAction(mo));
+            }
         }
 
         int toReduce = this.amount / REDUCTION_FACTOR;
         AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, POWER_ID, toReduce));
-        HierophantMod.pietyLostInCombat += toReduce;
     }
 
     @Override

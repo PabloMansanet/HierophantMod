@@ -13,7 +13,7 @@ import hierophant.cards.Doubloon;
 
 public class DisplayOfPowerAction extends com.megacrit.cardcrawl.actions.AbstractGameAction
 {
-    public static final String CHOOSE_TEXT = "Choose";
+    public static final String CHOOSE_TEXT = "Discard";
     public int damage;
     public int damageMultiplier;
     private AbstractMonster m;
@@ -32,10 +32,11 @@ public class DisplayOfPowerAction extends com.megacrit.cardcrawl.actions.Abstrac
         if (this.duration == com.megacrit.cardcrawl.core.Settings.ACTION_DUR_FAST) {
             if (p.hand.isEmpty()) {
                 this.isDone = true;
-                return; 
+                return;
             }
             if (p.hand.size() == 1) {
                 damageMultiplier = p.hand.getBottomCard().costForTurn;
+                p.hand.moveToDiscardPile(p.hand.getBottomCard());
                 tickDuration();
                 return;
             }

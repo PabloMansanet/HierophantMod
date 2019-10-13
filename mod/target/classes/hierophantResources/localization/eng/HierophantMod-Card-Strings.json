@@ -60,7 +60,7 @@
   },
   "hierophant:DivineIntervention": {
     "NAME": "Divine intervention",
-    "DESCRIPTION": "Fully heal an enemy. NL Gain !M! hierophant:Piety per HP healed."
+    "DESCRIPTION": "Heal an enemy up to !M! HP. NL Gain 3 hierophant:Piety per HP healed."
   },
   "hierophant:Strike_Hierophant": {
     "NAME": "Strike",
@@ -134,17 +134,12 @@
     "DESCRIPTION": "Gain Block equal to your hierophant:Piety. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain Block equal to your hierophant:Piety."
   },
-  "hierophant:Prophecy": {
-    "NAME": "Prophecy",
-    "DESCRIPTION": "Reorder your draw pile in decreasing cost order. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your draw pile, then reorder it in decreasing cost order."
-  },
   "hierophant:Doomsaying": {
     "NAME":"Doomsaying",
     "DESCRIPTION": "Gain Energy equal to the highest cost among the top !M! cards of your draw pile."
   },
-  "hierophant:Prayer": {
-    "NAME":"Prayer",
+  "hierophant:Prophecy": {
+    "NAME":"Prophecy",
     "DESCRIPTION": "Play the highest cost card among the top X cards of your draw pile.",
     "UPGRADE_DESCRIPTION": "Play the highest cost card among the top X+1 cards of your draw pile."
   },
@@ -178,7 +173,8 @@
   },
   "hierophant:Levitation": {
     "NAME":"Levitation",
-    "DESCRIPTION": "Gain 1 Intangible. NL Exhaust. NL hierophant:Tithe."
+    "DESCRIPTION": "Gain 1 Intangible. NL Exhaust. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Intangible. NL hierophant:Tithe."
   },
   "hierophant:TollTheBells": {
     "NAME":"Toll The Bells",
@@ -230,6 +226,10 @@
     "NAME":"Cursed Gold",
     "DESCRIPTION": "At the start of your turn, shuffle !M! Doubloon from your exhaust pile into your discard pile. NL hierophant:Gilded.",
     "UPGRADE_DESCRIPTION": "At the start of your turn, shuffle !M! Doubloons from your exhaust into your discard pile. NL hierophant:Gilded."
+  },
+  "hierophant:ArchangelShield": {
+    "NAME":"Archangel Shield",
+    "DESCRIPTION": "At the end of your turn, gain Block equal to twice your hierophant:Fervor."
   },
   "hierophant:AuricForm": {
      "NAME":"Auric Form",
@@ -286,7 +286,7 @@
   },
   "hierophant:ThreeLashes": {
     "NAME":"Three Lashes",
-    "DESCRIPTION": "NL Gain !hierophant:P! hierophant:Piety. NL Deal !D! damage three times."
+    "DESCRIPTION": "Deal !D! damage three times. NL Gain 3 hierophant:Fervor."
   },
   "hierophant:SealAway": {
     "NAME":"Seal Away",
@@ -294,7 +294,8 @@
   },
   "hierophant:Smite": {
     "NAME":"Smite",
-    "DESCRIPTION": "Deal !D! damage. NL Deals 1 additional damage for every !M! hierophant:Piety."
+    "DESCRIPTION": "Gain !hierophant:P! hierophant:Piety. NL Deal damage equal to your hierophant:Piety.",
+    "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:Upheaval": {
     "NAME":"Upheaval",
@@ -319,11 +320,11 @@
   },
   "hierophant:Sermon": {
     "NAME":"Sermon",
-    "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 3 hierophant:Fervor."
+    "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 5 hierophant:Fervor."
   },
   "hierophant:DeathKnell": {
     "NAME":"Death Knell",
-    "DESCRIPTION": "Your Attacks deal no damage for !M! turns. NL After !M! turns, gain 30 hierophant:Fervor."
+    "DESCRIPTION": "Your Attacks deal no damage for !M! turns. NL After !M! turns, gain 50 hierophant:Fervor."
   },
   "hierophant:Empathy": {
     "NAME":"Empathy",
@@ -333,13 +334,25 @@
     "NAME":"Kindle",
     "DESCRIPTION": "Gain 1 Strength. NL Gain 5 hierophant:Fervor."
   },
+  "hierophant:Chorus": {
+    "NAME":"Chorus",
+    "DESCRIPTION": "Gain 3 hierophant:Fervor. NL Double your hierophant:Fervor. NL Exhaust",
+    "UPGRADE_DESCRIPTION":"Gain 3 hierophant:Fervor. NL Double your hierophant:Fervor."
+  },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",
     "DESCRIPTION": "Lose 10% of your Gold. NL Deal that much damage.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
+  "hierophant:AuricShield": {
+    "NAME":"Auric Shield",
+    "DESCRIPTION": "Lose 5% of your Gold. NL Gain that much Block.",
+    "EXTENDED_DESCRIPTION": [
+       "NL (Gains !B! Block.)"
+    ]
+  },
   "hierophant:DisplayOfPower": {
     "NAME":"Display Of Power",
-    "DESCRIPTION": "Choose a card in your hand. Deal damage equal to !D! times its cost."
+    "DESCRIPTION": "Discard a card. Deal damage equal to !D! times its cost."
   }
 }

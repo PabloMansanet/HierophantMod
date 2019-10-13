@@ -370,11 +370,10 @@ public class HierophantMod implements
         // BaseMod.addCard(new LocustPlague());
         BaseMod.addCard(new WrathOfGod());
         BaseMod.addCard(new SealAway());
-        // BaseMod.addCard(new Smite());
+        BaseMod.addCard(new Smite());
         BaseMod.addCard(new Upheaval());
         BaseMod.addCard(new FlamingChariot());
         BaseMod.addCard(new Punish());
-        // BaseMod.addCard(new Anathema());
         BaseMod.addCard(new Anathema());
         BaseMod.addCard(new AuricBeam());
         BaseMod.addCard(new DisplayOfPower());
@@ -390,26 +389,23 @@ public class HierophantMod implements
         BaseMod.addCard(new RecallFunds());
         BaseMod.addCard(new Dazzle());
         BaseMod.addCard(new Embezzle());
-        //BaseMod.addCard(new Entourage());
         BaseMod.addCard(new Blessing());
         BaseMod.addCard(new Empathy());
         BaseMod.addCard(new FieryStrike());
         BaseMod.addCard(new DeathKnell());
         BaseMod.addCard(new Kindle());
+        BaseMod.addCard(new Chorus());
         BaseMod.addCard(new Shelter());
         BaseMod.addCard(new MirrorShield());
         BaseMod.addCard(new ChurchCoffers());
         BaseMod.addCard(new Sermon());
-        //BaseMod.addCard(new ArchangelHalo());
-        //BaseMod.addCard(new ArchangelWings());
         BaseMod.addCard(new DivineIntervention());
         BaseMod.addCard(new Miracle());
         BaseMod.addCard(new Bribe());
         BaseMod.addCard(new Flagellation());
         BaseMod.addCard(new PristineSoul());
-        // BaseMod.addCard(new Prophecy());
         BaseMod.addCard(new Doomsaying());
-        BaseMod.addCard(new Prayer());
+        BaseMod.addCard(new Prophecy());
         BaseMod.addCard(new Repentance());
         BaseMod.addCard(new SecretStash());
         BaseMod.addCard(new Levitation());
@@ -418,18 +414,15 @@ public class HierophantMod implements
         BaseMod.addCard(new Racketeering());
         BaseMod.addCard(new TollTheBells());
         BaseMod.addCard(new Encroach());
+        BaseMod.addCard(new AuricShield());
 
         // // Powers
-        // BaseMod.addCard(new VowOfPoverty());
-        // BaseMod.addCard(new VowOfSobriety());
-        // BaseMod.addCard(new VowOfSanctity());
-        // BaseMod.addCard(new VowOfPurity());
-        // BaseMod.addCard(new VowOfStability());
         // BaseMod.addCard(new Martyrdom());
         BaseMod.addCard(new Generosity());
         BaseMod.addCard(new Charity());
         BaseMod.addCard(new CursedGold());
         BaseMod.addCard(new AuricForm());
+        BaseMod.addCard(new ArchangelShield());
         // BaseMod.addCard(new Phylactery());
 
         // logger.info("Making sure the cards are unlocked.");
@@ -446,7 +439,7 @@ public class HierophantMod implements
         // UnlockTracker.unlockCard(LocustPlague.ID);
         UnlockTracker.unlockCard(WrathOfGod.ID);
         UnlockTracker.unlockCard(SealAway.ID);
-        // UnlockTracker.unlockCard(Smite.ID);
+        UnlockTracker.unlockCard(Smite.ID);
         UnlockTracker.unlockCard(Upheaval.ID);
         UnlockTracker.unlockCard(FlamingChariot.ID);
         UnlockTracker.unlockCard(Punish.ID);
@@ -465,26 +458,23 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(RecallFunds.ID);
         UnlockTracker.unlockCard(Dazzle.ID);
         UnlockTracker.unlockCard(Embezzle.ID);
-        //UnlockTracker.unlockCard(Entourage.ID);
         UnlockTracker.unlockCard(Blessing.ID);
         UnlockTracker.unlockCard(Empathy.ID);
         UnlockTracker.unlockCard(FieryStrike.ID);
         UnlockTracker.unlockCard(DeathKnell.ID);
         UnlockTracker.unlockCard(Kindle.ID);
+        UnlockTracker.unlockCard(Chorus.ID);
         UnlockTracker.unlockCard(Shelter.ID);
         UnlockTracker.unlockCard(MirrorShield.ID);
         UnlockTracker.unlockCard(ChurchCoffers.ID);
         UnlockTracker.unlockCard(Sermon.ID);
-        //UnlockTracker.unlockCard(ArchangelHalo.ID);
-        //UnlockTracker.unlockCard(ArchangelWings.ID);
         UnlockTracker.unlockCard(DivineIntervention.ID);
         UnlockTracker.unlockCard(Miracle.ID);
         UnlockTracker.unlockCard(Bribe.ID);
         UnlockTracker.unlockCard(Flagellation.ID);
         UnlockTracker.unlockCard(PristineSoul.ID);
-        // UnlockTracker.unlockCard(Prophecy.ID);
         UnlockTracker.unlockCard(Doomsaying.ID);
-        UnlockTracker.unlockCard(Prayer.ID);
+        UnlockTracker.unlockCard(Prophecy.ID);
         UnlockTracker.unlockCard(Repentance.ID);
         UnlockTracker.unlockCard(SecretStash.ID);
         UnlockTracker.unlockCard(Levitation.ID);
@@ -493,6 +483,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Racketeering.ID);
         UnlockTracker.unlockCard(TollTheBells.ID);
         UnlockTracker.unlockCard(Encroach.ID);
+        UnlockTracker.unlockCard(AuricShield.ID);
 
         // // Powers
         // UnlockTracker.unlockCard(VowOfPoverty.ID);
@@ -505,6 +496,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Charity.ID);
         UnlockTracker.unlockCard(CursedGold.ID);
         UnlockTracker.unlockCard(AuricForm.ID);
+        UnlockTracker.unlockCard(ArchangelShield.ID);
         // UnlockTracker.unlockCard(Phylactery.ID);
 
         // logger.info("Done adding cards!");

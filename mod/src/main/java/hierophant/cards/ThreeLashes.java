@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
-import hierophant.powers.PietyPower;
+import hierophant.powers.FervorPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
@@ -18,7 +18,7 @@ public class ThreeLashes extends AbstractDynamicCard {
     public static final String ID = HierophantMod.makeID(ThreeLashes.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
@@ -28,24 +28,23 @@ public class ThreeLashes extends AbstractDynamicCard {
     private static final int DAMAGE = 1;
     private static final int UPGRADE_PLUS_DMG = 1;
 
-    private static final int PIETY = 3;
+    private static final int FERVOR = 3;
 
     public ThreeLashes() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        piety = basePiety = PIETY;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PietyPower(p, p, piety), piety));
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new FervorPower(p, p, FERVOR), FERVOR));
     }
 
     @Override

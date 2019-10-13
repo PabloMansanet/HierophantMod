@@ -1,4 +1,4 @@
-package com.megacrit.cardcrawl.actions.defect;
+package hierophant.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -34,7 +34,7 @@ public class CoinFlingAction extends com.megacrit.cardcrawl.actions.AbstractGame
         if (this.duration == com.megacrit.cardcrawl.core.Settings.ACTION_DUR_FAST) {
             if (this.p.hand.isEmpty()) {
                 this.isDone = true;
-                return; 
+                return;
             }
             if (this.p.hand.size() == 1) {
                 if (this.p.hand.getBottomCard().cardID.equals(DOUBLOON_ID)) {

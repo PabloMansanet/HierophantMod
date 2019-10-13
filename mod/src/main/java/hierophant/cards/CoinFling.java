@@ -1,11 +1,11 @@
 package hierophant.cards;
 
-import com.megacrit.cardcrawl.actions.defect.CoinFlingAction;
+import hierophant.actions.CoinFlingAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
-import hierophant.HierophantTags;
+import hierophant.tags.HierophantTags;
 import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;

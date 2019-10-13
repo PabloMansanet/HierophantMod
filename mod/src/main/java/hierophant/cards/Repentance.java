@@ -53,9 +53,9 @@ public class Repentance extends AbstractDynamicCard {
 
     public void applyPowers()
     {
-      this.basePiety = 2 * HierophantMod.pietyLostInCombat;
       super.applyPowers();
-      
+      this.basePiety = 2 * HierophantMod.pietyLostInCombat;
+
       if (upgraded) {
           rawDescription = UPGRADE_DESCRIPTION;
       } else {

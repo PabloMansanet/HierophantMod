@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
-import hierophant.HierophantTags;
+import hierophant.tags.HierophantTags;
 import hierophant.characters.Hierophant;
 import hierophant.powers.CharityPower;
 
@@ -32,7 +32,7 @@ public class Charity extends AbstractDynamicCard {
 
     public Charity() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        tags.add(HierophantTags.HIEROPHANT_GILDED);
+        tags.add(hierophant.tags.HierophantTags.HIEROPHANT_GILDED);
         this.magicNumber = this.baseMagicNumber = MAGIC;
     }
 

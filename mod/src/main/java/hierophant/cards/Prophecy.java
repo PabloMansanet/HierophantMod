@@ -1,12 +1,12 @@
 
 package hierophant.cards;
 
+import com.megacrit.cardcrawl.actions.defect.ProphecyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 
@@ -22,39 +22,27 @@ public class Prophecy extends AbstractDynamicCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    // /TEXT DECLARATION/
-
-
-    // STAT DECLARATION
-
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 0;
-    private static final int UPGRADED_COST = 0;
-    private static final int MAGIC = 8;
-
-    // /STAT DECLARATION/
+    private static final int COST = -1;
 
     public Prophecy() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        magicNumber = baseMagicNumber = MAGIC;
-        exhaust = true;
     }
 
-    // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ProphecyAction(p, this.freeToPlayOnce, this.upgraded, this.energyOnUse));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(8);
+            this.initializeDescription();
         }
     }
 }

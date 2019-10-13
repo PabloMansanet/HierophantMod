@@ -9,9 +9,11 @@
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/CursedGold.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/powers/CursedGoldPower.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/DivineIntervention.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/ArchangelShield.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/AbstractDynamicCard.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/powers/CharityPower.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/DeathKnell.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Chorus.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Smite.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Generosity.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/actions/DoomsayingAction.java
@@ -39,6 +41,7 @@
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/actions/CoinFlingAction.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/powers/EnlightenedPower.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/relics/PlaceholderRelic.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/powers/ArchangelShieldPower.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/powers/EndurePower.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/VowOfPoverty.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Endure.java
@@ -64,7 +67,6 @@
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/AuricLance.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Levitation.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/patches/GildedPatch.java
-/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Prayer.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Punish.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/HolyVerse.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/actions/CurrencyExchangeAction.java
@@ -74,7 +76,6 @@
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Zeal.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/PassingBell.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/SecretStash.java
-/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/actions/PrayerAction.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Embezzle.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/orbs/DefaultOrb.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Shelter.java
@@ -85,6 +86,7 @@
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/characters/Hierophant.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/AuricForm.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/SealAway.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/AuricShield.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Sermon.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/actions/RecallFundsAction.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/tags/HierophantTags.java
@@ -102,6 +104,7 @@
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/relics/DonationBoxRelic.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/powers/FervorPower.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/FlamingChariot.java
+/home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/actions/ProphecyAction.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/DisplayOfPower.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/powers/GenerosityPower.java
 /home/corax/repos/spire_hierophant/mod/src/main/java/hierophant/cards/Anathema.java

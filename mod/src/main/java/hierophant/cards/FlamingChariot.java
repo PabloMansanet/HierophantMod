@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
-import hierophant.powers.FervorPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
@@ -25,8 +24,8 @@ public class FlamingChariot extends AbstractDynamicCard {
 
     private static final int COST = 2;
 
-    private static final int DAMAGE = 15;
-    private static final int UPGRADE_PLUS_DMG = 20;
+    private static final int DAMAGE = 16;
+    private static final int UPGRADE_PLUS_DMG = 6;
     private static final int MAGIC = 1;
     public FlamingChariot() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -36,11 +35,6 @@ public class FlamingChariot extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int savedFervor = 0;
-        if (p.hasPower("FervorPower")) {
-            savedFervor = p.getPower("FervorPower").amount;
-        }
-
         DamageInfo info = new DamageInfo(p, damage, damageTypeForTurn);
         info.name = "FlamingChariot";
         AbstractDungeon.actionManager.addToBottom(
