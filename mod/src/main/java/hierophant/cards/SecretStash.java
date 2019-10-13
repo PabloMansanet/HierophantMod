@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import hierophant.HierophantMod;
+import hierophant.tags.HierophantTags;
 import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;
@@ -35,6 +36,7 @@ public class SecretStash extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         isEthereal = true;
         magicNumber = baseMagicNumber = MAGIC;
+        tags.add(HierophantTags.HIEROPHANT_HOARD);
     }
 
     @Override
