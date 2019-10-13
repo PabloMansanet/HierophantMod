@@ -30,7 +30,6 @@ public class Vocation extends AbstractDynamicCard {
 
     public Vocation() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        tags.add(HierophantTags.HIEROPHANT_GILDED);
     }
 
 
