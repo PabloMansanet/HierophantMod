@@ -78,10 +78,12 @@ public class DeathKnellPower extends AbstractPower implements CloneablePowerInte
     public void atEndOfRound()
     {
         AbstractPlayer p = AbstractDungeon.player;
-        if (amount == 0) {
+        if (amount == 1) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new FervorPower(p, p, FERVOR), FERVOR));
+            AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.ReducePowerAction(owner, owner, POWER_ID, 1));
+        } if (amount == 0) {
             AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction(owner, owner, POWER_ID));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-            new FervorPower(p, p, FERVOR), FERVOR));
         } else {
             AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.ReducePowerAction(owner, owner, POWER_ID, 1));
         }
