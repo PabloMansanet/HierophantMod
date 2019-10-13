@@ -32,7 +32,7 @@ public class Kindle extends AbstractDynamicCard {
     private static final int COST = 1;
     private static final int UPGRADED_COST = 0;
     private static final int STRENGTH = 1;
-    private static final int FERVOR = 5;
+    private static final int FERVOR = 8;
 
     public Kindle() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

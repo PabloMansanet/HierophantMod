@@ -1,6 +1,7 @@
 package hierophant.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import static java.lang.Integer.min;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -41,9 +42,10 @@ public class Purify extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        int healAmount = min(magicNumber, m.maxHealth - m.currentHealth);
         AbstractDungeon.actionManager.addToBottom(new HealAction(m, p, magicNumber));
         if (p.hasPower(VocationPower.POWER_ID)) {
-            int fervor = magicNumber * p.getPower(VocationPower.POWER_ID).amount;
+            int fervor = healAmount * p.getPower(VocationPower.POWER_ID).amount;
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new FervorPower(p, p, fervor), fervor));
         }
