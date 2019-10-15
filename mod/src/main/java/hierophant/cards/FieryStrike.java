@@ -28,8 +28,8 @@ public class FieryStrike extends AbstractDynamicCard {
     private static final int DAMAGE = 8;
     private static final int UPGRADE_PLUS_DMG = 2;
 
-    private static final int MAGIC = 5;
-    private static final int UPGRADE_PLUS_MAGIC = 3;
+    private static final int MAGIC = 4;
+    private static final int UPGRADE_PLUS_MAGIC = 2;
 
     public FieryStrike() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

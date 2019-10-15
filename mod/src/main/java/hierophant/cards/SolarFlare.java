@@ -1,8 +1,8 @@
 package hierophant.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -34,17 +34,18 @@ public class SolarFlare extends AbstractTitheCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = MAGIC;
-
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         payTithe();
+        if (p.hasPower(FervorPower.POWER_ID)) {
+            int amount = p.getPower(FervorPower.POWER_ID).amount;
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, amount));
+        }
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new FervorPower(p, p, magicNumber), magicNumber));
 
     }
 

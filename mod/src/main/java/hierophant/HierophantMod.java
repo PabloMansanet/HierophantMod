@@ -398,6 +398,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Kindle());
         BaseMod.addCard(new Chorus());
         BaseMod.addCard(new Shelter());
+        BaseMod.addCard(new CrumbleAndRebuild());
         BaseMod.addCard(new MirrorShield());
         BaseMod.addCard(new ChurchCoffers());
         BaseMod.addCard(new Sermon());
@@ -471,6 +472,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Kindle.ID);
         UnlockTracker.unlockCard(Chorus.ID);
         UnlockTracker.unlockCard(Shelter.ID);
+        UnlockTracker.unlockCard(CrumbleAndRebuild.ID);
         UnlockTracker.unlockCard(MirrorShield.ID);
         UnlockTracker.unlockCard(ChurchCoffers.ID);
         UnlockTracker.unlockCard(Sermon.ID);

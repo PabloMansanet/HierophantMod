@@ -54,7 +54,7 @@ public class ArchangelShieldPower extends AbstractPower implements CloneablePowe
     public void atEndOfTurn(boolean isPlayer) {
         AbstractPlayer p = AbstractDungeon.player;
         if (p.hasPower(FervorPower.POWER_ID)) {
-            int block = 2 * this.amount * p.getPower(FervorPower.POWER_ID).amount;
+            int block = this.amount * p.getPower(FervorPower.POWER_ID).amount;
             this.flash();
             AbstractDungeon.actionManager.addToTop(new GainBlockAction(p, p, block));
         }

@@ -43,14 +43,16 @@ public class Purify extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int healAmount = min(magicNumber, m.maxHealth - m.currentHealth);
-        AbstractDungeon.actionManager.addToBottom(new HealAction(m, p, magicNumber));
-        if (p.hasPower(VocationPower.POWER_ID)) {
-            int fervor = healAmount * p.getPower(VocationPower.POWER_ID).amount;
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new FervorPower(p, p, fervor), fervor));
-        }
+        AbstractDungeon.actionManager.addToBottom(new HealAction(m, p, healAmount));
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        if (p.hasPower(VocationPower.POWER_ID)) {
+            int fervor = healAmount * p.getPower(VocationPower.POWER_ID).amount;
+            if (fervor > 0) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                    new FervorPower(p, p, fervor), fervor));
+            }
+        }
     }
 
     @Override

@@ -104,6 +104,10 @@
     "NAME": "Shelter",
     "DESCRIPTION": "Gain !B! Block. NL ALL enemies gain !M! Block."
   },
+  "hierophant:CrumbleAndRebuild": {
+    "NAME": "CrumbleAndRebuild",
+    "DESCRIPTION": "EVERYONE loses 20 block. NL EVERYONE gains !B! Block."
+  },
   "hierophant:Encroach": {
     "NAME": "Encroach",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards if an enemy has 7 or more Block."
@@ -245,7 +249,7 @@
   },
   "hierophant:ArchangelShield": {
     "NAME":"Archangel Shield",
-    "DESCRIPTION": "At the end of your turn, gain Block equal to twice your hierophant:Fervor."
+    "DESCRIPTION": "At the end of your turn, gain Block equal to your hierophant:Fervor."
   },
   "hierophant:AuricForm": {
      "NAME":"Auric Form",

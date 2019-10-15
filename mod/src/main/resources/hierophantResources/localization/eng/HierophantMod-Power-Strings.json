@@ -45,7 +45,7 @@
 },
 "hierophant:FervorPower": {
         "NAME": "Fervor",
-        "DESCRIPTIONS": ["Your next Attack deals #b", "0% additional damage."]
+        "DESCRIPTIONS": ["Your next Attack this turn deals #b", "0% additional damage."]
 },
 "hierophant:DeathKnellPower": {
         "NAME": "Death Knell",

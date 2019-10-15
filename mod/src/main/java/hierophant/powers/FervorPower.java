@@ -4,11 +4,9 @@ import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -60,6 +58,12 @@ public class FervorPower extends AbstractPower implements CloneablePowerInterfac
     }
 
     @Override
+    public void atEndOfTurn(boolean isPlayer)
+    {
+            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+    }
+
+    @Override
     public float atDamageGive(float damage, DamageInfo.DamageType type)
     {
         if (type == DamageInfo.DamageType.NORMAL) {
@@ -74,7 +78,7 @@ public class FervorPower extends AbstractPower implements CloneablePowerInterfac
                 && info.type == DamageInfo.DamageType.NORMAL
                 && info.name != "FlamingChariot") {
             AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
-                }
+            }
     }
 
     @Override

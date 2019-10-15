@@ -24,7 +24,7 @@ public class FlamingChariot extends AbstractDynamicCard {
 
     private static final int COST = 2;
 
-    private static final int DAMAGE = 16;
+    private static final int DAMAGE = 14;
     private static final int UPGRADE_PLUS_DMG = 6;
     private static final int MAGIC = 1;
     public FlamingChariot() {

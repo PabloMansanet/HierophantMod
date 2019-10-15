@@ -28,7 +28,7 @@
     "NAMES": [
       "fervor"
     ],
-    "DESCRIPTION": "Your next attack deals #b10% additional damage per level of Fervor."
+    "DESCRIPTION": "Your next attack this turn deals #b10% additional damage per level of Fervor."
   },
   {
     "NAMES": [
