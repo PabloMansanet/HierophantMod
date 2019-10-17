@@ -313,7 +313,7 @@
   },
   "hierophant:LocustPlague": {
     "NAME":"Locust Plague",
-    "DESCRIPTION": "Deal !D! damage to a random enemy times the combined cost of your hand.",
+    "DESCRIPTION": "Deal !D! damage to a random enemy, times the combined cost of your hand.",
     "EXTENDED_DESCRIPTION": [
        " NL (Hits once.)",
        " NL (Hits !M! times.)"
@@ -366,7 +366,7 @@
   },
   "hierophant:Anathema": {
     "NAME":"Anathema",
-    "DESCRIPTION": "Deal damage equal to three times your hierophant:Piety. NL Lose all hierophant:Piety.",
+    "DESCRIPTION": "Deal 3 damage per hierophant:Piety. NL Lose all hierophant:Piety.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:Patience": {
@@ -410,6 +410,10 @@
     "EXTENDED_DESCRIPTION": [
        " NL (Gains !B! Block.)"
     ]
+  },
+  "hierophant:Determination": {
+    "NAME":"Determination",
+    "DESCRIPTION": "When you defeat an enemy, heal for a third of its remaining HP."
   },
   "hierophant:DisplayOfPower": {
     "NAME":"Display Of Power",

@@ -429,6 +429,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Martyrdom());
         BaseMod.addCard(new Vocation());
         BaseMod.addCard(new Generosity());
+        BaseMod.addCard(new Determination());
         BaseMod.addCard(new Charity());
         BaseMod.addCard(new CursedGold());
         BaseMod.addCard(new AuricForm());
@@ -509,6 +510,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Martyrdom.ID);
         UnlockTracker.unlockCard(Generosity.ID);
         UnlockTracker.unlockCard(Charity.ID);
+        UnlockTracker.unlockCard(Determination.ID);
         UnlockTracker.unlockCard(CursedGold.ID);
         UnlockTracker.unlockCard(AuricForm.ID);
         UnlockTracker.unlockCard(ArchangelShield.ID);

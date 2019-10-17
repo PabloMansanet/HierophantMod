@@ -43,6 +43,10 @@
         "NAME": "Community",
         "DESCRIPTIONS": ["When an enemy gains Block, gain that much Block."]
 },
+"hierophant:Determination": {
+        "NAME": "Determination",
+        "DESCRIPTIONS": ["When you defeat an enemy, heal for a third of its remaining HP."]
+},
 "hierophant:EnlightenedPower": {
         "NAME": "Enlightened",
         "DESCRIPTIONS": ["Gain #b50% additional Piety for #b", " turn.", " turns."]

@@ -1,28 +1,30 @@
 package hierophant.powers;
 
-import basemod.interfaces.CloneablePowerInterface;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import static hierophant.HierophantMod.makePowerPath;
+import static java.lang.Math.ceil;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.common.SuicideAction;
 import com.megacrit.cardcrawl.actions.utility.HideHealthBarAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import hierophant.HierophantMod;
-import static java.lang.Math.ceil;
-import hierophant.util.TextureLoader;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static hierophant.HierophantMod.makePowerPath;
+import basemod.interfaces.CloneablePowerInterface;
+import hierophant.HierophantMod;
+import hierophant.util.TextureLoader;
 
 // Defeat any enemies with lower or equal HP than your Piety at end of turn.
 public class PietyPower extends AbstractPower implements CloneablePowerInterface {
@@ -70,12 +72,23 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
         }
     }
 
+    private void determinationHeal(int healthRemaining) {
+        AbstractPlayer p = AbstractDungeon.player;
+        if (p.hasPower(DeterminationPower.POWER_ID)) {
+            AbstractPower determination = p.getPower(DeterminationPower.POWER_ID);
+            determination.flash();
+            AbstractDungeon.actionManager.addToBottom(
+                    new HealAction(p, p, (determination.amount * healthRemaining) / 3));
+        }
+    }
+
     @Override
     public void atEndOfTurn(final boolean isPlayer) {
         boolean allMonstersPacified = true;
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if ((mo.currentHealth <= this.amount) && (mo.currentHealth > 0)) {
                 this.flash();
+                determinationHeal(mo.currentHealth);
                 AbstractDungeon.actionManager.addToTop(new HideHealthBarAction(mo));
                 AbstractDungeon.actionManager.addToBottom(new SuicideAction(mo));
             } else if (mo.currentHealth > 0) {
