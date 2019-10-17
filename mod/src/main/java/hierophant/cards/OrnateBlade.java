@@ -31,7 +31,7 @@ public class OrnateBlade extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int DAMAGE = 8;
+    private static final int DAMAGE = 9;
     private static final int UPGRADE_PLUS_DAMAGE = 4;
 
     private static final int MAGIC = 3;

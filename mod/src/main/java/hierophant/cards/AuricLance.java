@@ -39,6 +39,7 @@ public class AuricLance extends AbstractTitheCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         baseDamage = (p.gold * magicNumber) / 100;
+        payTithe();
         calculateCardDamage(m);
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
