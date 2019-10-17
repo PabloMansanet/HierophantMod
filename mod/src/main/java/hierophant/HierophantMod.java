@@ -27,6 +27,7 @@ import hierophant.cards.*;
 import hierophant.characters.Hierophant;
 import hierophant.powers.EmbezzlePower;
 import hierophant.powers.PietyPower;
+import hierophant.relics.AtriumRelic;
 import hierophant.relics.BeggarsRobeRelic;
 import hierophant.relics.DonationBoxRelic;
 import hierophant.util.IDCheckDontTouchPls;
@@ -332,14 +333,7 @@ public class HierophantMod implements
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         BaseMod.addRelicToCustomPool(new DonationBoxRelic(), Hierophant.Enums.COLOR_GOLD);
         BaseMod.addRelicToCustomPool(new BeggarsRobeRelic(), Hierophant.Enums.COLOR_GOLD);
-        //BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), Hierophant.Enums.COLOR_GOLD);
-        //BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), Hierophant.Enums.COLOR_GOLD);
-
-        // This adds a relic to the Shared pool. Every character can find this relic.
-        //BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
-
-        // Mark relics as seen (the others are all starters so they're marked as seen in the character file
-        // UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
+        BaseMod.addRelicToCustomPool(new AtriumRelic(), Hierophant.Enums.COLOR_GOLD);
         logger.info("Done adding relics!");
     }
 

@@ -3,6 +3,7 @@ package hierophant.cards;
 
 import static hierophant.HierophantMod.makeCardPath;
 
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -30,7 +31,7 @@ public class EyeForCoin extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
 
     public EyeForCoin() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -42,6 +43,7 @@ public class EyeForCoin extends AbstractDynamicCard {
         Doubloon doubloon = new Doubloon();
         doubloon.upgraded = this.upgraded;
         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(doubloon, p.hb.x, p.hb.y));
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(doubloon, 1));
     }
 
     @Override

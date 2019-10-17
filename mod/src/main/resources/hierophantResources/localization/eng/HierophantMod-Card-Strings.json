@@ -320,8 +320,8 @@
   },
   "hierophant:GoldFever": {
     "NAME":"Gold Fever",
-    "DESCRIPTION": "Deal 5 damage for each Doubloon in your deck. NL Gilded.",
-    "UPGRADE_DESCRIPTION": "Deal 8 damage for each Doubloon in your deck. NL Gilded.",
+    "DESCRIPTION": "Deal 5 damage for each Doubloon in your deck. NL hierophant:Gilded.",
+    "UPGRADE_DESCRIPTION": "Deal 8 damage for each Doubloon in your deck. NL hierophant:Gilded.",
     "EXTENDED_DESCRIPTION": [
        " NL (Deals !D! damage.)"
     ]
@@ -400,7 +400,7 @@
   },
   "hierophant:Exaltation": {
     "NAME":"Exaltation",
-    "DESCRIPTION": "Gain hierophant:Piety equal to your hierophant:Fervor, and hierophant:Fervor equal to your hierophant:Piety."
+    "DESCRIPTION": "Gain hierophant:Piety equal to your hierophant:Fervor and hierophant:Fervor equal to NL your hierophant:Piety."
   },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",
