@@ -45,7 +45,7 @@ public class LocustPlague extends AbstractDynamicCard {
         AbstractCard c;
         while(iter.hasNext()) {
             c = (AbstractCard)iter.next();
-            if (c == this) {
+            if (c == this || c.costForTurn < 0) {
                 continue;
             }
             count += c.costForTurn;
