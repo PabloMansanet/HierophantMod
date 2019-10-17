@@ -6,6 +6,20 @@
       "At the end of each combat, earn enough gold to reach a total of #b80."
     ]
   },
+  "hierophant:AtriumRelic": {
+    "NAME": "Atrium",
+    "FLAVOR": "Voice of the Heavens.",
+    "DESCRIPTIONS": [
+      "Retain the highest cost card of your hand."
+    ]
+  },
+  "hierophant:BeggarsRobeRelic": {
+    "NAME": "Beggar's Robe",
+    "FLAVOR": "... Perhaps they can?",
+    "DESCRIPTIONS": [
+      "When you have less than 10 gold, gain +4 Strength and +4 Dexterity."
+    ]
+  },
   "hierophant:PlaceholderRelic": {
     "NAME": "Placeholder Energy Relic",
     "FLAVOR": "The snake is a friend.",
