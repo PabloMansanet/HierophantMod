@@ -80,12 +80,12 @@
   },
   "hierophant:ConvertCurrency": {
     "NAME": "Convert Currency",
-    "DESCRIPTION": "Exhaust a card. NL Gain [E] , then  [E] [E] if you exhausted a Doubloon. NL hierophant:Gilded. ",
-    "UPGRADE_DESCRIPTION": "Exhaust a card. NL Gain [E] [E] , then [E] [E] if you exhausted a Doubloon. NL hierophant:Gilded. "
+    "DESCRIPTION": "Exhaust a card. NL Gain [E] , then NL [E] [E] if you Exhausted a Doubloon. NL hierophant:Gilded. ",
+    "UPGRADE_DESCRIPTION": "Exhaust a card. NL Gain [E] [E] , then NL [E] [E] if you Exhausted a Doubloon. NL hierophant:Gilded. "
   },
   "hierophant:RecallFunds": {
     "NAME": "Recall Funds",
-    "DESCRIPTION": "Return up to !M! Doubloons from your exhaust pile to your hand. NL Exhaust. NL hierophant:Gilded."
+    "DESCRIPTION": "Return up to !M! Doubloons from your Exhaust pile to your hand. NL Exhaust. NL hierophant:Gilded."
   },
   "hierophant:Dazzle": {
     "NAME": "Dazzle",
@@ -106,11 +106,11 @@
   },
   "hierophant:Rebuild": {
     "NAME": "Rebuild",
-    "DESCRIPTION": "Everyone loses 20 block. NL Everyone gains !B! Block."
+    "DESCRIPTION": "Everyone loses 30 Block. NL Everyone gains !B! Block."
   },
   "hierophant:Encroach": {
     "NAME": "Encroach",
-    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards if an enemy has 7 or more Block."
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards if any enemy has Block."
   },
   "hierophant:MirrorShield": {
     "NAME": "Mirror Shield",
@@ -123,8 +123,8 @@
   },
   "hierophant:Invocation": {
     "NAME": "Invocation",
-    "DESCRIPTION": "Gain [E] [E] [E] [E] [E] [E]. NL hierophant:Tithe.",
-    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E] [E] [E] [E] [E] [E]. NL hierophant:Tithe."
+    "DESCRIPTION": "Gain [E] [E] [E] NL [E] [E] [E]. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E] [E] NL [E] [E] [E] [E]. NL hierophant:Tithe."
   },
   "hierophant:Miracle": {
     "NAME": "Miracle",
@@ -181,7 +181,7 @@
   "hierophant:Cornucopia": {
     "NAME":"Cornucopia",
     "DESCRIPTION": "Add X Doubloons to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add X upgraded Doubloons to your hand. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Add X Upgraded Doubloons to your hand. NL Exhaust."
   },
   "hierophant:Endure": {
     "NAME":"Endure",
@@ -249,12 +249,17 @@
   },
   "hierophant:CursedGold": {
     "NAME":"Cursed Gold",
-    "DESCRIPTION": "At the start of your turn, shuffle !M! Doubloon from your exhaust pile into your discard pile. NL hierophant:Gilded.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, shuffle !M! Doubloons from your exhaust pile into your discard pile. NL hierophant:Gilded."
+    "DESCRIPTION": "At the start of your turn, shuffle !M! Doubloon from your Exhaust pile into your discard pile. NL hierophant:Gilded.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, shuffle !M! Doubloons from your Exhaust pile into your discard pile. NL hierophant:Gilded."
   },
   "hierophant:ArchangelShield": {
     "NAME":"Archangel Shield",
     "DESCRIPTION": "At the end of your turn, gain Block equal to your hierophant:Fervor."
+  },
+  "hierophant:Community": {
+    "NAME":"Community",
+    "DESCRIPTION": "When an enemy gains Block, gain that much Block.",
+    "UPGRADE_DESCRIPTION": "When an enemy gains Block, gain that much Block. NL Innate."
   },
   "hierophant:AuricForm": {
      "NAME":"Auric Form",
@@ -274,7 +279,7 @@
   },
   "hierophant:AuricLance": {
     "NAME":"Auric Lance",
-    "DESCRIPTION": "Deal damage equal to !M!% of your Gold. NL hierophant:Tithe.",
+    "DESCRIPTION": "Deal damage equal to NL !M!% of your Gold. NL hierophant:Tithe.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:Mercenaries": {
@@ -304,11 +309,23 @@
   },
   "hierophant:SolarFlare": {
     "NAME":"Solar Flare",
-    "DESCRIPTION": "Gain Block equal to your hierophant:Fervor. NL Deal !D! damage."
+    "DESCRIPTION": "Gain Block equal to your hierophant:Fervor. NL Deal !D! damage. NL Tithe."
   },
   "hierophant:LocustPlague": {
     "NAME":"Locust Plague",
-    "DESCRIPTION": "Deal !D! damage and apply 1 Vulnerable to a random enemy 8 times. NL hierophant:Tithe."
+    "DESCRIPTION": "Deal !D! damage to a random enemy times the combined cost of your hand.",
+    "EXTENDED_DESCRIPTION": [
+       " NL (Hits once.)",
+       " NL (Hits !M! times.)"
+    ]
+  },
+  "hierophant:GoldFever": {
+    "NAME":"Gold Fever",
+    "DESCRIPTION": "Deal 5 damage for each Doubloon in your deck. NL Gilded.",
+    "UPGRADE_DESCRIPTION": "Deal 8 damage for each Doubloon in your deck. NL Gilded.",
+    "EXTENDED_DESCRIPTION": [
+       " NL (Deals !D! damage.)"
+    ]
   },
   "hierophant:WrathOfGod": {
     "NAME":"Wrath Of God",
@@ -367,6 +384,11 @@
   "hierophant:Empathy": {
     "NAME":"Empathy",
     "DESCRIPTION": "Heal ALL enemies 12. NL Apply 1 Weak and 1 Vulnerable per !M! HP healed."
+  },
+  "hierophant:EyeForCoin": {
+    "NAME":"Eye For Coin",
+    "DESCRIPTION": "Permanently add a Doubloon to your deck. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Permanently add an Upgraded Doubloon yo your deck. NL Exhaust"
   },
   "hierophant:Kindle": {
     "NAME":"Kindle",

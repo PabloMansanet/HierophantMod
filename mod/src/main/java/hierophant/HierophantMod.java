@@ -369,7 +369,8 @@ public class HierophantMod implements
         BaseMod.addCard(new ConquistadorRush());
         BaseMod.addCard(new RepressedViolence());
         BaseMod.addCard(new SolarFlare());
-        // BaseMod.addCard(new LocustPlague());
+        BaseMod.addCard(new LocustPlague());
+        BaseMod.addCard(new GoldFever());
         BaseMod.addCard(new WrathOfGod());
         BaseMod.addCard(new SealAway());
         BaseMod.addCard(new Smite());
@@ -393,6 +394,7 @@ public class HierophantMod implements
         BaseMod.addCard(new RecallFunds());
         BaseMod.addCard(new Dazzle());
         BaseMod.addCard(new Embezzle());
+        BaseMod.addCard(new EyeForCoin());
         BaseMod.addCard(new Alms());
         BaseMod.addCard(new Blessing());
         BaseMod.addCard(new Empathy());
@@ -432,9 +434,8 @@ public class HierophantMod implements
         BaseMod.addCard(new AuricForm());
         BaseMod.addCard(new ArchangelShield());
         BaseMod.addCard(new Community());
-        // BaseMod.addCard(new Phylactery());
 
-        // logger.info("Making sure the cards are unlocked.");
+        logger.info("Making sure the cards are unlocked.");
 
         // // Attacks
         UnlockTracker.unlockCard(Strike_Hierophant.ID);
@@ -447,7 +448,8 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(ConquistadorRush.ID);
         UnlockTracker.unlockCard(RepressedViolence.ID);
         UnlockTracker.unlockCard(SolarFlare.ID);
-        // UnlockTracker.unlockCard(LocustPlague.ID);
+        UnlockTracker.unlockCard(LocustPlague.ID);
+        UnlockTracker.unlockCard(GoldFever.ID);
         UnlockTracker.unlockCard(WrathOfGod.ID);
         UnlockTracker.unlockCard(SealAway.ID);
         UnlockTracker.unlockCard(Smite.ID);
@@ -470,6 +472,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(RecallFunds.ID);
         UnlockTracker.unlockCard(Dazzle.ID);
         UnlockTracker.unlockCard(Embezzle.ID);
+        UnlockTracker.unlockCard(EyeForCoin.ID);
         UnlockTracker.unlockCard(Alms.ID);
         UnlockTracker.unlockCard(Blessing.ID);
         UnlockTracker.unlockCard(Empathy.ID);
@@ -502,10 +505,6 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(AuricShield.ID);
 
         // // Powers
-        // UnlockTracker.unlockCard(VowOfPoverty.ID);
-        // UnlockTracker.unlockCard(VowOfSobriety.ID);
-        // UnlockTracker.unlockCard(VowOfSanctity.ID);
-        // UnlockTracker.unlockCard(VowOfPurity.ID);
         UnlockTracker.unlockCard(Vocation.ID);
         UnlockTracker.unlockCard(Martyrdom.ID);
         UnlockTracker.unlockCard(Generosity.ID);
@@ -514,9 +513,8 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(AuricForm.ID);
         UnlockTracker.unlockCard(ArchangelShield.ID);
         UnlockTracker.unlockCard(Community.ID);
-        // UnlockTracker.unlockCard(Phylactery.ID);
 
-        // logger.info("Done adding cards!");
+        logger.info("Done adding cards!");
     }
 
     // There are better ways to do this than listing every single individual card, but I do not want to complicate things

@@ -40,8 +40,9 @@ public class Community extends AbstractDynamicCard {
     @Override
     public void upgrade() {
         if (!upgraded) {
-            this.isInnate = true;
+            isInnate = true;
             upgradeName();
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

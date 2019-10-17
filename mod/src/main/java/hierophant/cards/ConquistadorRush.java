@@ -33,7 +33,7 @@ public class ConquistadorRush extends AbstractDynamicCard {
     private static final int UPGRADE_PLUS_DMG = 2;
 
     private static final int MAGIC = 3;
-    private static final int UPGRADE_PLUS_MAGIC = 5;
+    private static final int UPGRADE_PLUS_MAGIC = 2;
 
     public ConquistadorRush() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
