@@ -53,6 +53,7 @@ public class MartyrdomPower extends AbstractPower implements CloneablePowerInter
     public void onCardDraw(AbstractCard card) {
         AbstractPlayer p = AbstractDungeon.player;
         if (card.type == AbstractCard.CardType.STATUS) {
+            this.flash();
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                     new FervorPower(p, p, this.amount), this.amount));
         }

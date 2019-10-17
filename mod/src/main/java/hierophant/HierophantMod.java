@@ -382,6 +382,7 @@ public class HierophantMod implements
         BaseMod.addCard(new AuricBeam());
         BaseMod.addCard(new DisplayOfPower());
         BaseMod.addCard(new FieryStrike());
+        BaseMod.addCard(new OrnateBlade());
 
         // // Skills
         BaseMod.addCard(new Defend_Hierophant());
@@ -401,6 +402,7 @@ public class HierophantMod implements
         BaseMod.addCard(new DeathKnell());
         BaseMod.addCard(new Kindle());
         BaseMod.addCard(new Chorus());
+        BaseMod.addCard(new Exaltation());
         BaseMod.addCard(new Shelter());
         BaseMod.addCard(new Rebuild());
         BaseMod.addCard(new MirrorShield());
@@ -408,7 +410,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Invocation());
         BaseMod.addCard(new Sermon());
         BaseMod.addCard(new DivineIntervention());
-        BaseMod.addCard(new Miracle());
+        BaseMod.addCard(new FaithHealing());
         BaseMod.addCard(new Bribe());
         BaseMod.addCard(new Flagellation());
         BaseMod.addCard(new PristineSoul());
@@ -461,6 +463,8 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Anathema.ID);
         UnlockTracker.unlockCard(AuricBeam.ID);
         UnlockTracker.unlockCard(DisplayOfPower.ID);
+        UnlockTracker.unlockCard(FieryStrike.ID);
+        UnlockTracker.unlockCard(OrnateBlade.ID);
 
         // // Skills
         UnlockTracker.unlockCard(Defend_Hierophant.ID);
@@ -477,10 +481,10 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Alms.ID);
         UnlockTracker.unlockCard(Blessing.ID);
         UnlockTracker.unlockCard(Empathy.ID);
-        UnlockTracker.unlockCard(FieryStrike.ID);
         UnlockTracker.unlockCard(DeathKnell.ID);
         UnlockTracker.unlockCard(Kindle.ID);
         UnlockTracker.unlockCard(Chorus.ID);
+        UnlockTracker.unlockCard(Exaltation.ID);
         UnlockTracker.unlockCard(Shelter.ID);
         UnlockTracker.unlockCard(Rebuild.ID);
         UnlockTracker.unlockCard(MirrorShield.ID);
@@ -488,7 +492,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Invocation.ID);
         UnlockTracker.unlockCard(Sermon.ID);
         UnlockTracker.unlockCard(DivineIntervention.ID);
-        UnlockTracker.unlockCard(Miracle.ID);
+        UnlockTracker.unlockCard(FaithHealing.ID);
         UnlockTracker.unlockCard(Bribe.ID);
         UnlockTracker.unlockCard(Flagellation.ID);
         UnlockTracker.unlockCard(PristineSoul.ID);

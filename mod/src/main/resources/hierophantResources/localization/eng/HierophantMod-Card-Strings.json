@@ -126,8 +126,8 @@
     "DESCRIPTION": "Gain [E] [E] [E] NL [E] [E] [E]. NL hierophant:Tithe.",
     "UPGRADE_DESCRIPTION": "Gain [E] [E] [E] [E] NL [E] [E] [E] [E]. NL hierophant:Tithe."
   },
-  "hierophant:Miracle": {
-    "NAME": "Miracle",
+  "hierophant:FaithHealing": {
+    "NAME": "Faith Healing",
     "DESCRIPTION": "Exhaust ALL Status cards in your hand. NL Gain !hierophant:P! hierophant:Piety per card Exhausted."
   },
   "hierophant:Bribe": {
@@ -189,8 +189,7 @@
   },
   "hierophant:Levitation": {
     "NAME":"Levitation",
-    "DESCRIPTION": "Gain 1 Intangible. NL Exhaust. NL hierophant:Tithe.",
-    "UPGRADE_DESCRIPTION": "Gain 1 Intangible. NL hierophant:Tithe."
+    "DESCRIPTION": "Gain 1 Intangible. NL Exhaust. NL hierophant:Tithe."
   },
   "hierophant:TollTheBells": {
     "NAME":"Toll The Bells",
@@ -265,10 +264,6 @@
      "NAME":"Auric Form",
     "DESCRIPTION": "At the start of your turn, lose !M!% of your gold, then gain that much hierophant:Fervor and hierophant:Piety."
   },
-  "hierophant:Phylactery": {
-    "NAME":"Phylactery",
-    "DESCRIPTION": "When you would die, heal to !M!% of your max HP instead and remove this power. NL hierophant:Tithe."
-  },
   "hierophant:CoinFling": {
     "NAME":"Coin Fling",
     "DESCRIPTION": "NL Discard a card. NL Deal !D! damage. NL Deals double damage if you discarded a Doubloon. NL hierophant:Gilded."
@@ -294,6 +289,10 @@
   "hierophant:PassingBell": {
     "NAME":"Passing Bell",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Enlightened."
+  },
+  "hierophant:OrnateBlade": {
+    "NAME":"Ornate Blade",
+    "DESCRIPTION": "Deal !D! damage. NL hierophant:Hoard !M!."
   },
   "hierophant:ConquistadorRush": {
     "NAME":"Conquistador Rush",
@@ -398,6 +397,10 @@
     "NAME":"Chorus",
     "DESCRIPTION": "Gain 4 hierophant:Fervor. NL Double your hierophant:Fervor. NL Exhaust.",
     "UPGRADE_DESCRIPTION":"Gain 4 hierophant:Fervor. NL Double your hierophant:Fervor."
+  },
+  "hierophant:Exaltation": {
+    "NAME":"Exaltation",
+    "DESCRIPTION": "Gain hierophant:Piety equal to your hierophant:Fervor, and hierophant:Fervor equal to your hierophant:Piety."
   },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",

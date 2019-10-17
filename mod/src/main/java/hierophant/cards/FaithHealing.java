@@ -1,20 +1,21 @@
 
 package hierophant.cards;
 
-import com.megacrit.cardcrawl.actions.defect.MiracleAction;
+import static hierophant.HierophantMod.makeCardPath;
+
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
 import hierophant.HierophantMod;
+import hierophant.actions.FaithHealingAction;
 import hierophant.characters.Hierophant;
 
-import static hierophant.HierophantMod.makeCardPath;
+public class FaithHealing extends AbstractDynamicCard {
 
-public class Miracle extends AbstractDynamicCard {
-
-    public static final String ID = HierophantMod.makeID(Miracle.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(FaithHealing.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Skill.png");
@@ -31,14 +32,14 @@ public class Miracle extends AbstractDynamicCard {
     private static final int PIETY = 8;
     private static final int PIETY_PLUS_UPGRADE = 4;
 
-    public Miracle() {
+    public FaithHealing() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         piety = basePiety = PIETY;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new MiracleAction(p, piety));
+        AbstractDungeon.actionManager.addToBottom(new FaithHealingAction(p, piety));
     }
 
     @Override

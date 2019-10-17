@@ -1,4 +1,4 @@
-package com.megacrit.cardcrawl.actions.defect;
+package hierophant.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -7,11 +7,11 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import hierophant.powers.PietyPower;
 
-public class MiracleAction extends com.megacrit.cardcrawl.actions.AbstractGameAction
+public class FaithHealingAction extends com.megacrit.cardcrawl.actions.AbstractGameAction
 {
     private int piety;
     private AbstractPlayer p;
-    public MiracleAction(AbstractPlayer p, int piety) {
+    public FaithHealingAction(AbstractPlayer p, int piety) {
         this.actionType = AbstractGameAction.ActionType.EXHAUST;
         this.p = p;
         this.piety = piety;
