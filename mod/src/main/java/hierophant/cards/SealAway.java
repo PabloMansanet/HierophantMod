@@ -23,11 +23,10 @@ public class SealAway extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int UPGRADED_COST = 1;
+    private static final int UPGRADED_COST = 0;
 
-    private static final int DAMAGE = 10;
-    private static final int UPGRADE_PLUS_DMG = 5 ;
-    private static final int MAGIC = 10;
+    private static final int DAMAGE = 11;
+    private static final int MAGIC = 11;
 
     public SealAway() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -47,7 +46,7 @@ public class SealAway extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeBaseCost(UPGRADED_COST);
         }
     }
 }

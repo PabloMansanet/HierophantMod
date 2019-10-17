@@ -1,19 +1,3 @@
-Repressed Violence:
-
-0 cost common:
-Deal 3 damage.
-Ethereal.
-When exhausted, permanently increase its damage by 2(3).
-
-Conquistador Rush
-1 cost uncommon:
-
-Deal 8(10) damage, plus 3 (4) per exhausted Doubloon.
-Gilded.
-
-Solar Flare:
-Carries Fervor over.
-
 Exaltation:
 1(0) cost rare skill:
 Gain Fervor equal to your Piety and Piety equal to your Fervor.
@@ -37,3 +21,8 @@ Eye for Coin:
 2(2).
 Permanently add a (upgraded) Doubloon to your deck.
 Exhaust.
+
+Invocation:
+4e
+Gain 6e (8e)
+Tithe

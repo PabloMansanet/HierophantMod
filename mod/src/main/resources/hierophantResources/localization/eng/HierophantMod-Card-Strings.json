@@ -60,7 +60,7 @@
   },
   "hierophant:DivineIntervention": {
     "NAME": "Divine intervention",
-    "DESCRIPTION": "Heal an enemy up to !M! HP. NL Gain 2 hierophant:Piety per HP healed."
+    "DESCRIPTION": "Heal an enemy !M! HP. NL Gain 2 hierophant:Piety per HP healed."
   },
   "hierophant:Strike_Hierophant": {
     "NAME": "Strike",
@@ -104,9 +104,9 @@
     "NAME": "Shelter",
     "DESCRIPTION": "Gain !B! Block. NL ALL enemies gain !M! Block."
   },
-  "hierophant:CrumbleAndRebuild": {
-    "NAME": "CrumbleAndRebuild",
-    "DESCRIPTION": "EVERYONE loses 20 block. NL EVERYONE gains !B! Block."
+  "hierophant:Rebuild": {
+    "NAME": "Rebuild",
+    "DESCRIPTION": "Everyone loses 20 block. NL Everyone gains !B! Block."
   },
   "hierophant:Encroach": {
     "NAME": "Encroach",
@@ -120,6 +120,11 @@
   "hierophant:ChurchCoffers": {
     "NAME": "Church Coffers",
     "DESCRIPTION": "Draw !M! cards. NL gain [E] [E]. NL hierophant:Tithe."
+  },
+  "hierophant:Invocation": {
+    "NAME": "Invocation",
+    "DESCRIPTION": "Gain [E] [E] [E] [E] [E] [E]. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E] [E] [E] [E] [E] [E]. NL hierophant:Tithe."
   },
   "hierophant:Miracle": {
     "NAME": "Miracle",
@@ -253,7 +258,7 @@
   },
   "hierophant:AuricForm": {
      "NAME":"Auric Form",
-    "DESCRIPTION": "At the start of your turn, lose !M! % of your Gold, then gain that much Block."
+    "DESCRIPTION": "At the start of your turn, lose !M!% of your gold, then gain that much hierophant:Fervor and hierophant:Piety."
   },
   "hierophant:Phylactery": {
     "NAME":"Phylactery",
@@ -269,7 +274,8 @@
   },
   "hierophant:AuricLance": {
     "NAME":"Auric Lance",
-    "DESCRIPTION": "Deal !D! damage. NL Lose 10 Gold."
+    "DESCRIPTION": "Deal damage equal to !M!% of your Gold. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:Mercenaries": {
     "NAME":"Mercenaries",
@@ -284,13 +290,21 @@
     "NAME":"Passing Bell",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Enlightened."
   },
+  "hierophant:ConquistadorRush": {
+    "NAME":"Conquistador Rush",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage per Exhausted Doubloon. NL hierophant:Gilded."
+  },
+  "hierophant:RepressedViolence": {
+    "NAME":"Repressed Violence",
+    "DESCRIPTION": "Deal !D! damage. NL Ethereal. NL When Exhausted, permanently increase its damage by !M!."
+  },
   "hierophant:FieryStrike": {
     "NAME":"Fiery Strike",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Fervor."
   },
   "hierophant:SolarFlare": {
     "NAME":"Solar Flare",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Fervor. NL hierophant:Tithe."
+    "DESCRIPTION": "Gain Block equal to your hierophant:Fervor. NL Deal !D! damage."
   },
   "hierophant:LocustPlague": {
     "NAME":"Locust Plague",
@@ -306,7 +320,7 @@
   },
   "hierophant:ThreeLashes": {
     "NAME":"Three Lashes",
-    "DESCRIPTION": "Deal !D! damage three times. NL Gain 3 hierophant:Fervor."
+    "DESCRIPTION": "Deal !D! damage three times. NL Gain 4 hierophant:Fervor."
   },
   "hierophant:SealAway": {
     "NAME":"Seal Away",
@@ -340,7 +354,7 @@
   },
   "hierophant:Patience": {
     "NAME":"Patience",
-    "DESCRIPTION": "Gain hierophant:Fervor equal to an enemy's Block."
+    "DESCRIPTION": "Gain hierophant:Piety equal to twice an enemy's Block."
   },
   "hierophant:Sermon": {
     "NAME":"Sermon",
@@ -348,7 +362,7 @@
   },
   "hierophant:DeathKnell": {
     "NAME":"Death Knell",
-    "DESCRIPTION": "Your Attacks deal no damage for !M! turns. NL After !M! turns, gain 50 hierophant:Fervor."
+    "DESCRIPTION": "Your Attacks deal no damage for !M! turns. NL After !M! turns, gain 60 hierophant:Fervor."
   },
   "hierophant:Empathy": {
     "NAME":"Empathy",
@@ -360,8 +374,8 @@
   },
   "hierophant:Chorus": {
     "NAME":"Chorus",
-    "DESCRIPTION": "Gain 3 hierophant:Fervor. NL Double your hierophant:Fervor. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"Gain 3 hierophant:Fervor. NL Double your hierophant:Fervor."
+    "DESCRIPTION": "Gain 4 hierophant:Fervor. NL Double your hierophant:Fervor. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":"Gain 4 hierophant:Fervor. NL Double your hierophant:Fervor."
   },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",

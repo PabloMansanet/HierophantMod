@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
-import hierophant.tags.HierophantTags;
 import hierophant.characters.Hierophant;
 import hierophant.powers.VocationPower;
 
@@ -26,7 +25,7 @@ public class Vocation extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
 
     public Vocation() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

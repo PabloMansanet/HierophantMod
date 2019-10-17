@@ -9,7 +9,7 @@
 },
 "hierophant:AuricFormPower": {
         "NAME": "Auric Form",
-        "DESCRIPTIONS": ["At the start of your turn, lose #b", "% of your Gold, then gain that much block."]
+        "DESCRIPTIONS": ["At the start of your turn, lose #b", "% of your gold and gain that much Fervor and Piety."]
 },
 "hierophant:GenerosityPower": {
         "NAME": "Generosity",
@@ -38,6 +38,10 @@
 "hierophant:ArchangelShieldPower": {
         "NAME": "Archangel Shield",
         "DESCRIPTIONS": ["At the end of your turn, gain Block equal to twice your Fervor."]
+},
+"hierophant:Community": {
+        "NAME": "Community",
+        "DESCRIPTIONS": ["When an enemy gains Block, gain that much Block."]
 },
 "hierophant:EnlightenedPower": {
         "NAME": "Enlightened",

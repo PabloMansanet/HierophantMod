@@ -3,7 +3,7 @@
     "NAME": "Donation Box",
     "FLAVOR": "Beggars can't be choosers.",
     "DESCRIPTIONS": [
-      "At the end of each combat, earn enough gold to reach a total of #b100."
+      "At the end of each combat, earn enough gold to reach a total of #b80."
     ]
   },
   "hierophant:PlaceholderRelic": {

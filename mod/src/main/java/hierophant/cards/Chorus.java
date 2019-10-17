@@ -31,7 +31,7 @@ public class Chorus extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int FERVOR = 3;
+    private static final int FERVOR = 4;
 
     public Chorus() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

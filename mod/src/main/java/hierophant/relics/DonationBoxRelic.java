@@ -29,9 +29,9 @@ public class DonationBoxRelic extends CustomRelic {
         int reward = 0;
         AbstractPlayer p = AbstractDungeon.player;
         if (p.hasPower(EmbezzlePower.POWER_ID)) {
-            reward = (100 - AbstractDungeon.player.gold + p.getPower(EmbezzlePower.POWER_ID).amount);
+            reward = (80 - AbstractDungeon.player.gold + p.getPower(EmbezzlePower.POWER_ID).amount);
         } else {
-            reward = (100 - AbstractDungeon.player.gold);
+            reward = (80 - AbstractDungeon.player.gold);
         }
         if (reward > 0) {
             AbstractDungeon.getCurrRoom().rewards.add(new DonationReward(reward));

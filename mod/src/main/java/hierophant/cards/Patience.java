@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
-import hierophant.powers.FervorPower;
+import hierophant.powers.PietyPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
@@ -38,7 +38,7 @@ public class Patience extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new FervorPower(p, p, m.currentBlock), m.currentBlock));
+                new PietyPower(p, p, 2 * m.currentBlock), 2 * m.currentBlock));
     }
 
     @Override

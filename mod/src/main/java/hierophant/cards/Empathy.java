@@ -34,9 +34,9 @@ public class Empathy extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 0;
-    private static final int MAGIC = 3;
+    private static final int MAGIC = 6;
     private static final int HEAL = 12;
-    private static final int UPGRADE_PLUS_MAGIC = -1;
+    private static final int UPGRADE_PLUS_MAGIC = -2;
 
     // /STAT DECLARATION/
     public Empathy() {

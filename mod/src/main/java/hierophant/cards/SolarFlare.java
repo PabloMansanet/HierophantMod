@@ -26,8 +26,8 @@ public class SolarFlare extends AbstractTitheCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 5;
-    private static final int DAMAGE = 25;
-    private static final int UPGRADE_PLUS_DMG = 10;
+    private static final int DAMAGE = 28;
+    private static final int UPGRADE_PLUS_DMG = 12;
     private static final int MAGIC = 10;
 
     public SolarFlare() {

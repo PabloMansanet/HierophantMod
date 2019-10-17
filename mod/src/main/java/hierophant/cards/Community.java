@@ -7,15 +7,14 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
-import hierophant.tags.HierophantTags;
 import hierophant.characters.Hierophant;
-import hierophant.powers.GenerosityPower;
+import hierophant.powers.CommunityPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class Generosity extends AbstractDynamicCard {
+public class Community extends AbstractDynamicCard {
 
-    public static final String ID = HierophantMod.makeID(Generosity.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(Community.class.getSimpleName());
     public static final String IMG = makeCardPath("Power.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -26,26 +25,25 @@ public class Generosity extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
 
-    public Generosity() {
+    public Community() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        tags.add(HierophantTags.HIEROPHANT_GILDED);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new GenerosityPower(p, p, 1), 1));
+                new CommunityPower(p, p, 1), 1));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
-            upgradeName();
             this.isInnate = true;
-            this.rawDescription = UPGRADE_DESCRIPTION;
+            upgradeName();
             initializeDescription();
         }
     }
 }
+

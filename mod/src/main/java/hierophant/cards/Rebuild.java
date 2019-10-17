@@ -13,9 +13,9 @@ import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class CrumbleAndRebuild extends AbstractDynamicCard {
+public class Rebuild extends AbstractDynamicCard {
 
-    public static final String ID = HierophantMod.makeID(CrumbleAndRebuild.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(Rebuild.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Skill.png");
@@ -33,7 +33,7 @@ public class CrumbleAndRebuild extends AbstractDynamicCard {
     private static final int BLOCK = 15;
     private static final int DECREASE = 30;
 
-    public CrumbleAndRebuild() {
+    public Rebuild() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.baseBlock = BLOCK;
     }
