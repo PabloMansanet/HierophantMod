@@ -31,7 +31,7 @@ public abstract class AbstractTitheCard extends AbstractDynamicCard {
     public boolean hasEnoughEnergy()
     {
         return super.hasEnoughEnergy()
-            || (AbstractDungeon.player.gold > GOLD_PER_ENERGY * (this.costForTurn - EnergyPanel.totalCount));
+            || (AbstractDungeon.player.gold >= GOLD_PER_ENERGY * (this.costForTurn - EnergyPanel.totalCount));
     }
 
 }
