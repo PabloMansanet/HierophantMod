@@ -3,13 +3,12 @@ package hierophant.cards;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.GainPennyEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 
 import hierophant.HierophantMod;
@@ -43,7 +42,6 @@ public class EyeForCoin extends AbstractDynamicCard {
         Doubloon doubloon = new Doubloon();
         doubloon.upgraded = this.upgraded;
         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(doubloon, p.hb.x, p.hb.y));
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(doubloon, 1));
     }
 
     @Override

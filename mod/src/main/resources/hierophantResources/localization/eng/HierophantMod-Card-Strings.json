@@ -85,7 +85,7 @@
   },
   "hierophant:RecallFunds": {
     "NAME": "Recall Funds",
-    "DESCRIPTION": "Return up to !M! Doubloons from your Exhaust pile to your hand. NL Exhaust. NL hierophant:Gilded."
+    "DESCRIPTION": "Return up to !M! Doubloons from your Exhaust pile to NL your hand. NL Exhaust. NL hierophant:Gilded."
   },
   "hierophant:Dazzle": {
     "NAME": "Dazzle",
@@ -140,7 +140,7 @@
   },
   "hierophant:PristineSoul": {
     "NAME": "Pristine Soul",
-    "DESCRIPTION": "Gain !hierophant:P! Piety. NL Gain Block equal to your hierophant:Piety. NL Exhaust.",
+    "DESCRIPTION": "Gain !hierophant:P! hierophant:Piety. NL Gain Block equal to your hierophant:Piety. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !hierophant:P! Piety. NL Gain Block equal to your hierophant:Piety."
   },
   "hierophant:Doomsaying": {

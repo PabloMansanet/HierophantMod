@@ -33,6 +33,7 @@ public class AuricShield extends AbstractDynamicCard {
     public AuricShield() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
+        block = baseBlock = 0;
     }
 
     @Override
