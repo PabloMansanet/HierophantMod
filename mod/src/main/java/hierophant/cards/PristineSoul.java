@@ -48,9 +48,7 @@ public class PristineSoul extends AbstractDynamicCard {
         }
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new PietyPower(p, p, piety), piety));
-        if (p.hasPower(PietyPower.POWER_ID)) {
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, combinedBlock));
-        }
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, combinedBlock));
     }
 
     @Override

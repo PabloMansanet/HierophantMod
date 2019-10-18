@@ -29,18 +29,17 @@ public class AuricBeam extends AbstractDynamicCard {
     private static final int COST = 2;
     private static final int UPGRADED_COST = 1;
 
-    private static final int MAGIC = 10;
+    private static final int MAGIC = 12;
 
     public AuricBeam() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
         this.baseDamage = 0;
-
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.baseDamage = p.gold / magicNumber;
+        this.baseDamage = (p.gold * magicNumber) / 100;
         calculateCardDamage(m);
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
@@ -51,7 +50,7 @@ public class AuricBeam extends AbstractDynamicCard {
     @Override
     public void applyPowers()
     {
-        this.baseDamage = AbstractDungeon.player.gold / magicNumber;
+        this.baseDamage = (AbstractDungeon.player.gold * magicNumber) / 100;
         super.applyPowers();
         this.rawDescription = DESCRIPTION;
         this.rawDescription += UPGRADE_DESCRIPTION;
