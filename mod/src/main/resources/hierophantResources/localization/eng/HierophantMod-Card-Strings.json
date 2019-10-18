@@ -140,8 +140,8 @@
   },
   "hierophant:PristineSoul": {
     "NAME": "Pristine Soul",
-    "DESCRIPTION": "Gain Block equal to your hierophant:Piety. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain Block equal to your hierophant:Piety."
+    "DESCRIPTION": "Gain !hierophant:P! Piety. NL Gain Block equal to your hierophant:Piety. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !hierophant:P! Piety. NL Gain Block equal to your hierophant:Piety."
   },
   "hierophant:Doomsaying": {
     "NAME":"Doomsaying",
@@ -290,9 +290,9 @@
     "NAME":"Passing Bell",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! hierophant:Enlightened."
   },
-  "hierophant:OrnateBlade": {
-    "NAME":"Ornate Blade",
-    "DESCRIPTION": "Deal !D! damage. NL hierophant:Hoard !M!."
+  "hierophant:OrnateBuckler": {
+    "NAME":"Ornate Buckler",
+    "DESCRIPTION": "Gain !B! Block. NL hierophant:Hoard !M!."
   },
   "hierophant:ConquistadorRush": {
     "NAME":"Conquistador Rush",
@@ -409,7 +409,7 @@
   },
   "hierophant:AuricShield": {
     "NAME":"Auric Shield",
-    "DESCRIPTION": "Lose 5% of your Gold. NL Gain that much Block.",
+    "DESCRIPTION": "Gain Block equal to !M!% of your Gold.",
     "EXTENDED_DESCRIPTION": [
        " NL (Gains !B! Block.)"
     ]

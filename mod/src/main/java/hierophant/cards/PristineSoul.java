@@ -1,17 +1,19 @@
 
 package hierophant.cards;
 
+import static hierophant.HierophantMod.makeCardPath;
+
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 import hierophant.powers.PietyPower;
-
-import static hierophant.HierophantMod.makeCardPath;
 
 public class PristineSoul extends AbstractDynamicCard {
 
@@ -30,16 +32,24 @@ public class PristineSoul extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 0;
+    private static final int PIETY = 4;
 
     public PristineSoul() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         exhaust = true;
+        piety = basePiety = PIETY;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        int combinedBlock = piety;
         if (p.hasPower(PietyPower.POWER_ID)) {
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, p.getPower(PietyPower.POWER_ID).amount));
+            combinedBlock += p.getPower(PietyPower.POWER_ID).amount;
+        }
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new PietyPower(p, p, piety), piety));
+        if (p.hasPower(PietyPower.POWER_ID)) {
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, combinedBlock));
         }
     }
 

@@ -26,9 +26,9 @@ public class AuricShield extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int MAGIC = 20;
+    private static final int MAGIC = 7;
+    private static final int UPGRADE_PLUS_MAGIC = 3;
     private static final int COST = 1;
-    private static final int UPGRADED_COST = 0;
 
     public AuricShield() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -37,6 +37,7 @@ public class AuricShield extends AbstractDynamicCard {
 
     @Override
      public void use(AbstractPlayer p, AbstractMonster m) {
+        baseBlock = (p.gold * magicNumber) / 100;
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         rawDescription = DESCRIPTION;
         initializeDescription();
@@ -45,7 +46,7 @@ public class AuricShield extends AbstractDynamicCard {
     @Override
     public void applyPowers() {
         AbstractPlayer p = AbstractDungeon.player;
-        baseBlock = p.gold / magicNumber;
+        baseBlock = (p.gold * magicNumber) / 100;
         super.applyPowers();
         rawDescription = DESCRIPTION;
         rawDescription += EXTENDED_DESCRIPTION[0];
@@ -53,11 +54,17 @@ public class AuricShield extends AbstractDynamicCard {
     }
 
     @Override
+    public void onMoveToDiscard()
+    {
+        this.rawDescription = DESCRIPTION;
+        initializeDescription();
+    }
+
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(UPGRADED_COST);
+            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
-
     }
 }

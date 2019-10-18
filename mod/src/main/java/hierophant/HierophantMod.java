@@ -378,7 +378,7 @@ public class HierophantMod implements
         BaseMod.addCard(new AuricBeam());
         BaseMod.addCard(new DisplayOfPower());
         BaseMod.addCard(new FieryStrike());
-        BaseMod.addCard(new OrnateBlade());
+        BaseMod.addCard(new OrnateBuckler());
 
         // // Skills
         BaseMod.addCard(new Defend_Hierophant());
@@ -460,7 +460,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(AuricBeam.ID);
         UnlockTracker.unlockCard(DisplayOfPower.ID);
         UnlockTracker.unlockCard(FieryStrike.ID);
-        UnlockTracker.unlockCard(OrnateBlade.ID);
+        UnlockTracker.unlockCard(OrnateBuckler.ID);
 
         // // Skills
         UnlockTracker.unlockCard(Defend_Hierophant.ID);
