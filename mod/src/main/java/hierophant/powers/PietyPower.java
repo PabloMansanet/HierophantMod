@@ -24,6 +24,7 @@ import org.apache.logging.log4j.Logger;
 
 import basemod.interfaces.CloneablePowerInterface;
 import hierophant.HierophantMod;
+import hierophant.patches.EscapeFieldPatch;
 import hierophant.util.TextureLoader;
 
 // Defeat any enemies with lower or equal HP than your Piety at end of turn.
@@ -91,6 +92,7 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
                 determinationHeal(mo.currentHealth);
                 AbstractDungeon.actionManager.addToTop(new HideHealthBarAction(mo));
                 AbstractDungeon.actionManager.addToBottom(new SuicideAction(mo));
+                EscapeFieldPatch.escapingPiety.set(mo, true);
             } else if (mo.currentHealth > 0) {
                 allMonstersPacified = false;
             }
