@@ -35,19 +35,13 @@ public class Upheaval extends AbstractTitheCard {
     }
 
     @Override
-    public void calculateCardDamage(AbstractMonster mo)
-    {
-        this.baseDamage = 2 * mo.currentBlock;
-        super.calculateCardDamage(mo);
-    }
-
-    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         payTithe();
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (mo == null) {
+            if (mo == null || mo.isDead || mo.isDying) {
                 continue;
             }
+            this.baseDamage = 2 * mo.currentBlock;
             calculateCardDamage(mo);
             AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(mo, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
