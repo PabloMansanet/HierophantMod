@@ -273,7 +273,7 @@
   },
   "hierophant:AuricLance": {
     "NAME":"Auric Lance",
-    "DESCRIPTION": "Deal damage equal to NL !M!% of your Gold. NL hierophant:Tithe.",
+    "DESCRIPTION": "Lose !M!% of your Gold. NL Deal that much damage. NL hierophant:Tithe.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:Mercenaries": {
@@ -403,7 +403,7 @@
   },
   "hierophant:AuricBeam": {
     "NAME":"Auric Beam",
-    "DESCRIPTION": "Lose 12% of your Gold. NL Deal that much damage.",
+    "DESCRIPTION": "Lose 10% of your Gold. NL Deal that much damage.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:AuricShield": {

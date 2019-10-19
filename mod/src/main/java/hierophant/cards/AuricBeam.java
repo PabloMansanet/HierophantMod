@@ -29,7 +29,7 @@ public class AuricBeam extends AbstractDynamicCard {
     private static final int COST = 2;
     private static final int UPGRADED_COST = 1;
 
-    private static final int MAGIC = 12;
+    private static final int MAGIC = 10;
 
     public AuricBeam() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
