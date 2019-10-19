@@ -39,11 +39,11 @@
         "NAME": "Archangel Shield",
         "DESCRIPTIONS": ["At the end of your turn, gain Block equal to twice your Fervor."]
 },
-"hierophant:Community": {
+"hierophant:CommunityPower": {
         "NAME": "Community",
         "DESCRIPTIONS": ["When an enemy gains Block, gain that much Block."]
 },
-"hierophant:Determination": {
+"hierophant:DeterminationPower": {
         "NAME": "Determination",
         "DESCRIPTIONS": ["When you defeat an enemy, heal for a third of its remaining HP."]
 },
