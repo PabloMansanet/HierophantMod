@@ -27,6 +27,9 @@ public class AtriumRelic extends CustomRelic {
         int cost = 0;
         int index = 0;
         int highestCardPosition = 0;
+        if (AbstractDungeon.player.hand.isEmpty()) {
+            return;
+        }
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.costForTurn > cost) {
                 highestCardPosition = index;

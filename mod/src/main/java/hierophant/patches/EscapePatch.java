@@ -14,7 +14,7 @@ public class EscapePatch
     {
        if (EscapeFieldPatch.escapingPiety.get(__instance)) {
             __instance.flipHorizontal = true;
-            __instance.drawX += Gdx.graphics.getDeltaTime() * 400.0F;
+            __instance.drawX += Gdx.graphics.getDeltaTime() * 200.0F;
         }
     }
 }

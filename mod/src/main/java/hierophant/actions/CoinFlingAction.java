@@ -33,6 +33,7 @@ public class CoinFlingAction extends com.megacrit.cardcrawl.actions.AbstractGame
         int damageMultiplier = 1;
         if (this.duration == com.megacrit.cardcrawl.core.Settings.ACTION_DUR_FAST) {
             if (this.p.hand.isEmpty()) {
+                damageMultiplier = 1;
                 this.isDone = true;
                 return;
             }
