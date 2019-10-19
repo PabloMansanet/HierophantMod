@@ -1,6 +1,8 @@
 package hierophant.characters;
 
 import basemod.abstracts.CustomPlayer;
+import basemod.animations.SpriterAnimation;
+
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
@@ -98,12 +100,12 @@ public class Hierophant extends CustomPlayer {
     public Hierophant(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
                 "hierophantResources/images/char/hierophantCharacter/orb/vfx.png", null,
-                HIEROPHANT_SKELETON_JSON);
+                new SpriterAnimation("hierophantResources/images/char/hierophantCharacter/idle/idle.scml"));
 
 
         // =============== TEXTURES, ENERGY, LOADOUT =================
 
-        initializeClass("hierophantResources/images/char/hierophantCharacter/hierophant.png",
+        initializeClass(null,
                 HIEROPHANT_SHOULDER_1, // campfire pose
                 HIEROPHANT_SHOULDER_2, // another campfire pose
                 HIEROPHANT_CORPSE, // dead corpse
