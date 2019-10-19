@@ -43,6 +43,7 @@ public class AuricLance extends AbstractTitheCard {
         calculateCardDamage(m);
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        p.loseGold(damage);
         initializeDescription();
     }
 
