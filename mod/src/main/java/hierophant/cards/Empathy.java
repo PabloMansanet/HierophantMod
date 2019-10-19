@@ -12,7 +12,6 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
-import hierophant.powers.VocationPower;
 import hierophant.powers.FervorPower;
 
 import static hierophant.HierophantMod.makeCardPath;
@@ -54,13 +53,6 @@ public class Empathy extends AbstractDynamicCard {
             AbstractDungeon.actionManager.addToBottom(new HealAction(mo, p, healAmount));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, healAmount / magicNumber, false), healAmount / magicNumber ));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new VulnerablePower(mo, healAmount / magicNumber, false), healAmount / magicNumber));
-
-
-            if (p.hasPower(VocationPower.POWER_ID)) {
-                int fervor = healAmount * p.getPower(VocationPower.POWER_ID).amount;
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                    new FervorPower(p, p, fervor), fervor));
-            }
         }
     }
 

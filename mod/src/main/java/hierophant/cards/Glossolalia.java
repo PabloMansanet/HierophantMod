@@ -8,13 +8,13 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
-import hierophant.powers.VocationPower;
+import hierophant.powers.GlossolaliaPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class Vocation extends AbstractDynamicCard {
+public class Glossolalia extends AbstractDynamicCard {
 
-    public static final String ID = HierophantMod.makeID(Vocation.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(Glossolalia.class.getSimpleName());
     public static final String IMG = makeCardPath("Power.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -25,25 +25,24 @@ public class Vocation extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 0;
+    private static final int COST = 3;
+    private static final int UPGRADED_COST = 2;
 
-    public Vocation() {
+    public Glossolalia() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
     }
-
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new VocationPower(p, p, 1), 1));
+                new GlossolaliaPower(p, p, 1), 1));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
+            upgradeBaseCost(UPGRADED_COST);
             upgradeName();
-            this.isInnate = true;
-            this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

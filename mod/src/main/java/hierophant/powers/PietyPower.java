@@ -90,6 +90,7 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
                 this.flash();
                 determinationHeal(mo.currentHealth);
                 AbstractDungeon.actionManager.addToTop(new HideHealthBarAction(mo));
+                mo.escapeTimer = 1.0f;
                 AbstractDungeon.actionManager.addToBottom(new SuicideAction(mo));
             } else if (mo.currentHealth > 0) {
                 allMonstersPacified = false;

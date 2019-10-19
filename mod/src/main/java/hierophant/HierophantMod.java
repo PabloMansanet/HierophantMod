@@ -108,7 +108,7 @@ public class HierophantMod implements
     // Character assets
 
     private static final String HIEROPHANT_BUTTON = "hierophantResources/images/charSelect/DefaultCharacterButton.png";
-    private static final String HIEROPHANT_PORTRAIT = "hierophantResources/images/charSelect/hierophantPortrait.jpg";
+    private static final String HIEROPHANT_PORTRAIT = "hierophantResources/images/charSelect/hierophantPortrait.png";
     public static final String HIEROPHANT_SHOULDER_1 = "hierophantResources/images/char/hierophantCharacter/shoulder.png";
     public static final String HIEROPHANT_SHOULDER_2 = "hierophantResources/images/char/hierophantCharacter/shoulder2.png";
     public static final String HIEROPHANT_CORPSE = "hierophantResources/images/char/hierophantCharacter/corpse.png";
@@ -425,7 +425,7 @@ public class HierophantMod implements
 
         // // Powers
         BaseMod.addCard(new Martyrdom());
-        BaseMod.addCard(new Vocation());
+        BaseMod.addCard(new Glossolalia());
         BaseMod.addCard(new Generosity());
         BaseMod.addCard(new Determination());
         BaseMod.addCard(new Charity());
@@ -506,7 +506,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(AuricShield.ID);
 
         // // Powers
-        UnlockTracker.unlockCard(Vocation.ID);
+        UnlockTracker.unlockCard(Glossolalia.ID);
         UnlockTracker.unlockCard(Martyrdom.ID);
         UnlockTracker.unlockCard(Generosity.ID);
         UnlockTracker.unlockCard(Charity.ID);

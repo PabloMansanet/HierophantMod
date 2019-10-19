@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
 import static java.lang.Integer.min;
 import hierophant.characters.Hierophant;
-import hierophant.powers.VocationPower;
 import hierophant.powers.FervorPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 
@@ -57,11 +56,6 @@ public class Blessing extends AbstractDynamicCard {
                 continue;
             }
             AbstractDungeon.actionManager.addToBottom(new HealAction(mo, p, magicNumber));
-            if (p.hasPower(VocationPower.POWER_ID)) {
-                int fervor = magicNumber * p.getPower(VocationPower.POWER_ID).amount;
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                    new FervorPower(p, p, fervor), fervor));
-            }
         }
     }
 

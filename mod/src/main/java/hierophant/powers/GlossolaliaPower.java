@@ -1,26 +1,31 @@
 package hierophant.powers;
 
-import basemod.interfaces.CloneablePowerInterface;
+import static hierophant.HierophantMod.makePowerPath;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import hierophant.HierophantMod;
-import hierophant.util.TextureLoader;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static hierophant.HierophantMod.makePowerPath;
+import basemod.interfaces.CloneablePowerInterface;
+import hierophant.HierophantMod;
+import hierophant.util.TextureLoader;
 
-public class VocationPower extends AbstractPower implements CloneablePowerInterface {
+public class GlossolaliaPower extends AbstractPower implements CloneablePowerInterface {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
     public AbstractCreature source;
 
-    public static final String POWER_ID = HierophantMod.makeID("VocationPower");
+    public static final String POWER_ID = HierophantMod.makeID("GlossolaliaPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -28,7 +33,7 @@ public class VocationPower extends AbstractPower implements CloneablePowerInterf
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("auric_big.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("auric_small.png"));
 
-    public VocationPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
+    public GlossolaliaPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
@@ -61,7 +66,17 @@ public class VocationPower extends AbstractPower implements CloneablePowerInterf
     }
 
     @Override
+    public void onCardDraw(AbstractCard c) {
+        if (c.costForTurn < 1) {
+            return;
+        }
+        AbstractPlayer p = AbstractDungeon.player;
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new FervorPower(p, p, this.amount * c.costForTurn), this.amount * c.costForTurn));
+    }
+
+    @Override
     public AbstractPower makeCopy() {
-        return new VocationPower(owner, source, amount);
+        return new GlossolaliaPower(owner, source, amount);
     }
 }

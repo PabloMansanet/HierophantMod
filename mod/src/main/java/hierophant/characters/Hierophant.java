@@ -103,7 +103,7 @@ public class Hierophant extends CustomPlayer {
 
         // =============== TEXTURES, ENERGY, LOADOUT =================
 
-        initializeClass("hierophantResources/images/char/hierophantCharacter/redmage.png",
+        initializeClass("hierophantResources/images/char/hierophantCharacter/hierophant.png",
                 HIEROPHANT_SHOULDER_1, // campfire pose
                 HIEROPHANT_SHOULDER_2, // another campfire pose
                 HIEROPHANT_CORPSE, // dead corpse

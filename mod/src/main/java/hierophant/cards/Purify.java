@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import hierophant.powers.VocationPower;
 import hierophant.powers.FervorPower;
 
 import static hierophant.HierophantMod.makeCardPath;
@@ -46,13 +45,6 @@ public class Purify extends AbstractDynamicCard {
         AbstractDungeon.actionManager.addToBottom(new HealAction(m, p, healAmount));
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-        if (p.hasPower(VocationPower.POWER_ID)) {
-            int fervor = healAmount * p.getPower(VocationPower.POWER_ID).amount;
-            if (fervor > 0) {
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                    new FervorPower(p, p, fervor), fervor));
-            }
-        }
     }
 
     @Override

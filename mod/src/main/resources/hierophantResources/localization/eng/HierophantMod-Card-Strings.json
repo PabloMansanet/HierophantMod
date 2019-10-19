@@ -237,10 +237,9 @@
     "DESCRIPTION": "Whenever you play a Doubloon, draw an additional card. NL hierophant:Gilded.",
     "UPGRADE_DESCRIPTION": "Whenever you play a Doubloon, draw an additional card. NL hierophant:Gilded. NL Innate."
   },
-  "hierophant:Vocation": {
-    "NAME":"Vocation",
-    "DESCRIPTION": "When you heal an enemy, gain that much hierophant:Fervor.",
-    "UPGRADE_DESCRIPTION":"When you heal an enemy, gain that much hierophant:Fervor. NL Innate."
+  "hierophant:Glossolalia": {
+    "NAME":"Glossolalia",
+    "DESCRIPTION": "When you draw a card, gain hierophant:Fervor equal to its cost."
   },
   "hierophant:Charity": {
     "NAME":"Charity",

@@ -12,7 +12,6 @@ import static java.lang.Integer.min;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 import hierophant.powers.PietyPower;
-import hierophant.powers.VocationPower;
 import hierophant.powers.FervorPower;
 
 import static hierophant.HierophantMod.makeCardPath;
@@ -54,11 +53,6 @@ public class DivineIntervention extends AbstractDynamicCard {
         AbstractDungeon.actionManager.addToBottom(new HealAction(m, p, healAmount));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new PietyPower(p, p, piety), piety));
-        if (p.hasPower(VocationPower.POWER_ID)) {
-            int fervor = healAmount * p.getPower(VocationPower.POWER_ID).amount;
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new FervorPower(p, p, fervor), fervor));
-        }
     }
 
     @Override
