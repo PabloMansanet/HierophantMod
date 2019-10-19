@@ -103,7 +103,7 @@ public class Hierophant extends CustomPlayer {
 
         // =============== TEXTURES, ENERGY, LOADOUT =================
 
-        initializeClass(null, // required call to load textures and setup energy/loadout.
+        initializeClass("hierophantResources/images/char/hierophantCharacter/redmage.png",
                 HIEROPHANT_SHOULDER_1, // campfire pose
                 HIEROPHANT_SHOULDER_2, // another campfire pose
                 HIEROPHANT_CORPSE, // dead corpse
@@ -114,14 +114,14 @@ public class Hierophant extends CustomPlayer {
 
         // =============== ANIMATIONS =================
 
-        loadAnimation(
-                HIEROPHANT_SKELETON_ATLAS,
-                HIEROPHANT_SKELETON_JSON,
-                1.0f);
-        AnimationState.TrackEntry e = state.setAnimation(0, "Idle", true);
-        e.setTime(e.getEndTime() * MathUtils.random());
-        stateData.setMix("Hit", "Idle", 0.1F);
-        e.setTimeScale(0.6F);
+        //loadAnimation(
+        //        HIEROPHANT_SKELETON_ATLAS,
+        //        HIEROPHANT_SKELETON_JSON,
+        //        1.0f);
+        //AnimationState.TrackEntry e = state.setAnimation(0, "Idle", true);
+        //e.setTime(e.getEndTime() * MathUtils.random());
+        //stateData.setMix("Hit", "Idle", 0.1F);
+        //e.setTimeScale(0.6F);
 
         // =============== /ANIMATIONS/ =================
 
