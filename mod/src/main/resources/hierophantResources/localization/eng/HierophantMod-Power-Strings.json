@@ -9,7 +9,7 @@
 },
 "hierophant:AuricFormPower": {
         "NAME": "Auric Form",
-        "DESCRIPTIONS": ["At the start of your turn, lose #b", "% of your gold and gain that much Fervor and Piety."]
+        "DESCRIPTIONS": ["At the start of your turn, lose #b", "% of your gold and gain that much Fervor."]
 },
 "hierophant:GenerosityPower": {
         "NAME": "Generosity",

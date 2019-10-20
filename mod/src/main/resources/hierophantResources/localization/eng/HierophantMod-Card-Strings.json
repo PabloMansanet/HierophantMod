@@ -261,7 +261,7 @@
   },
   "hierophant:AuricForm": {
      "NAME":"Auric Form",
-    "DESCRIPTION": "At the start of your turn, lose !M!% of your gold, then gain that much hierophant:Fervor and hierophant:Piety."
+    "DESCRIPTION": "At the start of your turn, lose !M!% of your gold, then gain that much hierophant:Fervor."
   },
   "hierophant:CoinFling": {
     "NAME":"Coin Fling",

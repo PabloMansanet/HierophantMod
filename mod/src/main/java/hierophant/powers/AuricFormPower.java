@@ -70,8 +70,6 @@ public class AuricFormPower extends AbstractPower implements CloneablePowerInter
         p.loseGold(goldToLose);
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new FervorPower(p, p, goldToLose), goldToLose));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PietyPower(p, p, goldToLose), goldToLose));
     }
 
     @Override
