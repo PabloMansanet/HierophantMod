@@ -107,7 +107,7 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
 
         String[] dialogStrings = dialogs.get(mo.id);
         if (dialogStrings != null) {
-            String dialog = dialogStrings[rand.random(0, dialogStrings.length)];
+            String dialog = dialogStrings[rand.random(0, dialogStrings.length-1)];
             AbstractDungeon.actionManager.addToBottom(new TalkAction(mo, dialog, 1.0F, 2.0F));
         }
     }
