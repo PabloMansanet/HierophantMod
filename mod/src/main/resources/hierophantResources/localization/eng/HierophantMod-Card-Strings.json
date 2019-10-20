@@ -271,10 +271,9 @@
     "NAME":"Batter",
     "DESCRIPTION": "Deal !D! damage. NL If any damage is blocked, deal !D! additional damage."
   },
-  "hierophant:AuricLance": {
-    "NAME":"Auric Lance",
-    "DESCRIPTION": "Lose !M!% of your Gold. NL Deal that much damage. NL hierophant:Tithe.",
-    "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
+  "hierophant:OrnateJavelin": {
+    "NAME":"Ornate Javelin",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust. NL hierophant:Hoard !M!."
   },
   "hierophant:Mercenaries": {
     "NAME":"Mercenaries",

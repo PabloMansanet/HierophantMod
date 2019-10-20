@@ -357,7 +357,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Strike_Hierophant());
         BaseMod.addCard(new CoinFling());
         BaseMod.addCard(new Batter());
-        BaseMod.addCard(new AuricLance());
+        BaseMod.addCard(new OrnateJavelin());
         BaseMod.addCard(new ThreeLashes());
         BaseMod.addCard(new Zeal());
         BaseMod.addCard(new Mercenaries());
@@ -439,7 +439,7 @@ public class HierophantMod implements
         // // Attacks
         UnlockTracker.unlockCard(Strike_Hierophant.ID);
         UnlockTracker.unlockCard(CoinFling.ID);
-        UnlockTracker.unlockCard(AuricLance.ID);
+        UnlockTracker.unlockCard(OrnateJavelin.ID);
         UnlockTracker.unlockCard(ThreeLashes.ID);
         UnlockTracker.unlockCard(Zeal.ID);
         UnlockTracker.unlockCard(Mercenaries.ID);

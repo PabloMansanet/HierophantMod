@@ -13,9 +13,10 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
-public class AuricLance extends AbstractTitheCard {
+import hierophant.tags.HierophantTags;
+public class OrnateJavelin extends AbstractDynamicCard {
 
-    public static final String ID = HierophantMod.makeID(AuricLance.class.getSimpleName());
+    public static final String ID = HierophantMod.makeID(OrnateJavelin.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -26,52 +27,24 @@ public class AuricLance extends AbstractTitheCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
-    private static final int COST = 3;
-    private static final int MAGIC = 15;
-    private static final int UPGRADE_PLUS_MAGIC = 5;
+    private static final int COST = 2;
+    private static final int DAMAGE = 18;
+    private static final int UPGRADE_PLUS_DAMAGE = 6;
+    private static final int MAGIC = 4;
+    private static final int UPGRADE_PLUS_MAGIC = 2;
 
-    public AuricLance() {
+    public OrnateJavelin() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        damage = baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = MAGIC;
-        baseDamage = 0;
+        tags.add(HierophantTags.HIEROPHANT_HOARD);
+        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        baseDamage = (p.gold * magicNumber) / 100;
-        payTithe();
-        p.loseGold(baseDamage);
-        calculateCardDamage(m);
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-        initializeDescription();
-    }
-
-    @Override
-    public void applyPowers()
-    {
-        AbstractPlayer p = AbstractDungeon.player;
-        baseDamage = (p.gold * magicNumber) / 100;
-        super.applyPowers();
-        this.rawDescription = DESCRIPTION;
-        this.rawDescription += UPGRADE_DESCRIPTION;
-        initializeDescription();
-    }
-
-    @Override
-    public void calculateCardDamage(AbstractMonster mo)
-    {
-        super.calculateCardDamage(mo);
-        this.rawDescription = DESCRIPTION;
-        this.rawDescription += UPGRADE_DESCRIPTION;
-        initializeDescription();
-    }
-
-    @Override
-    public void onMoveToDiscard()
-    {
-        this.rawDescription = DESCRIPTION;
-        initializeDescription();
     }
 
     @Override
@@ -79,6 +52,7 @@ public class AuricLance extends AbstractTitheCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
+            upgradeDamage(UPGRADE_PLUS_DAMAGE);
             initializeDescription();
         }
     }
