@@ -77,6 +77,7 @@ public class ConquistadorRush extends AbstractDynamicCard {
 
     public void upgrade() {
         if (!this.upgraded) {
+            upgradeName();
             this.upgradeDamage(UPGRADE_PLUS_DMG);
             this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
             this.initializeDescription();

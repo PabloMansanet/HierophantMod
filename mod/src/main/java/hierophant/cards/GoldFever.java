@@ -91,6 +91,7 @@ public class GoldFever extends AbstractDynamicCard {
 
     public void upgrade() {
         if (!this.upgraded) {
+            this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
             this.initializeDescription();
         }

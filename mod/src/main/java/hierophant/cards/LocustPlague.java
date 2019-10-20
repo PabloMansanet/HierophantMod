@@ -90,6 +90,7 @@ public class LocustPlague extends AbstractDynamicCard {
 
     public void upgrade() {
         if (!this.upgraded) {
+            this.upgradeName();
             this.upgradeDamage(UPGRADE_PLUS_DMG);
         }
     }

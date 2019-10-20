@@ -43,8 +43,8 @@ public class ArchangelShield extends AbstractDynamicCard {
     @Override
     public void upgrade() {
         if (!upgraded) {
-            this.upgradeBaseCost(UPGRADED_COST);
             upgradeName();
+            this.upgradeBaseCost(UPGRADED_COST);
         }
     }
 }
