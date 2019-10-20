@@ -24,8 +24,9 @@ public abstract class AbstractTitheCard extends AbstractDynamicCard {
 
     protected void payTithe()
     {
-        // TODO Visual Effect
-        AbstractDungeon.player.loseGold(GOLD_PER_ENERGY * (this.costForTurn - EnergyPanel.totalCount));
+        if (!this.freeToPlayOnce) {
+            AbstractDungeon.player.loseGold(GOLD_PER_ENERGY * (this.costForTurn - EnergyPanel.totalCount));
+        }
     }
 
     public boolean hasEnoughEnergy()
