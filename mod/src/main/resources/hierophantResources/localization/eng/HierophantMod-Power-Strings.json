@@ -1,7 +1,7 @@
 {
 "hierophant:PietyPower": {
         "NAME": "Piety",
-        "DESCRIPTIONS": ["Defeat ANY enemies with HP equal or lower than #b", " at the end of your turn, then lose a third of your Piety."]
+        "DESCRIPTIONS": ["At the end of your turn, defeat ANY enemies with HP equal or lower than #b", " and lose a third of your Piety."]
 },
 "hierophant:EndurePower": {
         "NAME": "Enduring",

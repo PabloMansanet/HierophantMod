@@ -76,7 +76,7 @@ public class FervorPower extends AbstractPower implements CloneablePowerInterfac
 
     @Override
     public void onAfterCardPlayed(AbstractCard card) {
-        if (card.cardID != FlamingChariot.ID) {
+        if (card.type == AbstractCard.CardType.ATTACK && card.cardID != FlamingChariot.ID) {
             AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         }
     }
