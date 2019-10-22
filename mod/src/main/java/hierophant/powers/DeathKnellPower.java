@@ -21,7 +21,7 @@ import static hierophant.HierophantMod.makePowerPath;
 
 public class DeathKnellPower extends AbstractPower implements CloneablePowerInterface {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
-    private static final int FERVOR = 50;
+    private static final int FERVOR = 60;
 
     public static final String POWER_ID = HierophantMod.makeID("DeathKnellPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

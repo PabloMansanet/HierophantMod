@@ -15,8 +15,8 @@ import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
 import hierophant.tags.HierophantTags;
 
-public class ConquistadorRush extends AbstractDynamicCard {
-    public static final String ID = HierophantMod.makeID(ConquistadorRush.class.getSimpleName());
+public class Remorse extends AbstractDynamicCard {
+    public static final String ID = HierophantMod.makeID(Remorse.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
@@ -35,7 +35,7 @@ public class ConquistadorRush extends AbstractDynamicCard {
     private static final int MAGIC = 2;
     private static final int UPGRADE_PLUS_MAGIC = 1;
 
-    public ConquistadorRush() {
+    public Remorse() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = MAGIC;

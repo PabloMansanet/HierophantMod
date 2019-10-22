@@ -292,8 +292,8 @@
     "NAME":"Ornate Buckler",
     "DESCRIPTION": "Gain !B! Block. NL hierophant:Hoard !M!."
   },
-  "hierophant:ConquistadorRush": {
-    "NAME":"Conquistador Rush",
+  "hierophant:Remorse": {
+    "NAME":"Remorse",
     "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage per Exhausted Doubloon. NL hierophant:Gilded."
   },
   "hierophant:RepressedViolence": {

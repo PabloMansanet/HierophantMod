@@ -362,7 +362,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Zeal());
         BaseMod.addCard(new Mercenaries());
         BaseMod.addCard(new PassingBell());
-        BaseMod.addCard(new ConquistadorRush());
+        BaseMod.addCard(new Remorse());
         BaseMod.addCard(new RepressedViolence());
         BaseMod.addCard(new SolarFlare());
         BaseMod.addCard(new LocustPlague());
@@ -444,7 +444,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Zeal.ID);
         UnlockTracker.unlockCard(Mercenaries.ID);
         UnlockTracker.unlockCard(PassingBell.ID);
-        UnlockTracker.unlockCard(ConquistadorRush.ID);
+        UnlockTracker.unlockCard(Remorse.ID);
         UnlockTracker.unlockCard(RepressedViolence.ID);
         UnlockTracker.unlockCard(SolarFlare.ID);
         UnlockTracker.unlockCard(LocustPlague.ID);
