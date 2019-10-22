@@ -378,10 +378,10 @@ public class HierophantMod implements
         BaseMod.addCard(new AuricBeam());
         BaseMod.addCard(new DisplayOfPower());
         BaseMod.addCard(new FieryStrike());
-        BaseMod.addCard(new OrnateBuckler());
 
         // // Skills
         BaseMod.addCard(new Defend_Hierophant());
+        BaseMod.addCard(new OrnateBuckler());
         BaseMod.addCard(new Doubloon());
         BaseMod.addCard(new MorningPrayer());
         BaseMod.addCard(new HolyVerse());

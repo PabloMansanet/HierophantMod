@@ -16,7 +16,7 @@ import static hierophant.HierophantMod.makeCardPath;
 public class AuricBeam extends AbstractDynamicCard {
 
     public static final String ID = HierophantMod.makeID(AuricBeam.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("AuricBeam.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

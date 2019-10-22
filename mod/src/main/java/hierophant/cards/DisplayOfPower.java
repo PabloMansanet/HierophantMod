@@ -12,7 +12,7 @@ import static hierophant.HierophantMod.makeCardPath;
 public class DisplayOfPower extends AbstractDynamicCard {
 
     public static final String ID = HierophantMod.makeID(DisplayOfPower.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("DisplayOfPower.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

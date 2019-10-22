@@ -17,7 +17,7 @@ import static java.lang.Integer.min;
 public class Zeal extends AbstractDynamicCard {
 
     public static final String ID = HierophantMod.makeID(Zeal.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Zeal.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

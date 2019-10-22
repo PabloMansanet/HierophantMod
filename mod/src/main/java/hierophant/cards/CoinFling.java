@@ -13,7 +13,7 @@ import static hierophant.HierophantMod.makeCardPath;
 public class CoinFling extends AbstractDynamicCard {
 
     public static final String ID = HierophantMod.makeID(CoinFling.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("CoinFling.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

@@ -15,7 +15,7 @@ import static hierophant.HierophantMod.makeCardPath;
 public class SealAway extends AbstractDynamicCard {
 
     public static final String ID = HierophantMod.makeID(SealAway.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("SealAway.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

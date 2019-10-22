@@ -18,7 +18,7 @@ import static hierophant.HierophantMod.makeCardPath;
 public class SolarFlare extends AbstractTitheCard {
 
     public static final String ID = HierophantMod.makeID(SolarFlare.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("SolarFlare.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

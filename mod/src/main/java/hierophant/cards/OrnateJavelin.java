@@ -17,7 +17,7 @@ import hierophant.tags.HierophantTags;
 public class OrnateJavelin extends AbstractDynamicCard {
 
     public static final String ID = HierophantMod.makeID(OrnateJavelin.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("OrnateJavelin.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
