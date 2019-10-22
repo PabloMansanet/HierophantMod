@@ -15,7 +15,7 @@ import static hierophant.HierophantMod.makeCardPath;
 public class ArchangelShield extends AbstractDynamicCard {
 
     public static final String ID = HierophantMod.makeID(ArchangelShield.class.getSimpleName());
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("ArchangelShield.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;

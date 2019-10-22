@@ -19,7 +19,7 @@ public class DeathKnell extends AbstractDynamicCard {
     public static final String ID = HierophantMod.makeID(DeathKnell.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("DeathKnell.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

@@ -19,7 +19,7 @@ public class OrnateBuckler extends AbstractDynamicCard {
     public static final String ID = HierophantMod.makeID(OrnateBuckler.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("OrnateBuckler.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

@@ -15,7 +15,7 @@ import static hierophant.HierophantMod.makeCardPath;
 public class AuricShield extends AbstractDynamicCard {
 
     public static final String ID = HierophantMod.makeID(AuricShield.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("AuricShield.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
