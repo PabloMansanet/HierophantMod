@@ -107,7 +107,7 @@ public class HierophantMod implements
 
     // Character assets
 
-    private static final String HIEROPHANT_BUTTON = "hierophantResources/images/charSelect/DefaultCharacterButton.png";
+    private static final String HIEROPHANT_BUTTON = "hierophantResources/images/charSelect/HierophantButton.png";
     private static final String HIEROPHANT_PORTRAIT = "hierophantResources/images/charSelect/hierophantPortrait.png";
     public static final String HIEROPHANT_SHOULDER_1 = "hierophantResources/images/char/hierophantCharacter/shoulder.png";
     public static final String HIEROPHANT_SHOULDER_2 = "hierophantResources/images/char/hierophantCharacter/shoulder2.png";
