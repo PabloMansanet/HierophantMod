@@ -51,6 +51,10 @@
         "NAME": "Enlightened",
         "DESCRIPTIONS": ["Gain #b50% additional Piety for #b", " turn.", " turns."]
 },
+"hierophant:RepentancePower": {
+        "NAME": "Repentance",
+        "DESCRIPTIONS": ["At the end of #b", " turn, gain Piety instead of losing it.", " turns, gain Piety instead of losing it."]
+},
 "hierophant:FervorPower": {
         "NAME": "Fervor",
         "DESCRIPTIONS": ["Your next Attack this turn deals #b", "0% additional damage."]

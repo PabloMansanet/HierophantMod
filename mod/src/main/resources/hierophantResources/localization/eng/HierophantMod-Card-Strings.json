@@ -198,7 +198,7 @@
   },
   "hierophant:Alms": {
     "NAME":"Alms",
-    "DESCRIPTION": "Discard your hand, then draw cards equal to the highest cost discarded."
+    "DESCRIPTION": "Discard your hand, then draw cards equal to the combined cost discarded."
   },
   "hierophant:VowOfPoverty": {
     "NAME":"Vow Of Poverty",

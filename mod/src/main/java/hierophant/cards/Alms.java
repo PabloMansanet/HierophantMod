@@ -42,9 +42,7 @@ public class Alms extends AbstractDynamicCard {
         int count = 0;
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             count++;
-            if (c.costForTurn > draw) {
-                draw = c.costForTurn;
-            }
+            draw += c.costForTurn > 0 ? c.costForTurn : 0;
         }
         AbstractDungeon.actionManager.addToTop(new DrawCardAction(p, draw));
         AbstractDungeon.actionManager.addToTop(new DiscardAction(p, p, count, true));

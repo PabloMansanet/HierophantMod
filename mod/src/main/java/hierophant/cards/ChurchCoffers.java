@@ -28,8 +28,8 @@ public class ChurchCoffers extends AbstractTitheCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 3;
-    private static final int UPGRADED_COST = 2;
+    private static final int COST = 2;
+    private static final int UPGRADED_COST = 1;
     private static final int MAGIC = 2;
 
     // /STAT DECLARATION/
