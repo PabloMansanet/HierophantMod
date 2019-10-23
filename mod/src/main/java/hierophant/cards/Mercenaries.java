@@ -79,6 +79,8 @@ public class Mercenaries extends AbstractTitheCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            this.rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
             this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }

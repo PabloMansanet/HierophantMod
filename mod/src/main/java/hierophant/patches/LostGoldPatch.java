@@ -17,7 +17,7 @@ public class LostGoldPatch
     {
         AbstractPlayer p = AbstractDungeon.player;
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
-            HierophantMod.goldLostThisTurn += goldAmount;
+            HierophantMod.goldLostThisTurn += goldAmount > 0 ? goldAmount : 0;
             if (p.hasPower(EmbezzlePower.POWER_ID)) {
                 AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(p, p, EmbezzlePower.POWER_ID, goldAmount));
 
