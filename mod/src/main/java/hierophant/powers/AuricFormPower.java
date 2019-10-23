@@ -29,8 +29,8 @@ public class AuricFormPower extends AbstractPower implements CloneablePowerInter
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("auric_big.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("auric_small.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("auric_form_big.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("auric_form_small.png"));
 
     public AuricFormPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
         name = NAME;

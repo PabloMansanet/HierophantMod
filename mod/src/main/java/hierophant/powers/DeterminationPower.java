@@ -27,8 +27,8 @@ public class DeterminationPower extends AbstractPower implements CloneablePowerI
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("auric_big.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("auric_small.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("determination_big.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("determination_small.png"));
 
     public DeterminationPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
         name = NAME;

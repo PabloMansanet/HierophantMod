@@ -25,8 +25,8 @@ public class EmbezzlePower extends AbstractPower implements CloneablePowerInterf
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("auric_big.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("auric_small.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("embezzle_big.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("embezzle_small.png"));
 
     public EmbezzlePower(final AbstractCreature owner, final int amount) {
         name = NAME;
@@ -38,7 +38,7 @@ public class EmbezzlePower extends AbstractPower implements CloneablePowerInterf
         type = PowerType.BUFF;
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
-        
+
         this.description = DESCRIPTIONS[0];
 
         updateDescription();

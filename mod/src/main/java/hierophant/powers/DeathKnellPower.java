@@ -28,8 +28,8 @@ public class DeathKnellPower extends AbstractPower implements CloneablePowerInte
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("auric_big.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("auric_small.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("death_knell_big.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("death_knell_small.png"));
 
     public DeathKnellPower(final AbstractCreature owner, final int amount) {
         name = NAME;

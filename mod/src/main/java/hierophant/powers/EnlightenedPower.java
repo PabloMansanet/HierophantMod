@@ -29,8 +29,8 @@ public class EnlightenedPower extends AbstractPower implements CloneablePowerInt
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("auric_big.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("auric_small.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("enlightened_big.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("enlightened_small.png"));
 
     public EnlightenedPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
         name = NAME;
@@ -46,7 +46,7 @@ public class EnlightenedPower extends AbstractPower implements CloneablePowerInt
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
-        
+
         this.description = DESCRIPTIONS[0];
 
         updateDescription();
