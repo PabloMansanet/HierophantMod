@@ -27,8 +27,8 @@ public class Charity extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int MAGIC = 5;
-    private static final int UPGRADE_PLUS_MAGIC = 3;
+    private static final int MAGIC = 6;
+    private static final int UPGRADE_PLUS_MAGIC = 4;
 
     public Charity() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

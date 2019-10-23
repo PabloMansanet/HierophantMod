@@ -12,6 +12,7 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
@@ -26,9 +27,9 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import hierophant.cards.*;
 import hierophant.characters.Hierophant;
 import hierophant.powers.EmbezzlePower;
+import hierophant.powers.PietyBarPower;
 import hierophant.powers.PietyPower;
 import hierophant.relics.PropheticMaskRelic;
-import hierophant.relics.BeggarsRobeRelic;
 import hierophant.relics.DonationBoxRelic;
 import hierophant.util.IDCheckDontTouchPls;
 import hierophant.util.TextureLoader;
@@ -68,6 +69,7 @@ public class HierophantMod implements
         OnStartBattleSubscriber,
         OnPowersModifiedSubscriber,
         PreMonsterTurnSubscriber,
+        PostPlayerUpdateSubscriber,
         PostInitializeSubscriber {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
     private static String modID;
@@ -332,7 +334,7 @@ public class HierophantMod implements
 
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         BaseMod.addRelicToCustomPool(new DonationBoxRelic(), Hierophant.Enums.COLOR_GOLD);
-        BaseMod.addRelicToCustomPool(new BeggarsRobeRelic(), Hierophant.Enums.COLOR_GOLD);
+        //BaseMod.addRelicToCustomPool(new BeggarsRobeRelic(), Hierophant.Enums.COLOR_GOLD);
         BaseMod.addRelicToCustomPool(new PropheticMaskRelic(), Hierophant.Enums.COLOR_GOLD);
         logger.info("Done adding relics!");
     }
@@ -621,6 +623,20 @@ public class HierophantMod implements
     {
         HierophantMod.goldLostThisTurn = 0;
         return true;
+    }
+
+    // ================ /GOLD HP BARS/ ===================
+    @Override
+    public void receivePostPlayerUpdate()
+    {
+        if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
+            for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+                if (mo != null && !mo.isDead && !mo.isDying && !mo.hasPower(PietyBarPower.POWER_ID)) {
+                    // Add power directly to stay silent
+                    mo.powers.add(new PietyBarPower(mo, mo, 1));
+                }
+            }
+        }
     }
 
 

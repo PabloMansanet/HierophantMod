@@ -3,6 +3,10 @@
         "NAME": "Piety",
         "DESCRIPTIONS": ["At the end of your turn, defeat ANY enemies with HP equal or lower than #b", " and lose a third of your Piety."]
 },
+"hierophant:PietyBarPower": {
+        "NAME": "PietyBar",
+        "DESCRIPTIONS": ["."]
+},
 "hierophant:EndurePower": {
         "NAME": "Enduring",
         "DESCRIPTIONS": ["Gain #b", " Piety whenever you are attacked."]

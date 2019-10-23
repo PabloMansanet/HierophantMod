@@ -3,6 +3,7 @@ package hierophant.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -19,7 +20,7 @@ import org.apache.logging.log4j.Logger;
 
 import static hierophant.HierophantMod.makePowerPath;
 
-public class DeathKnellPower extends AbstractPower implements CloneablePowerInterface {
+public class DeathKnellPower extends AbstractPower implements CloneablePowerInterface, NonStackablePower {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
     private static final int FERVOR = 60;
 
