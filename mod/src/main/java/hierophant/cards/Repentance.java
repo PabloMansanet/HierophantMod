@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
-import hierophant.powers.PietyPower;
+import hierophant.powers.RepentancePower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
@@ -40,39 +40,8 @@ public class Repentance extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        applyPowers();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PietyPower(p, p, piety), piety));
-        if (upgraded) {
-            rawDescription = UPGRADE_DESCRIPTION;
-        } else {
-            rawDescription = DESCRIPTION;
-        }
-        initializeDescription();
-    }
-
-    public void applyPowers()
-    {
-      super.applyPowers();
-      this.basePiety = 2 * HierophantMod.pietyLostInCombat;
-
-      if (upgraded) {
-          rawDescription = UPGRADE_DESCRIPTION;
-      } else {
-          rawDescription = DESCRIPTION;
-      }
-      rawDescription = rawDescription + EXTENDED_DESCRIPTION[0];
-      initializeDescription();
-    }
-
-    public void onMoveToDiscard()
-    {
-        if (upgraded) {
-            rawDescription = UPGRADE_DESCRIPTION;
-        } else {
-            rawDescription = DESCRIPTION;
-        }
-        initializeDescription();
+                new RepentancePower(p, p, 1), 1));
     }
 
     @Override

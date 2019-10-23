@@ -1,9 +1,15 @@
 package hierophant.powers;
 
-import basemod.interfaces.CloneablePowerInterface;
+import static hierophant.HierophantMod.makePowerPath;
+import static java.lang.Math.ceil;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.animations.TalkAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -19,17 +25,13 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.random.Random;
 
-import hierophant.HierophantMod;
-import hierophant.patches.EscapeFieldPatch;
-import hierophant.util.TextureLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static hierophant.HierophantMod.makePowerPath;
-import static java.lang.Math.ceil;
-
-import java.util.HashMap;
-import java.util.Map;
+import basemod.interfaces.CloneablePowerInterface;
+import hierophant.HierophantMod;
+import hierophant.patches.EscapeFieldPatch;
+import hierophant.util.TextureLoader;
 
 // Defeat any enemies with lower or equal HP than your Piety at end of turn.
 public class PietyPower extends AbstractPower implements CloneablePowerInterface {
@@ -134,7 +136,17 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
         }
 
         int toReduce = (int)ceil(amount / (float)REDUCTION_FACTOR);
-        AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, POWER_ID, toReduce));
+        AbstractPlayer p = AbstractDungeon.player;
+        if (p.hasPower(RepentancePower.POWER_ID)) {
+            int toGain = toReduce;
+            if (p.hasPower(EnlightenedPower.POWER_ID)) {
+                toGain *= EnlightenedPower.PIETY_BONUS / 100;
+            }
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                    new PietyPower(p, p, toGain), toGain));
+        } else {
+            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, POWER_ID, toReduce));
+        }
     }
 
     @Override

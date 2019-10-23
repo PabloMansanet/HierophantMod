@@ -40,7 +40,7 @@ public class SolarFlare extends AbstractTitheCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         payTithe();
         if (p.hasPower(FervorPower.POWER_ID)) {
-            int amount = p.getPower(FervorPower.POWER_ID).amount;
+            int amount = 2 * p.getPower(FervorPower.POWER_ID).amount;
             AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, amount));
         }
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));

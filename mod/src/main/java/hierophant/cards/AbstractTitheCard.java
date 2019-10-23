@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 public abstract class AbstractTitheCard extends AbstractDynamicCard {
-    public static final int GOLD_PER_ENERGY = 20;
+    public static final int GOLD_PER_ENERGY = 10;
 
     public AbstractTitheCard(final String id,
                              final String img,

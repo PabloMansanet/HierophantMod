@@ -20,7 +20,7 @@ public class DonationBoxRelic extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("donation.png"));
 
     public DonationBoxRelic() {
-        super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
     }
 
     @Override

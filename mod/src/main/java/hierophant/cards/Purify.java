@@ -30,8 +30,8 @@ public class Purify extends AbstractDynamicCard {
     private static final int DAMAGE = 20;
     private static final int UPGRADE_PLUS_DMG = 10;
 
-    private static final int MAGIC = 8;
-    private static final int UPGRADE_PLUS_MAGIC = 4;
+    private static final int MAGIC = 5;
+    private static final int UPGRADE_PLUS_MAGIC = 5;
 
     public Purify() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

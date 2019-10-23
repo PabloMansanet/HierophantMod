@@ -33,7 +33,6 @@ public class MorningPrayer extends AbstractDynamicCard {
     private static final int BLOCK = 12;
     private static final int UPGRADE_PLUS_BLOCK = 4;
     private static final int MAGIC = 2;
-    private static final int UPGRADE_PLUS_MAGIC = 1;
 
     public MorningPrayer() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -53,7 +52,6 @@ public class MorningPrayer extends AbstractDynamicCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBlock(UPGRADE_PLUS_BLOCK);
-            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }

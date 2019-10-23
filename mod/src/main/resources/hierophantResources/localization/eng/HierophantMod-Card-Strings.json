@@ -154,11 +154,8 @@
   },
   "hierophant:Repentance": {
     "NAME":"Repentance",
-    "DESCRIPTION": "Gain twice the hierophant:Piety lost this combat. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain twice the hierophant:Piety lost this combat.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (Gain !hierophant:P! hierophant:Piety .)"
-    ]
+    "DESCRIPTION": "At the end of this turn, instead of losing hierophant:Piety, gain that much hierophant:Piety. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":"At the end of this turn, instead of losing hierophant:Piety, gain that much hierophant:Piety."
   },
   "hierophant:SecretStash": {
     "NAME":"Secret Stash",
@@ -201,7 +198,7 @@
   },
   "hierophant:Alms": {
     "NAME":"Alms",
-    "DESCRIPTION": "Draw cards equal to the highest cost among cards in your hand."
+    "DESCRIPTION": "Discard your hand, then draw cards equal to the highest cost discarded."
   },
   "hierophant:VowOfPoverty": {
     "NAME":"Vow Of Poverty",
@@ -252,7 +249,7 @@
   },
   "hierophant:ArchangelShield": {
     "NAME":"Archangel Shield",
-    "DESCRIPTION": "At the end of your turn, gain Block equal to your hierophant:Fervor."
+    "DESCRIPTION": "When you spend hierophant:Fervor, gain that much Block."
   },
   "hierophant:Community": {
     "NAME":"Community",
@@ -277,8 +274,9 @@
   },
   "hierophant:Mercenaries": {
     "NAME":"Mercenaries",
-    "DESCRIPTION": "Deal 1 damage per !M! Gold lost this turn. NL hierophant:Tithe.",
-    "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
+    "DESCRIPTION": "Deal 1 damage per Gold lost this turn. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": "Deal 3 damage per 2 Gold lost this turn. NL hierophant:Tithe.",
+    "EXTENDED_DESCRIPTION": [" NL (Deals !D! damage.)"]
   },
   "hierophant:SearingVirtue": {
     "NAME":"Searing Virtue",
@@ -306,7 +304,7 @@
   },
   "hierophant:SolarFlare": {
     "NAME":"Solar Flare",
-    "DESCRIPTION": "Gain Block equal to your hierophant:Fervor. NL Deal !D! damage. NL hierophant:Tithe."
+    "DESCRIPTION": "Gain Block equal to twice your hierophant:Fervor. NL Deal !D! damage. NL hierophant:Tithe."
   },
   "hierophant:LocustPlague": {
     "NAME":"Locust Plague",
@@ -385,7 +383,7 @@
   "hierophant:EyeForCoin": {
     "NAME":"Eye For Coin",
     "DESCRIPTION": "Permanently add a Doubloon to your deck. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Permanently add an Upgraded Doubloon yo your deck. NL Exhaust"
+    "UPGRADE_DESCRIPTION": "Permanently add an Upgraded Doubloon to your deck. NL Exhaust"
   },
   "hierophant:Kindle": {
     "NAME":"Kindle",

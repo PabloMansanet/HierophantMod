@@ -17,7 +17,7 @@
 },
 "hierophant:GlossolaliaPower": {
         "NAME": "Glossolalia",
-        "DESCRIPTIONS": ["When draw a card, gain Fervor equal to its cost."]
+        "DESCRIPTIONS": ["When you draw a card, gain Fervor equal to its cost."]
 },
 "hierophant:CursedGoldPower": {
         "NAME": "Cursed Gold",
@@ -37,7 +37,7 @@
 },
 "hierophant:ArchangelShieldPower": {
         "NAME": "Archangel Shield",
-        "DESCRIPTIONS": ["At the end of your turn, gain Block equal to twice your Fervor."]
+        "DESCRIPTIONS": ["When you spend Fervor, gain that much Block."]
 },
 "hierophant:CommunityPower": {
         "NAME": "Community",

@@ -6,9 +6,9 @@
       "At the end of each combat, earn enough gold to reach a total of #b80."
     ]
   },
-  "hierophant:AtriumRelic": {
-    "NAME": "Atrium",
-    "FLAVOR": "Voice of the Heavens.",
+  "hierophant:PropheticMaskRelic": {
+    "NAME": "Prophetic Mask",
+    "FLAVOR": "For and from the heavens.",
     "DESCRIPTIONS": [
       "Retain the highest cost card of your hand."
     ]

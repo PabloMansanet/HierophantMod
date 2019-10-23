@@ -11,15 +11,15 @@ import basemod.abstracts.CustomRelic;
 import hierophant.HierophantMod;
 import hierophant.util.TextureLoader;
 
-public class AtriumRelic extends CustomRelic {
+public class PropheticMaskRelic extends CustomRelic {
     // ID, images, text.
-    public static final String ID = HierophantMod.makeID("AtriumRelic");
+    public static final String ID = HierophantMod.makeID("PropheticMaskRelic");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("donation.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("donation.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("PropheticMask.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("PropheticMask.png"));
 
-    public AtriumRelic() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
+    public PropheticMaskRelic() {
+        super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
     }
 
     @Override

@@ -1,24 +1,28 @@
 package hierophant.powers;
 
-import basemod.interfaces.CloneablePowerInterface;
+import static hierophant.HierophantMod.makePowerPath;
+import static java.lang.Math.ceil;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import static java.lang.Math.ceil;
-import hierophant.HierophantMod;
-import hierophant.cards.FlamingChariot;
-import hierophant.util.TextureLoader;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static hierophant.HierophantMod.makePowerPath;
+import basemod.interfaces.CloneablePowerInterface;
+import hierophant.HierophantMod;
+import hierophant.cards.FlamingChariot;
+import hierophant.util.TextureLoader;
 
 public class FervorPower extends AbstractPower implements CloneablePowerInterface {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
@@ -77,7 +81,16 @@ public class FervorPower extends AbstractPower implements CloneablePowerInterfac
     @Override
     public void onAfterCardPlayed(AbstractCard card) {
         if (card.type == AbstractCard.CardType.ATTACK && card.cardID != FlamingChariot.ID) {
-            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+            AbstractPlayer p = AbstractDungeon.player;
+            if (p.hasPower(ArchangelShieldPower.POWER_ID)) {
+                int shieldAmount = p.getPower(ArchangelShieldPower.POWER_ID).amount;
+                this.flash();
+                AbstractDungeon.actionManager.addToBottom(
+                        new GainBlockAction(p, p, this.amount * shieldAmount));
+            }
+
+            AbstractDungeon.actionManager.addToTop(
+                    new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         }
     }
 

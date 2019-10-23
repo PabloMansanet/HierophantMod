@@ -30,7 +30,7 @@ public class EyeForCoin extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
 
     public EyeForCoin() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

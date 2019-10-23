@@ -26,10 +26,11 @@ public class Mercenaries extends AbstractTitheCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 
     private static final int COST = 2;
-    private static final int MAGIC = 3;
-    private static final int UPGRADE_PLUS_MAGIC = -1;
+    private static final int MAGIC = 2;
+    private static final int UPGRADE_PLUS_MAGIC = 1;
 
     public Mercenaries() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -40,10 +41,10 @@ public class Mercenaries extends AbstractTitheCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         payTithe();
-        this.baseDamage = HierophantMod.goldLostThisTurn / magicNumber;
+        this.baseDamage = HierophantMod.goldLostThisTurn * magicNumber / 2;
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        this.rawDescription = DESCRIPTION;
+        this.rawDescription = (this.upgraded ? UPGRADE_DESCRIPTION : DESCRIPTION);
         initializeDescription();
     }
 
@@ -51,8 +52,8 @@ public class Mercenaries extends AbstractTitheCard {
     public void calculateCardDamage(AbstractMonster mo)
     {
         super.calculateCardDamage(mo);
-        this.rawDescription = DESCRIPTION;
-        this.rawDescription += UPGRADE_DESCRIPTION;
+        this.rawDescription = (this.upgraded ? UPGRADE_DESCRIPTION : DESCRIPTION);
+        this.rawDescription += EXTENDED_DESCRIPTION[0];
         initializeDescription();
     }
 
@@ -60,17 +61,17 @@ public class Mercenaries extends AbstractTitheCard {
     public void applyPowers()
     {
         int tithe = GOLD_PER_ENERGY * (this.costForTurn - EnergyPanel.totalCount);
-        this.baseDamage = (tithe + HierophantMod.goldLostThisTurn) / magicNumber;
+        this.baseDamage = (tithe + HierophantMod.goldLostThisTurn) * magicNumber / 2;
         super.applyPowers();
-        this.rawDescription = DESCRIPTION;
-        this.rawDescription += UPGRADE_DESCRIPTION;
+        this.rawDescription = (this.upgraded ? UPGRADE_DESCRIPTION : DESCRIPTION);
+        this.rawDescription += EXTENDED_DESCRIPTION[0];
         initializeDescription();
     }
 
     @Override
     public void onMoveToDiscard()
     {
-        this.rawDescription = DESCRIPTION;
+        this.rawDescription = (this.upgraded ? UPGRADE_DESCRIPTION : DESCRIPTION);
         initializeDescription();
     }
 

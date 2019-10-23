@@ -1,12 +1,15 @@
 package hierophant.characters;
 
-import basemod.abstracts.CustomPlayer;
-import basemod.animations.SpriterAnimation;
+import static hierophant.HierophantMod.HIEROPHANT_CORPSE;
+import static hierophant.HierophantMod.HIEROPHANT_SHOULDER_1;
+import static hierophant.HierophantMod.HIEROPHANT_SHOULDER_2;
+import static hierophant.HierophantMod.makeID;
+import static hierophant.characters.Hierophant.Enums.COLOR_GOLD;
+
+import java.util.ArrayList;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.math.MathUtils;
-import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -20,16 +23,19 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import hierophant.HierophantMod;
-import hierophant.cards.*;
-import hierophant.relics.DonationBoxRelic;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.ArrayList;
-
-import static hierophant.HierophantMod.*;
-import static hierophant.characters.Hierophant.Enums.COLOR_GOLD;
+import basemod.abstracts.CustomPlayer;
+import basemod.animations.SpriterAnimation;
+import hierophant.HierophantMod;
+import hierophant.cards.ChurchCoffers;
+import hierophant.cards.Defend_Hierophant;
+import hierophant.cards.Punish;
+import hierophant.cards.SealAway;
+import hierophant.cards.Strike_Hierophant;
+import hierophant.relics.PropheticMaskRelic;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
@@ -170,8 +176,8 @@ public class Hierophant extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(DonationBoxRelic.ID);
-        UnlockTracker.markRelicAsSeen(DonationBoxRelic.ID);
+        retVal.add(PropheticMaskRelic.ID);
+        UnlockTracker.markRelicAsSeen(PropheticMaskRelic.ID);
 
         return retVal;
     }

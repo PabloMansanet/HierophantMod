@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28490e81-f8c8-4c76-92dc-f5ccedbf1228" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../mechanics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mechanics.md.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mechanics.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/HierophantMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/AbstractTitheCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/AbstractTitheCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Alms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Alms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/ArchangelShield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/ArchangelShield.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Embezzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Embezzle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Entourage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/EyeForCoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/EyeForCoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Mercenaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Mercenaries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/MorningPrayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/MorningPrayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Purify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Purify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Repentance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Repentance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/RepressedViolence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/RepressedViolence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/SearingVirtue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/SolarFlare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/SolarFlare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/characters/Hierophant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/powers/ArchangelShieldPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/powers/ArchangelShieldPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/powers/FervorPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/powers/FervorPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/powers/PietyPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/powers/PietyPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/relics/AtriumRelic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/relics/DonationBoxRelic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/relics/DonationBoxRelic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/char/hierophantCharacter/idle/idle.scml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/char/hierophantCharacter/idle/idle.scml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Keyword-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Keyword-Strings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Power-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Power-Strings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Relic-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Relic-Strings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new_cards.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

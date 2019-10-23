@@ -1,6 +1,7 @@
 
 package hierophant.cards;
 
+import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -38,12 +39,15 @@ public class Alms extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int draw = 0;
+        int count = 0;
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
+            count++;
             if (c.costForTurn > draw) {
                 draw = c.costForTurn;
             }
         }
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, draw, false));
+        AbstractDungeon.actionManager.addToTop(new DrawCardAction(p, draw));
+        AbstractDungeon.actionManager.addToTop(new DiscardAction(p, p, count, true));
     }
 
     @Override
