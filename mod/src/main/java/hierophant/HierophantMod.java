@@ -1,9 +1,12 @@
 package hierophant;
 
-import basemod.BaseMod;
-import basemod.ModLabeledToggleButton;
-import basemod.ModPanel;
-import basemod.interfaces.*;
+import static hierophant.rewards.HoardReward.addHoardedGoldToRewards;
+
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.Properties;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
@@ -12,37 +15,125 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
-import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.localization.EventStrings;
+import com.megacrit.cardcrawl.localization.OrbStrings;
+import com.megacrit.cardcrawl.localization.PotionStrings;
+import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rewards.RewardSave;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import hierophant.cards.*;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import basemod.BaseMod;
+import basemod.ModLabeledToggleButton;
+import basemod.ModPanel;
+import basemod.interfaces.EditCardsSubscriber;
+import basemod.interfaces.EditCharactersSubscriber;
+import basemod.interfaces.EditKeywordsSubscriber;
+import basemod.interfaces.EditRelicsSubscriber;
+import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.OnPowersModifiedSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
+import basemod.interfaces.PostBattleSubscriber;
+import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.PostPlayerUpdateSubscriber;
+import basemod.interfaces.PreMonsterTurnSubscriber;
+import hierophant.cards.Alms;
+import hierophant.cards.Anathema;
+import hierophant.cards.ArchangelShield;
+import hierophant.cards.AuricBeam;
+import hierophant.cards.AuricForm;
+import hierophant.cards.AuricShield;
+import hierophant.cards.Batter;
+import hierophant.cards.Blessing;
+import hierophant.cards.Bribe;
+import hierophant.cards.BulkyChest;
+import hierophant.cards.Charity;
+import hierophant.cards.Chorus;
+import hierophant.cards.ChurchCoffers;
+import hierophant.cards.CoinFling;
+import hierophant.cards.Community;
+import hierophant.cards.ConvertCurrency;
+import hierophant.cards.Cornucopia;
+import hierophant.cards.CursedGold;
+import hierophant.cards.Dazzle;
+import hierophant.cards.DeathKnell;
+import hierophant.cards.Defend_Hierophant;
+import hierophant.cards.Determination;
+import hierophant.cards.DisplayOfPower;
+import hierophant.cards.DivineIntervention;
+import hierophant.cards.Doomsaying;
+import hierophant.cards.Doubloon;
+import hierophant.cards.Embezzle;
+import hierophant.cards.Empathy;
+import hierophant.cards.Encroach;
+import hierophant.cards.Endure;
+import hierophant.cards.Exaltation;
+import hierophant.cards.EyeForCoin;
+import hierophant.cards.FaithHealing;
+import hierophant.cards.FieryStrike;
+import hierophant.cards.Flagellation;
+import hierophant.cards.FlamingChariot;
+import hierophant.cards.Generosity;
+import hierophant.cards.Glossolalia;
+import hierophant.cards.GoldFever;
+import hierophant.cards.HolyVerse;
+import hierophant.cards.Invocation;
+import hierophant.cards.Kindle;
+import hierophant.cards.Levitation;
+import hierophant.cards.LocustPlague;
+import hierophant.cards.Martyrdom;
+import hierophant.cards.Mercenaries;
+import hierophant.cards.MirrorShield;
+import hierophant.cards.MorningPrayer;
+import hierophant.cards.OrnateBuckler;
+import hierophant.cards.OrnateJavelin;
+import hierophant.cards.PassingBell;
+import hierophant.cards.Patience;
+import hierophant.cards.PristineSoul;
+import hierophant.cards.Prophecy;
+import hierophant.cards.Punish;
+import hierophant.cards.Purify;
+import hierophant.cards.Racketeering;
+import hierophant.cards.Rebuild;
+import hierophant.cards.RecallFunds;
+import hierophant.cards.Remorse;
+import hierophant.cards.Repentance;
+import hierophant.cards.RepressedViolence;
+import hierophant.cards.RustyCrate;
+import hierophant.cards.SealAway;
+import hierophant.cards.SecretStash;
+import hierophant.cards.Sermon;
+import hierophant.cards.Shelter;
+import hierophant.cards.Smite;
+import hierophant.cards.SolarFlare;
+import hierophant.cards.Strike_Hierophant;
+import hierophant.cards.ThreeLashes;
+import hierophant.cards.TollTheBells;
+import hierophant.cards.Upheaval;
+import hierophant.cards.WrathOfGod;
+import hierophant.cards.Zeal;
 import hierophant.characters.Hierophant;
 import hierophant.powers.EmbezzlePower;
 import hierophant.powers.PietyBarPower;
 import hierophant.powers.PietyPower;
-import hierophant.relics.PropheticMaskRelic;
 import hierophant.relics.DonationBoxRelic;
+import hierophant.relics.PropheticMaskRelic;
 import hierophant.util.IDCheckDontTouchPls;
 import hierophant.util.TextureLoader;
 import hierophant.variables.PietyNumber;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.util.Properties;
-
-import static hierophant.rewards.HoardReward.addHoardedGoldToRewards;
 
 
 /*
@@ -84,9 +175,9 @@ public class HierophantMod implements
     public static boolean enablePlaceholder = true; // The boolean we'll be setting on/off (true/false)
 
     //This is for the in-game mod settings panel.
-    private static final String MODNAME = "Hierophant Mod";
-    private static final String AUTHOR = "Contrast"; // And pretty soon - You!
-    private static final String DESCRIPTION = "Hierophant Playable Character";
+    private static final String MODNAME = "The Hierophant";
+    private static final String AUTHOR = "Contrast";
+    private static final String DESCRIPTION = "A holy creature of grand aspirations, tested by greed. NL Converts its enemies through benevolence or bribery.";
 
     // =============== INPUT TEXTURE LOCATION =================
 
@@ -136,16 +227,8 @@ public class HierophantMod implements
         return getModID() + "Resources/images/relics/outline/" + resourcePath;
     }
 
-    public static String makeOrbPath(String resourcePath) {
-        return getModID() + "Resources/orbs/" + resourcePath;
-    }
-
     public static String makePowerPath(String resourcePath) {
         return getModID() + "Resources/images/powers/" + resourcePath;
-    }
-
-    public static String makeEventPath(String resourcePath) {
-        return getModID() + "Resources/images/events/" + resourcePath;
     }
 
     // =============== /MAKE IMAGE PATHS/ =================
@@ -159,16 +242,6 @@ public class HierophantMod implements
         logger.info("Subscribe to BaseMod hooks");
 
         BaseMod.subscribe(this);
-
-      /*
-           (   ( /(  (     ( /( (            (  `   ( /( )\ )    )\ ))\ )
-           )\  )\()) )\    )\()))\ )   (     )\))(  )\()|()/(   (()/(()/(
-         (((_)((_)((((_)( ((_)\(()/(   )\   ((_)()\((_)\ /(_))   /(_))(_))
-         )\___ _((_)\ _ )\ _((_)/(_))_((_)  (_()((_) ((_|_))_  _(_))(_))_
-        ((/ __| || (_)_\(_) \| |/ __| __| |  \/  |/ _ \|   \  |_ _||   (_)
-         | (__| __ |/ _ \ | .` | (_ | _|  | |\/| | (_) | |) |  | | | |) |
-          \___|_||_/_/ \_\|_|\_|\___|___| |_|  |_|\___/|___/  |___||___(_)
-      */
 
         setModID("hierophant");
         logger.info("Done subscribing");
@@ -587,7 +660,6 @@ public class HierophantMod implements
         if (keywords != null) {
             for (Keyword keyword : keywords) {
                 BaseMod.addKeyword(getModID().toLowerCase(), keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
-                //  getModID().toLowerCase() makes your keyword mod specific (it won't show up in other cards that use that word)
             }
         }
     }
@@ -632,7 +704,7 @@ public class HierophantMod implements
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
             for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 if (mo != null && !mo.isDead && !mo.isDying && !mo.hasPower(PietyBarPower.POWER_ID)) {
-                    // Add power directly to stay silent
+                    // Add directly to avoid any UI impact
                     mo.powers.add(new PietyBarPower(mo, mo, 1));
                 }
             }

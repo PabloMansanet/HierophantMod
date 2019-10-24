@@ -37,20 +37,10 @@ import hierophant.cards.SealAway;
 import hierophant.cards.Strike_Hierophant;
 import hierophant.relics.PropheticMaskRelic;
 
-//Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
-//and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
-//All text (starting description and loadout, anything labeled TEXT[]) can be found in HierophantMod-character-Strings.json in the resources
-
 public class Hierophant extends CustomPlayer {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
 
     // =============== CHARACTER ENUMERATORS =================
-    // These are enums for your Characters color (both general color and for the card library) as well as
-    // an enum for the name of the player class - IRONCLAD, THE_SILENT, DEFECT, YOUR_CLASS ...
-    // These are all necessary for creating a character. If you want to find out where and how exactly they are used
-    // in the basegame (for fun and education) Ctrl+click on the PlayerClass, CardColor and/or LibraryType below and go down the
-    // Ctrl+click rabbit hole
-
     public static class Enums {
         @SpireEnum
         public static AbstractPlayer.PlayerClass HIEROPHANT;
@@ -118,20 +108,6 @@ public class Hierophant extends CustomPlayer {
                 getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN)); // energy manager
 
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
-
-
-        // =============== ANIMATIONS =================
-
-        //loadAnimation(
-        //        HIEROPHANT_SKELETON_ATLAS,
-        //        HIEROPHANT_SKELETON_JSON,
-        //        1.0f);
-        //AnimationState.TrackEntry e = state.setAnimation(0, "Idle", true);
-        //e.setTime(e.getEndTime() * MathUtils.random());
-        //stateData.setMix("Hit", "Idle", 0.1F);
-        //e.setTimeScale(0.6F);
-
-        // =============== /ANIMATIONS/ =================
 
 
         // =============== TEXT BUBBLE LOCATION =================
