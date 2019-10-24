@@ -231,8 +231,7 @@
   },
   "hierophant:Generosity": {
     "NAME":"Generosity",
-    "DESCRIPTION": "Whenever you play a Doubloon, draw an additional card. NL hierophant:Gilded.",
-    "UPGRADE_DESCRIPTION": "Whenever you play a Doubloon, draw an additional card. NL hierophant:Gilded. NL Innate."
+    "DESCRIPTION": "Whenever you play a Doubloon, draw an additional card. NL hierophant:Gilded."
   },
   "hierophant:Glossolalia": {
     "NAME":"Glossolalia",
@@ -383,7 +382,7 @@
   "hierophant:EyeForCoin": {
     "NAME":"Eye For Coin",
     "DESCRIPTION": "Permanently add a Doubloon to your deck. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Permanently add an Upgraded Doubloon to your deck. NL Exhaust"
+    "UPGRADE_DESCRIPTION": "Permanently add an Upgraded Doubloon to your deck. NL Exhaust."
   },
   "hierophant:Kindle": {
     "NAME":"Kindle",
