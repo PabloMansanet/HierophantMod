@@ -5,9 +5,9 @@
     <!--The author name(s) as they appear in MTS and any other comments are in your ModTheSpire.json-->
     <groupId>hierophantmod</groupId>
     <artifactId>HierophantMod</artifactId>
-    <name>Hierophant Mod</name>
-    <version>0.0.1</version>
-    <description>Hierophant Custom Character.</description>
+    <name>The Hierophant</name>
+    <version>1.0.2</version>
+    <description>A holy creature of grand aspirations, tested by greed. Converts its enemies through benevolence or bribery.</description>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>

@@ -1,7 +1,9 @@
 package hierophant.actions;
 
+import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -22,8 +24,9 @@ public class FaithHealingAction extends com.megacrit.cardcrawl.actions.AbstractG
         int pietyGain = 0;
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.type == AbstractCard.CardType.STATUS) {
-                p.hand.moveToExhaustPile(c);
                 pietyGain += this.piety;
+                AbstractDungeon.actionManager.addToTop(
+                        new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
             }
         }
 

@@ -31,7 +31,7 @@ public class PristineSoul extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 0;
+    private static final int COST = 1;
     private static final int PIETY = 4;
 
     public PristineSoul() {

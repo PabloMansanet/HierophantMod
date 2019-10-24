@@ -25,11 +25,11 @@ public class Punish extends AbstractDynamicCard {
 
     private static final int COST = 2;
 
-    private static final int DAMAGE = 9;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int DAMAGE = 8;
+    private static final int UPGRADE_PLUS_DMG = 4;
 
-    private static final int PIETY = 9;
-    private static final int UPGRADE_PLUS_PIETY = 3;
+    private static final int PIETY = 8;
+    private static final int UPGRADE_PLUS_PIETY = 4;
 
     public Punish() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
