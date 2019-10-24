@@ -620,23 +620,11 @@ public class HierophantMod implements
         BaseMod.loadCustomStringsFile(RelicStrings.class,
                 getModID() + "Resources/localization/eng/HierophantMod-Relic-Strings.json");
 
-        // Event Strings
-        BaseMod.loadCustomStringsFile(EventStrings.class,
-                getModID() + "Resources/localization/eng/HierophantMod-Event-Strings.json");
-
-        // PotionStrings
-        BaseMod.loadCustomStringsFile(PotionStrings.class,
-                getModID() + "Resources/localization/eng/HierophantMod-Potion-Strings.json");
-
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class,
                 getModID() + "Resources/localization/eng/HierophantMod-Character-Strings.json");
 
-        // OrbStrings
-        BaseMod.loadCustomStringsFile(OrbStrings.class,
-                getModID() + "Resources/localization/eng/HierophantMod-Orb-Strings.json");
-
-        logger.info("Done edittting strings");
+        logger.info("Done editting strings");
     }
 
     // ================ /LOAD THE TEXT/ ===================

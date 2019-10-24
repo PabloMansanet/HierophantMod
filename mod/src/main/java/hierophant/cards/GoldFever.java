@@ -61,7 +61,7 @@ public class GoldFever extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.baseDamage = this.magicNumber * countDoubloons();
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AttackEffect.BLUNT_HEAVY));
-        this.rawDescription = DESCRIPTION;
+        this.rawDescription = (this.upgraded ? UPGRADE_DESCRIPTION : DESCRIPTION);
         this.initializeDescription();
     }
 
@@ -93,6 +93,7 @@ public class GoldFever extends AbstractDynamicCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
+            this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
     }

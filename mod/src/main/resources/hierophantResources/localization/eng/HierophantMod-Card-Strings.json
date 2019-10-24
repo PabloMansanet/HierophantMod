@@ -280,7 +280,7 @@
   },
   "hierophant:ThreeLashes": {
     "NAME":"Three Lashes",
-    "DESCRIPTION": "Deal !D! damage three times. NL Gain 4 hierophant:Fervor."
+    "DESCRIPTION": "Deal !D! damage three times. NL Gain 5 hierophant:Fervor."
   },
   "hierophant:SealAway": {
     "NAME":"Seal Away",
