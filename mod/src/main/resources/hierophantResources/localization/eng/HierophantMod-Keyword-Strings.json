@@ -16,7 +16,7 @@
     "NAMES": [
       "tithe"
     ],
-    "DESCRIPTION": "Can be partially paid with gold, at a rate of #b10 gold per Energy."
+    "DESCRIPTION": "When your energy is insufficient, can be partially paid with gold at a rate of #b10 gold per missing Energy."
   },
   {
     "NAMES": [
