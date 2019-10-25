@@ -45,6 +45,7 @@ public class Blessing extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
         exhaust = true;
+        tags.add(CardTags.HEALING);
     }
 
     @Override

@@ -49,6 +49,7 @@ public class Doubloon extends AbstractDynamicCard {
         magicNumber = baseMagicNumber = MAGIC;
         tags.add(HierophantTags.HIEROPHANT_HOARD);
         exhaust = true;
+        tags.add(CardTags.HEALING); // To prevent generation
     }
 
     public Doubloon(boolean upgraded) {

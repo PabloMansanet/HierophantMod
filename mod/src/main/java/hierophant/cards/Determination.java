@@ -30,6 +30,7 @@ public class Determination extends AbstractDynamicCard {
 
     public Determination() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        tags.add(CardTags.HEALING);
     }
 
     @Override

@@ -37,6 +37,7 @@ public class SecretStash extends AbstractDynamicCard {
         isEthereal = true;
         magicNumber = baseMagicNumber = MAGIC;
         tags.add(HierophantTags.HIEROPHANT_HOARD);
+        tags.add(CardTags.HEALING); // To prevent generation
     }
 
     @Override

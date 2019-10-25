@@ -39,6 +39,7 @@ public class BulkyChest extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
         tags.add(HierophantTags.HIEROPHANT_HOARD);
+        tags.add(CardTags.HEALING); // To prevent generation
     }
 
     @Override

@@ -38,6 +38,7 @@ public class RustyCrate extends AbstractDynamicCard {
         magicNumber = baseMagicNumber = MAGIC;
         tags.add(HierophantTags.HIEROPHANT_DOUBLE_GILDED);
         tags.add(HierophantTags.HIEROPHANT_HOARD);
+        tags.add(CardTags.HEALING); // To prevent generation
     }
 
     @Override

@@ -511,9 +511,10 @@ public class HierophantMod implements
 
         logger.info("Making sure the cards are unlocked.");
 
-        // // Attacks
+        // Attacks
         UnlockTracker.unlockCard(Strike_Hierophant.ID);
         UnlockTracker.unlockCard(CoinFling.ID);
+        UnlockTracker.unlockCard(Batter.ID);
         UnlockTracker.unlockCard(OrnateJavelin.ID);
         UnlockTracker.unlockCard(ThreeLashes.ID);
         UnlockTracker.unlockCard(Zeal.ID);
@@ -535,10 +536,10 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(AuricBeam.ID);
         UnlockTracker.unlockCard(DisplayOfPower.ID);
         UnlockTracker.unlockCard(FieryStrike.ID);
-        UnlockTracker.unlockCard(OrnateBuckler.ID);
 
-        // // Skills
+        // Skills
         UnlockTracker.unlockCard(Defend_Hierophant.ID);
+        UnlockTracker.unlockCard(OrnateBuckler.ID);
         UnlockTracker.unlockCard(Doubloon.ID);
         UnlockTracker.unlockCard(MorningPrayer.ID);
         UnlockTracker.unlockCard(HolyVerse.ID);
@@ -581,11 +582,11 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(AuricShield.ID);
 
         // // Powers
-        UnlockTracker.unlockCard(Glossolalia.ID);
         UnlockTracker.unlockCard(Martyrdom.ID);
+        UnlockTracker.unlockCard(Glossolalia.ID);
         UnlockTracker.unlockCard(Generosity.ID);
-        UnlockTracker.unlockCard(Charity.ID);
         UnlockTracker.unlockCard(Determination.ID);
+        UnlockTracker.unlockCard(Charity.ID);
         UnlockTracker.unlockCard(CursedGold.ID);
         UnlockTracker.unlockCard(AuricForm.ID);
         UnlockTracker.unlockCard(ArchangelShield.ID);

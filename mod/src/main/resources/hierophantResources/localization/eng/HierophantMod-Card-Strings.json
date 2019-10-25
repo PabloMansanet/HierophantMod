@@ -240,7 +240,7 @@
   },
   "hierophant:Remorse": {
     "NAME":"Remorse",
-    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage per Exhausted Doubloon. NL hierophant:Gilded."
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage per Doubloon in your Exhaust pile. NL hierophant:Gilded."
   },
   "hierophant:RepressedViolence": {
     "NAME":"Repressed Violence",

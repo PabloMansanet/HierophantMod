@@ -44,7 +44,7 @@ public class Encroach extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         boolean draw = false;
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (mo.currentBlock > 0) {
+            if (mo != null && !mo.isDead && mo.currentBlock > 0) {
                 draw = true;
             }
         }

@@ -39,6 +39,7 @@ public class OrnateJavelin extends AbstractDynamicCard {
         magicNumber = baseMagicNumber = MAGIC;
         tags.add(HierophantTags.HIEROPHANT_HOARD);
         this.exhaust = true;
+        tags.add(CardTags.HEALING); // To prevent generation
     }
 
     @Override

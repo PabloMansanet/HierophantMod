@@ -30,7 +30,7 @@ public class OrnateBuckler extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int BLOCK = 8;
-    private static final int UPGRADE_PLUS_BLOCK = 4;
+    private static final int UPGRADE_PLUS_BLOCK = 3;
 
     private static final int MAGIC = 3;
     private static final int UPGRADE_PLUS_MAGIC = 1;
@@ -42,6 +42,7 @@ public class OrnateBuckler extends AbstractDynamicCard {
         magicNumber = baseMagicNumber = MAGIC;
         block = baseBlock = BLOCK;
         tags.add(HierophantTags.HIEROPHANT_HOARD);
+        tags.add(CardTags.HEALING); // To prevent generation
     }
 
     @Override
