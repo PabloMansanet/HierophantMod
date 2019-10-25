@@ -272,7 +272,7 @@
   },
   "hierophant:WrathOfGod": {
     "NAME":"Wrath Of God",
-    "DESCRIPTION": "Deal !D! damage to all enemies. NL Deals !M! damage to you. NL hierophant:Tithe."
+    "DESCRIPTION": "Deal !D! damage to all enemies and !M! damage to you. NL hierophant:Tithe."
   },
   "hierophant:Zeal": {
     "NAME":"Zeal",

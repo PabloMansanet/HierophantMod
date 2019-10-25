@@ -29,13 +29,10 @@ public class WrathOfGod extends AbstractTitheCard {
     private static final int DAMAGE = 40;
     private static final int UPGRADE_PLUS_DMG = 20;
 
-    private static final int MAGIC = 10;
-    private static final int UPGRADE_PLUS_MAGIC = 5;
-
     public WrathOfGod() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        magicNumber = baseMagicNumber = MAGIC;
+        magicNumber = baseMagicNumber = DAMAGE/4;
         this.isMultiDamage = true;
     }
 
@@ -50,12 +47,26 @@ public class WrathOfGod extends AbstractTitheCard {
         AbstractDungeon.actionManager.addToBottom( new DamageAction(p, new DamageInfo(p, magicNumber, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
     }
 
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+        this.magicNumber = damage / 4;
+        this.isDamageModified = this.damage != this.baseDamage;
+        this.isMagicNumberModified = this.isDamageModified;
+    }
+
+    public void applyPowers() {
+        super.applyPowers();
+        this.magicNumber = damage / 4;
+        this.isDamageModified = this.damage != this.baseDamage;
+        this.isMagicNumberModified = this.isDamageModified;
+        this.isDamageModified = this.damage != this.baseDamage;
+    }
+
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }
