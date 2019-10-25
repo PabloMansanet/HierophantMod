@@ -37,7 +37,11 @@
 },
 "hierophant:CharityPower": {
         "NAME": "Charity",
-        "DESCRIPTIONS": ["When you play a Doubloon, gain #b", " Piety."]
+        "DESCRIPTIONS": ["When you draw a Doubloon, gain #b", " Piety."]
+},
+"hierophant:RefugePower": {
+        "NAME": "Refuge",
+        "DESCRIPTIONS": ["When you play a Doubloon, everyone gains #b", " Block."]
 },
 "hierophant:ArchangelShieldPower": {
         "NAME": "Archangel Shield",

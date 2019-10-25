@@ -1,48 +1,42 @@
 package hierophant.cards;
 
+import static hierophant.HierophantMod.makeCardPath;
+
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
 import hierophant.HierophantMod;
-import hierophant.tags.HierophantTags;
 import hierophant.characters.Hierophant;
-import hierophant.powers.CharityPower;
-import hierophant.powers.EnlightenedPower;
-import hierophant.powers.PietyPower;
+import hierophant.powers.RefugePower;
+import hierophant.tags.HierophantTags;
 
-import static hierophant.HierophantMod.makeCardPath;
+public class Refuge extends AbstractDynamicCard {
 
-public class Charity extends AbstractDynamicCard {
-
-    public static final String ID = HierophantMod.makeID(Charity.class.getSimpleName());
-    public static final String IMG = makeCardPath("Charity.png");
-
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    public static final String ID = HierophantMod.makeID(Refuge.class.getSimpleName());
+    public static final String IMG = makeCardPath("Refuge.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 1;
-    private static final int MAGIC = 6;
-    private static final int UPGRADE_PLUS_MAGIC = 4;
+    private static final int COST = 0;
+    private static final int MAGIC = 4;
+    private static final int UPGRADE_PLUS_MAGIC = 3;
 
-    public Charity() {
+    public Refuge() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         tags.add(HierophantTags.HIEROPHANT_GILDED);
-        this.magicNumber = this.baseMagicNumber = MAGIC;
+        magicNumber = baseMagicNumber = MAGIC;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new CharityPower(p, p, magicNumber), magicNumber));
+                new RefugePower(p, p, magicNumber), magicNumber));
     }
 
     @Override
@@ -50,6 +44,7 @@ public class Charity extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
+            initializeDescription();
         }
     }
 }

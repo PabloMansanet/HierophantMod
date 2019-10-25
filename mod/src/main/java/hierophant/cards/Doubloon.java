@@ -1,8 +1,8 @@
 
 package hierophant.cards;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -15,6 +15,7 @@ import hierophant.powers.CharityPower;
 import hierophant.powers.EnlightenedPower;
 import hierophant.powers.GenerosityPower;
 import hierophant.powers.PietyPower;
+import hierophant.powers.RefugePower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
@@ -63,19 +64,18 @@ public class Doubloon extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (p.hasPower(GenerosityPower.POWER_ID)) {
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW + p.getPower(GenerosityPower.POWER_ID).amount));
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW));
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, p.getPower(GenerosityPower.POWER_ID).amount));
         }
 
-        if (p.hasPower(CharityPower.POWER_ID)) {
-            int piety = p.getPower(CharityPower.POWER_ID).amount;
-            if (p.hasPower(EnlightenedPower.POWER_ID)) {
-                piety = (piety * EnlightenedPower.PIETY_BONUS) / 100;
+        if (p.hasPower(RefugePower.POWER_ID)) {
+            int blockAmount = p.getPower(RefugePower.POWER_ID).amount;
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, m, blockAmount));
+            for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(mo, p, blockAmount));
             }
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PietyPower(p, p, piety), piety));
         }
+
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW));
     }
 
     @Override

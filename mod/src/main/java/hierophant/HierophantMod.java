@@ -89,6 +89,7 @@ import hierophant.cards.FlamingChariot;
 import hierophant.cards.Generosity;
 import hierophant.cards.Glossolalia;
 import hierophant.cards.GoldFever;
+import hierophant.cards.HammerAndAnvil;
 import hierophant.cards.HolyVerse;
 import hierophant.cards.Invocation;
 import hierophant.cards.Kindle;
@@ -109,6 +110,7 @@ import hierophant.cards.Purify;
 import hierophant.cards.Racketeering;
 import hierophant.cards.Rebuild;
 import hierophant.cards.RecallFunds;
+import hierophant.cards.Refuge;
 import hierophant.cards.Remorse;
 import hierophant.cards.Repentance;
 import hierophant.cards.RepressedViolence;
@@ -475,6 +477,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Chorus());
         BaseMod.addCard(new Exaltation());
         BaseMod.addCard(new Shelter());
+        BaseMod.addCard(new HammerAndAnvil());
         BaseMod.addCard(new Rebuild());
         BaseMod.addCard(new MirrorShield());
         BaseMod.addCard(new ChurchCoffers());
@@ -504,6 +507,7 @@ public class HierophantMod implements
         BaseMod.addCard(new Generosity());
         BaseMod.addCard(new Determination());
         BaseMod.addCard(new Charity());
+        BaseMod.addCard(new Refuge());
         BaseMod.addCard(new CursedGold());
         BaseMod.addCard(new AuricForm());
         BaseMod.addCard(new ArchangelShield());
@@ -558,6 +562,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Chorus.ID);
         UnlockTracker.unlockCard(Exaltation.ID);
         UnlockTracker.unlockCard(Shelter.ID);
+        UnlockTracker.unlockCard(HammerAndAnvil.ID);
         UnlockTracker.unlockCard(Rebuild.ID);
         UnlockTracker.unlockCard(MirrorShield.ID);
         UnlockTracker.unlockCard(ChurchCoffers.ID);
@@ -587,6 +592,7 @@ public class HierophantMod implements
         UnlockTracker.unlockCard(Generosity.ID);
         UnlockTracker.unlockCard(Determination.ID);
         UnlockTracker.unlockCard(Charity.ID);
+        UnlockTracker.unlockCard(Refuge.ID);
         UnlockTracker.unlockCard(CursedGold.ID);
         UnlockTracker.unlockCard(AuricForm.ID);
         UnlockTracker.unlockCard(ArchangelShield.ID);

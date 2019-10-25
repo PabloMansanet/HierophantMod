@@ -42,7 +42,7 @@
   },
   "hierophant:Embezzle": {
     "NAME": "Embezzle",
-    "DESCRIPTION": "Gain !M! Gold. NL At the end of combat, return any of the !M! Gold you did not spend."
+    "DESCRIPTION": "Gain !M! Gold. NL At the end of combat, return any of the !M! Gold you did not spend. NL Exhaust."
   },
   "hierophant:Entourage": {
     "NAME": "Entourage",
@@ -145,6 +145,10 @@
     "NAME":"Racketeering",
     "DESCRIPTION": "Give an enemy !M! Block. Draw a card for each 5 Block on that enemy."
   },
+  "hierophant:HammerAndAnvil": {
+    "NAME":"Hammer And Anvil",
+    "DESCRIPTION": "Give an enemy !M! Block. NL Gain hierophant:Fervor equal to that enemy's Block."
+  },
   "hierophant:Alms": {
     "NAME":"Alms",
     "DESCRIPTION": "Discard your hand, then draw cards equal to the combined cost discarded."
@@ -188,7 +192,11 @@
   },
   "hierophant:Charity": {
     "NAME":"Charity",
-    "DESCRIPTION": "Whenever you play a Doubloon, gain !M! hierophant:Piety. NL hierophant:Gilded."
+    "DESCRIPTION": "When you draw a Doubloon, gain !M! hierophant:Piety. NL hierophant:Gilded."
+  },
+  "hierophant:Refuge": {
+    "NAME":"Refuge",
+    "DESCRIPTION": "When you play a Doubloon, everyone gains !M! Block. NL hierophant:Gilded."
   },
   "hierophant:CursedGold": {
     "NAME":"Cursed Gold",
@@ -322,7 +330,7 @@
   },
   "hierophant:DeathKnell": {
     "NAME":"Death Knell",
-    "DESCRIPTION": "Your Attacks deal no damage for !M! turns. NL After !M! turns, gain 60 hierophant:Fervor."
+    "DESCRIPTION": "Your Attacks deal no damage for !M! turns. NL After !M! turns, gain 40 hierophant:Fervor."
   },
   "hierophant:Empathy": {
     "NAME":"Empathy",
