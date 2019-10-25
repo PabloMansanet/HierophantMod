@@ -3,7 +3,10 @@ package hierophant.relics;
 import static hierophant.HierophantMod.makeRelicOutlinePath;
 import static hierophant.HierophantMod.makeRelicPath;
 
+import com.megacrit.cardcrawl.random.Random;
+
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.math.Vector;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
@@ -26,18 +29,24 @@ public class PropheticMaskRelic extends CustomRelic {
     public void onPlayerEndTurn() {
         int cost = 0;
         int index = 0;
-        int highestCardPosition = 0;
+        java.util.Vector<Integer> candidateIndices = new java.util.Vector<Integer>();
+        int highestCost = 0;
         if (AbstractDungeon.player.hand.isEmpty()) {
             return;
         }
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.costForTurn > cost) {
-                highestCardPosition = index;
-                cost = c.costForTurn;
+            if (c.costForTurn > highestCost && !c.isEthereal) {
+                candidateIndices.clear();
+                highestCost = c.costForTurn;
+                candidateIndices.add(index);
+            } else if (c.costForTurn == highestCost && !c.isEthereal) {
+                candidateIndices.add(index);
             }
             index++;
         }
-        AbstractCard highest = AbstractDungeon.player.hand.group.get(highestCardPosition);
+        Random rand = new Random();
+        int chosenCardIndex = candidateIndices.get(rand.random(0, candidateIndices.size() - 1));
+        AbstractCard highest = AbstractDungeon.player.hand.group.get(chosenCardIndex);
         highest.retain = true;
     }
 

@@ -10,7 +10,7 @@
     "NAME": "Prophetic Mask",
     "FLAVOR": "For and from the heavens.",
     "DESCRIPTIONS": [
-      "Retain the highest cost card of your hand."
+      "Retain the highest cost card of your hand (Chosen at random when tied)."
     ]
   },
   "hierophant:BeggarsRobeRelic": {

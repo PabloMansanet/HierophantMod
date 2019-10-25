@@ -24,7 +24,7 @@ public class WrathOfGod extends AbstractTitheCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 9;
+    private static final int COST = 8;
 
     private static final int DAMAGE = 40;
     private static final int UPGRADE_PLUS_DMG = 20;
@@ -32,7 +32,7 @@ public class WrathOfGod extends AbstractTitheCard {
     public WrathOfGod() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        magicNumber = baseMagicNumber = DAMAGE/4;
+        magicNumber = baseMagicNumber = DAMAGE/5;
         this.isMultiDamage = true;
     }
 
