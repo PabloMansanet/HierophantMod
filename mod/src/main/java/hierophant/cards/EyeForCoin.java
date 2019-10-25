@@ -40,7 +40,9 @@ public class EyeForCoin extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         Doubloon doubloon = new Doubloon();
-        doubloon.upgraded = this.upgraded;
+        if (this.upgraded) {
+            doubloon.upgrade();
+        }
         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(doubloon, p.hb.x, p.hb.y));
     }
 

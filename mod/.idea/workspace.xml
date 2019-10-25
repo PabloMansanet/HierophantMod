@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28490e81-f8c8-4c76-92dc-f5ccedbf1228" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/RepressedViolence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/RepressedViolence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/powers/FervorPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/powers/FervorPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/powers/PietyPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/powers/PietyPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/EyeForCoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/EyeForCoin.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
