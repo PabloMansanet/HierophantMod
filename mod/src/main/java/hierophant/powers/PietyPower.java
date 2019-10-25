@@ -125,6 +125,9 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
                 AbstractDungeon.actionManager.addToTop(new HideHealthBarAction(mo));
                 AbstractDungeon.actionManager.addToBottom(new SuicideAction(mo));
                 EscapeFieldPatch.escapingPiety.set(mo, true);
+                if (mo.id.equals("Darkling")) {
+                    mo.halfDead = true;
+                }
             } else if (mo.currentHealth > 0) {
                 allMonstersPacified = false;
             }

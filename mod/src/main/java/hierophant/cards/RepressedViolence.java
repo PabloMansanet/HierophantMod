@@ -45,6 +45,14 @@ public class RepressedViolence extends AbstractDynamicCard {
     }
 
     @Override
+    public void applyPowers() {
+        this.baseDamage = this.misc;
+        this.isDamageModified = false;
+        super.applyPowers();
+        this.initializeDescription();
+    }
+
+    @Override
     public void triggerOnExhaust() {
         Iterator iter = AbstractDungeon.player.masterDeck.group.iterator();
         AbstractCard c;

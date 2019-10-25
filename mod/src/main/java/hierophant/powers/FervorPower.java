@@ -89,7 +89,7 @@ public class FervorPower extends AbstractPower implements CloneablePowerInterfac
                         new GainBlockAction(p, p, this.amount * shieldAmount));
             }
 
-            AbstractDungeon.actionManager.addToTop(
+            AbstractDungeon.actionManager.addToBottom(
                     new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         }
     }

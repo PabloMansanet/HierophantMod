@@ -6,7 +6,7 @@
     <groupId>hierophantmod</groupId>
     <artifactId>HierophantMod</artifactId>
     <name>The Hierophant</name>
-    <version>1.0.2</version>
+    <version>1.1.0</version>
     <description>A holy creature of grand aspirations, tested by greed. Converts its enemies through benevolence or bribery.</description>
 
     <properties>
