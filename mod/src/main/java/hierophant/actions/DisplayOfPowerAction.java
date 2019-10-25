@@ -1,4 +1,6 @@
-package com.megacrit.cardcrawl.actions.defect;
+package hierophant.actions;
+
+import java.util.Iterator;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -8,17 +10,17 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import hierophant.HierophantMod;
-import hierophant.cards.Doubloon;
 
 public class DisplayOfPowerAction extends com.megacrit.cardcrawl.actions.AbstractGameAction
 {
-    public static final String CHOOSE_TEXT = "Discard";
+    private AbstractPlayer p;
+    public static final String CHOOSE_TEXT = "place on top of your Draw Pile.";
     public int damage;
     public int damageMultiplier;
     private AbstractMonster m;
 
     public DisplayOfPowerAction(AbstractMonster m, int damage) {
+        this.p = AbstractDungeon.player;
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FAST;
         this.damage = damage;
@@ -26,34 +28,40 @@ public class DisplayOfPowerAction extends com.megacrit.cardcrawl.actions.Abstrac
         this.m = m;
     }
 
-    public void update()
-    {
-        AbstractPlayer p = AbstractDungeon.player;
-        if (this.duration == com.megacrit.cardcrawl.core.Settings.ACTION_DUR_FAST) {
-            if (p.hand.isEmpty()) {
+    public void update() {
+        if (this.duration == Settings.ACTION_DUR_FAST) {
+            if (this.p.hand.isEmpty()) {
                 this.isDone = true;
-                return;
-            }
-            if (p.hand.size() == 1) {
-                damageMultiplier = p.hand.getBottomCard().costForTurn;
-                p.hand.moveToDiscardPile(p.hand.getBottomCard());
-                tickDuration();
-                return;
-            }
-            AbstractDungeon.handCardSelectScreen.open(CHOOSE_TEXT, 1, false);
-            tickDuration();
-            return;
-        }
+            } else if (this.p.hand.size() == 1) {
+                AbstractCard c = this.p.hand.getTopCard();
+                this.damageMultiplier = c.costForTurn;
+                this.p.hand.moveToDeck(c, false);
+                AbstractDungeon.player.hand.refreshHandLayout();
+                AbstractDungeon.actionManager.addToBottom(
+                        new DamageAction(m, new DamageInfo(p, damage * damageMultiplier, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
 
-        if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
-            for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                damageMultiplier = c.costForTurn;
+                this.isDone = true;
+            } else {
+                AbstractDungeon.handCardSelectScreen.open(CHOOSE_TEXT, 1, false);
+                this.tickDuration();
             }
-            AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
-            AbstractDungeon.handCardSelectScreen.selectedCards.group.clear();
+        } else {
+            if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
+                AbstractCard c;
+                for(Iterator var1 = AbstractDungeon.handCardSelectScreen.selectedCards.group.iterator(); var1.hasNext(); this.p.hand.moveToDeck(c, false)) {
+                    c = (AbstractCard)var1.next();
+                    this.damageMultiplier = c.costForTurn;
+
+                }
+                AbstractDungeon.actionManager.addToBottom(
+                        new DamageAction(m, new DamageInfo(p, damage * damageMultiplier, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
+                AbstractDungeon.player.hand.refreshHandLayout();
+                AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
+                this.isDone = true;
+            }
+
+            this.tickDuration();
         }
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage * damageMultiplier, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
-        this.isDone = true;
     }
+
 }

@@ -35,7 +35,7 @@ public class Embezzle extends AbstractDynamicCard {
 
     private static final int COST = 0;
     private static final int MAGIC = 40;
-    private static final int UPGRADE_PLUS_MAGIC = 30;
+    private static final int UPGRADE_PLUS_MAGIC = 20;
 
     public Embezzle() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

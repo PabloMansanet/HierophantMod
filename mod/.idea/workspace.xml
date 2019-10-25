@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28490e81-f8c8-4c76-92dc-f5ccedbf1228" name="Default Changelist" comment="" />
+    <list default="true" id="28490e81-f8c8-4c76-92dc-f5ccedbf1228" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/actions/DisplayOfPowerAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/actions/DisplayOfPowerAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/DisplayOfPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/DisplayOfPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/Embezzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/Embezzle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/EyeForCoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/EyeForCoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/HammerAndAnvil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/HammerAndAnvil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/cards/WrathOfGod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/cards/WrathOfGod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hierophant/relics/PropheticMaskRelic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hierophant/relics/PropheticMaskRelic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Strike.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Strike.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Strike_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/images/cards/Strike_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hierophantResources/localization/eng/HierophantMod-Card-Strings.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +186,10 @@
           <url>jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/AbstractCard.class</url>
           <line>1005</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/unique/SetupAction.class</url>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

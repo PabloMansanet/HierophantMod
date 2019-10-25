@@ -280,7 +280,7 @@
   },
   "hierophant:WrathOfGod": {
     "NAME":"Wrath Of God",
-    "DESCRIPTION": "Deal !D! damage to all enemies and !M! damage to you. NL hierophant:Tithe."
+    "DESCRIPTION": "Deal !D! damage to all enemies and a fifth ( !M! ) to you. NL hierophant:Tithe."
   },
   "hierophant:Zeal": {
     "NAME":"Zeal",
@@ -372,6 +372,6 @@
   },
   "hierophant:DisplayOfPower": {
     "NAME":"Display Of Power",
-    "DESCRIPTION": "Discard a card. Deal damage equal to !D! times its cost."
+    "DESCRIPTION": "Place a card on top of your draw pile. NL Deal damage equal to !D! times its cost."
   }
 }

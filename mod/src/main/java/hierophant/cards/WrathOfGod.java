@@ -28,6 +28,7 @@ public class WrathOfGod extends AbstractTitheCard {
 
     private static final int DAMAGE = 40;
     private static final int UPGRADE_PLUS_DMG = 20;
+    private static final int UPGRADE_PLUS_MAGIC = 4;
 
     public WrathOfGod() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -67,6 +68,7 @@ public class WrathOfGod extends AbstractTitheCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
         }
     }
 }

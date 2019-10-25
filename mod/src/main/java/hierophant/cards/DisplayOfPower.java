@@ -1,6 +1,6 @@
 package hierophant.cards;
 
-import com.megacrit.cardcrawl.actions.defect.DisplayOfPowerAction;
+import hierophant.actions.DisplayOfPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -14,7 +14,7 @@ public class DisplayOfPower extends AbstractDynamicCard {
     public static final String ID = HierophantMod.makeID(DisplayOfPower.class.getSimpleName());
     public static final String IMG = makeCardPath("DisplayOfPower.png");
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;

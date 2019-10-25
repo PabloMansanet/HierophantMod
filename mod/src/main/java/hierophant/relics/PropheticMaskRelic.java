@@ -44,13 +44,17 @@ public class PropheticMaskRelic extends CustomRelic {
             }
             index++;
         }
+
+        if (candidateIndices.isEmpty()) {
+            return;
+        }
         Random rand = new Random();
         int chosenCardIndex = candidateIndices.get(rand.random(0, candidateIndices.size() - 1));
         AbstractCard highest = AbstractDungeon.player.hand.group.get(chosenCardIndex);
         highest.retain = true;
     }
 
-    // Description
+	// Description
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];
