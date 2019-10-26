@@ -24,7 +24,7 @@ public class WrathOfGod extends AbstractTitheCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 8;
+    private static final int COST = 6;
 
     private static final int DAMAGE = 40;
     private static final int UPGRADE_PLUS_DMG = 20;

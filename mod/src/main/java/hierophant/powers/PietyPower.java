@@ -30,6 +30,7 @@ import org.apache.logging.log4j.Logger;
 
 import basemod.interfaces.CloneablePowerInterface;
 import hierophant.HierophantMod;
+import hierophant.actions.PietyDefeatAction;
 import hierophant.patches.EscapeFieldPatch;
 import hierophant.util.TextureLoader;
 
@@ -46,20 +47,10 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
 
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("piety_big.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("piety_small.png"));
-    private static final Map<String, String[]> dialogs = new HashMap<String, String[]>();
 
     public static final int REDUCTION_FACTOR = 3;
 
     public PietyPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
-        dialogs.put("Cultist", new String[]{"CA-CAW! HAIL THE NEW GODS! CA-CAW!", "CA-CAW! THE LIGHT SHINES!"});
-        dialogs.put("SlaverBlue", new String[]{"Slavery isn't my thing anyway..."});
-        dialogs.put("SlaverRed", new String[]{"I was the slave all along!"});
-        dialogs.put("Champ", new String[]{"ALL THIS VIOLENCE! ALL FOR NOTHING!", "SKY IS THE LIMIT!"});
-        dialogs.put("GremlinLeader", new String[]{"My children, what have I done?"});
-        dialogs.put("Chosen", new String[]{"Will I ever atone for my sins?"});
-        dialogs.put("Mystic", new String[]{"Your Gods and mine are all but the same."});
-        dialogs.put("Centurion", new String[]{"I should've listened to her..."});
-        dialogs.put("GiantHead", new String[]{"Hello... Theism..."});
         name = NAME;
         ID = POWER_ID;
 
@@ -78,6 +69,7 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
 
         updateDescription();
     }
+
 
     @Override
     public void stackPower(int stackAmount)
@@ -99,21 +91,6 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
         }
     }
 
-    public void pietyDialog(AbstractMonster mo) {
-        Random rand = new Random();
-        int chance = 30;
-
-        if (rand.random(100) > chance)  {
-            return;
-        }
-
-        String[] dialogStrings = dialogs.get(mo.id);
-        if (dialogStrings != null) {
-            String dialog = dialogStrings[rand.random(0, dialogStrings.length-1)];
-            AbstractDungeon.actionManager.addToBottom(new TalkAction(mo, dialog, 1.0F, 2.0F));
-        }
-    }
-
     @Override
     public void atEndOfTurn(final boolean isPlayer) {
         boolean allMonstersPacified = true;
@@ -121,20 +98,15 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
             if ((mo.currentHealth <= this.amount) && (mo.currentHealth > 0)) {
                 this.flash();
                 determinationHeal(mo.currentHealth);
-                pietyDialog(mo);
                 AbstractDungeon.actionManager.addToTop(new HideHealthBarAction(mo));
-                AbstractDungeon.actionManager.addToBottom(new SuicideAction(mo));
-                EscapeFieldPatch.escapingPiety.set(mo, true);
-                if (mo.id.equals("Darkling")) {
-                    mo.halfDead = true;
-                }
+                AbstractDungeon.actionManager.addToBottom(new PietyDefeatAction(mo));
             } else if (mo.currentHealth > 0) {
                 allMonstersPacified = false;
             }
         }
 
         if (allMonstersPacified) {
-            // Prevent darkling softlock
+            // Prevent softlocks
             AbstractDungeon.getCurrRoom().cannotLose = false;
         }
 

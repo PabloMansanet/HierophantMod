@@ -33,12 +33,15 @@ public class Patience extends AbstractDynamicCard {
 
     public Patience() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        this.piety = this.basePiety = 0;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        basePiety = 2 * m.currentBlock;
+        applyPowers();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PietyPower(p, p, 2 * m.currentBlock), 2 * m.currentBlock));
+                new PietyPower(p, p, piety), piety));
     }
 
     @Override
