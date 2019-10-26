@@ -135,7 +135,8 @@
   },
   "hierophant:Levitation": {
     "NAME":"Levitation",
-    "DESCRIPTION": "Gain 1 Intangible. NL Exhaust. NL hierophant:Tithe."
+    "DESCRIPTION": "Gain 1 Intangible. NL Exhaust. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Intangible. NL hierophant:Tithe."
   },
   "hierophant:TollTheBells": {
     "NAME":"Toll The Bells",
@@ -157,26 +158,6 @@
     "NAME":"Vow Of Poverty",
     "DESCRIPTION": "You may not earn Gold this combat. NL Gain 1 strength at the start of your turn.",
     "UPGRADE_DESCRIPTION": "You may not earn Gold this combat. NL Gain 1 strength at the start of your turn. NL Innate."
-  },
-  "hierophant:VowOfSobriety": {
-    "NAME":"Vow Of Sobriety",
-    "DESCRIPTION": "You may not consume or earn potions this combat. NL Gain 1 dexterity at the start of your turn.",
-    "UPGRADE_DESCRIPTION": "You may not consume or earn potions this combat. NL Gain 1 dexterity at the start of your turn. NL Innate."
-  },
-  "hierophant:VowOfSanctity": {
-    "NAME":"Vow Of Sanctity",
-    "DESCRIPTION": "Lose 3 additional hierophant:Piety when dealing damage. NL At the end of your turn, gain !hierophant:P! hierophant:Piety.",
-    "UPGRADE_DESCRIPTION": "Lose 3 additional hierophant:Piety when dealing damage. NL At the end of your turn, gain !hierophant:P! hierophant:Piety. NL Innate."
-  },
-  "hierophant:VowOfStability": {
-    "NAME":"Vow Of Stability",
-    "DESCRIPTION": "You take double unblocked attack damage. NL At the end of your turn, double your Block.",
-    "UPGRADE_DESCRIPTION": "You take double unblocked attack damage. NL At the end of your turn, double your Block. NL Innate."
-  },
-  "hierophant:VowOfPurity": {
-    "NAME":"Vow Of Purity",
-    "DESCRIPTION": "You may not inflict any negative status effects. NL At the end of your turn, gain 1 artifact.",
-    "UPGRADE_DESCRIPTION": "You may not inflict any negative status effects. NL Gain 1 artifact at the start of your turn. NL Innate."
   },
   "hierophant:Martyrdom": {
     "NAME":"Martyrdom",

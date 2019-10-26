@@ -31,7 +31,7 @@ public class LocustPlague extends AbstractDynamicCard {
     private static final int COST = 3;
 
     private static final int DAMAGE = 3;
-    private static final int UPGRADE_PLUS_DMG = 1;
+    private static final int UPGRADE_PLUS_DMG = 2;
 
     public LocustPlague() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

@@ -27,7 +27,6 @@ public class Levitation extends AbstractTitheCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 5;
-    private static final int UPGRADED_COST = 3;
     private static final int MAGIC = 1;
 
     public Levitation() {
@@ -45,8 +44,9 @@ public class Levitation extends AbstractTitheCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.upgradeBaseCost(UPGRADED_COST);
+            this.exhaust = false;
             this.upgradeName();
+            this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
