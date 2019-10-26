@@ -29,13 +29,14 @@ public class Racketeering extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 0;
-    private static final int MAGIC = 5;
+    private static final int MAGIC = 10;
     private static final int UPGRADE_PLUS_MAGIC = 5;
     private static final int BLOCK_PER_DRAW = 5;
 
     public Racketeering() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
+        exhaust = true;
     }
 
     @Override

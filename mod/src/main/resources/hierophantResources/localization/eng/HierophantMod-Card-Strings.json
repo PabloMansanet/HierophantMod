@@ -55,7 +55,7 @@
   },
   "hierophant:Rebuild": {
     "NAME": "Rebuild",
-    "DESCRIPTION": "Everyone loses 30 Block. NL Everyone gains !B! Block."
+    "DESCRIPTION": "Everyone loses ALL Block. NL Everyone gains !B! Block."
   },
   "hierophant:Encroach": {
     "NAME": "Encroach",
@@ -144,7 +144,7 @@
   },
   "hierophant:Racketeering": {
     "NAME":"Racketeering",
-    "DESCRIPTION": "Give an enemy !M! Block. Draw a card for each 5 Block on that enemy."
+    "DESCRIPTION": "Give an enemy !M! Block. Draw a card for each 5 Block on that enemy. NL Exhaust."
   },
   "hierophant:HammerAndAnvil": {
     "NAME":"Hammer And Anvil",
@@ -303,7 +303,7 @@
   },
   "hierophant:Patience": {
     "NAME":"Patience",
-    "DESCRIPTION": "Gain hierophant:Piety equal to twice an enemy's Block."
+    "DESCRIPTION": "Gain hierophant:Piety equal to an enemy's Block."
   },
   "hierophant:Sermon": {
     "NAME":"Sermon",

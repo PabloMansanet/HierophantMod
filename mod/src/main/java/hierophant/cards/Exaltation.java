@@ -41,12 +41,13 @@ public class Exaltation extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (p.hasPower(FervorPower.POWER_ID)) {
-            this.piety = this.basePiety = p.getPower(FervorPower.POWER_ID).amount;
+            this.basePiety = p.getPower(FervorPower.POWER_ID).amount;
         }
         int fervorToGain = 0;
         if (p.hasPower(PietyPower.POWER_ID)) {
             fervorToGain = p.getPower(PietyPower.POWER_ID).amount;
         }
+        applyPowers();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new FervorPower(p, p, fervorToGain), fervorToGain));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,

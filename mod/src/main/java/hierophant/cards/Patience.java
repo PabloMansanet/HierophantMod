@@ -38,7 +38,7 @@ public class Patience extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        basePiety = 2 * m.currentBlock;
+        basePiety = m.currentBlock;
         applyPowers();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new PietyPower(p, p, piety), piety));

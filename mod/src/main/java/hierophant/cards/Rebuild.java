@@ -31,7 +31,6 @@ public class Rebuild extends AbstractDynamicCard {
     private static final int COST = 2;
     private static final int UPGRADED_COST = 1;
     private static final int BLOCK = 15;
-    private static final int DECREASE = 30;
 
     public Rebuild() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -40,9 +39,9 @@ public class Rebuild extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(p, p, DECREASE));
+        AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(p, p, p.currentBlock));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(mo, p, DECREASE));
+            AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(mo, p, mo.currentBlock));
         }
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
