@@ -34,8 +34,8 @@ public class GoldFever extends AbstractDynamicCard {
 
     private static final int COST = 2;
 
-    private static final int MAGIC = 4;
-    private static final int UPGRADE_PLUS_MAGIC = 2;
+    private static final int MAGIC = 3;
+    private static final int UPGRADE_PLUS_MAGIC = 1;
 
     public GoldFever() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -44,19 +44,38 @@ public class GoldFever extends AbstractDynamicCard {
         magicNumber = baseMagicNumber = MAGIC;
     }
 
-    public int countDoubloons() {
+    public static int countDoubloons() {
         int count = 0;
-        Iterator iter = AbstractDungeon.player.masterDeck.group.iterator();
+        Iterator var1 = AbstractDungeon.player.hand.group.iterator();
+
         AbstractCard c;
-        while(iter.hasNext()) {
-            c = (AbstractCard)iter.next();
+        while(var1.hasNext()) {
+            c = (AbstractCard)var1.next();
             if (c.cardID == Doubloon.ID) {
-                count++;
+                ++count;
             }
         }
+
+        var1 = AbstractDungeon.player.drawPile.group.iterator();
+
+        while(var1.hasNext()) {
+            c = (AbstractCard)var1.next();
+            if (c.cardID == Doubloon.ID) {
+                ++count;
+            }
+        }
+
+        var1 = AbstractDungeon.player.discardPile.group.iterator();
+
+        while(var1.hasNext()) {
+            c = (AbstractCard)var1.next();
+            if (c.cardID == Doubloon.ID) {
+                ++count;
+            }
+        }
+
         return count;
     }
-
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.baseDamage = this.magicNumber * countDoubloons();

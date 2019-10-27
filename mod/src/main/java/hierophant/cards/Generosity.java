@@ -24,8 +24,8 @@ public class Generosity extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
-    private static final int COST = 2;
-    private static final int UPGRADED_COST = 1;
+    private static final int COST = 3;
+    private static final int UPGRADED_COST = 2;
 
     public Generosity() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

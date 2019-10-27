@@ -152,12 +152,7 @@
   },
   "hierophant:Alms": {
     "NAME":"Alms",
-    "DESCRIPTION": "Discard your hand, then draw cards equal to the combined cost discarded."
-  },
-  "hierophant:VowOfPoverty": {
-    "NAME":"Vow Of Poverty",
-    "DESCRIPTION": "You may not earn Gold this combat. NL Gain 1 strength at the start of your turn.",
-    "UPGRADE_DESCRIPTION": "You may not earn Gold this combat. NL Gain 1 strength at the start of your turn. NL Innate."
+    "DESCRIPTION": "Discard your hand, then draw cards equal to the combined cost discarded. NL Exhaust."
   },
   "hierophant:Martyrdom": {
     "NAME":"Martyrdom",
@@ -253,8 +248,8 @@
   },
   "hierophant:GoldFever": {
     "NAME":"Gold Fever",
-    "DESCRIPTION": "Deal 5 damage for each Doubloon in your deck. NL hierophant:Gilded.",
-    "UPGRADE_DESCRIPTION": "Deal 8 damage for each Doubloon in your deck. NL hierophant:Gilded.",
+    "DESCRIPTION": "Deal 3 damage for each Doubloon in your deck. NL hierophant:Gilded.",
+    "UPGRADE_DESCRIPTION": "Deal 4 damage for each Doubloon in your deck. NL hierophant:Gilded.",
     "EXTENDED_DESCRIPTION": [
        " NL (Deals !D! damage.)"
     ]

@@ -34,6 +34,7 @@ public class Alms extends AbstractDynamicCard {
 
     public Alms() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        this.exhaust = true;
     }
 
     @Override
