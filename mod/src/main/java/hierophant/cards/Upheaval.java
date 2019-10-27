@@ -13,7 +13,7 @@ import hierophant.characters.Hierophant;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class Upheaval extends AbstractTitheCard {
+public class Upheaval extends AbstractDynamicCard {
 
     public static final String ID = HierophantMod.makeID(Upheaval.class.getSimpleName());
     public static final String IMG = makeCardPath("Upheaval.png");
@@ -36,7 +36,6 @@ public class Upheaval extends AbstractTitheCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        payTithe();
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if (mo == null || mo.isDead || mo.isDying) {
                 continue;

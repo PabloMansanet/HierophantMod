@@ -103,8 +103,8 @@
   },
   "hierophant:Repentance": {
     "NAME":"Repentance",
-    "DESCRIPTION": "At the end of this turn, instead of losing hierophant:Piety, gain that much hierophant:Piety. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"At the end of this turn, instead of losing hierophant:Piety, gain that much hierophant:Piety."
+    "DESCRIPTION": "At the end of this turn, instead of losing hierophant:Piety, gain twice that much hierophant:Piety. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":"At the end of this turn, instead of losing hierophant:Piety, gain twice that much hierophant:Piety."
   },
   "hierophant:SecretStash": {
     "NAME":"Secret Stash",
@@ -282,7 +282,7 @@
   },
   "hierophant:Upheaval": {
     "NAME":"Upheaval",
-    "DESCRIPTION": "Deal damage to ALL enemies equal to twice their Block. NL hierophant:Tithe."
+    "DESCRIPTION": "Deal damage to ALL enemies equal to twice their Block."
   },
   "hierophant:FlamingChariot": {
     "NAME":"Flaming Chariot",

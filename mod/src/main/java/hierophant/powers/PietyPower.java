@@ -104,7 +104,7 @@ public class PietyPower extends AbstractPower implements CloneablePowerInterface
         int toReduce = (int)ceil(amount / (float)REDUCTION_FACTOR);
         AbstractPlayer p = AbstractDungeon.player;
         if (p.hasPower(RepentancePower.POWER_ID)) {
-            int toGain = toReduce;
+            int toGain = 2 * toReduce;
             if (p.hasPower(EnlightenedPower.POWER_ID)) {
                 toGain *= EnlightenedPower.PIETY_BONUS / 100;
             }

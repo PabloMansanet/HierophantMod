@@ -61,7 +61,7 @@
 },
 "hierophant:RepentancePower": {
         "NAME": "Repentance",
-        "DESCRIPTIONS": ["At the end of #b", " turn, gain Piety instead of losing it.", " turns, gain Piety instead of losing it."]
+        "DESCRIPTIONS": ["At the end of #b", " turn, gain twice the Piety you would have lost.", " turns, gain twice the Piety you would have lost."]
 },
 "hierophant:FervorPower": {
         "NAME": "Fervor",
