@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.vfx.combat.FlameParticleEffect;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,6 +26,7 @@ import hierophant.HierophantMod;
 import hierophant.cards.FieryStrike;
 import hierophant.cards.FlamingChariot;
 import hierophant.cards.ThreeLashes;
+import hierophant.effects.FervorFlameEffect;
 import hierophant.util.TextureLoader;
 
 public class FervorPower extends AbstractPower implements CloneablePowerInterface {
@@ -110,5 +112,15 @@ public class FervorPower extends AbstractPower implements CloneablePowerInterfac
     public AbstractPower makeCopy() {
         return new FervorPower(owner, source, amount);
     }
+
+    @Override
+    public void update(int slot) {
+        super.update(slot);
+        for(int i = 0; i < java.lang.Math.min(this.amount/4, 15); ++i) {
+            AbstractDungeon.effectsQueue.add(new FervorFlameEffect(this.owner.drawX, this.owner.drawY + 140F, this.amount / 20.0F ));
+        }
+    }
+
+
 }
 

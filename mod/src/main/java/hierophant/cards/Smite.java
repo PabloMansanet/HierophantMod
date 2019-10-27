@@ -1,19 +1,24 @@
 package hierophant.cards;
 
+import static hierophant.HierophantMod.makeCardPath;
+
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+
 import hierophant.HierophantMod;
 import hierophant.characters.Hierophant;
+import hierophant.effects.SmiteEffect;
 import hierophant.powers.PietyPower;
-
-import static hierophant.HierophantMod.makeCardPath;
 
 public class Smite extends AbstractDynamicCard {
     public static final String POWER_ID = HierophantMod.makeID("PietyPower");
@@ -30,7 +35,7 @@ public class Smite extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int PIETY = 5;
+    private static final int PIETY = 6;
     private static final int UPGRADE_PLUS_PIETY = 3;
 
     public Smite() {
@@ -48,8 +53,11 @@ public class Smite extends AbstractDynamicCard {
         this.baseDamage = combinedDamage;
         calculateCardDamage(m);
         AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         initializeDescription();
+        AbstractDungeon.actionManager.addToTop(new VFXAction(
+                    new SmiteEffect(p.drawX - 400.0F, p.drawY + 800.0F * Settings.scale), 0.2f));
+        AbstractDungeon.actionManager.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
     }
 
     @Override
