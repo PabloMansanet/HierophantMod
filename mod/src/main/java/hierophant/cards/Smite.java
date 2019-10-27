@@ -30,7 +30,7 @@ public class Smite extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int PIETY = 3;
+    private static final int PIETY = 6;
     private static final int UPGRADE_PLUS_PIETY = 3;
 
     public Smite() {
@@ -41,10 +41,7 @@ public class Smite extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int combinedDamage = piety;
-        if (p.hasPower(PietyPower.POWER_ID)) {
-            combinedDamage += p.getPower(PietyPower.POWER_ID).amount;
-        }
+        int combinedDamage = piety + HierophantMod.pietyGainedThisTurn;
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new PietyPower(p, p, piety), piety));
 
@@ -58,11 +55,7 @@ public class Smite extends AbstractDynamicCard {
     @Override
     public void applyPowers()
     {
-        AbstractPlayer p = AbstractDungeon.player;
-        int combinedDamage = this.piety;
-        if (p.hasPower(PietyPower.POWER_ID)) {
-            combinedDamage += p.getPower(PietyPower.POWER_ID).amount;
-        }
+        int combinedDamage = piety + HierophantMod.pietyGainedThisTurn;
         this.baseDamage = combinedDamage;
         super.applyPowers();
 

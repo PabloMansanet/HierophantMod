@@ -277,7 +277,7 @@
   },
   "hierophant:Smite": {
     "NAME":"Smite",
-    "DESCRIPTION": "Gain !hierophant:P! hierophant:Piety. NL Deal damage equal to your hierophant:Piety.",
+    "DESCRIPTION": "Gain !hierophant:P! hierophant:Piety. NL Deal damage equal to the hierophant:Piety gained this turn.",
     "UPGRADE_DESCRIPTION": " NL (Deals !D! damage.)"
   },
   "hierophant:Upheaval": {

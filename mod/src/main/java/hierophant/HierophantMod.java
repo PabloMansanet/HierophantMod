@@ -170,6 +170,7 @@ public class HierophantMod implements
     public static int lastPietyValue = 0;
     public static int pietyLostInCombat = 0;
     public static int goldLostThisTurn = 0;
+    public static int pietyGainedThisTurn = 0;
 
     // Mod-settings settings. This is if you want an on/off savable button
     public static Properties hierophantDefaultSettings = new Properties();
@@ -387,7 +388,7 @@ public class HierophantMod implements
                     return new hierophant.rewards.HoardReward(rewardSave.amount);
                 },
                 (customReward) -> {
-                    return new RewardSave(customReward.type.toString(), null, ((hierophant.rewards.HoardReward)customReward).amount, 0);
+                    return new RewardSave(customReward.type.toString(), null, ((hierophant.rewards.HoardReward)customReward).goldAmt, 0);
                 });
         BaseMod.registerCustomReward(
                 hierophant.patches.DonationRewardTypePatch.HIEROPHANT_DONATION_REWARD,
@@ -665,6 +666,7 @@ public class HierophantMod implements
         HierophantMod.pietyLostInCombat = 0;
         HierophantMod.lastPietyValue = 0;
         HierophantMod.goldLostThisTurn = 0;
+        HierophantMod.pietyGainedThisTurn = 0;
     }
 
     // ================ /PIETY TRACKING/ ===================
@@ -681,6 +683,8 @@ public class HierophantMod implements
         HierophantMod.lastPietyValue = currentPiety;
         if (pietyDelta < 0) {
             HierophantMod.pietyLostInCombat -= pietyDelta;
+        } else {
+            HierophantMod.pietyGainedThisTurn += pietyDelta;
         }
     }
 
@@ -689,6 +693,7 @@ public class HierophantMod implements
     public boolean receivePreMonsterTurn(AbstractMonster m)
     {
         HierophantMod.goldLostThisTurn = 0;
+        HierophantMod.pietyGainedThisTurn = 0;
         return true;
     }
 
@@ -730,6 +735,7 @@ public class HierophantMod implements
             }
         }
         HierophantMod.goldLostThisTurn = 0;
+        HierophantMod.pietyGainedThisTurn = 0;
     }
 
     // ================ /LOAD THE KEYWORDS/ ===================
