@@ -5,6 +5,7 @@ import static java.lang.Math.ceil;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -21,7 +22,9 @@ import org.apache.logging.log4j.Logger;
 
 import basemod.interfaces.CloneablePowerInterface;
 import hierophant.HierophantMod;
+import hierophant.cards.FieryStrike;
 import hierophant.cards.FlamingChariot;
+import hierophant.cards.ThreeLashes;
 import hierophant.util.TextureLoader;
 
 public class FervorPower extends AbstractPower implements CloneablePowerInterface {
@@ -91,6 +94,10 @@ public class FervorPower extends AbstractPower implements CloneablePowerInterfac
 
             AbstractDungeon.actionManager.addToBottom(
                     new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+            if (card.cardID == FieryStrike.ID || card.cardID == ThreeLashes.ID) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                        new FervorPower(p, p, card.magicNumber), card.magicNumber));
+            }
         }
     }
 

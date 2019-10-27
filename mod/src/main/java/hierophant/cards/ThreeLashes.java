@@ -33,6 +33,7 @@ public class ThreeLashes extends AbstractDynamicCard {
     public ThreeLashes() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        magicNumber = baseMagicNumber = FERVOR;
     }
 
     @Override
@@ -43,8 +44,10 @@ public class ThreeLashes extends AbstractDynamicCard {
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new FervorPower(p, p, FERVOR), FERVOR));
+        if (!p.hasPower(FervorPower.POWER_ID)) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                    new FervorPower(p, p, magicNumber), magicNumber));
+        } // Else it's done in FervorPower to prevent auto-remove
     }
 
     @Override

@@ -41,8 +41,10 @@ public class FieryStrike extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new FervorPower(p, p, magicNumber), magicNumber));
+        if (!p.hasPower(FervorPower.POWER_ID)) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                    new FervorPower(p, p, magicNumber), magicNumber));
+        } // Else it's done in FervorPower to prevent auto-remove
     }
 
     @Override
