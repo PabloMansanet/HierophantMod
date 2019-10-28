@@ -248,8 +248,8 @@
   },
   "hierophant:GoldFever": {
     "NAME":"Gold Fever",
-    "DESCRIPTION": "Deal 3 damage for each Doubloon in your deck. NL hierophant:Gilded.",
-    "UPGRADE_DESCRIPTION": "Deal 4 damage for each Doubloon in your deck. NL hierophant:Gilded.",
+    "DESCRIPTION": "Deal 8 damage for each Doubloon in your discard pile. NL hierophant:Gilded.",
+    "UPGRADE_DESCRIPTION": "Deal 12 damage for each Doubloon in your discard pile. NL hierophant:Gilded.",
     "EXTENDED_DESCRIPTION": [
        " NL (Deals !D! damage.)"
     ]
