@@ -33,8 +33,8 @@ public class Doubloon extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 0;
-    private static final int MAGIC = 8;
-    private static final int UPGRADE_PLUS_MAGIC = 8;
+    private static final int MAGIC = 5;
+    private static final int UPGRADE_PLUS_MAGIC = 5;
     private static final int DRAW = 1;
 
     // /STAT DECLARATION/

@@ -30,8 +30,8 @@ public class BulkyChest extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = -2;
-    private static final int MAGIC = 40;
-    private static final int UPGRADE_PLUS_MAGIC = 20;
+    private static final int MAGIC = 50;
+    private static final int UPGRADE_PLUS_MAGIC = 30;
 
     // /STAT DECLARATION/
 
