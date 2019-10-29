@@ -31,8 +31,19 @@ public abstract class AbstractTitheCard extends AbstractDynamicCard {
 
     public boolean hasEnoughEnergy()
     {
-        return super.hasEnoughEnergy()
-            || (AbstractDungeon.player.gold >= GOLD_PER_ENERGY * (this.costForTurn - EnergyPanel.totalCount));
+        boolean playable = super.hasEnoughEnergy();
+
+        // Very hacky, but hasEnoughEnergy() doesn't make this easy. This text means that
+        // the specific reason why it's failing is because of lack of energy, and not
+        // other reasons such as Entangle
+        if ((this.cantUseMessage == AbstractCard.TEXT[11]) &&
+                (AbstractDungeon.player.gold >=
+                    GOLD_PER_ENERGY * (this.costForTurn - EnergyPanel.totalCount)))
+        {
+            this.cantUseMessage = null;
+            return true;
+        }
+        return playable;
     }
 
 }
