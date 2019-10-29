@@ -1,0 +1,354 @@
+{
+  "hierophant:Blessing": {
+    "NAME": "祝福",
+    "DESCRIPTION": "回复 !M! 生命。 NL 回复所有敌人 !M! 生命 。 NL 消耗 。"
+  },
+  "hierophant:Doubloon": {
+    "NAME": "杜布隆",
+    "DESCRIPTION": "抽 1 张牌。 NL 消耗 。 NL hierophant:贮藏 !M! 。"
+  },
+  "hierophant:DivineIntervention": {
+    "NAME": "普渡众生",
+    "DESCRIPTION": "回复一名敌人 !M! 生命。 NL 每回复一点生命，获得 2 点 hierophant:虔诚 。"
+  },
+  "hierophant:Strike_Hierophant": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "hierophant:Defend_Hierophant": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "hierophant:MorningPrayer": {
+    "NAME": "晨祷",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 点 hierophant:开明 。"
+  },
+  "hierophant:HolyVerse": {
+    "NAME": "圣诗",
+    "DESCRIPTION": "获得 !hierophant:P! 点 hierophant:虔诚 。"
+  },
+  "hierophant:ConvertCurrency": {
+    "NAME": "兑换货币",
+    "DESCRIPTION": "消耗 一张牌。 NL 获得 [E] ，如果你 消耗 的是 杜布隆 ，额外获得 [E] [E] 。NL hierophant:镀金 。 ",
+    "UPGRADE_DESCRIPTION": "消耗 一张牌。 NL 获得 [E] [E] ，如果你 消耗 的是 杜布隆 ，额外获得 [E] [E] 。 NL hierophant:镀金 。 "
+  },
+  "hierophant:RecallFunds": {
+    "NAME": "召回资金",
+    "DESCRIPTION": "至多将消耗堆中的 !M! 张杜布隆加入你的手牌。 NL 消耗 。 NL hierophant:镀金 。"
+  },
+  "hierophant:Dazzle": {
+    "NAME": "目眩",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 手牌中每有一张杜布隆，获得 !M! 点 格挡 。 NL hierophant:镀金 。"
+  },
+  "hierophant:Embezzle": {
+    "NAME": "贪污",
+    "DESCRIPTION": "获得 !M! 金币。 NL 战斗结束时，将 !M! 金币中未消费的部分返还。 NL 消耗 。"
+  },
+  "hierophant:Entourage": {
+    "NAME": "随行",
+    "DESCRIPTION": "本回合每消费 !M! 金币，获得 1 点 格挡 。 NL hierophant:奉献 。",
+    "UPGRADE_DESCRIPTION": " NL (获得 !B! 点 格挡 。)"
+  },
+  "hierophant:Shelter": {
+    "NAME": "庇护所",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 所有敌人获得 !M! 点 格挡 。"
+  },
+  "hierophant:Rebuild": {
+    "NAME": "重建",
+
+    "DESCRIPTION": "所有单位失去 所有 格挡 。 NL 所有单位获得 !B! 点 格挡 。"
+  },
+  "hierophant:Encroach": {
+    "NAME": "蚕食",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果敌人拥有 格挡 ，抽 !M! 张牌 。"
+  },
+  "hierophant:MirrorShield": {
+    "NAME": "镜盾",
+    "DESCRIPTION": "获得 等于一名敌人等量的 格挡 。",
+    "UPGRADE_DESCRIPTION": "获得 等于一名敌人等量的 格挡 。 NL 抽一张牌。"
+  },
+  "hierophant:ChurchCoffers": {
+    "NAME": "教堂金库",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 获得 [E] [E] 。 NL hierophant:奉献 。"
+  },
+  "hierophant:Invocation": {
+    "NAME": "祈愿",
+    "DESCRIPTION": "获得 [E] [E] [E] NL [E] [E] [E] 。 NL hierophant:奉献 。",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] [E] [E] NL [E] [E] [E] [E] 。 NL hierophant:奉献 。"
+  },
+  "hierophant:FaithHealing": {
+    "NAME": "信仰治愈",
+    "DESCRIPTION": "消耗 手牌中所有的状态牌。 NL 每消耗一张牌，获得 !hierophant:P! 点 hierophant:虔诚 。"
+  },
+  "hierophant:Bribe": {
+    "NAME": "贿赂",
+    "DESCRIPTION": "所有敌人失去 !M! 点 力量。 NL hierophant:奉献 。 NL 消耗 。"
+  },
+  "hierophant:Flagellation": {
+    "NAME": "鞭打",
+    "DESCRIPTION": "将 2 张伤口加入你的手牌。 NL 获得 !hierophant:P! 点 hierophant:虔诚 。"
+  },
+  "hierophant:PristineSoul": {
+    "NAME": "纯洁灵魂",
+    "DESCRIPTION": "获得 !hierophant:P! 点 hierophant:虔诚 。 NL 获得 等于你 hierophant:虔诚 点数的 格挡 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 !hierophant:P! 点  hierophant:虔诚 。 NL 获得 等于你 hierophant:虔诚 点数的 格挡 。"
+  },
+  "hierophant:Doomsaying": {
+    "NAME":"末世预言",
+    "DESCRIPTION": "获得等于抽牌堆顶部前 !M! 张牌的最高能耗牌的能量。"
+  },
+  "hierophant:Prophecy": {
+    "NAME":"预言",
+    "DESCRIPTION": "打出抽牌堆顶部前 X 张牌的最高能耗牌。",
+    "UPGRADE_DESCRIPTION": "打出抽牌堆顶部前 X+1 张牌的最高能耗牌。"
+  },
+  "hierophant:Repentance": {
+    "NAME":"忏悔",
+    "DESCRIPTION": "本回合结束时，将丢失 hierophant:虔诚 变为获得两倍丢失量。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"本回合结束时，将丢失 hierophant:虔诚 变为获得两倍丢失量。"
+  },
+  "hierophant:SecretStash": {
+    "NAME":"秘宝",
+    "DESCRIPTION": "虚无 。 NL hierophant:贮藏 !M! 。"
+  },
+  "hierophant:BulkyChest": {
+    "NAME":"大箱子",
+    "DESCRIPTION": "不能被打出 。 NL 抽到这张牌时，失去 [E]。 NL hierophant:贮藏 !M! 。",
+    "EXTENDED_DESCRIPTION": [
+      "我不能打出这张牌。"
+    ]
+  },
+  "hierophant:RustyCrate": {
+    "NAME":"生锈的板条箱",
+    "DESCRIPTION": "不能被打出 。 NL hierophant:贮藏 !M! 。 NL hierophant:镀金 2 。",
+    "EXTENDED_DESCRIPTION": [
+      "我不能打出这张牌。"
+    ]
+  },
+  "hierophant:Cornucopia": {
+    "NAME":"聚宝盆",
+    "DESCRIPTION": "将 X 张杜布隆加入你的手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将 X 张已 升级 的杜布隆加入你的手牌。 NL 消耗 。"
+  },
+  "hierophant:Endure": {
+    "NAME":"忍耐",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 本回合你每次被攻击时，获得 !M! 点 hierophant:虔诚 。"
+  },
+  "hierophant:Levitation": {
+    "NAME":"悬浮",
+    "DESCRIPTION": "获得 1 层 无实体 。 NL 消耗 。 NL hierophant:奉献 。",
+	"UPGRADE_DESCRIPTION": "获得 1 层 无实体 。 NL hierophant:奉献 。"
+  },
+  "hierophant:TollTheBells": {
+    "NAME":"敲响警钟",
+    "DESCRIPTION": "获得 [E] [E]。 NL 获得 2 点 hierophant:开明。 NL 将 2 晕眩加入你的抽牌堆。"
+  },
+  "hierophant:Racketeering": {
+    "NAME":"诈欺",
+    "DESCRIPTION": "给予一名敌人 !M! 点 格挡 。 该敌人每有 5 点 格挡 ，抽一张牌。 NL 消耗 。"
+  },
+  "hierophant:HammerAndAnvil": {
+    "NAME":"锤砧",
+    "DESCRIPTION": "给予一名敌人 !M! 点 格挡 。 NL 获得等于敌人 格挡 点数的 hierophant:激情 。"
+  },
+  "hierophant:Alms": {
+    "NAME":"施舍",
+    "DESCRIPTION": "丢弃一张牌，抽被丢弃牌耗能之和的牌。 NL 消耗 。"
+  },
+  "hierophant:Martyrdom": {
+    "NAME":"殉道",
+    "DESCRIPTION": "将3张伤口加入你的抽牌堆。 NL 每当你抽到一张状态牌时，获得 !M! 点 hierophant:激情 。"
+  },
+  "hierophant:Generosity": {
+    "NAME":"慷慨",
+    "DESCRIPTION": "每当你打出一张杜布隆，额外抽一张牌。 NL hierophant:镀金 。"
+  },
+  "hierophant:Glossolalia": {
+    "NAME":"舌音",
+    "DESCRIPTION": "每当你抽一张牌，获得等于抽到牌耗能的 hierophant:激情 。"
+  },
+  "hierophant:Charity": {
+    "NAME":"赈济",
+    "DESCRIPTION": "当你抽到一张杜布隆时，获得 !M! 点 hierophant:虔诚 。 NL hierophant:镀金 。"
+  },
+  "hierophant:Refuge": {
+    "NAME":"避难所",
+    "DESCRIPTION": "每当你打出一张杜布隆，所有单位获得 !M! 点 格挡 。 NL hierophant:镀金 。"
+  },
+  "hierophant:CursedGold": {
+    "NAME":"诅咒金币",
+    "DESCRIPTION": "你的回合开始时，将 !M! 张杜布隆从消耗堆加入你的弃牌堆。 NL hierophant:镀金 。",
+    "UPGRADE_DESCRIPTION": "你的回合开始时，将 !M! 张杜布隆从消耗堆加入你的弃牌堆。 NL hierophant:镀金 。"
+  },
+  "hierophant:ArchangelShield": {
+    "NAME":"大天使盾",
+    "DESCRIPTION": "每当你消耗了 hierophant:激情 ，获得等量 格挡 。"
+  },
+  "hierophant:Community": {
+    "NAME":"共享",
+    "DESCRIPTION": "每当一名敌人获得了 格挡 ，获得等量的 格挡 。",
+    "UPGRADE_DESCRIPTION": "每当一名敌人获得了 格挡 ，获得等量的 格挡 。 NL 固有。"
+  },
+  "hierophant:AuricForm": {
+     "NAME":"鎏金形态",
+    "DESCRIPTION": "你的回合开始时，失去 !M!% 的金币并获得等量的 hierophant:激情 。"
+  },
+  "hierophant:CoinFling": {
+    "NAME":"抛硬币",
+    "DESCRIPTION": "丢弃一张牌。 NL 造成 !D! 点伤害。 NL 当你丢弃的是杜布隆时，造成双倍伤害。 NL hierophant:镀金 。"
+  },
+  "hierophant:Batter": {
+    "NAME":"殴打",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果格挡了任意伤害，造成 !D! 点额外伤害。"
+  },
+  "hierophant:OrnateJavelin": {
+    "NAME":"华丽标枪",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。 NL hierophant:贮藏 !M! 。"
+  },
+  "hierophant:Mercenaries": {
+    "NAME":"佣兵",
+    "DESCRIPTION": "本回合每失去1金币，造成 1 点伤害。 NL hierophant:奉献 。",
+    "UPGRADE_DESCRIPTION": "本回合每失去2金币，造成 3 点伤害。 NL hierophant:奉献 。",
+    "EXTENDED_DESCRIPTION": [" NL (造成 !D! 点伤害。)"]
+  },
+  "hierophant:SearingVirtue": {
+    "NAME":"灼热美德",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 每有一种不同的 hierophant:誓言 ，造成 !M! 点额外伤害。"
+  },
+  "hierophant:PassingBell": {
+    "NAME":"丧钟",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! 点 hierophant:开明。"
+  },
+  "hierophant:OrnateBuckler": {
+    "NAME":"华丽圆盾",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL hierophant:贮藏 !M! 。"
+  },
+  "hierophant:Remorse": {
+    "NAME":"自责",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 你的消耗堆中每有一张杜布隆，造成 !M! 点额外伤害。 NL hierophant:镀金 。"
+  },
+  "hierophant:RepressedViolence": {
+    "NAME":"镇压暴力",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。 NL 这张牌被 消耗 时，本局游戏这张牌的伤害增加 !M! 点。"
+  },
+  "hierophant:FieryStrike": {
+    "NAME":"猛烈打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! hierophant:激情 。"
+  },
+  "hierophant:SolarFlare": {
+    "NAME":"太阳耀斑",
+    "DESCRIPTION": "获得等于你 hierophant:激情 点数的 格挡  。 NL 造成 !D! 点伤害。 NL hierophant:奉献 。"
+  },
+  "hierophant:LocustPlague": {
+    "NAME":"蝗灾",
+    "DESCRIPTION": "对随机一名敌人造成 !D! 点伤害 ，次数等于你手牌耗能总和。",
+    "EXTENDED_DESCRIPTION": [
+       " NL (攻击 1 次。)",
+       " NL (攻击 !M! 次。)"
+    ]
+  },
+  "hierophant:GoldFever": {
+    "NAME":"金币狂热",
+    "DESCRIPTION": "你的弃牌堆中每有一张杜布隆，造成 8 点伤害 。 NL hierophant:镀金 。",
+    "UPGRADE_DESCRIPTION": "你的弃牌堆中每有一张杜布隆，造成 12 点伤害 。 NL hierophant:镀金 。",
+    "EXTENDED_DESCRIPTION": [
+       " NL (造成 !D! 点伤害。)"
+    ]
+  },
+  "hierophant:WrathOfGod": {
+    "NAME":"神愤",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，受到五分之一 ( !M! ) 的伤害。 NL hierophant:奉献 。"
+  },
+  "hierophant:Zeal": {
+    "NAME":"热忱",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得等于你格挡点数两倍的 hierophant:虔诚 。"
+  },
+  "hierophant:ThreeLashes": {
+    "NAME":"三鞭",
+    "DESCRIPTION": "造成 !D! 点伤害三次。 NL 获得 5 hierophant:激情 。"
+  },
+  "hierophant:SealAway": {
+    "NAME":"封锁",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 点 格挡 。"
+  },
+  "hierophant:Smite": {
+    "NAME":"猛打",
+    "DESCRIPTION": "获得 !hierophant:P! 点 hierophant:虔诚 。 NL 造成等于你本回合获得 hierophant:虔诚 层数的伤害。",
+    "UPGRADE_DESCRIPTION": " NL (造成 !D! 点伤害。)"
+  },
+  "hierophant:Upheaval": {
+    "NAME":"剧变",
+    "DESCRIPTION": "对所有敌人造成等于他们格挡点数两倍的伤害。"
+  },
+  "hierophant:FlamingChariot": {
+    "NAME":"燃烧战车",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 不消耗 hierophant:激情 。"
+  },
+  "hierophant:Punish": {
+    "NAME":"惩罚",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !hierophant:P! 点 hierophant:虔诚 。"
+  },
+  "hierophant:Purify": {
+    "NAME":"净化",
+    "DESCRIPTION": "回复一名敌人 !M! 生命。 NL 造成 !D! 点伤害。"
+  },
+  "hierophant:Anathema": {
+    "NAME":"咒逐",
+    "DESCRIPTION": "你每有1点 hierophant:虔诚 ，造成 3 点伤害 per 点 。 NL 失去所有的 hierophant:虔诚 。",
+    "UPGRADE_DESCRIPTION": " NL (造成 !D! 点伤害。)"
+  },
+  "hierophant:Patience": {
+    "NAME":"耐心",
+    "DESCRIPTION": "获得等于敌人格挡点数的 hierophant:虔诚 。"
+  },
+  "hierophant:Sermon": {
+    "NAME":"布道",
+    "DESCRIPTION": "给予所有敌人 !M! 虚弱 。 NL 获得 6 层 hierophant:激情 。"
+  },
+  "hierophant:DeathKnell": {
+    "NAME":"死亡丧钟",
+    "DESCRIPTION": "接下来的 !M! 个回合，你的攻击不造成伤害。 NL  !M! 回合后，获得 40 hierophant:激情 。"
+  },
+  "hierophant:Empathy": {
+    "NAME":"移情",
+    "DESCRIPTION": "所有敌人回复 12生命。 NL 每回复 !M! 点生命，给予 1 层 虚弱 和 易伤 。"
+  },
+  "hierophant:EyeForCoin": {
+    "NAME":"见钱眼开",
+    "DESCRIPTION": "将一张杜布隆加入你的牌组。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将一张已 升级 的杜布隆加入你的牌组。 NL 消耗 。"
+  },
+  "hierophant:Kindle": {
+    "NAME":"激起",
+    "DESCRIPTION": "获得 1 点 力量 。 NL 获得 8 层 hierophant:激情 。"
+  },
+  "hierophant:Chorus": {
+    "NAME":"合唱",
+    "DESCRIPTION": "获得 4 层 hierophant:激情 。 NL 翻倍你的 hierophant:激情 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"获得 4 层 hierophant:激情 。 NL 翻倍你的 hierophant:激情 。"
+  },
+  "hierophant:Exaltation": {
+    "NAME":"欢跃",
+    "DESCRIPTION": "获得 hierophant:激情 层数的 hierophant:虔诚 ， NL 获得 hierophant:虔诚 点数的  hierophant:激情 。"
+  },
+  "hierophant:AuricBeam": {
+    "NAME":"鎏金光束",
+    "DESCRIPTION": "失去 10% 的金币。 NL 造成等量伤害。",
+    "UPGRADE_DESCRIPTION": " NL (造成 !D! 点伤害。)"
+  },
+  "hierophant:AuricShield": {
+    "NAME":"鎏金护盾",
+    "DESCRIPTION": "获得等于你的 !M!% 的金币数量的 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+       " NL (获得 !B! 点 格挡 。)"
+    ]
+  },
+  "hierophant:Determination": {
+    "NAME":"决心",
+    "DESCRIPTION": "每当你击杀了一名敌人，回复其剩余血量的三分之一的生命。"
+  },
+  "hierophant:DisplayOfPower": {
+    "NAME":"彰显力量",
+    "DESCRIPTION": "将一张牌放到你抽牌堆的顶部。 NL 造成其耗能 !D! 倍的伤害。"
+  }
+}

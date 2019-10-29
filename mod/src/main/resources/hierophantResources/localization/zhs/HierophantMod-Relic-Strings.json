@@ -1,0 +1,23 @@
+{
+  "hierophant:DonationBoxRelic": {
+    "NAME": "捐赠箱",
+    "FLAVOR": "叫花子不能挑肥拣瘦。",
+    "DESCRIPTIONS": [
+      "每场战斗结束时，将金币获得总数增加到 #b80 。"
+    ]
+  },
+  "hierophant:PropheticMaskRelic": {
+    "NAME": "预言面具",
+    "FLAVOR": "从天而来，为天而生。",
+    "DESCRIPTIONS": [
+      "#y保留 最高耗能的手牌（相同时随机选择）。"
+    ]
+  },
+  "hierophant:BeggarsRobeRelic": {
+    "NAME": "乞者袍",
+    "FLAVOR": "……也许他们能？",
+    "DESCRIPTIONS": [
+      "每当你拥有的金币少于 10 ，获得 4 点力量和 4 点敏捷。"
+    ]
+  }
+}

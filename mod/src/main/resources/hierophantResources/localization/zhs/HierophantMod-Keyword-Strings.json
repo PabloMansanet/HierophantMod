@@ -1,0 +1,56 @@
+[
+  {
+    "NAMES": [
+      "秘藏"
+    ],
+    "DESCRIPTION": "如果这张牌战斗结束时没有被 #y消耗 ，获得金币。"
+  },
+  {
+    "NAMES": [
+      "誓言",
+      "誓言"
+    ],
+    "DESCRIPTION": "以施加限制为代价换取高额收益的特殊能力。"
+  },
+  {
+    "NAMES": [
+      "奉献"
+    ],
+    "DESCRIPTION": "当你的能量不足时，可用金币补足。每点能量 #b10 金币。"
+  },
+  {
+    "NAMES": [
+      "镀金"
+    ],
+    "DESCRIPTION": "当这张牌加入你的牌组时，将一张 #y杜布隆 加入你的牌组。"
+  },
+  {
+    "NAMES": [
+      "激情"
+    ],
+    "DESCRIPTION": "本回合你的下一次攻击，每有一层 #y激情 增加 #b10% 额外伤害。"
+  },
+  {
+    "NAMES": [
+      "开明"
+    ],
+    "DESCRIPTION": "在开明状态时额外获得 #b50% 的虔诚。"
+  },
+  {
+    "NAMES": [
+      "虔诚"
+    ],
+    "DESCRIPTION": "你的回合结束时，击杀血量不大于你 #b虔诚 层数的敌人并失去三分之一的 #b虔诚 。"
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "Multiword Keyword",
+      "multiword_keyword",
+      "multiword_keywords",
+      "multikey",
+      "multikeyword"
+    ],
+    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  }
+]
