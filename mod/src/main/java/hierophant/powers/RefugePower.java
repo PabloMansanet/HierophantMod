@@ -69,7 +69,9 @@ public class RefugePower extends AbstractPower implements CloneablePowerInterfac
             int blockAmount = p.getPower(RefugePower.POWER_ID).amount;
             AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, blockAmount));
             for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(mo, p, blockAmount));
+                if (!mo.isDead && !mo.isDying) {
+                    AbstractDungeon.actionManager.addToBottom(new GainBlockAction(mo, p, blockAmount));
+                }
             }
 
         }

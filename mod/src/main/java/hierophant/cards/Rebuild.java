@@ -41,11 +41,15 @@ public class Rebuild extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(p, p, p.currentBlock));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(mo, p, mo.currentBlock));
+            if (!mo.isDead && !mo.isDying) {
+                AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(mo, p, mo.currentBlock));
+            }
         }
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(mo, p, block));
+            if (!mo.isDead && !mo.isDying) {
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(mo, p, block));
+            }
         }
     }
 

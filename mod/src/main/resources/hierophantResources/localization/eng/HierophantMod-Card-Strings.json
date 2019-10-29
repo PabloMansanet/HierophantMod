@@ -68,7 +68,8 @@
   },
   "hierophant:ChurchCoffers": {
     "NAME": "Church Coffers",
-    "DESCRIPTION": "Draw !M! cards. NL gain [E] [E]. NL hierophant:Tithe."
+    "DESCRIPTION": "Draw !M! cards. NL gain [E] [E]. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL gain [E] [E] [E]. NL hierophant:Tithe."
   },
   "hierophant:Invocation": {
     "NAME": "Invocation",
@@ -289,7 +290,7 @@
   },
   "hierophant:Purify": {
     "NAME":"Purify",
-    "DESCRIPTION": "Heal an enemy !M! HP. NL Deal !D! damage."
+    "DESCRIPTION": "Heal an enemy !M! HP. NL Deal !D! damage. NL hierophant:Tithe."
   },
   "hierophant:Anathema": {
     "NAME":"Anathema",

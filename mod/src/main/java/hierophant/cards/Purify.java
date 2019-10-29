@@ -15,7 +15,7 @@ import hierophant.powers.FervorPower;
 
 import static hierophant.HierophantMod.makeCardPath;
 
-public class Purify extends AbstractDynamicCard {
+public class Purify extends AbstractTitheCard {
 
     public static final String ID = HierophantMod.makeID(Purify.class.getSimpleName());
     public static final String IMG = makeCardPath("Purify.png");
@@ -30,7 +30,7 @@ public class Purify extends AbstractDynamicCard {
     private static final int DAMAGE = 20;
     private static final int UPGRADE_PLUS_DMG = 10;
 
-    private static final int MAGIC = 5;
+    private static final int MAGIC = 10;
     private static final int UPGRADE_PLUS_MAGIC = 5;
 
     public Purify() {
@@ -41,6 +41,7 @@ public class Purify extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        payTithe();
         int healAmount = min(magicNumber, m.maxHealth - m.currentHealth);
         AbstractDungeon.actionManager.addToBottom(new HealAction(m, p, healAmount));
         AbstractDungeon.actionManager.addToBottom(

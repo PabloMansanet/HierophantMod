@@ -43,7 +43,9 @@ public class Shelter extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(mo, p, magicNumber));
+            if (!mo.isDead && !mo.isDying) {
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(mo, p, magicNumber));
+            }
         }
     }
 

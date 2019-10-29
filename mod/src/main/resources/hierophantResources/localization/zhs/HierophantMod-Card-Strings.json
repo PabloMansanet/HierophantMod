@@ -69,7 +69,8 @@
   },
   "hierophant:ChurchCoffers": {
     "NAME": "教堂金库",
-    "DESCRIPTION": "抽 !M! 张牌。 NL 获得 [E] [E] 。 NL hierophant:奉献 。"
+    "DESCRIPTION": "抽 !M! 张牌。 NL 获得 [E] [E] 。 NL hierophant:奉献 。",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌。 NL 获得 [E] [E] [E] 。 NL hierophant:奉献 。"
   },
   "hierophant:Invocation": {
     "NAME": "祈愿",
@@ -290,7 +291,7 @@
   },
   "hierophant:Purify": {
     "NAME":"净化",
-    "DESCRIPTION": "回复一名敌人 !M! 生命。 NL 造成 !D! 点伤害。"
+    "DESCRIPTION": "回复一名敌人 !M! 生命。 NL 造成 !D! 点伤害。NL hierophant:奉献 。"
   },
   "hierophant:Anathema": {
     "NAME":"咒逐",

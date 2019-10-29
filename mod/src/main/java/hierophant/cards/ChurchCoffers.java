@@ -22,6 +22,7 @@ public class ChurchCoffers extends AbstractTitheCard {
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -29,7 +30,6 @@ public class ChurchCoffers extends AbstractTitheCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 2;
-    private static final int UPGRADED_COST = 1;
     private static final int MAGIC = 2;
 
     // /STAT DECLARATION/
@@ -43,15 +43,20 @@ public class ChurchCoffers extends AbstractTitheCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         payTithe();
+        if (this.upgraded) {
+            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(3));
+        } else {
+            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(2));
+        }
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.magicNumber));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(UPGRADED_COST);
+            rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }
