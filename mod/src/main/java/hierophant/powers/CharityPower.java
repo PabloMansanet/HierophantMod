@@ -58,21 +58,9 @@ public class CharityPower extends AbstractPower implements CloneablePowerInterfa
         this.amount += stackAmount;
         if (this.amount == 0) {
             AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
-       }
-   }
-
-    @Override
-    public void onCardDraw(AbstractCard c) {
-        AbstractPlayer p = AbstractDungeon.player;
-        if (c.cardID == Doubloon.ID) {
-            int piety = this.amount;
-            if (AbstractDungeon.player.hasPower(EnlightenedPower.POWER_ID)) {
-                piety = (piety * EnlightenedPower.PIETY_BONUS) / 100;
-            }
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PietyPower(p, p, piety), piety));
         }
     }
+
 
     @Override
     public void updateDescription() {

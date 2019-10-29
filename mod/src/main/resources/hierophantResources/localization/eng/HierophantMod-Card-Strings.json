@@ -168,11 +168,11 @@
   },
   "hierophant:Charity": {
     "NAME":"Charity",
-    "DESCRIPTION": "When you draw a Doubloon, gain !M! hierophant:Piety. NL hierophant:Gilded."
+    "DESCRIPTION": "When you play a Doubloon, gain !M! hierophant:Piety. NL hierophant:Gilded."
   },
   "hierophant:Refuge": {
     "NAME":"Refuge",
-    "DESCRIPTION": "When you play a Doubloon, everyone gains !M! Block. NL hierophant:Gilded."
+    "DESCRIPTION": "When you draw a Doubloon, everyone gains !M! Block. NL hierophant:Gilded."
   },
   "hierophant:CursedGold": {
     "NAME":"Cursed Gold",
@@ -248,8 +248,8 @@
   },
   "hierophant:GoldFever": {
     "NAME":"Gold Fever",
-    "DESCRIPTION": "Deal 8 damage for each Doubloon in your discard pile. NL hierophant:Gilded.",
-    "UPGRADE_DESCRIPTION": "Deal 12 damage for each Doubloon in your discard pile. NL hierophant:Gilded.",
+    "DESCRIPTION": "Deal 6 damage for each Doubloon in your discard pile. NL hierophant:Gilded.",
+    "UPGRADE_DESCRIPTION": "Deal 10 damage for each Doubloon in your discard pile. NL hierophant:Gilded.",
     "EXTENDED_DESCRIPTION": [
        " NL (Deals !D! damage.)"
     ]

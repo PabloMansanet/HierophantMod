@@ -1,20 +1,27 @@
 package hierophant.powers;
 
-import basemod.interfaces.CloneablePowerInterface;
+import static hierophant.HierophantMod.makePowerPath;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import hierophant.HierophantMod;
-import hierophant.util.TextureLoader;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static hierophant.HierophantMod.makePowerPath;
+import basemod.interfaces.CloneablePowerInterface;
+import hierophant.HierophantMod;
+import hierophant.cards.Doubloon;
+import hierophant.util.TextureLoader;
 
 public class RefugePower extends AbstractPower implements CloneablePowerInterface {
     public static final Logger logger = LogManager.getLogger(HierophantMod.class.getName());
@@ -54,6 +61,19 @@ public class RefugePower extends AbstractPower implements CloneablePowerInterfac
             AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
        }
    }
+
+    @Override
+    public void onCardDraw(AbstractCard c) {
+        AbstractPlayer p = AbstractDungeon.player;
+        if (c.cardID == Doubloon.ID) {
+            int blockAmount = p.getPower(RefugePower.POWER_ID).amount;
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, blockAmount));
+            for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(mo, p, blockAmount));
+            }
+
+        }
+    }
 
     @Override
     public void updateDescription() {
