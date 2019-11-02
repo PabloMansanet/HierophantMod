@@ -29,7 +29,7 @@ public class HolyVerse extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int PIETY = 9;
+    private static final int PIETY = 10;
     private static final int UPGRADE_PLUS_PIETY = 5;
 
     public HolyVerse() {

@@ -35,6 +35,7 @@ public class EyeForCoin extends AbstractDynamicCard {
     public EyeForCoin() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        tags.add(CardTags.HEALING);
     }
 
     @Override

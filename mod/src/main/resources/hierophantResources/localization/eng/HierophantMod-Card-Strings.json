@@ -68,8 +68,8 @@
   },
   "hierophant:ChurchCoffers": {
     "NAME": "Church Coffers",
-    "DESCRIPTION": "Draw !M! cards. NL gain [E] [E]. NL hierophant:Tithe.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL gain [E] [E] [E]. NL hierophant:Tithe."
+    "DESCRIPTION": "Draw !M! cards. NL Gain [E] [E]. NL hierophant:Tithe.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Gain [E] [E] [E]. NL hierophant:Tithe."
   },
   "hierophant:Invocation": {
     "NAME": "Invocation",

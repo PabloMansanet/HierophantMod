@@ -36,8 +36,8 @@ public class Flagellation extends AbstractDynamicCard {
     public static final CardColor COLOR = Hierophant.Enums.COLOR_GOLD;
 
     private static final int COST = 1;
-    private static final int PIETY = 14;
-    private static final int UPGRADE_PLUS_PIETY = 6;
+    private static final int PIETY = 15;
+    private static final int UPGRADE_PLUS_PIETY = 7;
 
     public Flagellation() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
